@@ -8,7 +8,7 @@ uses
 type
   TDataModule1 = class(TDataModule)
     ADOConnection1: TADOConnection;
-    ADOQuery1: TADOQuery;
+    ADOTable1: TADOTable;
   private
     { Private declarations }
   public

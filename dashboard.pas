@@ -7,7 +7,9 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
   FMX.Grid.Style, FMX.Memo.Types, FMX.Layouts, FMX.Memo, FMX.ListBox,
   FMX.StdCtrls, FMX.Edit, FMX.Ani, FMX.Objects, FMX.Controls.Presentation,
-  FMX.ScrollBox, FMX.Grid, FMX.TabControl;
+  FMX.ScrollBox, FMX.Grid, FMX.TabControl, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
 
 type
   TForm2 = class(TForm)
@@ -27,14 +29,8 @@ type
     Text27: TText;
     Rectangle42: TRectangle;
     Text28: TText;
-    Rectangle44: TRectangle;
-    Text29: TText;
-    Rectangle45: TRectangle;
-    Text33: TText;
-    Rectangle46: TRectangle;
-    Text34: TText;
     Rectangle43: TRectangle;
-    StringGrid1: TStringGrid;
+    grid_Employee_List: TStringGrid;
     Rectangle129: TRectangle;
     Rectangle130: TRectangle;
     Rectangle131: TRectangle;
@@ -298,7 +294,7 @@ type
     Rectangle8: TRectangle;
     Image13: TImage;
     ColorAnimation5: TColorAnimation;
-    Rectangle9: TRectangle;
+    rect_navbar_employee: TRectangle;
     Rectangle10: TRectangle;
     Image7: TImage;
     Rectangle11: TRectangle;
@@ -342,6 +338,11 @@ type
     Image15: TImage;
     Rectangle30: TRectangle;
     Image16: TImage;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    procedure rect_navbar_employeeClick(Sender: TObject);
+    procedure Rectangle17Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -354,5 +355,17 @@ var
 implementation
 
 {$R *.fmx}
+
+uses auth_u, datamodule;
+
+procedure TForm2.Rectangle17Click(Sender: TObject);
+begin
+          tabs.TabIndex := 1;
+end;
+
+procedure TForm2.rect_navbar_employeeClick(Sender: TObject);
+begin
+  tabs.TabIndex := 0;
+end;
 
 end.

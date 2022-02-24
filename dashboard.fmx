@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Dashboard'
   ClientHeight = 516
   ClientWidth = 1094
   FormFactor.Width = 320
@@ -20,7 +20,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 516.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 2
+      TabIndex = 0
       TabPosition = None
       Sizes = (
         887s
@@ -45,7 +45,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -93,17 +93,17 @@ object Form2: TForm2
               Fill.Kind = None
               Position.X = 57.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 168.000000000000000000
+              Size.Width = 200.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text7: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 168.000000000000000000
+                Size.Width = 200.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'La Date du Facture'
+                Text = 'Nom'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -126,19 +126,19 @@ object Form2: TForm2
             object Rectangle36: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 715.000000000000000000
+              Position.X = 657.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 100.000000000000000000
+              Size.Width = 200.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text8: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 100.000000000000000000
+                Size.Width = 200.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Telephone'
+                Text = 'R'#244'le'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -146,19 +146,19 @@ object Form2: TForm2
             object Rectangle41: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 615.000000000000000000
+              Position.X = 457.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 100.000000000000000000
+              Size.Width = 200.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text27: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 100.000000000000000000
+                Size.Width = 200.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Adresse'
+                Text = 'Service'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -166,79 +166,19 @@ object Form2: TForm2
             object Rectangle42: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 225.000000000000000000
+              Position.X = 257.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 390.000000000000000000
+              Size.Width = 200.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text28: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 390.000000000000000000
+                Size.Width = 200.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Nom et Pr'#233'nom'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Rectangle44: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 1025.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 100.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text29: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 100.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Montant'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Rectangle45: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 925.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 100.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text33: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 100.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Type d'#39'Op'#233'ration'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Rectangle46: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 815.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 110.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text34: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 110.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'N'#176' RC'
+                Text = 'Pr'#233'nom'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -251,7 +191,7 @@ object Form2: TForm2
             Size.Height = 408.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
-            object StringGrid1: TStringGrid
+            object grid_Employee_List: TStringGrid
               Align = Client
               CanFocus = True
               ClipChildren = True
@@ -260,7 +200,7 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 12
+              RowCount = 1
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
               Viewport.Height = 404.000000000000000000
@@ -1061,7 +1001,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -4522,7 +4462,7 @@ object Form2: TForm2
         TriggerInverse = 'IsMouseOver=false'
       end
     end
-    object Rectangle9: TRectangle
+    object rect_navbar_employee: TRectangle
       Align = Top
       Cursor = crHandPoint
       Fill.Color = xFF152331
@@ -4533,6 +4473,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = rect_navbar_employeeClick
       object Rectangle10: TRectangle
         Align = Left
         Fill.Kind = None
@@ -5069,7 +5010,7 @@ object Form2: TForm2
           Size.Width = 107.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Clients'
+          Text = 'Employ'#233'es'
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.FontColor = claWhite
         end
@@ -5918,6 +5859,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle17Click
       object Rectangle18: TRectangle
         Align = Left
         Fill.Kind = None
@@ -7098,6 +7040,51 @@ object Form2: TForm2
           Size.PlatformDefault = False
         end
       end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.ADOTable1
+    ScopeMappings = <>
+    Left = 248
+    Top = 88
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = grid_Employee_List
+      Columns = <
+        item
+          MemberName = 'num_employee'
+          ReadOnly = True
+          Width = 55
+          ColumnStyle = 'Column'
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'nom'
+          Width = 200
+          Alignment = taLeftJustify
+        end
+        item
+          MemberName = 'prenom'
+          Width = 200
+          Alignment = taLeftJustify
+        end
+        item
+          MemberName = 'service'
+          Width = 200
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'role'
+          Width = 200
+          Alignment = taCenter
+        end>
     end
   end
 end

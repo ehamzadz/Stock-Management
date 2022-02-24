@@ -14,14 +14,12 @@ object DataModule1: TDataModule1
     Left = 48
     Top = 24
   end
-  object ADOQuery1: TADOQuery
+  object ADOTable1: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-    Parameters = <>
-    SQL.Strings = (
-      'select * from employee')
-    Left = 144
+    TableName = 'employee'
+    Left = 184
     Top = 24
   end
 end

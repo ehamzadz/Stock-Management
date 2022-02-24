@@ -40,6 +40,8 @@ implementation
 
 {$R *.fmx}
 
+uses datamodule;
+
 procedure TForm1.rect_closeClick(Sender: TObject);
 begin
   application.Terminate;
