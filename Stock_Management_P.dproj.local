@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/01 12:23:26.000.085,=D:\1\Projects\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 00:21:40.000.537,=G:\Projects\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 00:26:03.939,=G:\Projects\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 00:27:08.953,D:\Github\Desktop App\Stock Management\auth_u.pas=G:\Projects\Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 00:27:08.953,D:\Github\Desktop App\Stock Management\auth_u.fmx=G:\Projects\Delphi\Unit1.fmx</Transaction>
+    <Transaction>2022/02/24 00:27:34.939,D:\Github\Desktop App\Stock Management\Stock_Management_P.dproj=G:\Projects\Delphi\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
