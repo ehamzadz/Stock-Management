@@ -1,0 +1,144 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 254
+  ClientWidth = 242
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xFF293D52
+    Size.Width = 242.000000000000000000
+    Size.Height = 254.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Color = xFFF9900F
+      Size.Width = 242.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text1: TText
+        Align = Left
+        Margins.Left = 15.000000000000000000
+        Position.X = 15.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Se connecter'
+        TextSettings.Font.Family = 'Calibri'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Leading
+      end
+      object Rectangle3: TRectangle
+        Align = Right
+        Fill.Kind = None
+        Position.X = 197.000000000000000000
+        Size.Width = 45.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Text2: TText
+          Align = Client
+          HitTest = False
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'x'
+          TextSettings.Font.Family = 'Calibri'
+          TextSettings.Font.Size = 28.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+    end
+    object Text3: TText
+      Margins.Left = 15.000000000000000000
+      Position.X = 44.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 149.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nom d'#39'Utilisateur :'
+      TextSettings.Font.Family = 'Calibri'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Leading
+    end
+    object Text4: TText
+      Margins.Left = 15.000000000000000000
+      Position.X = 44.000000000000000000
+      Position.Y = 140.000000000000000000
+      Size.Width = 149.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Mot de Pass :'
+      TextSettings.Font.Family = 'Calibri'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Leading
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      ReturnKeyType = Next
+      Position.X = 44.000000000000000000
+      Position.Y = 97.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      ReturnKeyType = Next
+      Password = True
+      Position.X = 44.000000000000000000
+      Position.Y = 172.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Rectangle4: TRectangle
+      Fill.Color = xFF08B03C
+      Position.X = 44.000000000000000000
+      Position.Y = 221.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text7: TText
+        Align = Center
+        HitTest = False
+        Size.Width = 148.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Se connecter'
+        TextSettings.Font.Family = 'Calibri'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+      end
+    end
+    object Text5: TText
+      Margins.Left = 15.000000000000000000
+      Position.X = 44.000000000000000000
+      Position.Y = 264.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Invalide User/Pass !'
+      TextSettings.Font.Family = 'Calibri'
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.FontColor = claTomato
+      TextSettings.VertAlign = Leading
+      Visible = False
+    end
+  end
+end
