@@ -24,6 +24,7 @@ type
     Text5: TText;
     ColorAnimation1: TColorAnimation;
     orange: TBrushObject;
+    StringGrid1: TStringGrid;
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure rect_closeClick(Sender: TObject);

@@ -3,12 +3,10 @@ unit datamodule;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+  System.SysUtils, System.Classes;
 
 type
   TDataModule1 = class(TDataModule)
-    ADOConnection1: TADOConnection;
-    ADOQuery1: TADOQuery;
   private
     { Private declarations }
   public
