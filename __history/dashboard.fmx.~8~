@@ -7045,7 +7045,7 @@ object Form2: TForm2
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.ADOTable1
     ScopeMappings = <>
-    Left = 264
+    Left = 248
     Top = 88
   end
   object BindingsList1: TBindingsList
