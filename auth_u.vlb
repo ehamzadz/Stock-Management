@@ -29,9 +29,6 @@ Coordinates=214,78,41,51
 [Edit_password]
 Coordinates=292,10,87,51
 
-[Rectangle4]
-Coordinates=271,78,69,33
-
 [Text1]
 Coordinates=124,10,41,51
 
@@ -43,4 +40,7 @@ Coordinates=269,229,48,33
 
 []
 Coordinates=67,78,70,51
+
+[btn_login]
+Coordinates=271,78,69,33
 

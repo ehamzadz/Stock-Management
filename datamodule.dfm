@@ -1,7 +1,7 @@
 object DataModule1: TDataModule1
   OldCreateOrder = False
-  Height = 362
-  Width = 439
+  Height = 520
+  Width = 718
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
@@ -19,7 +19,7 @@ object DataModule1: TDataModule1
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'employee'
-    Left = 184
+    Left = 360
     Top = 24
   end
 end

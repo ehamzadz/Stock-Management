@@ -5,6 +5,7 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 254
   ClientWidth = 242
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -100,7 +101,7 @@ object Form1: TForm1
     end
     object Edit_username: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 4
+      TabOrder = 0
       ReturnKeyType = Next
       Position.X = 44.000000000000000000
       Position.Y = 97.000000000000000000
@@ -110,7 +111,7 @@ object Form1: TForm1
     end
     object Edit_password: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 3
+      TabOrder = 1
       ReturnKeyType = Next
       Password = True
       Position.X = 44.000000000000000000
@@ -119,7 +120,7 @@ object Form1: TForm1
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object Rectangle4: TRectangle
+    object btn_login: TRectangle
       Fill.Color = xFF08B03C
       Position.X = 44.000000000000000000
       Position.Y = 221.000000000000000000
@@ -127,6 +128,7 @@ object Form1: TForm1
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = btn_loginClick
       object Text7: TText
         Align = Center
         HitTest = False
@@ -153,9 +155,30 @@ object Form1: TForm1
       TextSettings.VertAlign = Leading
       Visible = False
     end
+    object Text6: TText
+      Align = Bottom
+      Position.Y = 216.000000000000000000
+      Size.Width = 242.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cr'#233'er un compte ?'
+      TextSettings.Font.Family = 'Calibri'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      OnClick = Text6Click
+    end
   end
   object orange: TBrushObject
     StyleName = 'orange'
     Brush.Color = xFFF9900F
+  end
+  object qry1: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      '')
+    Left = 6
+    Top = 48
   end
 end

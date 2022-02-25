@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.Ani, System.Rtti,
-  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid;
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.DB, Data.Win.ADODB;
 
 type
   TForm1 = class(TForm)
@@ -19,14 +19,18 @@ type
     Text4: TText;
     Edit_username: TEdit;
     Edit_password: TEdit;
-    Rectangle4: TRectangle;
+    btn_login: TRectangle;
     Text7: TText;
     Text5: TText;
     ColorAnimation1: TColorAnimation;
     orange: TBrushObject;
+    Text6: TText;
+    qry1: TADOQuery;
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure rect_closeClick(Sender: TObject);
+    procedure Text6Click(Sender: TObject);
+    procedure btn_loginClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,7 +44,26 @@ implementation
 
 {$R *.fmx}
 
-uses datamodule;
+uses datamodule, register_u;
+
+procedure TForm1.btn_loginClick(Sender: TObject);
+var
+  user,pass :string;
+begin
+
+  user := edit_username.text;
+  pass := edit_password.text;
+
+  qry1.SQL.Clear;
+  qry1.SQL.Add('select username from employee WHERE username = '+ quotedstr(user) +' UNION select username from it_users WHERE username = '+quotedstr(user));
+  qry1.Open;
+
+  if (qry1.FieldByName('username')<>0) then begin
+    showmessage('success');
+  end;
+
+
+end;
 
 procedure TForm1.rect_closeClick(Sender: TObject);
 begin
@@ -51,6 +74,19 @@ procedure TForm1.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbleft) then StartWindowDrag;
+end;
+
+procedure TForm1.Text6Click(Sender: TObject);
+begin
+
+  Visible := False;
+  try
+    register_u.Form3.ShowModal; // Shows the Form
+  finally
+    Visible := true;
+    // Makes Form1 visible again
+  end;
+
 end;
 
 end.
