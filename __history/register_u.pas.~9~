@@ -64,11 +64,7 @@ begin
   pass := edit2.text;
 
 
-  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then begin
-    showmessage('Complete tous les champs!');
-  end else begin
-
-  end;
+  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then
 
 
 

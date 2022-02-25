@@ -99,7 +99,7 @@ object Form3: TForm3
       TextSettings.FontColor = claWhite
       TextSettings.HorzAlign = Leading
     end
-    object edit5: TEdit
+    object Edit_username: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 0
       ReturnKeyType = Next
@@ -109,17 +109,18 @@ object Form3: TForm3
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object edit6: TEdit
+    object Edit_password: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 1
       ReturnKeyType = Next
+      Password = True
       Position.X = 44.000000000000000000
       Position.Y = 172.000000000000000000
       Size.Width = 172.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object btn_register: TRectangle
+    object Rectangle4: TRectangle
       Fill.Color = xFF08B03C
       Position.X = 152.000000000000000000
       Position.Y = 381.000000000000000000
@@ -127,7 +128,6 @@ object Form3: TForm3
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
-      OnClick = btn_registerClick
       object Text7: TText
         Align = Center
         HitTest = False
@@ -259,12 +259,5 @@ object Form3: TForm3
       TextSettings.FontColor = claWhite
       OnClick = Text11Click
     end
-  end
-  object qry1: TADOQuery
-    Connection = DataModule1.ADOConnection1
-    CursorType = ctStatic
-    Parameters = <>
-    Left = 238
-    Top = 48
   end
 end

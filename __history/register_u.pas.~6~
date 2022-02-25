@@ -5,8 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.Edit, FMX.Ani, FMX.Objects, Data.DB,
-  Data.Win.ADODB;
+  FMX.Controls.Presentation, FMX.Edit, FMX.Ani, FMX.Objects;
 
 type
   TForm3 = class(TForm)
@@ -18,9 +17,9 @@ type
     ColorAnimation1: TColorAnimation;
     Text3: TText;
     Text4: TText;
-    edit5: TEdit;
-    edit6: TEdit;
-    btn_register: TRectangle;
+    Edit_username: TEdit;
+    Edit_password: TEdit;
+    Rectangle4: TRectangle;
     Text7: TText;
     Text5: TText;
     Edit1: TEdit;
@@ -32,12 +31,10 @@ type
     Text10: TText;
     Edit4: TEdit;
     Text11: TText;
-    qry1: TADOQuery;
     procedure rect_closeClick(Sender: TObject);
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Text11Click(Sender: TObject);
-    procedure btn_registerClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,29 +47,6 @@ var
 implementation
 
 {$R *.fmx}
-
-procedure TForm3.btn_registerClick(Sender: TObject);
-var
-  nom,prenom,service,role,user,pass :string;
-begin
-
-  nom := edit5.text;
-  prenom := edit6.text;
-  service := edit1.text;
-  role := edit4.text;
-  user := edit3.text;
-  pass := edit2.text;
-
-
-  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then begin
-    showmessage('Complete tous les champs!');
-  end else begin
-
-  end;
-
-
-
-end;
 
 procedure TForm3.rect_closeClick(Sender: TObject);
 begin
