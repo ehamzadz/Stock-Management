@@ -67,51 +67,32 @@ begin
   if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then begin
     showmessage('Complete tous les champs!');
   end else begin
-    //check if username exist or not
-    qry1.SQL.Clear;
-    qry1.SQL.Add('select count(username) from employee');
-    qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +')');
-    qry1.SQL.Add('UNION ');
-    qry1.SQL.Add('select count(username) from it_users');
-    qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +')');
-    qry1.Open;
 
-    qry1.First;
-    qry1.Next;
-
-    //inserting new user information to database
-    if (qry1.Fields[0].asinteger=0) then begin
-      if (service='it') OR (service='IT') then begin
-        qry1.SQL.Clear;
-        qry1.SQL.Add('insert into it_users (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
-        qry1.Parameters.ParamByName('nom').Value := nom;
-        qry1.Parameters.ParamByName('prenom').Value := prenom;
-        qry1.Parameters.ParamByName('service').Value := service;
-        qry1.Parameters.ParamByName('role').Value := role;
-        qry1.Parameters.ParamByName('username').Value := user;
-        qry1.Parameters.ParamByName('password').Value := pass;
-        qry1.ExecSQL;
-        showmessage('Inscrit avec succès');
-        close;
-      end else begin
-        qry1.SQL.Clear;
-        qry1.SQL.Add('insert into employee (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
-        qry1.Parameters.ParamByName('nom').Value := nom;
-        qry1.Parameters.ParamByName('prenom').Value := prenom;
-        qry1.Parameters.ParamByName('service').Value := service;
-        qry1.Parameters.ParamByName('role').Value := role;
-        qry1.Parameters.ParamByName('username').Value := user;
-        qry1.Parameters.ParamByName('password').Value := pass;
-        qry1.ExecSQL;
-        showmessage('Inscrit avec succès');
-        close;
-      end;
-
+    if (service='it') OR (service='IT') then begin
+      qry1.SQL.Clear;
+      qry1.SQL.Add('insert into it_users (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
+      qry1.Parameters.ParamByName('nom').Value := nom;
+      qry1.Parameters.ParamByName('prenom').Value := prenom;
+      qry1.Parameters.ParamByName('service').Value := service;
+      qry1.Parameters.ParamByName('role').Value := role;
+      qry1.Parameters.ParamByName('username').Value := user;
+      qry1.Parameters.ParamByName('password').Value := pass;
+      qry1.ExecSQL;
+      showmessage('Inscrit avec succès');
+      close;
     end else begin
-      showmessage('Nom d"utilisateur invalide');
+      qry1.SQL.Clear;
+      qry1.SQL.Add('insert into employee (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
+      qry1.Parameters.ParamByName('nom').Value := nom;
+      qry1.Parameters.ParamByName('prenom').Value := prenom;
+      qry1.Parameters.ParamByName('service').Value := service;
+      qry1.Parameters.ParamByName('role').Value := role;
+      qry1.Parameters.ParamByName('username').Value := user;
+      qry1.Parameters.ParamByName('password').Value := pass;
+      qry1.ExecSQL;
+      showmessage('Inscrit avec succès');
+      close;
     end;
-
-
 
   end;
 

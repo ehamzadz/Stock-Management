@@ -67,7 +67,6 @@ begin
   qry1.Next;
 
   if (qry1.Fields[0].asinteger<>0) then begin
-    showmessage('Bienvenue');
     Visible := False;
     try
       dashboard.Form2.ShowModal; // Shows the Form

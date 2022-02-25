@@ -18,8 +18,8 @@ type
     ColorAnimation1: TColorAnimation;
     Text3: TText;
     Text4: TText;
-    Edit_username: TEdit;
-    Edit_password: TEdit;
+    edit5: TEdit;
+    edit6: TEdit;
     btn_register: TRectangle;
     Text7: TText;
     Text5: TText;
@@ -56,12 +56,33 @@ var
   nom,prenom,service,role,user,pass :string;
 begin
 
-  user := edit_username.text;
-  pass := edit_password.text;
-  user := edit_username.text;
-  pass := edit_password.text;
-  user := edit_username.text;
-  pass := edit_password.text;
+  nom := edit5.text;
+  prenom := edit6.text;
+  service := edit1.text;
+  role := edit4.text;
+  user := edit3.text;
+  pass := edit2.text;
+
+
+  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then begin
+    showmessage('Complete tous les champs!');
+  end else begin
+
+    if service='it' then begin
+      qry1.SQL.Clear;
+      qry1.SQL.Add('insert into it_users (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
+      qry1.Parameters.ParamByName('nom').Value := nom;
+      qry1.Parameters.ParamByName('prenom').Value := prenom;
+      qry1.Parameters.ParamByName('service').Value := service;
+      qry1.Parameters.ParamByName('role').Value := role;
+      qry1.Parameters.ParamByName('username').Value := user;
+      qry1.Parameters.ParamByName('pass').Value := pass;
+      qry1.ExecSQL;
+      showmessage('÷nscrit avec succès');
+    end;
+
+  end;
+
 
 
 end;

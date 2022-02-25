@@ -64,7 +64,35 @@ begin
   pass := edit2.text;
 
 
-  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then
+  if ((nom='') OR (prenom='') OR (service='') OR (role='') OR (user='') OR (pass='') )then begin
+    showmessage('Complete tous les champs!');
+  end else begin
+
+    if service='it' then begin
+      qry1.SQL.Clear;
+      qry1.SQL.Add('insert into it_users (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
+      qry1.Parameters.ParamByName('nom').Value := nom;
+      qry1.Parameters.ParamByName('prenom').Value := prenom;
+      qry1.Parameters.ParamByName('service').Value := service;
+      qry1.Parameters.ParamByName('role').Value := role;
+      qry1.Parameters.ParamByName('username').Value := user;
+      qry1.Parameters.ParamByName('pass').Value := pass;
+      qry1.ExecSQL;
+      showmessage('Inscrit avec succès');
+    end else begin
+      qry1.SQL.Clear;
+      qry1.SQL.Add('insert into employee (nom,prenom,service,role,username,password) values(:nom,:prenom,:service,:role,:username,:password)');
+      qry1.Parameters.ParamByName('nom').Value := nom;
+      qry1.Parameters.ParamByName('prenom').Value := prenom;
+      qry1.Parameters.ParamByName('service').Value := service;
+      qry1.Parameters.ParamByName('role').Value := role;
+      qry1.Parameters.ParamByName('username').Value := user;
+      qry1.Parameters.ParamByName('pass').Value := pass;
+      qry1.ExecSQL;
+      showmessage('Inscrit avec succès');
+    end;
+
+  end;
 
 
 
