@@ -44,7 +44,7 @@ implementation
 
 {$R *.fmx}
 
-uses datamodule, register_u;
+uses datamodule, register_u, dashboard;
 
 procedure TForm1.btn_loginClick(Sender: TObject);
 var
@@ -55,11 +55,28 @@ begin
   pass := edit_password.text;
 
   qry1.SQL.Clear;
-  qry1.SQL.Add('select username from employee WHERE username = '+ quotedstr(user) +' UNION select username from it_users WHERE username = '+quotedstr(user));
+  //qry1.SQL.Add('select username from employee WHERE username = '+ quotedstr(user) +' UNION select username from it_users WHERE username = '+quotedstr(user));
+  qry1.SQL.Add('select count(username) from employee');
+  qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +') and (password = '+ quotedstr(pass) +')');
+  qry1.SQL.Add('UNION ');
+  qry1.SQL.Add('select count(username) from it_users');
+  qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +') and (password = '+ quotedstr(pass) +')');
   qry1.Open;
 
-  if (qry1.FieldByName('username')<>0) then begin
-    showmessage('success');
+  qry1.First;
+  qry1.Next;
+
+  if (qry1.Fields[0].asinteger<>0) then begin
+    showmessage('Bienvenue');
+    Visible := False;
+    try
+      dashboard.Form2.ShowModal; // Shows the Form
+    finally
+      Visible := true;
+      // Makes Form1 visible again
+    end;
+  end else begin
+    showmessage('Failed');
   end;
 
 
