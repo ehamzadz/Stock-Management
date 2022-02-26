@@ -353,6 +353,8 @@ type
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
+    procedure Rectangle46Click(Sender: TObject);
+    procedure Edit2Typing(Sender: TObject);
   private
     { Private declarations }
   public
@@ -368,15 +370,56 @@ implementation
 
 uses auth_u, datamodule, register_u;
 
+
+// Adding new employee
 procedure TForm2.Button6Click(Sender: TObject);
 begin
-  register_u.Form3.text11.Visible := false;
-  register_u.Form3.ShowModal; // Shows the Form
+
+  try
+    register_u.Form3.text11.Visible := false;
+    register_u.Form3.ShowModal; // Shows the Form
+  finally
+    datamodule.DataModule1.ADOTable1.Active := false;
+    datamodule.DataModule1.ADOTable1.Active := true;
+  end;
+
+end;
+
+// Employee Seachring Field
+procedure TForm2.Edit2Typing(Sender: TObject);
+var
+  search :string;
+begin
+  search := edit2.Text;
+  if search<>'' then begin
+    datamodule.DataModule1.ADOTable1.Filtered := false;
+    datamodule.DataModule1.ADOTable1.Filter := 'nom like '+ quotedstr('%'+search+'%');
+    datamodule.DataModule1.ADOTable1.Filtered := true;
+  end else begin
+    datamodule.DataModule1.ADOTable1.Filtered := false;
+    datamodule.DataModule1.ADOTable1.Filter := '';
+    datamodule.DataModule1.ADOTable1.Filtered := true;
+  end;
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
-          tabs.TabIndex := 1;
+  tabs.TabIndex := 1;
+end;
+
+// Delete selected employee
+procedure TForm2.Rectangle46Click(Sender: TObject);
+begin
+
+    try
+        datamodule.DataModule1.ADOTable1.Delete;
+    except
+        on E:Exception do begin
+            ShowMessage('Unable to delete record. ' +
+                        E.ClassName + ':' + E.Message);
+        end;
+    end;
+
 end;
 
 procedure TForm2.rect_navbar_employeeClick(Sender: TObject);

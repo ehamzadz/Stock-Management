@@ -111,6 +111,13 @@ begin
       showmessage('Nom d"utilisateur invalide');
     end;
 
+    // clear all fields
+    edit1.text := '';
+    edit2.text := '';
+    edit3.text := '';
+    edit4.text := '';
+    edit5.text := '';
+    edit6.text := '';
 
 
   end;
