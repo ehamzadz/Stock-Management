@@ -121,7 +121,7 @@ end;
 
 procedure TForm3.rect_closeClick(Sender: TObject);
 begin
-  application.Terminate;
+  close;
 end;
 
 procedure TForm3.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;

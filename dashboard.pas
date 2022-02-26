@@ -341,8 +341,18 @@ type
     BindSourceDB1: TBindSourceDB;
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Rectangle9: TRectangle;
+    Line6: TLine;
+    Rectangle44: TRectangle;
+    Edit2: TEdit;
+    Rectangle45: TRectangle;
+    Button6: TButton;
+    Rectangle46: TRectangle;
+    Text29: TText;
+    Text33: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -356,7 +366,13 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule;
+uses auth_u, datamodule, register_u;
+
+procedure TForm2.Button6Click(Sender: TObject);
+begin
+  register_u.Form3.text11.Visible := false;
+  register_u.Form3.ShowModal; // Shows the Form
+end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
