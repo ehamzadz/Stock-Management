@@ -22,4 +22,12 @@ object DataModule1: TDataModule1
     Left = 360
     Top = 24
   end
+  object tbl_stock: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'stock'
+    Left = 360
+    Top = 88
+  end
 end
