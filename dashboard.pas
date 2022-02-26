@@ -439,7 +439,7 @@ end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
-  tabs.TabIndex := 1;
+  tabs.TabIndex := 8;
 end;
 
 // Delete selected employee
