@@ -68,6 +68,7 @@ begin
 
   if (qry1.Fields[0].asinteger<>0) then begin
     Visible := False;
+    dashboard.Form2.username_globalVar := user;
     try
       dashboard.Form2.ShowModal; // Shows the Form
     finally

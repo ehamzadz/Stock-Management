@@ -355,10 +355,12 @@ type
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    username_globalVar :string;
   end;
 
 var
@@ -374,15 +376,8 @@ uses auth_u, datamodule, register_u;
 // Adding new employee
 procedure TForm2.Button6Click(Sender: TObject);
 begin
-
-  try
-    register_u.Form3.text11.Visible := false;
-    register_u.Form3.ShowModal; // Shows the Form
-  finally
-    datamodule.DataModule1.ADOTable1.Active := false;
-    datamodule.DataModule1.ADOTable1.Active := true;
-  end;
-
+  register_u.Form3.text11.Visible := false;
+  register_u.Form3.ShowModal; // Shows the Form
 end;
 
 // Employee Seachring Field
@@ -400,6 +395,12 @@ begin
     datamodule.DataModule1.ADOTable1.Filter := '';
     datamodule.DataModule1.ADOTable1.Filtered := true;
   end;
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+  showmessage('Bienvenue ' +
+              username_globalVar);
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);

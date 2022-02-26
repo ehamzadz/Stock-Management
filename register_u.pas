@@ -51,6 +51,8 @@ implementation
 
 {$R *.fmx}
 
+uses datamodule;
+
 procedure TForm3.btn_registerClick(Sender: TObject);
 var
   nom,prenom,service,role,user,pass :string;
@@ -119,6 +121,9 @@ begin
     edit5.text := '';
     edit6.text := '';
 
+    // Refresh Employee table
+    datamodule.DataModule1.ADOTable1.Active := false;
+    datamodule.DataModule1.ADOTable1.Active := true;
 
   end;
 
