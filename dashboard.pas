@@ -390,6 +390,7 @@ type
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -404,10 +405,15 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u;
+uses auth_u, datamodule, register_u, addProduit_u;
 
 
 // Adding new employee
+procedure TForm2.Button4Click(Sender: TObject);
+begin
+  addProduit_u.Form4.Showmodal;
+end;
+
 procedure TForm2.Button6Click(Sender: TObject);
 begin
   register_u.Form3.text11.Visible := false;
