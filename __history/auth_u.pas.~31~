@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.Edit, FMX.Objects, FMX.Ani, System.Rtti,
-  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid;
+  FMX.Grid.Style, FMX.ScrollBox, FMX.Grid, Data.DB, Data.Win.ADODB;
 
 type
   TForm1 = class(TForm)
@@ -25,6 +25,7 @@ type
     ColorAnimation1: TColorAnimation;
     orange: TBrushObject;
     Text6: TText;
+    qry1: TADOQuery;
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure rect_closeClick(Sender: TObject);
@@ -43,7 +44,7 @@ implementation
 
 {$R *.fmx}
 
-uses datamodule, register_u;
+uses datamodule, register_u, dashboard;
 
 procedure TForm1.btn_loginClick(Sender: TObject);
 var
@@ -53,10 +54,30 @@ begin
   user := edit_username.text;
   pass := edit_password.text;
 
-  datamodule.DataModule1.
-  datamodule.DataModule1.ADOTable1.Filter := 'WHERE username = '+quotedstr(user);
-  datamodule.DataModule1.ADOTable1.Filtered := true;
+  qry1.SQL.Clear;
+  //qry1.SQL.Add('select username from employee WHERE username = '+ quotedstr(user) +' UNION select username from it_users WHERE username = '+quotedstr(user));
+  qry1.SQL.Add('select count(username) from employee');
+  qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +') and (password = '+ quotedstr(pass) +')');
+  qry1.SQL.Add('UNION ');
+  qry1.SQL.Add('select count(username) from it_users');
+  qry1.SQL.Add('WHERE (username = '+ quotedstr(user) +') and (password = '+ quotedstr(pass) +')');
+  qry1.Open;
 
+  qry1.First;
+  qry1.Next;
+
+  if (qry1.Fields[0].asinteger<>0) then begin
+    Visible := False;
+    dashboard.Form2.username_globalVar := user;
+    try
+      dashboard.Form2.ShowModal; // Shows the Form
+    finally
+      Visible := true;
+      // Makes Form1 visible again
+    end;
+  end else begin
+    showmessage('Failed');
+  end;
 
 
 end;

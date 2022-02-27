@@ -1,9 +1,11 @@
-object Form3: TForm3
+object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Form3'
-  ClientHeight = 478
-  ClientWidth = 595
+  BorderStyle = None
+  Caption = 'Form4'
+  ClientHeight = 410
+  ClientWidth = 305
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,17 +13,18 @@ object Form3: TForm3
   object Rectangle1: TRectangle
     Align = Client
     Fill.Color = xFF293D52
-    Size.Width = 595.000000000000000000
-    Size.Height = 478.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object rect_topBar: TRectangle
       Align = Top
       Fill.Color = xFFF9900F
-      Size.Width = 595.000000000000000000
+      Size.Width = 305.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnMouseDown = rect_topBarMouseDown
       object Text1: TText
         Align = Left
         HitTest = False
@@ -30,7 +33,7 @@ object Form3: TForm3
         Size.Width = 265.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
-        Text = 'Inscription'
+        Text = 'Ajouter un Produit'
         TextSettings.Font.Family = 'Calibri'
         TextSettings.Font.Size = 18.000000000000000000
         TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -40,7 +43,7 @@ object Form3: TForm3
       object rect_close: TRectangle
         Align = Right
         Fill.Color = xFFF9900F
-        Position.X = 550.000000000000000000
+        Position.X = 260.000000000000000000
         Size.Width = 45.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
@@ -72,12 +75,12 @@ object Form3: TForm3
     end
     object Text3: TText
       Margins.Left = 15.000000000000000000
-      Position.X = 68.000000000000000000
+      Position.X = 76.000000000000000000
       Position.Y = 64.000000000000000000
       Size.Width = 149.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Nom:'
+      Text = 'Code produit:'
       TextSettings.Font.Family = 'Calibri'
       TextSettings.Font.Size = 14.000000000000000000
       TextSettings.FontColor = claWhite
@@ -85,53 +88,54 @@ object Form3: TForm3
     end
     object Text4: TText
       Margins.Left = 15.000000000000000000
-      Position.X = 68.000000000000000000
+      Position.X = 76.000000000000000000
       Position.Y = 140.000000000000000000
       Size.Width = 149.000000000000000000
       Size.Height = 28.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Pr'#233'nom:'
+      Text = 'Designation:'
       TextSettings.Font.Family = 'Calibri'
       TextSettings.Font.Size = 14.000000000000000000
       TextSettings.FontColor = claWhite
       TextSettings.HorzAlign = Leading
     end
-    object Edit_username: TEdit
+    object edit5: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 8
+      TabOrder = 0
       ReturnKeyType = Next
-      Position.X = 68.000000000000000000
+      MaxLength = 10
+      Position.X = 76.000000000000000000
       Position.Y = 97.000000000000000000
       Size.Width = 172.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object Edit_password: TEdit
+    object edit6: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 4
+      TabOrder = 1
       ReturnKeyType = Next
-      Password = True
-      Position.X = 68.000000000000000000
+      Position.X = 76.000000000000000000
       Position.Y = 172.000000000000000000
       Size.Width = 172.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object Rectangle4: TRectangle
+    object btn_register: TRectangle
       Fill.Color = xFF08B03C
-      Position.X = 192.000000000000000000
-      Position.Y = 405.000000000000000000
-      Size.Width = 180.000000000000000000
+      Position.X = 64.000000000000000000
+      Position.Y = 381.000000000000000000
+      Size.Width = 196.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = btn_registerClick
       object Text7: TText
         Align = Center
         HitTest = False
         Size.Width = 148.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
-        Text = 'Se connecter'
+        Text = 'Ajouter'
         TextSettings.Font.Family = 'Calibri'
         TextSettings.Font.Size = 14.000000000000000000
         TextSettings.FontColor = claWhite
@@ -151,48 +155,24 @@ object Form3: TForm3
       TextSettings.VertAlign = Leading
       Visible = False
     end
-    object Edit1: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 7
-      ReturnKeyType = Next
-      Position.X = 68.000000000000000000
-      Position.Y = 249.000000000000000000
-      Size.Width = 172.000000000000000000
-      Size.Height = 29.000000000000000000
-      Size.PlatformDefault = False
-    end
     object Edit2: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       TabOrder = 3
       ReturnKeyType = Next
-      Password = True
-      Position.X = 332.000000000000000000
-      Position.Y = 244.000000000000000000
+      Position.X = 76.000000000000000000
+      Position.Y = 324.000000000000000000
       Size.Width = 172.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
     end
-    object Text6: TText
-      Margins.Left = 15.000000000000000000
-      Position.X = 68.000000000000000000
-      Position.Y = 216.000000000000000000
-      Size.Width = 149.000000000000000000
-      Size.Height = 29.000000000000000000
-      Size.PlatformDefault = False
-      Text = 'Service'
-      TextSettings.Font.Family = 'Calibri'
-      TextSettings.Font.Size = 14.000000000000000000
-      TextSettings.FontColor = claWhite
-      TextSettings.HorzAlign = Leading
-    end
     object Text8: TText
       Margins.Left = 15.000000000000000000
-      Position.X = 332.000000000000000000
-      Position.Y = 212.000000000000000000
+      Position.X = 76.000000000000000000
+      Position.Y = 292.000000000000000000
       Size.Width = 149.000000000000000000
       Size.Height = 28.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Mot de Pass :'
+      Text = 'Qte:'
       TextSettings.Font.Family = 'Calibri'
       TextSettings.Font.Size = 14.000000000000000000
       TextSettings.FontColor = claWhite
@@ -200,49 +180,33 @@ object Form3: TForm3
     end
     object Edit3: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 6
+      TabOrder = 2
       ReturnKeyType = Next
-      Position.X = 332.000000000000000000
-      Position.Y = 169.000000000000000000
+      Position.X = 76.000000000000000000
+      Position.Y = 249.000000000000000000
       Size.Width = 172.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
-    end
-    object Edit4: TEdit
-      Touch.InteractiveGestures = [LongTap, DoubleTap]
-      TabOrder = 5
-      ReturnKeyType = Next
-      Position.X = 68.000000000000000000
-      Position.Y = 321.000000000000000000
-      Size.Width = 172.000000000000000000
-      Size.Height = 29.000000000000000000
-      Size.PlatformDefault = False
-    end
-    object Text10: TText
-      Margins.Left = 15.000000000000000000
-      Position.X = 68.000000000000000000
-      Position.Y = 288.000000000000000000
-      Size.Width = 149.000000000000000000
-      Size.Height = 29.000000000000000000
-      Size.PlatformDefault = False
-      Text = 'Role'
-      TextSettings.Font.Family = 'Calibri'
-      TextSettings.Font.Size = 14.000000000000000000
-      TextSettings.FontColor = claWhite
-      TextSettings.HorzAlign = Leading
     end
     object Text9: TText
       Margins.Left = 15.000000000000000000
-      Position.X = 332.000000000000000000
-      Position.Y = 136.000000000000000000
+      Position.X = 76.000000000000000000
+      Position.Y = 216.000000000000000000
       Size.Width = 149.000000000000000000
       Size.Height = 29.000000000000000000
       Size.PlatformDefault = False
-      Text = 'Nom d'#39'Utilisateur :'
+      Text = 'Cat'#233'gorie:'
       TextSettings.Font.Family = 'Calibri'
       TextSettings.Font.Size = 14.000000000000000000
       TextSettings.FontColor = claWhite
       TextSettings.HorzAlign = Leading
     end
+  end
+  object qry1: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    Left = 238
+    Top = 48
   end
 end

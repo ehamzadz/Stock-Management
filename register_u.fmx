@@ -72,6 +72,14 @@ object Form3: TForm3
           TriggerInverse = 'IsMouseOver=false'
         end
       end
+      object ColorAnimation18: TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = xFFF9900F
+        StopValue = xFFE6830A
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
     end
     object Text3: TText
       Margins.Left = 15.000000000000000000

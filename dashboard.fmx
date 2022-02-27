@@ -3,7 +3,7 @@ object Form2: TForm2
   Top = 0
   BorderStyle = None
   Caption = 'Dashboard'
-  ClientHeight = 516
+  ClientHeight = 540
   ClientWidth = 1094
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -15,35 +15,35 @@ object Form2: TForm2
     Align = Client
     Fill.Kind = None
     Size.Width = 887.000000000000000000
-    Size.Height = 483.000000000000000000
+    Size.Height = 507.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object tabs: TTabControl
       Align = Client
       Size.Width = 887.000000000000000000
-      Size.Height = 483.000000000000000000
+      Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
       TabIndex = 8
       TabPosition = None
       Sizes = (
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s
+        507s
         887s
-        483s)
+        507s)
       object TabItem4: TTabItem
         CustomIcon = <
           item
@@ -61,7 +61,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle33: TRectangle
@@ -191,7 +191,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 320.000000000000000000
+            Size.Height = 344.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -199,20 +199,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 320.000000000000000000
+              Size.Height = 344.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 316.000000000000000000
+              Viewport.Height = 340.000000000000000000
             end
           end
           object Rectangle129: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 370.000000000000000000
+            Position.Y = 394.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -826,7 +826,7 @@ object Form2: TForm2
         object Rectangle48: TRectangle
           Align = Client
           Size.Width = 887.000000000000000000
-          Size.Height = 302.000000000000000000
+          Size.Height = 326.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle49: TRectangle
@@ -834,21 +834,21 @@ object Form2: TForm2
             Margins.Bottom = 15.000000000000000000
             Position.X = 48.000000000000000000
             Size.Width = 790.000000000000000000
-            Size.Height = 287.000000000000000000
+            Size.Height = 311.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Rectangle98: TRectangle
               Align = Left
               Fill.Kind = None
               Size.Width = 377.000000000000000000
-              Size.Height = 287.000000000000000000
+              Size.Height = 311.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Rectangle103: TRectangle
                 Align = Client
                 Fill.Kind = None
                 Size.Width = 377.000000000000000000
-                Size.Height = 287.000000000000000000
+                Size.Height = 311.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
                 object Rectangle104: TRectangle
@@ -951,7 +951,7 @@ object Form2: TForm2
                   Align = Client
                   Fill.Kind = None
                   Size.Width = 377.000000000000000000
-                  Size.Height = 211.000000000000000000
+                  Size.Height = 235.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
                   object GridFactureAchat: TStringGrid
@@ -959,14 +959,14 @@ object Form2: TForm2
                     CanFocus = True
                     ClipChildren = True
                     Size.Width = 377.000000000000000000
-                    Size.Height = 211.000000000000000000
+                    Size.Height = 235.000000000000000000
                     Size.PlatformDefault = False
                     TextSettings.HorzAlign = Center
                     TabOrder = 0
                     RowCount = 5
                     Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
                     Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 207.000000000000000000
+                    Viewport.Height = 231.000000000000000000
                   end
                 end
               end
@@ -975,14 +975,14 @@ object Form2: TForm2
               Align = Right
               Position.X = 413.000000000000000000
               Size.Width = 377.000000000000000000
-              Size.Height = 287.000000000000000000
+              Size.Height = 311.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Rectangle107: TRectangle
                 Align = Client
                 Fill.Kind = None
                 Size.Width = 377.000000000000000000
-                Size.Height = 287.000000000000000000
+                Size.Height = 311.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
                 object Rectangle109: TRectangle
@@ -1085,7 +1085,7 @@ object Form2: TForm2
                   Align = Client
                   Fill.Kind = None
                   Size.Width = 377.000000000000000000
-                  Size.Height = 211.000000000000000000
+                  Size.Height = 235.000000000000000000
                   Size.PlatformDefault = False
                   Stroke.Kind = None
                   object GridFactureVent: TStringGrid
@@ -1093,14 +1093,14 @@ object Form2: TForm2
                     CanFocus = True
                     ClipChildren = True
                     Size.Width = 377.000000000000000000
-                    Size.Height = 211.000000000000000000
+                    Size.Height = 235.000000000000000000
                     Size.PlatformDefault = False
                     TextSettings.HorzAlign = Center
                     TabOrder = 0
                     RowCount = 7
                     Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
                     Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 207.000000000000000000
+                    Viewport.Height = 231.000000000000000000
                   end
                 end
               end
@@ -1216,7 +1216,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle84: TRectangle
@@ -1226,7 +1226,7 @@ object Form2: TForm2
             Padding.Right = 30.000000000000000000
             Padding.Bottom = 30.000000000000000000
             Size.Width = 887.000000000000000000
-            Size.Height = 330.000000000000000000
+            Size.Height = 354.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Rectangle85: TRectangle
@@ -1235,7 +1235,7 @@ object Form2: TForm2
               Position.X = 30.000000000000000000
               Position.Y = 34.000000000000000000
               Size.Width = 308.000000000000000000
-              Size.Height = 266.000000000000000000
+              Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text21: TText
@@ -1334,16 +1334,16 @@ object Form2: TForm2
               ReadOnly = True
               Align = Client
               Size.Width = 519.000000000000000000
-              Size.Height = 266.000000000000000000
+              Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
               Viewport.Width = 515.000000000000000000
-              Viewport.Height = 262.000000000000000000
+              Viewport.Height = 286.000000000000000000
             end
           end
           object Rectangle86: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 330.000000000000000000
+            Position.Y = 354.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 98.000000000000000000
             Size.PlatformDefault = False
@@ -1791,7 +1791,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle60: TRectangle
@@ -1801,7 +1801,7 @@ object Form2: TForm2
             Padding.Right = 30.000000000000000000
             Padding.Bottom = 30.000000000000000000
             Size.Width = 887.000000000000000000
-            Size.Height = 330.000000000000000000
+            Size.Height = 354.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Rectangle67: TRectangle
@@ -1810,7 +1810,7 @@ object Form2: TForm2
               Position.X = 30.000000000000000000
               Position.Y = 34.000000000000000000
               Size.Width = 308.000000000000000000
-              Size.Height = 266.000000000000000000
+              Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text10: TText
@@ -1909,16 +1909,16 @@ object Form2: TForm2
               ReadOnly = True
               Align = Client
               Size.Width = 519.000000000000000000
-              Size.Height = 266.000000000000000000
+              Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
               Viewport.Width = 515.000000000000000000
-              Viewport.Height = 262.000000000000000000
+              Viewport.Height = 286.000000000000000000
             end
           end
           object Rectangle61: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 330.000000000000000000
+            Position.Y = 354.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 98.000000000000000000
             Size.PlatformDefault = False
@@ -2581,14 +2581,14 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 345.000000000000000000
+          Size.Height = 369.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object GridPanelLayout2: TGridPanelLayout
             Align = Client
             Margins.Bottom = 30.000000000000000000
             Size.Width = 887.000000000000000000
-            Size.Height = 315.000000000000000000
+            Size.Height = 339.000000000000000000
             Size.PlatformDefault = False
             ColumnCollection = <
               item
@@ -2621,7 +2621,7 @@ object Form2: TForm2
               Margins.Right = 30.000000000000000000
               Position.X = 125.500000000000000000
               Size.Width = 288.000000000000000000
-              Size.Height = 315.000000000000000000
+              Size.Height = 339.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text18: TText
@@ -2642,12 +2642,12 @@ object Form2: TForm2
                 CanFocus = True
                 ClipChildren = True
                 Size.Width = 288.000000000000000000
-                Size.Height = 224.000000000000000000
+                Size.Height = 248.000000000000000000
                 Size.PlatformDefault = False
                 RowCount = 0
                 Options = [AlternatingRowBackground]
                 Viewport.Width = 284.000000000000000000
-                Viewport.Height = 220.000000000000000000
+                Viewport.Height = 244.000000000000000000
               end
               object Rectangle97: TRectangle
                 Align = Top
@@ -2741,7 +2741,7 @@ object Form2: TForm2
               Margins.Left = 30.000000000000000000
               Position.X = 473.500000000000000000
               Size.Width = 288.000000000000000000
-              Size.Height = 315.000000000000000000
+              Size.Height = 339.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Rectangle92: TRectangle
@@ -2887,7 +2887,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle114: TRectangle
@@ -3018,7 +3018,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 378.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object GridStock: TStringGrid
@@ -3027,13 +3027,13 @@ object Form2: TForm2
               CanParentFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 378.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               RowCount = 10
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -3124,7 +3124,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle116: TRectangle
@@ -3274,7 +3274,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 378.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object GridFC: TStringGrid
@@ -3282,13 +3282,13 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 378.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               RowCount = 1
               Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -3415,7 +3415,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle31: TRectangle
@@ -3565,7 +3565,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 378.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object GridClient: TStringGrid
@@ -3573,13 +3573,13 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 378.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               RowCount = 1
               Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -3706,7 +3706,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 428.000000000000000000
+          Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle136: TRectangle
@@ -3816,7 +3816,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 320.000000000000000000
+            Size.Height = 344.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid1: TStringGrid
@@ -3824,20 +3824,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 320.000000000000000000
+              Size.Height = 344.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 0
-              Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+              Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 316.000000000000000000
+              Viewport.Height = 340.000000000000000000
             end
           end
           object Rectangle143: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 370.000000000000000000
+            Position.Y = 394.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -4234,7 +4234,7 @@ object Form2: TForm2
     Padding.Bottom = 25.000000000000000000
     Position.Y = 33.000000000000000000
     Size.Width = 207.000000000000000000
-    Size.Height = 483.000000000000000000
+    Size.Height = 507.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object Rectangle1: TRectangle
@@ -6691,7 +6691,7 @@ object Form2: TForm2
       Padding.Right = 5.000000000000000000
       Margins.Top = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Position.Y = 348.000000000000000000
+      Position.Y = 372.000000000000000000
       Size.Width = 207.000000000000000000
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
@@ -6993,7 +6993,7 @@ object Form2: TForm2
       Fill.Color = xFF152331
       Padding.Right = 5.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Position.Y = 403.000000000000000000
+      Position.Y = 427.000000000000000000
       Size.Width = 207.000000000000000000
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
@@ -7924,6 +7924,15 @@ object Form2: TForm2
         TriggerInverse = 'IsMouseOver=false'
       end
     end
+    object ColorAnimation18: TColorAnimation
+      Duration = 0.200000002980232200
+      Inverse = True
+      PropertyName = 'Fill.Color'
+      StartValue = xFFF9900F
+      StopValue = xFFE6830A
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.ADOTable1
@@ -7976,12 +7985,14 @@ object Form2: TForm2
       Columns = <
         item
           MemberName = 'num_stock'
+          ReadOnly = True
           Width = 57
           Alignment = taCenter
         end
         item
           MemberName = 'designation'
           Width = 400
+          ShowThousandSeparator = False
         end
         item
           MemberName = 'categorie'

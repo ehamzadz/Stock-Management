@@ -395,6 +395,7 @@ type
     Text77: TText;
     ColorAnimation17: TColorAnimation;
     Image28: TImage;
+    ColorAnimation18: TColorAnimation;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -462,7 +463,7 @@ begin
   search := edit3.Text;
   if search<>'' then begin
     datamodule.DataModule1.tbl_stock.Filtered := false;
-    datamodule.DataModule1.tbl_stock.Filter := 'nom like '+ quotedstr('%'+search+'%');
+    datamodule.DataModule1.tbl_stock.Filter := 'categorie like '+ quotedstr('%'+search+'%');
     datamodule.DataModule1.tbl_stock.Filtered := true;
   end else begin
     datamodule.DataModule1.tbl_stock.Filtered := false;

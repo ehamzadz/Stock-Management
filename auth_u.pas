@@ -26,6 +26,7 @@ type
     orange: TBrushObject;
     Text6: TText;
     qry1: TADOQuery;
+    ColorAnimation18: TColorAnimation;
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure rect_closeClick(Sender: TObject);

@@ -33,7 +33,6 @@ type
     Edit4: TEdit;
     Text11: TText;
     qry1: TADOQuery;
-    ColorAnimation18: TColorAnimation;
     procedure rect_closeClick(Sender: TObject);
     procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);

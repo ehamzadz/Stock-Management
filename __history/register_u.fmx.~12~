@@ -1,9 +1,11 @@
-object Form4: TForm4
+object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form4'
-  ClientHeight = 480
-  ClientWidth = 640
+  BorderStyle = None
+  Caption = 'Form3'
+  ClientHeight = 413
+  ClientWidth = 488
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,17 +13,18 @@ object Form4: TForm4
   object Rectangle1: TRectangle
     Align = Client
     Fill.Color = xFF293D52
-    Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Width = 488.000000000000000000
+    Size.Height = 413.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object rect_topBar: TRectangle
       Align = Top
       Fill.Color = xFFF9900F
-      Size.Width = 640.000000000000000000
+      Size.Width = 488.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnMouseDown = rect_topBarMouseDown
       object Text1: TText
         Align = Left
         HitTest = False
@@ -40,12 +43,13 @@ object Form4: TForm4
       object rect_close: TRectangle
         Align = Right
         Fill.Color = xFFF9900F
-        Position.X = 595.000000000000000000
+        Position.X = 443.000000000000000000
         Size.Width = 45.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
         Stroke.Color = xFFF9900F
         Stroke.Thickness = 2.000000000000000000
+        OnClick = rect_closeClick
         object Text2: TText
           Align = Client
           HitTest = False
@@ -123,6 +127,7 @@ object Form4: TForm4
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = btn_registerClick
       object Text7: TText
         Align = Center
         HitTest = False
@@ -242,5 +247,24 @@ object Form4: TForm4
       TextSettings.FontColor = claWhite
       TextSettings.HorzAlign = Leading
     end
+    object Text11: TText
+      Align = Bottom
+      Position.Y = 375.000000000000000000
+      Size.Width = 488.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Vous avez un compte ?'
+      TextSettings.Font.Family = 'Calibri'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claWhite
+      OnClick = Text11Click
+    end
+  end
+  object qry1: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    Left = 238
+    Top = 48
   end
 end
