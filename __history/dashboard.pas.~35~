@@ -162,8 +162,6 @@ type
     Rectangle66: TRectangle;
     Image18: TImage;
     ColorAnimation8: TColorAnimation;
-    TabItem8: TTabItem;
-    Button4: TButton;
     TabItem9: TTabItem;
     Rectangle75: TRectangle;
     GridPanelLayout1: TGridPanelLayout;
@@ -350,12 +348,61 @@ type
     Rectangle46: TRectangle;
     Text29: TText;
     Text33: TText;
+    TabItem2: TTabItem;
+    Rectangle135: TRectangle;
+    Rectangle136: TRectangle;
+    Rectangle137: TRectangle;
+    Text34: TText;
+    Rectangle138: TRectangle;
+    Text50: TText;
+    Line10: TLine;
+    Rectangle140: TRectangle;
+    Text54: TText;
+    Rectangle141: TRectangle;
+    Text55: TText;
+    Rectangle142: TRectangle;
+    StringGrid1: TStringGrid;
+    Rectangle143: TRectangle;
+    Rectangle144: TRectangle;
+    Rectangle145: TRectangle;
+    Rectangle146: TRectangle;
+    Image26: TImage;
+    Rectangle147: TRectangle;
+    Text71: TText;
+    Rectangle148: TRectangle;
+    Image27: TImage;
+    ColorAnimation14: TColorAnimation;
+    Text72: TText;
+    Rectangle149: TRectangle;
+    Line15: TLine;
+    Rectangle150: TRectangle;
+    Edit3: TEdit;
+    Rectangle151: TRectangle;
+    Button4: TButton;
+    Rectangle152: TRectangle;
+    Text73: TText;
+    Text74: TText;
+    BindSourceDB2: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    rect_topBar: TRectangle;
+    Text51: TText;
+    rect_close: TRectangle;
+    Text75: TText;
+    ColorAnimation15: TColorAnimation;
+    rect_fullScreen: TRectangle;
+    ColorAnimation16: TColorAnimation;
+    rect_minimize: TRectangle;
+    Text77: TText;
+    ColorAnimation17: TColorAnimation;
+    Image28: TImage;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure rect_closeClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -370,21 +417,19 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u;
+uses auth_u, datamodule, register_u, addProduit_u;
 
 
 // Adding new employee
+procedure TForm2.Button4Click(Sender: TObject);
+begin
+  addProduit_u.Form4.Showmodal;
+end;
+
 procedure TForm2.Button6Click(Sender: TObject);
 begin
-
-  try
-    register_u.Form3.text11.Visible := false;
-    register_u.Form3.ShowModal; // Shows the Form
-  finally
-    datamodule.DataModule1.ADOTable1.Active := false;
-    datamodule.DataModule1.ADOTable1.Active := true;
-  end;
-
+  register_u.Form3.text11.Visible := false;
+  register_u.Form3.ShowModal; // Shows the Form
 end;
 
 // Employee Seachring Field
@@ -406,12 +451,13 @@ end;
 
 procedure TForm2.FormShow(Sender: TObject);
 begin
-  showmessage('Bienvenue '+username_globalVar)
+  showmessage('Bienvenue ' +
+              username_globalVar);
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
-  tabs.TabIndex := 1;
+  tabs.TabIndex := 8;
 end;
 
 // Delete selected employee
@@ -427,6 +473,11 @@ begin
         end;
     end;
 
+end;
+
+procedure TForm2.rect_closeClick(Sender: TObject);
+begin
+  close;
 end;
 
 procedure TForm2.rect_navbar_employeeClick(Sender: TObject);

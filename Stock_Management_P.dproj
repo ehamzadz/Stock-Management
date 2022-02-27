@@ -307,10 +307,6 @@
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport FMX 2 Trial\LibD27\dclFMXfrxTee27.bpl">FastReport FMX 2.0 Tee Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport FMX 2 Trial\LibD27\dclFMXfsTee27.bpl">FastScript 1.9 FMX Tee Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport FMX 2 Trial\LibD27\dclFMXfrxIBX27.bpl">FastReport FMX 2.0 IBX Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Program Files (x86)\FastReport FMX 2 Trial\LibD27\dclFMXfsIBX27.bpl">FastScript 1.9 FMX IBX Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">

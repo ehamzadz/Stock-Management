@@ -5,7 +5,6 @@ object Form2: TForm2
   Caption = 'Dashboard'
   ClientHeight = 516
   ClientWidth = 1094
-  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -205,8 +204,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 316.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 320.000000000000000000
             end
           end
           object Rectangle129: TRectangle
@@ -965,8 +964,8 @@ object Form2: TForm2
                     TabOrder = 0
                     RowCount = 5
                     Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-                    Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 207.000000000000000000
+                    Viewport.Width = 377.000000000000000000
+                    Viewport.Height = 211.000000000000000000
                   end
                 end
               end
@@ -1099,8 +1098,8 @@ object Form2: TForm2
                     TabOrder = 0
                     RowCount = 7
                     Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-                    Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 207.000000000000000000
+                    Viewport.Width = 377.000000000000000000
+                    Viewport.Height = 211.000000000000000000
                   end
                 end
               end
@@ -1336,8 +1335,8 @@ object Form2: TForm2
               Size.Width = 519.000000000000000000
               Size.Height = 266.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 515.000000000000000000
-              Viewport.Height = 262.000000000000000000
+              Viewport.Width = 519.000000000000000000
+              Viewport.Height = 266.000000000000000000
             end
           end
           object Rectangle86: TRectangle
@@ -1911,8 +1910,8 @@ object Form2: TForm2
               Size.Width = 519.000000000000000000
               Size.Height = 266.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 515.000000000000000000
-              Viewport.Height = 262.000000000000000000
+              Viewport.Width = 519.000000000000000000
+              Viewport.Height = 266.000000000000000000
             end
           end
           object Rectangle61: TRectangle
@@ -2646,8 +2645,8 @@ object Form2: TForm2
                 Size.PlatformDefault = False
                 RowCount = 0
                 Options = [AlternatingRowBackground]
-                Viewport.Width = 284.000000000000000000
-                Viewport.Height = 220.000000000000000000
+                Viewport.Width = 288.000000000000000000
+                Viewport.Height = 224.000000000000000000
               end
               object Rectangle97: TRectangle
                 Align = Top
@@ -3032,8 +3031,8 @@ object Form2: TForm2
               TextSettings.HorzAlign = Center
               RowCount = 10
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 378.000000000000000000
             end
           end
         end
@@ -3287,8 +3286,8 @@ object Form2: TForm2
               TextSettings.HorzAlign = Center
               RowCount = 1
               Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 378.000000000000000000
             end
           end
         end
@@ -3578,8 +3577,8 @@ object Form2: TForm2
               TextSettings.HorzAlign = Center
               RowCount = 1
               Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 374.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 378.000000000000000000
             end
           end
         end
@@ -3830,8 +3829,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 316.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 320.000000000000000000
             end
           end
           object Rectangle143: TRectangle
@@ -4161,7 +4160,7 @@ object Form2: TForm2
               Size.Width = 141.000000000000000000
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              OnTyping = Edit3Typing
+              OnTyping = Edit2Typing
             end
           end
           object Rectangle151: TRectangle
@@ -4195,7 +4194,7 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
-              OnClick = Rectangle152Click
+              OnClick = Rectangle46Click
               object Text73: TText
                 Align = Center
                 HitTest = False

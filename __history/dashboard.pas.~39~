@@ -356,8 +356,6 @@ type
     Rectangle138: TRectangle;
     Text50: TText;
     Line10: TLine;
-    Rectangle139: TRectangle;
-    Text51: TText;
     Rectangle140: TRectangle;
     Text54: TText;
     Rectangle141: TRectangle;
@@ -384,12 +382,31 @@ type
     Rectangle152: TRectangle;
     Text73: TText;
     Text74: TText;
+    BindSourceDB2: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    rect_topBar: TRectangle;
+    Text51: TText;
+    rect_close: TRectangle;
+    Text75: TText;
+    ColorAnimation15: TColorAnimation;
+    rect_fullScreen: TRectangle;
+    ColorAnimation16: TColorAnimation;
+    rect_minimize: TRectangle;
+    Text77: TText;
+    ColorAnimation17: TColorAnimation;
+    Image28: TImage;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure rect_closeClick(Sender: TObject);
+    procedure rect_fullScreenClick(Sender: TObject);
+    procedure rect_minimizeClick(Sender: TObject);
+    procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
   private
     { Private declarations }
   public
@@ -404,10 +421,15 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u;
+uses auth_u, datamodule, register_u, addProduit_u;
 
 
 // Adding new employee
+procedure TForm2.Button4Click(Sender: TObject);
+begin
+  addProduit_u.Form4.Showmodal;
+end;
+
 procedure TForm2.Button6Click(Sender: TObject);
 begin
   register_u.Form3.text11.Visible := false;
@@ -439,7 +461,7 @@ end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
-  tabs.TabIndex := 1;
+  tabs.TabIndex := 8;
 end;
 
 // Delete selected employee
@@ -457,9 +479,36 @@ begin
 
 end;
 
+procedure TForm2.rect_closeClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TForm2.rect_fullScreenClick(Sender: TObject);
+begin
+  if windowstate= TWindowState.wsNormal then begin
+    WindowState := TWindowState.wsMaximized;
+  end else begin
+    if windowstate= TWindowState.wsMaximized then begin
+      WindowState := TWindowState.wsNormal;
+    end;
+  end;
+end;
+
+procedure TForm2.rect_minimizeClick(Sender: TObject);
+begin
+  WindowState := TWindowState.wsMinimized;
+end;
+
 procedure TForm2.rect_navbar_employeeClick(Sender: TObject);
 begin
   tabs.TabIndex := 0;
+end;
+
+procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbleft) then StartWindowDrag;
 end;
 
 end.

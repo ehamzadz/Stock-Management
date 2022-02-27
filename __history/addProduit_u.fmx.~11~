@@ -4,8 +4,7 @@ object Form4: TForm4
   BorderStyle = None
   Caption = 'Form4'
   ClientHeight = 410
-  ClientWidth = 305
-  Position = DesktopCenter
+  ClientWidth = 324
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -13,14 +12,14 @@ object Form4: TForm4
   object Rectangle1: TRectangle
     Align = Client
     Fill.Color = xFF293D52
-    Size.Width = 305.000000000000000000
+    Size.Width = 324.000000000000000000
     Size.Height = 410.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object rect_topBar: TRectangle
       Align = Top
       Fill.Color = xFFF9900F
-      Size.Width = 305.000000000000000000
+      Size.Width = 324.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
@@ -43,7 +42,7 @@ object Form4: TForm4
       object rect_close: TRectangle
         Align = Right
         Fill.Color = xFFF9900F
-        Position.X = 260.000000000000000000
+        Position.X = 279.000000000000000000
         Size.Width = 45.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False

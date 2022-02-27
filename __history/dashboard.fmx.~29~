@@ -4161,7 +4161,7 @@ object Form2: TForm2
               Size.Width = 141.000000000000000000
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              OnTyping = Edit3Typing
+              OnTyping = Edit2Typing
             end
           end
           object Rectangle151: TRectangle
@@ -4195,7 +4195,7 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
-              OnClick = Rectangle152Click
+              OnClick = Rectangle46Click
               object Text73: TText
                 Align = Center
                 HitTest = False

@@ -4161,7 +4161,7 @@ object Form2: TForm2
               Size.Width = 141.000000000000000000
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              OnTyping = Edit3Typing
+              OnTyping = Edit2Typing
             end
           end
           object Rectangle151: TRectangle

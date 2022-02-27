@@ -1,11 +1,9 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  BorderStyle = None
   Caption = 'Dashboard'
   ClientHeight = 516
   ClientWidth = 1094
-  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -4161,7 +4159,7 @@ object Form2: TForm2
               Size.Width = 141.000000000000000000
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              OnTyping = Edit3Typing
+              OnTyping = Edit2Typing
             end
           end
           object Rectangle151: TRectangle
@@ -4195,7 +4193,7 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
-              OnClick = Rectangle152Click
+              OnClick = Rectangle46Click
               object Text73: TText
                 Align = Center
                 HitTest = False
@@ -7675,7 +7673,6 @@ object Form2: TForm2
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
-    OnMouseDown = rect_topBarMouseDown
     object Text51: TText
       Align = Left
       HitTest = False
@@ -7901,7 +7898,7 @@ object Form2: TForm2
       Size.PlatformDefault = False
       Stroke.Color = xFFF9900F
       Stroke.Thickness = 2.000000000000000000
-      OnClick = rect_minimizeClick
+      OnClick = rect_closeClick
       object Text77: TText
         Align = Client
         HitTest = False

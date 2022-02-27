@@ -4,22 +4,22 @@
     <Transaction>2021/10/01 12:23:26.000.085,=D:\1\Projects\Delphi\Unit1.pas</Transaction>
     <Transaction>2022/02/24 00:21:40.000.537,=G:\Projects\Delphi\Unit1.pas</Transaction>
     <Transaction>2022/02/24 00:26:03.000.939,=G:\Projects\Delphi\Unit1.pas</Transaction>
-    <Transaction>2022/02/24 00:27:08.000.953,D:\Github\Desktop App\Stock Management\auth_u.fmx=G:\Projects\Delphi\Unit1.fmx</Transaction>
-    <Transaction>2022/02/24 00:27:08.000.953,D:\Github\Desktop App\Stock Management\auth_u.pas=G:\Projects\Delphi\Unit1.pas</Transaction>
-    <Transaction>2022/02/24 00:27:34.000.939,D:\Github\Desktop App\Stock Management\Stock_Management_P.dproj=G:\Projects\Delphi\Project1.dproj</Transaction>
+    <Transaction>2022/02/24 00:27:08.000.953,G:\Projects\Delphi\Unit1.fmx=D:\Github\Desktop App\Stock Management\auth_u.fmx</Transaction>
+    <Transaction>2022/02/24 00:27:08.000.953,G:\Projects\Delphi\Unit1.pas=D:\Github\Desktop App\Stock Management\auth_u.pas</Transaction>
+    <Transaction>2022/02/24 00:27:34.000.939,G:\Projects\Delphi\Project1.dproj=D:\Github\Desktop App\Stock Management\Stock_Management_P.dproj</Transaction>
     <Transaction>2022/02/24 00:33:12.000.322,=D:\Github\Desktop App\Stock Management\Unit1.pas</Transaction>
-    <Transaction>2022/02/24 00:33:29.000.252,D:\Github\Desktop App\Stock Management\datamodule.dfm=D:\Github\Desktop App\Stock Management\Unit1.dfm</Transaction>
-    <Transaction>2022/02/24 00:33:29.000.252,D:\Github\Desktop App\Stock Management\datamodule.pas=D:\Github\Desktop App\Stock Management\Unit1.pas</Transaction>
+    <Transaction>2022/02/24 00:33:29.000.252,D:\Github\Desktop App\Stock Management\Unit1.pas=D:\Github\Desktop App\Stock Management\datamodule.pas</Transaction>
+    <Transaction>2022/02/24 00:33:29.000.252,D:\Github\Desktop App\Stock Management\Unit1.dfm=D:\Github\Desktop App\Stock Management\datamodule.dfm</Transaction>
     <Transaction>2022/02/24 00:48:53.000.060,=D:\Github\Desktop App\Stock Management\Unit2.pas</Transaction>
     <Transaction>2022/02/24 00:49:17.000.549,=D:\Github\Desktop App\Stock Management\Unit2.pas</Transaction>
     <Transaction>2022/02/24 01:09:29.000.911,=D:\Github\Desktop App\Stock Management\Unit2.pas</Transaction>
-    <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\dashboard.fmx=D:\Github\Desktop App\Stock Management\Unit2.fmx</Transaction>
-    <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\dashboard.pas=D:\Github\Desktop App\Stock Management\Unit2.pas</Transaction>
+    <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\Unit2.pas=D:\Github\Desktop App\Stock Management\dashboard.pas</Transaction>
+    <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\Unit2.fmx=D:\Github\Desktop App\Stock Management\dashboard.fmx</Transaction>
     <Transaction>2022/02/25 01:55:34.000.717,=D:\Github\Desktop App\Stock Management\Unit3.pas</Transaction>
-    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\Unit3.fmx=D:\Github\Desktop App\Stock Management\register_u.fmx</Transaction>
-    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\Unit3.pas=D:\Github\Desktop App\Stock Management\register_u.pas</Transaction>
+    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\register_u.fmx=D:\Github\Desktop App\Stock Management\Unit3.fmx</Transaction>
+    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\register_u.pas=D:\Github\Desktop App\Stock Management\Unit3.pas</Transaction>
     <Transaction>2022/02/26 02:06:02.000.014,=D:\Github\Desktop App\Stock Management\Unit4.pas</Transaction>
-    <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\Unit4.pas=D:\Github\Desktop App\Stock Management\addProduit_u.pas</Transaction>
-    <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\Unit4.fmx=D:\Github\Desktop App\Stock Management\addProduit_u.fmx</Transaction>
+    <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\addProduit_u.pas=D:\Github\Desktop App\Stock Management\Unit4.pas</Transaction>
+    <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\addProduit_u.fmx=D:\Github\Desktop App\Stock Management\Unit4.fmx</Transaction>
   </Transactions>
 </BorlandProject>
