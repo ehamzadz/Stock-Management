@@ -60,4 +60,26 @@ object DataModule1: TDataModule1
     Left = 528
     Top = 240
   end
+  object qry_new_demandes: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from demande_produit'
+      
+        'inner join employee ON demande_produit.num_employee=employee .nu' +
+        'm_employee'
+      'where demande_produit.status='#39'en attente'#39)
+    Left = 528
+    Top = 328
+  end
+  object tbl_produits_demande: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'produits_demande'
+    Left = 528
+    Top = 408
+  end
 end

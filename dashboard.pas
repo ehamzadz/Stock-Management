@@ -209,6 +209,57 @@ type
     Button2: TButton;
     BindSourceDB4: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
+    Rectangle5: TRectangle;
+    Rectangle29: TRectangle;
+    Image5: TImage;
+    Rectangle31: TRectangle;
+    Text3: TText;
+    Rectangle37: TRectangle;
+    Image6: TImage;
+    ColorAnimation5: TColorAnimation;
+    TabItem3: TTabItem;
+    Rectangle38: TRectangle;
+    Rectangle39: TRectangle;
+    Rectangle40: TRectangle;
+    Text17: TText;
+    Rectangle47: TRectangle;
+    Text18: TText;
+    Line4: TLine;
+    Rectangle48: TRectangle;
+    Text19: TText;
+    Rectangle49: TRectangle;
+    StringGrid4: TStringGrid;
+    Rectangle50: TRectangle;
+    Rectangle51: TRectangle;
+    Rectangle52: TRectangle;
+    Rectangle53: TRectangle;
+    Image8: TImage;
+    Rectangle54: TRectangle;
+    Text21: TText;
+    Rectangle55: TRectangle;
+    Image11: TImage;
+    ColorAnimation6: TColorAnimation;
+    Text25: TText;
+    Rectangle63: TRectangle;
+    Line5: TLine;
+    Rectangle68: TRectangle;
+    Rectangle69: TRectangle;
+    Button10: TButton;
+    Rectangle70: TRectangle;
+    Text30: TText;
+    Rectangle71: TRectangle;
+    Text31: TText;
+    green: TBrushObject;
+    BindSourceDB5: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
+    Rectangle72: TRectangle;
+    Text32: TText;
+    Rectangle73: TRectangle;
+    Text35: TText;
+    Rectangle74: TRectangle;
+    Text36: TText;
+    Rectangle75: TRectangle;
+    Text37: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -229,6 +280,9 @@ type
     procedure Rectangle81Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Rectangle5Click(Sender: TObject);
+    procedure StringGrid4CellDblClick(const Column: TColumn;
+      const Row: Integer);
   private
     { Private declarations }
   public
@@ -245,7 +299,7 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u, addProduit_u;
+uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u;
 
 
 // Adding new employee
@@ -458,6 +512,15 @@ begin
 
 end;
 
+procedure TForm2.Rectangle5Click(Sender: TObject);
+begin
+  datamodule.DataModule1.qry_new_demandes.active := false;
+  datamodule.DataModule1.qry_new_demandes.active := true;
+  datamodule.DataModule1.qry_new_demandes.refresh;
+
+  tabs.TabIndex := 5;
+end;
+
 procedure TForm2.Rectangle81Click(Sender: TObject);
 var
   script :string;
@@ -506,6 +569,19 @@ procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbleft) then StartWindowDrag;
+end;
+
+procedure TForm2.StringGrid4CellDblClick(const Column: TColumn;
+  const Row: Integer);
+var
+  num :integer;
+begin
+
+  // send num demande to produits_demande form
+  num := datamodule.DataModule1.qry_new_demandes.fieldbyname('num_demande').asinteger;
+  produits_demande_u.Form5.num_demande_produit := num;
+  produits_demande_u.Form5.ShowModal;
+
 end;
 
 end.

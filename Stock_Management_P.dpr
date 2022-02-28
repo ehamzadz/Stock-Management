@@ -7,7 +7,8 @@ uses
   datamodule in 'datamodule.pas' {DataModule1: TDataModule},
   dashboard in 'dashboard.pas' {Form2},
   register_u in 'register_u.pas' {Form3},
-  addProduit_u in 'addProduit_u.pas' {Form4};
+  addProduit_u in 'addProduit_u.pas' {Form4},
+  produits_demande_u in 'produits_demande_u.pas' {Form5};
 
 {$R *.res}
 
@@ -18,5 +19,6 @@ begin
   Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TForm3, Form3);
   Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(TForm5, Form5);
   Application.Run;
 end.

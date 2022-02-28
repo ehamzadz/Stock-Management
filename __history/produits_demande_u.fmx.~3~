@@ -1,0 +1,33 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid4: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    TabOrder = 0
+    RowCount = 3
+    Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object tbl_demande_produits: TADOTable
+    Active = True
+    Connection = DataModule1.ADOConnection1
+    CursorType = ctStatic
+    TableName = 'produits_demande'
+    Left = 144
+    Top = 96
+  end
+end
