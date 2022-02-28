@@ -265,22 +265,6 @@ type
     Text66: TText;
     Text68: TText;
     navbar: TRectangle;
-    Rectangle1: TRectangle;
-    Rectangle2: TRectangle;
-    Image2: TImage;
-    Rectangle3: TRectangle;
-    txtCaisse: TText;
-    Rectangle4: TRectangle;
-    Image8: TImage;
-    ColorAnimation1: TColorAnimation;
-    Rectangle5: TRectangle;
-    Rectangle6: TRectangle;
-    Image6: TImage;
-    Rectangle7: TRectangle;
-    txtFactures: TText;
-    Rectangle8: TRectangle;
-    Image13: TImage;
-    ColorAnimation5: TColorAnimation;
     rect_navbar_employee: TRectangle;
     Rectangle10: TRectangle;
     Image7: TImage;
@@ -291,7 +275,6 @@ type
     ColorAnimation3: TColorAnimation;
     Rectangle13: TRectangle;
     Rectangle14: TRectangle;
-    Image3: TImage;
     Rectangle15: TRectangle;
     txtFournisseurs: TText;
     Rectangle16: TRectangle;
@@ -305,22 +288,6 @@ type
     Rectangle20: TRectangle;
     Image10: TImage;
     ColorAnimation4: TColorAnimation;
-    Rectangle21: TRectangle;
-    Rectangle22: TRectangle;
-    Image1: TImage;
-    Rectangle23: TRectangle;
-    txtAccueil: TText;
-    Rectangle24: TRectangle;
-    Image11: TImage;
-    ColorAnimation7: TColorAnimation;
-    Rectangle25: TRectangle;
-    Rectangle26: TRectangle;
-    Image5: TImage;
-    Rectangle27: TRectangle;
-    txtStatistiques: TText;
-    Rectangle28: TRectangle;
-    Image12: TImage;
-    ColorAnimation6: TColorAnimation;
     RecLogo: TRectangle;
     Image15: TImage;
     Rectangle30: TRectangle;
@@ -389,8 +356,16 @@ type
     StringGrid2: TStringGrid;
     BindSourceDB3: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
-    Text20: TText;
     Button7: TButton;
+    Rectangle81: TRectangle;
+    Rectangle82: TRectangle;
+    Image29: TImage;
+    Rectangle139: TRectangle;
+    Text20: TText;
+    Rectangle153: TRectangle;
+    Image30: TImage;
+    ColorAnimation19: TColorAnimation;
+    Image1: TImage;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -408,6 +383,7 @@ type
     procedure Button7Click(Sender: TObject);
     procedure btn_demanderClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -453,32 +429,23 @@ begin
     // insert produits to permanent table produit_demande
     count := datamodule.DataModule1.tbl_demande.RecordCount;
 
-
+    datamodule.DataModule1.tbl_demande.first;
     for i := 1 to count do begin
 
-      datamodule.DataModule1.qry.SQL.Clear;
-      datamodule.DataModule1.qry.SQL.Add('select * from demande where num_demande_produit=:num');
-      datamodule.DataModule1.qry.Parameters.ParamByName('num').Value := new_demande_num;
-      datamodule.DataModule1.qry.open;
-
-      designation := datamodule.DataModule1.qry.FieldByName('designation').asstring;
-      qte := datamodule.DataModule1.qry.FieldByName('qte').asinteger;
-      num := datamodule.DataModule1.qry.FieldByName('num_demande_produit').asinteger;
+      designation := datamodule.DataModule1.tbl_demande.FieldByName('designation').asstring;
+      qte := datamodule.DataModule1.tbl_demande.FieldByName('qte').asinteger;
+      num := datamodule.DataModule1.tbl_demande.FieldByName('num_demande_produit').asinteger;
 
       datamodule.DataModule1.qry.SQL.Clear;
-      datamodule.DataModule1.qry.SQL.Add('insert into produit_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.SQL.Add('insert into produits_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
       datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := designation;
       datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
       datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := num;
       datamodule.DataModule1.qry.ExecSQL;
 
+      datamodule.DataModule1.tbl_demande.next;
+
     end;
-
-
-
-
-
-
 
     // Clear temporary demande produit list
     datamodule.DataModule1.qry.SQL.Clear;
@@ -488,9 +455,7 @@ begin
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
 
-
-
-
+    rectangle83.Visible := false;
 
 end;
 
@@ -530,6 +495,8 @@ begin
     datamodule.DataModule1.tbl_demande_produit.active := true;
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := true;
 end;
 
 // add produit to demande list
@@ -602,6 +569,11 @@ begin
 
     ShowMessage(username_globalVar);
 
+end;
+
+procedure TForm2.Rectangle13Click(Sender: TObject);
+begin
+  tabs.TabIndex := 2;
 end;
 
 procedure TForm2.Rectangle152Click(Sender: TObject);

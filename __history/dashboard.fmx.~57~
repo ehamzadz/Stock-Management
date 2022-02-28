@@ -9,7 +9,7 @@ object Form2: TForm2
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
+  OnShow = FormShow
   DesignerMasterStyle = 0
   object client: TRectangle
     Align = Client
@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 2
+      TabIndex = 0
       TabPosition = None
       Sizes = (
         887s
@@ -48,7 +48,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -61,7 +61,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 419.000000000000000000
+          Size.Height = 457.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle33: TRectangle
@@ -191,7 +191,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 311.000000000000000000
+            Size.Height = 349.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -199,20 +199,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 311.000000000000000000
+              Size.Height = 349.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 307.000000000000000000
+              Viewport.Height = 345.000000000000000000
             end
           end
           object Rectangle129: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 361.000000000000000000
+            Position.Y = 399.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -494,7 +494,6 @@ object Form2: TForm2
         object Rectangle9: TRectangle
           Align = Top
           Fill.Kind = None
-          Position.Y = 38.000000000000000000
           Size.Width = 887.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -597,19 +596,6 @@ object Form2: TForm2
               TextSettings.HorzAlign = Leading
             end
           end
-        end
-        object Text20: TText
-          Align = Top
-          Margins.Left = 30.000000000000000000
-          Margins.Top = 5.000000000000000000
-          Position.X = 30.000000000000000000
-          Position.Y = 5.000000000000000000
-          Size.Width = 857.000000000000000000
-          Size.Height = 33.000000000000000000
-          Size.PlatformDefault = False
-          Text = 'La liste des Employ'#233'es'
-          TextSettings.Font.StyleExt = {00060000000000000004000000}
-          TextSettings.HorzAlign = Leading
         end
       end
       object TabItem5: TTabItem
@@ -1124,7 +1110,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -1187,6 +1173,7 @@ object Form2: TForm2
           Size.Height = 452.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
+          Visible = False
           object Rectangle84: TRectangle
             Align = Client
             Fill.Color = claWhitesmoke
@@ -5661,6 +5648,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle13Click
       object Rectangle14: TRectangle
         Align = Left
         Fill.Kind = None

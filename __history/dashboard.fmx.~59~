@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabIndex = 2
       TabPosition = None
       Sizes = (
         887s
@@ -48,7 +48,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -61,7 +61,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 452.000000000000000000
+          Size.Height = 457.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle33: TRectangle
@@ -191,7 +191,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 344.000000000000000000
+            Size.Height = 349.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -199,20 +199,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 344.000000000000000000
+              Size.Height = 349.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 2
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 340.000000000000000000
+              Viewport.Height = 345.000000000000000000
             end
           end
           object Rectangle129: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 394.000000000000000000
+            Position.Y = 399.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -494,8 +494,6 @@ object Form2: TForm2
         object Rectangle9: TRectangle
           Align = Top
           Fill.Kind = None
-          Margins.Top = 5.000000000000000000
-          Position.Y = 5.000000000000000000
           Size.Width = 887.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
@@ -1112,7 +1110,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -4671,11 +4669,11 @@ object Form2: TForm2
             end>
           Align = Client
           HitTest = False
-          Margins.Left = 7.000000000000000000
+          Margins.Left = 15.000000000000000000
           Margins.Top = 7.000000000000000000
           Margins.Right = 7.000000000000000000
           Margins.Bottom = 7.000000000000000000
-          Size.Width = 31.000000000000000000
+          Size.Width = 23.000000000000000000
           Size.Height = 31.000000000000000000
           Size.PlatformDefault = False
         end
@@ -4989,11 +4987,11 @@ object Form2: TForm2
             end>
           Align = Client
           HitTest = False
-          Margins.Left = 7.000000000000000000
+          Margins.Left = 15.000000000000000000
           Margins.Top = 7.000000000000000000
           Margins.Right = 7.000000000000000000
           Margins.Bottom = 7.000000000000000000
-          Size.Width = 31.000000000000000000
+          Size.Width = 23.000000000000000000
           Size.Height = 31.000000000000000000
           Size.PlatformDefault = False
         end
@@ -5199,11 +5197,11 @@ object Form2: TForm2
             end>
           Align = Client
           HitTest = False
-          Margins.Left = 7.000000000000000000
+          Margins.Left = 15.000000000000000000
           Margins.Top = 7.000000000000000000
           Margins.Right = 7.000000000000000000
           Margins.Bottom = 7.000000000000000000
-          Size.Width = 31.000000000000000000
+          Size.Width = 23.000000000000000000
           Size.Height = 31.000000000000000000
           Size.PlatformDefault = False
         end
@@ -5514,8 +5512,8 @@ object Form2: TForm2
       object Rectangle30: TRectangle
         Align = Left
         Fill.Kind = None
-        Padding.Top = 5.000000000000000000
-        Padding.Bottom = 5.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
         Margins.Left = 30.000000000000000000
         Position.X = 30.000000000000000000
         Size.Width = 51.000000000000000000
@@ -5626,9 +5624,9 @@ object Form2: TForm2
               FileName = 'C:\Users\BlackDev\Desktop\logo.png'
             end>
           Align = Left
-          Position.Y = 5.000000000000000000
+          Position.Y = 10.000000000000000000
           Size.Width = 65.000000000000000000
-          Size.Height = 47.000000000000000000
+          Size.Height = 37.000000000000000000
           Size.PlatformDefault = False
         end
       end
@@ -5644,6 +5642,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle13Click
       object Rectangle82: TRectangle
         Align = Left
         Fill.Kind = None
@@ -5896,11 +5895,11 @@ object Form2: TForm2
             end>
           Align = Client
           HitTest = False
-          Margins.Left = 7.000000000000000000
+          Margins.Left = 15.000000000000000000
           Margins.Top = 7.000000000000000000
           Margins.Right = 7.000000000000000000
           Margins.Bottom = 7.000000000000000000
-          Size.Width = 31.000000000000000000
+          Size.Width = 23.000000000000000000
           Size.Height = 31.000000000000000000
           Size.PlatformDefault = False
         end

@@ -389,7 +389,6 @@ type
     StringGrid2: TStringGrid;
     BindSourceDB3: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
-    Text20: TText;
     Button7: TButton;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
@@ -408,6 +407,7 @@ type
     procedure Button7Click(Sender: TObject);
     procedure btn_demanderClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -453,32 +453,23 @@ begin
     // insert produits to permanent table produit_demande
     count := datamodule.DataModule1.tbl_demande.RecordCount;
 
-
+    datamodule.DataModule1.tbl_demande.first;
     for i := 1 to count do begin
 
-      datamodule.DataModule1.qry.SQL.Clear;
-      datamodule.DataModule1.qry.SQL.Add('select * from demande where num_demande_produit=:num');
-      datamodule.DataModule1.qry.Parameters.ParamByName('num').Value := new_demande_num;
-      datamodule.DataModule1.qry.open;
-
-      designation := datamodule.DataModule1.qry.FieldByName('designation').asstring;
-      qte := datamodule.DataModule1.qry.FieldByName('designation').asinteger;
-      num := datamodule.DataModule1.qry.FieldByName('designation').asinteger;
+      designation := datamodule.DataModule1.tbl_demande.FieldByName('designation').asstring;
+      qte := datamodule.DataModule1.tbl_demande.FieldByName('qte').asinteger;
+      num := datamodule.DataModule1.tbl_demande.FieldByName('num_demande_produit').asinteger;
 
       datamodule.DataModule1.qry.SQL.Clear;
-      datamodule.DataModule1.qry.SQL.Add('insert into produit_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.SQL.Add('insert into produits_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
       datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := designation;
       datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
       datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := num;
       datamodule.DataModule1.qry.ExecSQL;
 
+      datamodule.DataModule1.tbl_demande.next;
+
     end;
-
-
-
-
-
-
 
     // Clear temporary demande produit list
     datamodule.DataModule1.qry.SQL.Clear;
@@ -488,9 +479,7 @@ begin
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
 
-
-
-
+    rectangle83.Visible := false;
 
 end;
 
@@ -530,6 +519,8 @@ begin
     datamodule.DataModule1.tbl_demande_produit.active := true;
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := true;
 end;
 
 // add produit to demande list
@@ -602,6 +593,11 @@ begin
 
     ShowMessage(username_globalVar);
 
+end;
+
+procedure TForm2.Rectangle13Click(Sender: TObject);
+begin
+  tabs.TabIndex := 2;
 end;
 
 procedure TForm2.Rectangle152Click(Sender: TObject);
