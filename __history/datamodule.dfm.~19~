@@ -19,19 +19,45 @@ object DataModule1: TDataModule1
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'employee'
-    Left = 184
+    Left = 360
     Top = 24
   end
-  object qry_Users_List: TADOQuery
+  object tbl_stock: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-    Parameters = <>
-    SQL.Strings = (
-      'select username from employee'
-      'UNION '
-      'select username from it_users')
-    Left = 48
+    TableName = 'stock'
+    Left = 360
     Top = 88
+  end
+  object tbl_demande: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande'
+    Left = 360
+    Top = 176
+  end
+  object tbl_demande_produit: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande_produit'
+    Left = 360
+    Top = 272
+  end
+  object qry: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 360
+    Top = 344
+  end
+  object tbl_list_demande_produits: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande_produit'
+    Left = 520
+    Top = 296
   end
 end

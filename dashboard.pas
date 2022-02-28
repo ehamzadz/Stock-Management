@@ -231,12 +231,13 @@ type
     Rectangle27: TRectangle;
     Rectangle28: TRectangle;
     Button2: TButton;
+    BindSourceDB4: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
     procedure rect_closeClick(Sender: TObject);
     procedure rect_fullScreenClick(Sender: TObject);
     procedure rect_minimizeClick(Sender: TObject);
@@ -250,6 +251,8 @@ type
     procedure FormShow(Sender: TObject);
     procedure Rectangle13Click(Sender: TObject);
     procedure Rectangle81Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -325,9 +328,14 @@ begin
 
 end;
 
-procedure TForm2.Button4Click(Sender: TObject);
+procedure TForm2.Button2Click(Sender: TObject);
 begin
   tabs.TabIndex := 1;
+end;
+
+procedure TForm2.Button4Click(Sender: TObject);
+begin
+    addProduit_u.Form4.ShowModal;
 end;
 
 procedure TForm2.Button6Click(Sender: TObject);
@@ -484,7 +492,7 @@ begin
 
   // show only demandes of the current login employee
   datamodule.DataModule1.tbl_list_demande_produits.filtered := false;
-  script := 'where num_employee =' + inttostr(num_employee_globalVar);
+  script := 'num_employee =' + inttostr(num_employee_globalVar);
   datamodule.DataModule1.tbl_list_demande_produits.filter := script;
   datamodule.DataModule1.tbl_list_demande_produits.filtered := true;
   datamodule.DataModule1.tbl_list_demande_produits.active := false;

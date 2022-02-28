@@ -57,7 +57,7 @@ object DataModule1: TDataModule1
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'demande_produit'
-    Left = 520
-    Top = 296
+    Left = 528
+    Top = 240
   end
 end

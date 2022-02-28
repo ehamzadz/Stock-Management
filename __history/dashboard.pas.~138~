@@ -42,58 +42,6 @@ type
     Image25: TImage;
     ColorAnimation13: TColorAnimation;
     Text35: TText;
-    TabItem5: TTabItem;
-    Rectangle47: TRectangle;
-    Rectangle50: TRectangle;
-    Rectangle51: TRectangle;
-    Rectangle52: TRectangle;
-    Text38: TText;
-    Rectangle53: TRectangle;
-    TextRevenu: TText;
-    TextRevenuPercnt: TText;
-    Text36: TText;
-    Rectangle54: TRectangle;
-    Rectangle55: TRectangle;
-    Text49: TText;
-    Rectangle63: TRectangle;
-    TextDepenses: TText;
-    TextDepensesPercnt: TText;
-    Text52: TText;
-    Rectangle88: TRectangle;
-    Rectangle95: TRectangle;
-    Text53: TText;
-    Rectangle96: TRectangle;
-    TextNet: TText;
-    TextNetPercnt: TText;
-    Text56: TText;
-    Rectangle48: TRectangle;
-    Rectangle49: TRectangle;
-    Rectangle98: TRectangle;
-    Rectangle103: TRectangle;
-    Rectangle104: TRectangle;
-    Rectangle105: TRectangle;
-    Text57: TText;
-    Rectangle106: TRectangle;
-    Text58: TText;
-    Line4: TLine;
-    Rectangle108: TRectangle;
-    Text60: TText;
-    Text59: TText;
-    Rectangle117: TRectangle;
-    GridFactureAchat: TStringGrid;
-    Rectangle102: TRectangle;
-    Rectangle107: TRectangle;
-    Rectangle109: TRectangle;
-    Rectangle110: TRectangle;
-    Text61: TText;
-    Rectangle111: TRectangle;
-    Text62: TText;
-    Line5: TLine;
-    Rectangle112: TRectangle;
-    Text63: TText;
-    Text64: TText;
-    Rectangle118: TRectangle;
-    GridFactureVent: TStringGrid;
     TabItem6: TTabItem;
     Rectangle79: TRectangle;
     Line8: TLine;
@@ -151,119 +99,6 @@ type
     Rectangle66: TRectangle;
     Image18: TImage;
     ColorAnimation8: TColorAnimation;
-    TabItem9: TTabItem;
-    Rectangle75: TRectangle;
-    GridPanelLayout1: TGridPanelLayout;
-    Rectangle68: TRectangle;
-    Rectangle69: TRectangle;
-    Rectangle71: TRectangle;
-    Text16: TText;
-    Rectangle72: TRectangle;
-    Image20: TImage;
-    ColorAnimation9: TColorAnimation;
-    Rectangle73: TRectangle;
-    Rectangle74: TRectangle;
-    Rectangle76: TRectangle;
-    Text17: TText;
-    Rectangle77: TRectangle;
-    Image22: TImage;
-    ColorAnimation10: TColorAnimation;
-    Rectangle80: TRectangle;
-    GridPanelLayout2: TGridPanelLayout;
-    Rectangle70: TRectangle;
-    Text18: TText;
-    StringGrid4: TStringGrid;
-    Rectangle97: TRectangle;
-    Rectangle99: TRectangle;
-    Text30: TText;
-    Rectangle100: TRectangle;
-    Text31: TText;
-    Rectangle101: TRectangle;
-    Text32: TText;
-    Line9: TLine;
-    Rectangle78: TRectangle;
-    Rectangle92: TRectangle;
-    Rectangle93: TRectangle;
-    Text19: TText;
-    Rectangle94: TRectangle;
-    Image23: TImage;
-    ColorAnimation12: TColorAnimation;
-    TabItem11: TTabItem;
-    Rectangle113: TRectangle;
-    Rectangle114: TRectangle;
-    recCodeProduit: TRectangle;
-    Text39: TText;
-    RecQte: TRectangle;
-    Text40: TText;
-    RecDesignation: TRectangle;
-    Text41: TText;
-    RecPrix: TRectangle;
-    Text42: TText;
-    Line11: TLine;
-    RecCategorie: TRectangle;
-    Text43: TText;
-    Rectangle119: TRectangle;
-    GridStock: TStringGrid;
-    Rectangle120: TRectangle;
-    Line12: TLine;
-    Rectangle121: TRectangle;
-    Edit16: TEdit;
-    Rectangle122: TRectangle;
-    Button13: TButton;
-    TabItem12: TTabItem;
-    Rectangle115: TRectangle;
-    Rectangle116: TRectangle;
-    RecCodeFour: TRectangle;
-    Text44: TText;
-    RecNomFour: TRectangle;
-    Text45: TText;
-    Line13: TLine;
-    RecDette: TRectangle;
-    Text46: TText;
-    RecCCP: TRectangle;
-    Text47: TText;
-    RecAdr: TRectangle;
-    Text48: TText;
-    RecPhone: TRectangle;
-    Text69: TText;
-    Rectangle124: TRectangle;
-    GridFC: TStringGrid;
-    Rectangle125: TRectangle;
-    Line14: TLine;
-    Rectangle126: TRectangle;
-    Edit17: TEdit;
-    Rectangle127: TRectangle;
-    Button14: TButton;
-    Rectangle123: TRectangle;
-    Text65: TText;
-    Text67: TText;
-    TabItem1: TTabItem;
-    Rectangle29: TRectangle;
-    Rectangle31: TRectangle;
-    RecCodeClient: TRectangle;
-    Text1: TText;
-    RecNomClient: TRectangle;
-    Text2: TText;
-    Line1: TLine;
-    RecDetteC: TRectangle;
-    Text3: TText;
-    RecCCPC: TRectangle;
-    Text4: TText;
-    RecAdrC: TRectangle;
-    Text5: TText;
-    RecPhoneC: TRectangle;
-    Text70: TText;
-    Rectangle37: TRectangle;
-    GridClient: TStringGrid;
-    Rectangle38: TRectangle;
-    Line2: TLine;
-    Rectangle39: TRectangle;
-    Edit1: TEdit;
-    Rectangle40: TRectangle;
-    Button2: TButton;
-    Rectangle128: TRectangle;
-    Text66: TText;
-    Text68: TText;
     navbar: TRectangle;
     rect_navbar_employee: TRectangle;
     Rectangle10: TRectangle;
@@ -366,6 +201,38 @@ type
     Image30: TImage;
     ColorAnimation19: TColorAnimation;
     Image1: TImage;
+    TabItem1: TTabItem;
+    Rectangle1: TRectangle;
+    Rectangle2: TRectangle;
+    Rectangle3: TRectangle;
+    Text1: TText;
+    Rectangle4: TRectangle;
+    Text2: TText;
+    Line1: TLine;
+    Rectangle5: TRectangle;
+    Text3: TText;
+    Rectangle6: TRectangle;
+    Text4: TText;
+    Rectangle7: TRectangle;
+    StringGrid3: TStringGrid;
+    Rectangle8: TRectangle;
+    Rectangle21: TRectangle;
+    Rectangle22: TRectangle;
+    Rectangle23: TRectangle;
+    Image2: TImage;
+    Rectangle24: TRectangle;
+    Text5: TText;
+    Rectangle25: TRectangle;
+    Image3: TImage;
+    ColorAnimation1: TColorAnimation;
+    Text16: TText;
+    Rectangle26: TRectangle;
+    Line2: TLine;
+    Rectangle27: TRectangle;
+    Rectangle28: TRectangle;
+    Button2: TButton;
+    BindSourceDB4: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -384,6 +251,7 @@ type
     procedure btn_demanderClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Rectangle13Click(Sender: TObject);
+    procedure Rectangle81Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -461,7 +329,7 @@ end;
 
 procedure TForm2.Button4Click(Sender: TObject);
 begin
-  addProduit_u.Form4.Showmodal;
+  tabs.TabIndex := 1;
 end;
 
 procedure TForm2.Button6Click(Sender: TObject);
@@ -573,7 +441,7 @@ end;
 
 procedure TForm2.Rectangle13Click(Sender: TObject);
 begin
-  tabs.TabIndex := 2;
+  tabs.TabIndex := 1;
 end;
 
 procedure TForm2.Rectangle152Click(Sender: TObject);
@@ -590,7 +458,7 @@ end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
-  tabs.TabIndex := 8;
+  tabs.TabIndex := 3;
 end;
 
 // Delete selected employee
@@ -605,6 +473,24 @@ begin
                         E.ClassName + ':' + E.Message);
         end;
     end;
+
+end;
+
+procedure TForm2.Rectangle81Click(Sender: TObject);
+var
+  script :string;
+begin
+  //tbl_list_demande_produits
+
+  tabs.TabIndex := 4;
+
+  // show only demandes of the current login employee
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := false;
+  script := 'num_employee =' + inttostr(num_employee_globalVar);
+  datamodule.DataModule1.tbl_list_demande_produits.filter := script;
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := true;
+  datamodule.DataModule1.tbl_list_demande_produits.active := false;
+  datamodule.DataModule1.tbl_list_demande_produits.active := true;
 
 end;
 

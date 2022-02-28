@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 4
+      TabIndex = 3
       TabPosition = None
       Sizes = (
         887s
@@ -1657,7 +1657,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2193,7 +2193,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2326,9 +2326,9 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 2
+              RowCount = 42
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
+              Viewport.Width = 867.000000000000000000
               Viewport.Height = 340.000000000000000000
             end
           end
@@ -2650,17 +2650,6 @@ object Form2: TForm2
             Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
-            object Edit1: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Right
-              Position.X = 104.000000000000000000
-              Position.Y = 7.000000000000000000
-              Margins.Right = 7.000000000000000000
-              Size.Width = 141.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              OnTyping = Edit3Typing
-            end
           end
           object Rectangle28: TRectangle
             Align = Left
@@ -2681,44 +2670,6 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Text = 'Ajouter une Demande Produits'
-              OnClick = Button4Click
-            end
-            object Rectangle29: TRectangle
-              Align = Left
-              Fill.Color = claTomato
-              Margins.Left = 15.000000000000000000
-              Position.X = 208.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 113.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              OnClick = Rectangle152Click
-              object Text17: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 85.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Supprimer'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-            object Text18: TText
-              Align = Left
-              HitTest = False
-              Margins.Left = 10.000000000000000000
-              Position.X = 331.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 248.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'S'#233'lectionner Produit puis Cliquer Supprimer'
-              TextSettings.Font.Size = 9.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              TextSettings.FontColor = claDimgray
-              TextSettings.HorzAlign = Leading
             end
           end
         end
@@ -4232,6 +4183,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle81Click
       object Rectangle82: TRectangle
         Align = Left
         Fill.Kind = None
@@ -4971,6 +4923,21 @@ object Form2: TForm2
           Width = 70
         end>
     end
+    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'num_demande'
+        end
+        item
+          MemberName = 'date_demande'
+        end
+        item
+          MemberName = 'status'
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -4983,5 +4950,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 400
     Top = 488
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = DataModule1.tbl_list_demande_produits
+    ScopeMappings = <>
+    Left = 536
+    Top = 256
   end
 end

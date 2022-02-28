@@ -229,18 +229,15 @@ type
     Rectangle26: TRectangle;
     Line2: TLine;
     Rectangle27: TRectangle;
-    Edit1: TEdit;
     Rectangle28: TRectangle;
     Button2: TButton;
-    Rectangle29: TRectangle;
-    Text17: TText;
-    Text18: TText;
+    BindSourceDB4: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
     procedure rect_closeClick(Sender: TObject);
     procedure rect_fullScreenClick(Sender: TObject);
     procedure rect_minimizeClick(Sender: TObject);
@@ -253,6 +250,7 @@ type
     procedure btn_demanderClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Rectangle13Click(Sender: TObject);
+    procedure Rectangle81Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -326,11 +324,6 @@ begin
 
     rectangle83.Visible := false;
 
-end;
-
-procedure TForm2.Button4Click(Sender: TObject);
-begin
-  tabs.TabIndex := 1;
 end;
 
 procedure TForm2.Button6Click(Sender: TObject);
@@ -442,7 +435,7 @@ end;
 
 procedure TForm2.Rectangle13Click(Sender: TObject);
 begin
-  tabs.TabIndex := 2;
+  tabs.TabIndex := 1;
 end;
 
 procedure TForm2.Rectangle152Click(Sender: TObject);
@@ -474,6 +467,24 @@ begin
                         E.ClassName + ':' + E.Message);
         end;
     end;
+
+end;
+
+procedure TForm2.Rectangle81Click(Sender: TObject);
+var
+  script :string;
+begin
+  //tbl_list_demande_produits
+
+  tabs.TabIndex := 4;
+
+  // show only demandes of the current login employee
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := false;
+  script := 'num_employee =' + inttostr(num_employee_globalVar);
+  datamodule.DataModule1.tbl_list_demande_produits.filter := script;
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := true;
+  datamodule.DataModule1.tbl_list_demande_produits.active := false;
+  datamodule.DataModule1.tbl_list_demande_produits.active := true;
 
 end;
 
