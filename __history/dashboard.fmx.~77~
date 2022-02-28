@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 3
+      TabIndex = 0
       TabPosition = None
       Sizes = (
         887s
@@ -40,7 +40,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -183,7 +183,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 344.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -191,295 +191,14 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 344.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 2
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 340.000000000000000000
-            end
-          end
-          object Rectangle129: TRectangle
-            Align = Bottom
-            Fill.Kind = None
-            Position.Y = 394.000000000000000000
-            Size.Width = 887.000000000000000000
-            Size.Height = 58.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Rectangle130: TRectangle
-              Align = FitRight
-              Fill.Kind = None
-              Padding.Left = 25.000000000000000000
-              Padding.Top = 11.000000000000000000
-              Padding.Right = 25.000000000000000000
-              Padding.Bottom = 11.000000000000000000
-              Position.X = 392.000030517578100000
-              Size.Width = 494.999969482421900000
-              Size.Height = 58.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle131: TRectangle
-                Align = Right
-                Cursor = crHandPoint
-                Fill.Color = xFF06AD57
-                Padding.Right = 5.000000000000000000
-                Position.X = 268.999969482421900000
-                Position.Y = 11.000000000000000000
-                Size.Width = 201.000000000000000000
-                Size.Height = 36.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle132: TRectangle
-                  Align = Left
-                  Fill.Kind = None
-                  HitTest = False
-                  Size.Width = 45.000000000000000000
-                  Size.Height = 36.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Image24: TImage
-                    MultiResBitmap.Height = 188
-                    MultiResBitmap.Width = 188
-                    MultiResBitmap = <
-                      item
-                        Width = 188
-                        Height = 188
-                        PNG = {
-                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
-                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-                          0BE149444154785EEDDD7D7014F51DC7F1EFEE3DE58187841C79440AA2E0B4F8
-                          D42A1A258288D03AEA140A442474749CA90E159CCED4EA743A566D673AF58F5A
-                          1F70D4B14F3E9676B4D6A771B0D607502CA2157C6C2988A11748EE4280E472B9
-                          A7FD75F7F29D202521B7975D6EEFF7FBBC66EC7D7F8BE3C4E69D75EF6EEF178D
-                          3C4408A17774746C4E241267C4E3F18A7038ECA9AFCF497D7D7D3C156EC6EB97
-                          7DD77FFDAEC7780979D0F9B1E8DADBDBCF3563CF9A6373797979A5CCB13BC5FC
-                          E63D9A79F094AB790979F044F0E699DD67DACA4BB041D7C413883E7F9E087EDF
-                          BE7DCFF0080540F4F9F344F0C964F2021EA14056F4C6C3A7ACE2258CC013C11F
-                          3E7C78128F3016423C8E33FDF1792278F309AA27BE0E19E0F2E6F8109A8438FA
-                          365EC29720784999D13F8633FDB110BCC4069FC89EBC92976042F0B213DA9338
-                          D31F81E01590BBA67F68C66A5E2A0DC12BC2FC46E33604138257085EB244F0CA
-                          513D7A04AF2095A347F08A52357A04AF3015A347F08ACB45AFD04B96081EAC08
-                          9479C912C1438E75A657E13604040F4728701B028287A3F01359696F2D46F070
-                          0C337A696F2D46F0302C595FB244F030A2C127B2727D301CC1C3F149F6C17004
-                          0FA392E9F206C1435E64891EC143DE72D197F86D08081E6C318379D478F8D492
-                          7D4716C1837DC228D97764113C14A454AFE95DDD837DF97756B5E99AF6FD8C30
-                          26F9F46C4D77EC50F570DBEAFDEAD7BFE4491D4EFC4284535FBF8CA7E2F9D9A6
-                          1A7A657725AF0A611882B23D86F075FB847E807463FDE6B7DF789CFFD0718E07
-                          BF6C59DB0221E8F77E9D4EE243A342F085F142F0963BCDE8FF36A6E88F9515B4
-                          D77CB866CB96D7FE3E78C4198E5DD22C59B26ACAD2A56D519F46AFDA891D4ADF
-                          6D2DDDB4707A3FAF9C61767492D55273F3C5D13973E64DE1C363E648F0572D6F
-                          5B17F46B7B033E0AF32150CC6D17C568D18C38AF9C63461F0EFAF5BD739BE7AF
-                          E3436332E6E05B97AD7A4E10DDC34B50D84FE69A67FA939D8F3E47D3EE31A37F
-                          8E57051B53F066EC2F9B5FC815BC0418BCBC712FFA2B2EBCE0E2977955908283
-                          5FB16CF51AF30B58CC4B80216E46AF112D36CFF46B78695B41C1B7B6AE9EA969
-                          623D2FA148842FC493F758D1BB714D9FA369EBE7CEBD6426AF6C292878612437
-                          F10845F4C5B90FF1E44DB96B7A875FBD1962640A6AD076F02B56AC5EAC51B096
-                          975044E9B25AEA9EE6ED8F9F5AAFDEB87379A3D7B634CFB77D496D3B782D95F9
-                          0D8FE00107A65D4DBB5A9EF6FCE5CDA52E442FB4ACED166DBFD3DABABC4DF0E8
-                          18BCD3AA86EBAEBD8127E76C7EFB355B0DDB3AC3AF58D6762D8F009E30B7F962
-                          5B4DDA0A3E2B8C5B7904F0842CD96BD2E635BC3E8E07004FF065C85693B682F7
-                          E999F13C02784346B7D5A4ADE035F2E30C0FDE52EEE219DEE4EA0746000AE0DE
-                          AB3400A50EC18352103C2805C18352103C2805C18352103C2805C18352103C28
-                          05C18352103C2805C18352103C2805C18352103C28C5D6BDC4D68E05DD8D6750
-                          D757CEA55479D5E05F65134868F8B9B12BBD071F1E2B844E49F2A57A28D01BA1
-                          71B1AD54F5D933B6762EC8EB6FAC7F327A8EEEA33F6BE49FC687608C10BC7332
-                          FD0793FEF0C42BBAD6065EE143233A6EF05336B4970BA36C2FE9811A3E040E41
-                          F02ED0A319515E5F1DBD511B71D39F11AF451A9E3A70A3A0F1FD881D4A8631D9
-                          AFC5B3BDB5F70C8CB8D1EFB067F8A60D07FE64FED1725E820B708677992FB3A9
-                          EB876517F16AC83167783376F33A08B14389CBFA5BEAEE4AEFE0D590A3826FDC
-                          D07D8319FB425E02943421B4D3EBEE4BFC8197394397340D4F444FD3FDFE4F79
-                          092EC325CD89A3951BE775AE0B6EB5E6A133BC267CAFF1082015D1DDBD99C7C1
-                          E01B361CBC540B68F5B92300B2A9981CA8BD3771BD35E682CF0AF15BEB114056
-                          03DDC9BBADC75CF0018D1CFB4DC7005E545631AEDC7AD41B9FEAB92677044072
-                          F5F7F7DFAB6B9AB893D7005233E2BE653A69D9DCA91E407A5A7ABC790DEF47F0
-                          A086786FB94EB158052F01E45631D9A753389CF7CDF300A56EE89D5600152078
-                          500A8207A52078508AD6B4A147F0EC0AEB19F1AAA6205D5EE7A7A6329D7C793E
-                          4536CCAFAA3369D0CBD10C3DD29E2257BFC822C0EDC1C5E16AF055018D5E9C53
-                          99DFD608A358BA2D4EFB93F2648FE08BC3D54B9A171C8ADDF2F43995A4E30554
-                          1823D782BF6546C8D17FB8D5FA83A7E34D61181BD7829F57E3E7C939B3C7FB78
-                          02288C6BC14FF0E3FA03BCC7B5E013D6CB2C001EE35AF03BE3064FCEE9CFE287
-                          08C6C6B5E0D77E94E0C93997BF1BE709A030AE056F9D8C6FFD74805763F7C09E
-                          140D6479015020D782B7BC7920434BB6C5A9275DF8A548DCFCC959F97E3F3D1E
-                          49F11180C2B97E6B010C0FEFB41687AB677800AF41F0A014040F4A41F0A01404
-                          0F4A41F0A014040F4A41F0A014040F4A41F0A014040F4A71FD5E9AE0402F9DBD
-                          F1E71448F5F311B04422119EC0A2F9FCF4F925BFA354B9BBBF6ACCD5337CF8BF
-                          FFA4392FFC18B1C3A8443643D336AEA69A3DCFF11177B816BC6664E9B477F0BB
-                          D2C09E9AEDF7919E75EE7314FFCFB5E04F7FF35E9E00EC99BAF9073C39CFB5E0
-                          2B0F75F004604FE8F01E9E9CE75AF07A069F5082C20823C393F35C0B3E13C02E
-                          6150207F8807E7B916FCC1BA593C01D83350339B27E7B916FCBFCEBB9627007B
-                          DACFFF054FCE732D78CBB66FDDCE13407EDA173C62FEAF7BDB34BABF6B811034
-                          7DC75F281CD94EC1C441D284F33B929522BCD37A8416A8A0434DF3A9F38C9B48
-                          68AE9E83BDB14DC7D6B9EABD13DBD7D7C7933A5A9E9DC153F1B8FBE304E03108
-                          1E9482E04129081E9482E04129081E9482E04129081E9482E04129081E94A2C4
-                          AD058661D08E1D9F5072C03B1F4AD9B5F3739E8A2F180AD2C2452DE4F73BFFCB
-                          A4BF0CB7169C00BDBD7DF4EED60F3C15BBD7A492297AE9F95729DAD5CD47E425
-                          75F04208FAE4E37FF30A46B3E5AD6DB9FF1ACA4CEAE077EDFA8227C8D77BDB76
-                          F02427A9833F7CA89727C857B453EECB1AA983CF64DCFBF4BBACB259B97FFBB3
-                          D4C10782019E205F8180BBAFD4149BD4C157574FE409F255DF58C7939CA40E7E
-                          DAB49378827C9D79D657799293D4C15BCE3ADBBD3D4E64B3E0D216D234F7760C
-                          F002E9830F858274DEF95FA7DABA3005CD6B7AD9BFA17659CF73A64C6DA42B97
-                          2CA671E32AF8A8BCB06B419160D782E290FE0C0FF065081E9482E04129081E94
-                          A2532C56F427AD00278A4E55E104CF0072EB8F6575D2D3081E9410A7CA0133F8
-                          007E892A28A13210ECD50D237B17AF01E43651BCA4EF5B19BE9F970052EB5A5B
-                          765DEEC692A63F767792A6D7E68E16C189B8B560FBF68F692091E455F17969D7
-                          82507988162D9EE7FA7D4645BDB5A03F96EEBAA33EC8AFC3EB6B061FE5138FF7
-                          D33FDE79DF53B17B4DD2FCFFE6F967375277AC878F48A8A6EA16EB21177CE4AA
-                          EAA753C9D4016B9689B56BC1471F7EC62B18CD5B9BB6CAB96B811ECD74AD2BBB
-                          3B37E60E9882C1C0021EA5B17B37762DB0EBFDF73EE4491E7A70E2421E8F041F
-                          B96AD27641E2A7BC94C2A183D8B5C0AE68678C2739E815A917F7DF54F1062F8F
-                          046FE9689D74A741E21D5E963CEC5A605F2623CFAE059A26FEB37F6DC5E5BCCC
-                          392A78CBBED649CD82E84D5E96B44000BB16D825CBAE0542179F76FE28702A2F
-                          871C13BCA5A3B57A9EF970C7E0AA7455554FE009F255D73099A7D2A59567FF1A
-                          BD3930ECA7D1870DDE1269ADBE9D32E9991963E0201F2A39D3A74FE509F255D2
-                          1F7AD7631951993DBB735DE8DB7CE41823066F89ACAADDD9B9B2A15A0871A548
-                          8BFD7CB8A49C79D6D77882D1CCBFE4C2D2FC907B7F344D65E9EBBB6EAE0F446F
-                          0C7DC0478765FBDFAEE9A9EEEF65757D8D4F5055460C4CF4EB71F3BAA1E6B83F
-                          38A33911EFB4EEDCB99B0E1FEAF3CC1359AFBCD36AED093F295C45E7377F838F
-                          B8C791775AFB6369AA9CD847C21FA58AECC6AEB5656BF94FF2E2891FE74824A2
-                          DC875054DCB560D6AC5945EF6D4C6766805283E04129081E9482E04129081E94
-                          82E04129081E9482E04129081E9482E04129081E9482E04129081E9482E04129
-                          081E94E289E063B19884BBFF80177922F809132648B7EB191CADA7A7C7137B1D
-                          7A22F85028F4368F20A9EAEA6A4F7C8F3D117C4343C3521E4152E974FA9B3C16
-                          952782D7342D6B9AC34B908CF9FD5D347BF6EC142F8BCA13C15BA64E9DFA6E63
-                          63A3CF1CB7241289B8F94416BF5DB0B465CCD03FEBE8E808CC9C39F3153E5664
-                          44FF03650A79608F27631A0000000049454E44AE426082}
-                        FileName = 'D:\icons\printer.png'
-                      end>
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 15.000000000000000000
-                    Margins.Top = 7.000000000000000000
-                    Margins.Right = 7.000000000000000000
-                    Margins.Bottom = 7.000000000000000000
-                    Size.Width = 23.000000000000000000
-                    Size.Height = 22.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                end
-                object Rectangle133: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  HitTest = False
-                  Size.Width = 106.000000000000000000
-                  Size.Height = 36.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text37: TText
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 5.000000000000000000
-                    Size.Width = 101.000000000000000000
-                    Size.Height = 36.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Imprimmer'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claWhite
-                  end
-                end
-                object Rectangle134: TRectangle
-                  Align = Right
-                  Fill.Kind = None
-                  HitTest = False
-                  Position.X = 151.000000000000000000
-                  Size.Width = 45.000000000000000000
-                  Size.Height = 36.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Image25: TImage
-                    MultiResBitmap.Height = 188
-                    MultiResBitmap.Width = 188
-                    MultiResBitmap = <
-                      item
-                        Width = 188
-                        Height = 188
-                        PNG = {
-                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
-                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
-                          780052D0A2CD2BD0D0448866B7D96DF202A1E01568220AEF381450B0C9E041D7
-                          DAAC49ECB17DE7DEF33BE7FB6932B3D24AAB936F4EAEFF24DB9C002BCBE55D97
-                          2EFFA7EB1EBE393F3FFF25DD4A23F8E0B685BE6915FEB7ABF02FD3ADA449FA88
-                          605EBD7AFDB04FECBDA699BCECFFCEEDEDED67E98FE4B0E103DA37F4A7ACB6FD
-                          ED6ADB7F916E65107C303962FFA0FB7B3E9F7F9A6E2470A409246FECBDE693E5
-                          72F963BA91C0860F227FEC1FCCE733998E083E8031635F53899E238D73256257
-                          42F08E958CBD6DEFBE4F97A671A471AAC6665738D6B0E11DE218F33C827786D8
-                          B7237847887D37827782D887217807887D3882176725F6FBFBEED774691A4F4B
-                          0AB3B4D979A515A3E21873188217642DF6D9EC4CE60742085E8CC5CDDE34CD5F
-                          E9D23CCEF0422CC6AEF4D6E01EC18B20F63C085E00B1E743F0C6117B5E046F18
-                          B1E747F04611FB3808DE20621F0FC11B43ECE3227843887D7C046F04B19741F0
-                          06107B39045F19B19745F015117B79045F09B1D741F015107B3D045F18B1D745
-                          F005117B7D045F08B1DB40F00510BB1D043F3262B785E04744ECF610FC4888DD
-                          26821F01B1DBC510322376DB184446C46E1FC3C884D83530900C885D07433912
-                          B16B61304720763D0CE740C4AE89011D80D87531A43D11BB3606B50762D7C7B0
-                          0622761F18D800C4EE0743DB81D87D61705B10BB3F0CEF19C4EE13037C02B1FB
-                          C5103710BB6F0CF21162F78F6126C41E03035D21F638C20F95D863093D58628F
-                          27EC70893DA6900326F6B8C20D99D8630B356862479861133B7A21064EEC5873
-                          3F7462C763AE074FECD834491FDDB118FB6C76E676DE2A5C6E1BABB1374D63EE
-                          DF158DBBE0891DDBB8FA166B31F6CBCB975362B7C3CD8637BAD9FBD81FD22D0C
-                          70113CB16328F9E0891DFB903EC35B8CFDEDDB37A7C46E97EC8637BAD9FBD8EF
-                          D32D0C920C9ED87128B9E0891DC7900ADE62ECBC37468BCC83D6B65DFE962ECD
-                          20763D329F306BDB9DD835497CD2881DB9F076D53D11BB36F3C1BF7BB7FC2E5D
-                          5647ECFACC7F02AD1C6788DD078E340310BB1F04BF03B1FB42F03B2C168B2FD3
-                          251C20F81DA6D3D3DF6F6E6E5EA45B88E341EB40B3D9D98BA669DEA75B8832BF
-                          E11F1EBA8B7459D5DDDD9FFF745D779A6E214AE20199A5575AD9F4DA38C3EF89
-                          4DAF4DE629376BEFA761D36B52DAF03FA78F26F49BFEFAFA9A4D2F46EA45156B
-                          5BBEC74F3B69917B1591E8710CB9E07B448F434906DF237A1C42F669498B6FEA
-                          5A3D907D7F7575354DB7304876C3AF19DDF4FCAA3DA3E483EF113D8672117C8F
-                          E831849BB716183DD3DF5F5C5CF0F60D43DC6CF835A39B9EFFF2C60877C1F788
-                          1ECF71197C8FE8F114B7E74BA3677A1EC056E676C3AF59DCF4FC26847A420C9E
-                          E8B11666E8448F5EA881133DC20D9BE8630B3968A28F2BEC90893EA6D00326FA
-                          78C20F97E86361B02B441F07434D883E0606FA08D1FBC7303710BD6F0CF20944
-                          EF17437C06D1FBC400B7207A7F18DE0E44EF0B831B80E8FD60680311BD0F0C6C
-                          0F44AF8F61ED89E8B531A80310BD2E867420A2D7C4808E40F47A18CE91885E0B
-                          83C980E87530944C885E0303C988E8ED63189911BD6D0C6204446F17431809D1
-                          DB44F023227A7B087E64446F0BC11740F476107C21446F03C11744F4F5117C61
-                          445F17C15740F4F5107C25445F07C15744F4E5117C65445F16C11B40F4E510BC
-                          11445F06C11B42F4E3237863887E5C046F10D18F87E08D22FA7110BC61449F1F
-                          C11B47F47911BC00A2CF87E045107D1E042F84E88F47F06288FE3893F4112294
-                          1F305AC0F04459DBF42A5F886C78516CFAC310BC304BD1B76DFB3A5D9AC69670
-                          C0CAF146E1BB0E1BDE018E37C311BC13443F0CC13B42F4BB11BC3344BF1DC13B
-                          44F4CF2378A74A473F99345FA54BD3D804CE957ACA52E5BB0A1BDE398E371F63
-                          18418CB9E995BEA8D8F0418C1565D39CFC942E25B0E183C9BDE9D58E4C041F50
-                          AEE8151F1F70A409E8F850BB1F1463EFB1E1036BDB76DE349336DD0EA21AFA1A
-                          C1E33F8BC5E28FE9F4F4F374BBA1FB7A3E9FBF4937C24E4EFE05584508DDDED3
-                          5B620000000049454E44AE426082}
-                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
-                      end>
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 13.000000000000000000
-                    Margins.Top = 13.000000000000000000
-                    Margins.Right = 13.000000000000000000
-                    Margins.Bottom = 13.000000000000000000
-                    RotationAngle = 180.000000000000000000
-                    Size.Width = 19.000000000000000000
-                    Size.Height = 10.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                end
-                object ColorAnimation13: TColorAnimation
-                  Duration = 0.200000002980232200
-                  PropertyName = 'Fill.Color'
-                  StartValue = xFF06AD57
-                  StopValue = xFFF95252
-                  Trigger = 'IsMouseOver=true'
-                  TriggerInverse = 'IsMouseOver=false'
-                end
-              end
-              object Text35: TText
-                Align = Client
-                HitTest = False
-                Margins.Left = 5.000000000000000000
-                Size.Width = 238.999969482421900000
-                Size.Height = 36.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'S'#233'lectionner la Facture puis imprimmer'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claDarkgray
-              end
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -1657,7 +1376,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2326,9 +2045,9 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 2
+              RowCount = 42
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
+              Viewport.Width = 867.000000000000000000
               Viewport.Height = 340.000000000000000000
             end
           end
@@ -2650,17 +2369,6 @@ object Form2: TForm2
             Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
-            object Edit1: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Right
-              Position.X = 104.000000000000000000
-              Position.Y = 7.000000000000000000
-              Margins.Right = 7.000000000000000000
-              Size.Width = 141.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              OnTyping = Edit3Typing
-            end
           end
           object Rectangle28: TRectangle
             Align = Left
@@ -2681,44 +2389,7 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Text = 'Ajouter une Demande Produits'
-              OnClick = Button4Click
-            end
-            object Rectangle29: TRectangle
-              Align = Left
-              Fill.Color = claTomato
-              Margins.Left = 15.000000000000000000
-              Position.X = 208.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 113.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              OnClick = Rectangle152Click
-              object Text17: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 85.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Supprimer'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-            object Text18: TText
-              Align = Left
-              HitTest = False
-              Margins.Left = 10.000000000000000000
-              Position.X = 331.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 248.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'S'#233'lectionner Produit puis Cliquer Supprimer'
-              TextSettings.Font.Size = 9.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              TextSettings.FontColor = claDimgray
-              TextSettings.HorzAlign = Leading
+              OnClick = Button2Click
             end
           end
         end
@@ -4232,6 +3903,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle81Click
       object Rectangle82: TRectangle
         Align = Left
         Fill.Kind = None
@@ -4971,6 +4643,21 @@ object Form2: TForm2
           Width = 70
         end>
     end
+    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'num_demande'
+        end
+        item
+          MemberName = 'date_demande'
+        end
+        item
+          MemberName = 'status'
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -4983,5 +4670,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 400
     Top = 488
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = DataModule1.tbl_list_demande_produits
+    ScopeMappings = <>
+    Left = 536
+    Top = 256
   end
 end

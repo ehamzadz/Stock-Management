@@ -2326,9 +2326,9 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 2
+              RowCount = 42
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
+              Viewport.Width = 867.000000000000000000
               Viewport.Height = 340.000000000000000000
             end
           end
@@ -2670,7 +2670,7 @@ object Form2: TForm2
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
               Text = 'Ajouter une Demande Produits'
-              OnClick = Button4Click
+              OnClick = Button2Click
             end
           end
         end
@@ -4184,6 +4184,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle81Click
       object Rectangle82: TRectangle
         Align = Left
         Fill.Kind = None
@@ -4923,6 +4924,21 @@ object Form2: TForm2
           Width = 70
         end>
     end
+    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'num_demande'
+        end
+        item
+          MemberName = 'date_demande'
+        end
+        item
+          MemberName = 'status'
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -4935,5 +4951,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 400
     Top = 488
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = DataModule1.tbl_list_demande_produits
+    ScopeMappings = <>
+    Left = 536
+    Top = 256
   end
 end
