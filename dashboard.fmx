@@ -1687,7 +1687,7 @@ object Form2: TForm2
                 Size.Width = 330.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Designation'
+                Text = 'La Date du Demande'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -1722,7 +1722,7 @@ object Form2: TForm2
                 Size.Width = 330.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Cat'#233'gorie'
+                Text = 'Statut'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
