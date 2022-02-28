@@ -11,5 +11,14 @@ Coordinates=95,1,59,123
 Coordinates=0,0,76,177
 
 [tbl_demande]
-Coordinates=95,143,77,123
+Coordinates=95,143,112,123
+
+[qry]
+Coordinates=46,196,40,51
+
+[tbl_demande_produit]
+Coordinates=380,80,119,123
+
+[tbl_list_demande_produits]
+Coordinates=213,1,145,123
 

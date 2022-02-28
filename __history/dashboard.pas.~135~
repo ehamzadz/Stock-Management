@@ -1,0 +1,525 @@
+unit dashboard;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Memo.Types, FMX.Layouts, FMX.Memo, FMX.ListBox,
+  FMX.StdCtrls, FMX.Edit, FMX.Ani, FMX.Objects, FMX.Controls.Presentation,
+  FMX.ScrollBox, FMX.Grid, FMX.TabControl, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
+
+type
+  TForm2 = class(TForm)
+    client: TRectangle;
+    tabs: TTabControl;
+    TabItem4: TTabItem;
+    Rectangle32: TRectangle;
+    Rectangle33: TRectangle;
+    Rectangle34: TRectangle;
+    Text6: TText;
+    Rectangle35: TRectangle;
+    Text7: TText;
+    Line3: TLine;
+    Rectangle36: TRectangle;
+    Text8: TText;
+    Rectangle41: TRectangle;
+    Text27: TText;
+    Rectangle42: TRectangle;
+    Text28: TText;
+    Rectangle43: TRectangle;
+    grid_Employee_List: TStringGrid;
+    Rectangle129: TRectangle;
+    Rectangle130: TRectangle;
+    Rectangle131: TRectangle;
+    Rectangle132: TRectangle;
+    Image24: TImage;
+    Rectangle133: TRectangle;
+    Text37: TText;
+    Rectangle134: TRectangle;
+    Image25: TImage;
+    ColorAnimation13: TColorAnimation;
+    Text35: TText;
+    TabItem6: TTabItem;
+    Rectangle79: TRectangle;
+    Line8: TLine;
+    Rectangle83: TRectangle;
+    Rectangle84: TRectangle;
+    Rectangle85: TRectangle;
+    Text22: TText;
+    Text23: TText;
+    ComboBox4: TComboBox;
+    Edit9: TEdit;
+    Button9: TButton;
+    Button1: TButton;
+    Text24: TText;
+    Rectangle86: TRectangle;
+    Rectangle87: TRectangle;
+    btn_demander: TRectangle;
+    Rectangle89: TRectangle;
+    Image19: TImage;
+    Rectangle90: TRectangle;
+    Text26: TText;
+    Rectangle91: TRectangle;
+    Image21: TImage;
+    ColorAnimation11: TColorAnimation;
+    TabItem7: TTabItem;
+    Rectangle56: TRectangle;
+    Line7: TLine;
+    Rectangle57: TRectangle;
+    Edit4: TEdit;
+    Button5: TButton;
+    Rectangle58: TRectangle;
+    ComboBox1: TComboBox;
+    Text12: TText;
+    Rectangle59: TRectangle;
+    Rectangle60: TRectangle;
+    Rectangle67: TRectangle;
+    Text10: TText;
+    Text11: TText;
+    Text9: TText;
+    ComboBox2: TComboBox;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Button8: TButton;
+    Button3: TButton;
+    Text13: TText;
+    Memo1: TMemo;
+    Rectangle61: TRectangle;
+    Rectangle62: TRectangle;
+    Text14: TText;
+    Edit7: TEdit;
+    RecAchat: TRectangle;
+    Rectangle64: TRectangle;
+    Image17: TImage;
+    Rectangle65: TRectangle;
+    Text15: TText;
+    Rectangle66: TRectangle;
+    Image18: TImage;
+    ColorAnimation8: TColorAnimation;
+    navbar: TRectangle;
+    rect_navbar_employee: TRectangle;
+    Rectangle10: TRectangle;
+    Image7: TImage;
+    Rectangle11: TRectangle;
+    txtClients: TText;
+    Rectangle12: TRectangle;
+    Image14: TImage;
+    ColorAnimation3: TColorAnimation;
+    Rectangle13: TRectangle;
+    Rectangle14: TRectangle;
+    Rectangle15: TRectangle;
+    txtFournisseurs: TText;
+    Rectangle16: TRectangle;
+    Image9: TImage;
+    ColorAnimation2: TColorAnimation;
+    Rectangle17: TRectangle;
+    Rectangle18: TRectangle;
+    Image4: TImage;
+    Rectangle19: TRectangle;
+    txtStock: TText;
+    Rectangle20: TRectangle;
+    Image10: TImage;
+    ColorAnimation4: TColorAnimation;
+    RecLogo: TRectangle;
+    Image15: TImage;
+    Rectangle30: TRectangle;
+    Image16: TImage;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Rectangle9: TRectangle;
+    Line6: TLine;
+    Rectangle44: TRectangle;
+    Edit2: TEdit;
+    Rectangle45: TRectangle;
+    Button6: TButton;
+    Rectangle46: TRectangle;
+    Text29: TText;
+    Text33: TText;
+    TabItem2: TTabItem;
+    Rectangle135: TRectangle;
+    Rectangle136: TRectangle;
+    Rectangle137: TRectangle;
+    Text34: TText;
+    Rectangle138: TRectangle;
+    Text50: TText;
+    Line10: TLine;
+    Rectangle140: TRectangle;
+    Text54: TText;
+    Rectangle141: TRectangle;
+    Text55: TText;
+    Rectangle142: TRectangle;
+    StringGrid1: TStringGrid;
+    Rectangle143: TRectangle;
+    Rectangle144: TRectangle;
+    Rectangle145: TRectangle;
+    Rectangle146: TRectangle;
+    Image26: TImage;
+    Rectangle147: TRectangle;
+    Text71: TText;
+    Rectangle148: TRectangle;
+    Image27: TImage;
+    ColorAnimation14: TColorAnimation;
+    Text72: TText;
+    Rectangle149: TRectangle;
+    Line15: TLine;
+    Rectangle150: TRectangle;
+    Edit3: TEdit;
+    Rectangle151: TRectangle;
+    Button4: TButton;
+    Rectangle152: TRectangle;
+    Text73: TText;
+    Text74: TText;
+    BindSourceDB2: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    rect_topBar: TRectangle;
+    Text51: TText;
+    rect_close: TRectangle;
+    Text75: TText;
+    ColorAnimation15: TColorAnimation;
+    rect_fullScreen: TRectangle;
+    ColorAnimation16: TColorAnimation;
+    rect_minimize: TRectangle;
+    Text77: TText;
+    ColorAnimation17: TColorAnimation;
+    Image28: TImage;
+    ColorAnimation18: TColorAnimation;
+    LinkFillControlToField1: TLinkFillControlToField;
+    StringGrid2: TStringGrid;
+    BindSourceDB3: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    Button7: TButton;
+    Rectangle81: TRectangle;
+    Rectangle82: TRectangle;
+    Image29: TImage;
+    Rectangle139: TRectangle;
+    Text20: TText;
+    Rectangle153: TRectangle;
+    Image30: TImage;
+    ColorAnimation19: TColorAnimation;
+    Image1: TImage;
+    TabItem1: TTabItem;
+    Rectangle1: TRectangle;
+    Rectangle2: TRectangle;
+    Rectangle3: TRectangle;
+    Text1: TText;
+    Rectangle4: TRectangle;
+    Text2: TText;
+    Line1: TLine;
+    Rectangle5: TRectangle;
+    Text3: TText;
+    Rectangle6: TRectangle;
+    Text4: TText;
+    Rectangle7: TRectangle;
+    StringGrid3: TStringGrid;
+    Rectangle8: TRectangle;
+    Rectangle21: TRectangle;
+    Rectangle22: TRectangle;
+    Rectangle23: TRectangle;
+    Image2: TImage;
+    Rectangle24: TRectangle;
+    Text5: TText;
+    Rectangle25: TRectangle;
+    Image3: TImage;
+    ColorAnimation1: TColorAnimation;
+    Text16: TText;
+    Rectangle26: TRectangle;
+    Line2: TLine;
+    Rectangle27: TRectangle;
+    Rectangle28: TRectangle;
+    Button2: TButton;
+    procedure rect_navbar_employeeClick(Sender: TObject);
+    procedure Rectangle17Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Rectangle46Click(Sender: TObject);
+    procedure Edit2Typing(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure rect_closeClick(Sender: TObject);
+    procedure rect_fullScreenClick(Sender: TObject);
+    procedure rect_minimizeClick(Sender: TObject);
+    procedure rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle152Click(Sender: TObject);
+    procedure Edit3Typing(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure btn_demanderClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
+    procedure Rectangle81Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    username_globalVar :string;
+    num_employee_globalVar :integer;
+  end;
+
+var
+  Form2: TForm2;
+  new_demande_num :integer;
+
+implementation
+
+{$R *.fmx}
+
+uses auth_u, datamodule, register_u, addProduit_u;
+
+
+// Adding new employee
+procedure TForm2.btn_demanderClick(Sender: TObject);
+var
+  dt:Tdatetime;
+  script,dtt,designation :string;
+  count,i,qte,num :integer;
+begin
+
+    dt := now;
+
+    dtt := datetimetostr(dt);
+    script := 'update demande_produit SET date_demande=' + quotedstr(dtt) + ', num_employee='+ inttostr(num_employee_globalVar) +' where num_demande='+ inttostr(new_demande_num);
+
+    showmessage(script);
+
+    // insert (update) demande produits list to demande_produit table
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add(script);
+    datamodule.DataModule1.qry.ExecSQL;
+    datamodule.DataModule1.tbl_demande_produit.active := false;
+    datamodule.DataModule1.tbl_demande_produit.active := true;
+
+
+    // insert produits to permanent table produit_demande
+    count := datamodule.DataModule1.tbl_demande.RecordCount;
+
+    datamodule.DataModule1.tbl_demande.first;
+    for i := 1 to count do begin
+
+      designation := datamodule.DataModule1.tbl_demande.FieldByName('designation').asstring;
+      qte := datamodule.DataModule1.tbl_demande.FieldByName('qte').asinteger;
+      num := datamodule.DataModule1.tbl_demande.FieldByName('num_demande_produit').asinteger;
+
+      datamodule.DataModule1.qry.SQL.Clear;
+      datamodule.DataModule1.qry.SQL.Add('insert into produits_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := designation;
+      datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
+      datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := num;
+      datamodule.DataModule1.qry.ExecSQL;
+
+      datamodule.DataModule1.tbl_demande.next;
+
+    end;
+
+    // Clear temporary demande produit list
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('DELETE FROM demande');
+    datamodule.DataModule1.qry.ExecSQL;
+
+    datamodule.DataModule1.tbl_demande.active := false;
+    datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := false;
+
+end;
+
+procedure TForm2.Button4Click(Sender: TObject);
+begin
+  tabs.TabIndex := 1;
+end;
+
+procedure TForm2.Button6Click(Sender: TObject);
+begin
+  register_u.Form3.text11.Visible := false;
+  register_u.Form3.ShowModal; // Shows the Form
+end;
+
+procedure TForm2.Button7Click(Sender: TObject);
+var
+  num :string;
+begin
+
+    //username_globalVar
+
+    // Clear temporary demande produit list
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('DELETE FROM demande');
+    datamodule.DataModule1.qry.ExecSQL;
+
+    //create new num for the nuw record
+    datamodule.DataModule1.tbl_demande_produit.last;
+    new_demande_num := datamodule.DataModule1.tbl_demande_produit.fields[0].asinteger + 1;
+
+    // insert new empty record to demande produit table
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('insert into demande_produit (num_demande) values(:num_demande)');
+    datamodule.DataModule1.qry.Parameters.ParamByName('num_demande').Value := new_demande_num;
+    datamodule.DataModule1.qry.ExecSQL;
+    datamodule.DataModule1.tbl_demande_produit.active := false;
+    datamodule.DataModule1.tbl_demande_produit.active := true;
+    datamodule.DataModule1.tbl_demande.active := false;
+    datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := true;
+end;
+
+// add produit to demande list
+procedure TForm2.Button9Click(Sender: TObject);
+var
+  produit, qtt :string;
+  qte, p :integer;
+begin
+
+    produit := ComboBox4.Items[ComboBox4.ItemIndex];
+    qtt := edit9.Text;
+    qte := strtoint(edit9.Text);
+    //showmessage(produit+qtt);
+
+    if (produit='') OR (qtt='') then begin
+      showmessage('Completez tous les champs');
+    end else begin
+
+      // inserting produit to temporary table
+      datamodule.DataModule1.qry.SQL.Clear;
+      datamodule.DataModule1.qry.SQL.Add('insert into demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := produit;
+      datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
+      datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := new_demande_num;
+      datamodule.DataModule1.qry.ExecSQL;
+
+      datamodule.DataModule1.tbl_demande.Active := false;
+      datamodule.DataModule1.tbl_demande.Active := true;
+    end;
+
+
+end;
+
+// Employee Seachring Field
+procedure TForm2.Edit2Typing(Sender: TObject);
+var
+  search :string;
+begin
+  search := edit2.Text;
+  if search<>'' then begin
+    datamodule.DataModule1.ADOTable1.Filtered := false;
+    datamodule.DataModule1.ADOTable1.Filter := 'nom like '+ quotedstr('%'+search+'%');
+    datamodule.DataModule1.ADOTable1.Filtered := true;
+  end else begin
+    datamodule.DataModule1.ADOTable1.Filtered := false;
+    datamodule.DataModule1.ADOTable1.Filter := '';
+    datamodule.DataModule1.ADOTable1.Filtered := true;
+  end;
+end;
+
+procedure TForm2.Edit3Typing(Sender: TObject);
+var
+  search :string;
+begin
+  search := edit3.Text;
+  if search<>'' then begin
+    datamodule.DataModule1.tbl_stock.Filtered := false;
+    datamodule.DataModule1.tbl_stock.Filter := 'categorie like '+ quotedstr('%'+search+'%');
+    datamodule.DataModule1.tbl_stock.Filtered := true;
+  end else begin
+    datamodule.DataModule1.tbl_stock.Filtered := false;
+    datamodule.DataModule1.tbl_stock.Filter := '';
+    datamodule.DataModule1.tbl_stock.Filtered := true;
+  end;
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+
+
+    ShowMessage(username_globalVar);
+
+end;
+
+procedure TForm2.Rectangle13Click(Sender: TObject);
+begin
+  tabs.TabIndex := 1;
+end;
+
+procedure TForm2.Rectangle152Click(Sender: TObject);
+begin
+    try
+        datamodule.DataModule1.tbl_stock.Delete;
+    except
+        on E:Exception do begin
+            ShowMessage('Unable to delete record. ' +
+                        E.ClassName + ':' + E.Message);
+        end;
+    end;
+end;
+
+procedure TForm2.Rectangle17Click(Sender: TObject);
+begin
+  tabs.TabIndex := 3;
+end;
+
+// Delete selected employee
+procedure TForm2.Rectangle46Click(Sender: TObject);
+begin
+
+    try
+        datamodule.DataModule1.ADOTable1.Delete;
+    except
+        on E:Exception do begin
+            ShowMessage('Unable to delete record. ' +
+                        E.ClassName + ':' + E.Message);
+        end;
+    end;
+
+end;
+
+procedure TForm2.Rectangle81Click(Sender: TObject);
+var
+  script :string;
+begin
+  //tbl_list_demande_produits
+
+  tabs.TabIndex := 4;
+
+  // show only demandes of the current login employee
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := false;
+  script := 'where num_employee =' + inttostr(num_employee_globalVar);
+  datamodule.DataModule1.tbl_list_demande_produits.filter := script;
+  datamodule.DataModule1.tbl_list_demande_produits.filtered := true;
+
+end;
+
+procedure TForm2.rect_closeClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TForm2.rect_fullScreenClick(Sender: TObject);
+begin
+  if windowstate= TWindowState.wsNormal then begin
+    WindowState := TWindowState.wsMaximized;
+  end else begin
+    if windowstate= TWindowState.wsMaximized then begin
+      WindowState := TWindowState.wsNormal;
+    end;
+  end;
+end;
+
+procedure TForm2.rect_minimizeClick(Sender: TObject);
+begin
+  WindowState := TWindowState.wsMinimized;
+end;
+
+procedure TForm2.rect_navbar_employeeClick(Sender: TObject);
+begin
+  tabs.TabIndex := 0;
+end;
+
+procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbleft) then StartWindowDrag;
+end;
+
+end.

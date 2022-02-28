@@ -13,6 +13,7 @@ type
     tbl_demande: TADOTable;
     tbl_demande_produit: TADOTable;
     qry: TADOQuery;
+    tbl_list_demande_produits: TADOTable;
   private
     { Private declarations }
   public

@@ -49,7 +49,15 @@ object DataModule1: TDataModule1
   object qry: TADOQuery
     Connection = ADOConnection1
     Parameters = <>
-    Left = 376
-    Top = 384
+    Left = 360
+    Top = 344
+  end
+  object tbl_list_demande_produits: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande_produit'
+    Left = 520
+    Top = 296
   end
 end

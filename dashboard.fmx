@@ -23,17 +23,9 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabIndex = 4
       TabPosition = None
       Sizes = (
-        887s
-        507s
-        887s
-        507s
-        887s
-        507s
-        887s
-        507s
         887s
         507s
         887s
@@ -48,7 +40,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -596,514 +588,6 @@ object Form2: TForm2
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.FontColor = claDimgray
               TextSettings.HorzAlign = Leading
-            end
-          end
-        end
-      end
-      object TabItem5: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = #1575#1604#1582#1586#1610#1606#1577
-        ExplicitSize.cx = 55.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-        object Rectangle47: TRectangle
-          Align = Top
-          Size.Width = 887.000000000000000000
-          Size.Height = 181.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Rectangle50: TRectangle
-            Align = Center
-            Size.Width = 787.000000000000000000
-            Size.Height = 128.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Rectangle51: TRectangle
-              Align = Left
-              Size.Width = 169.000000000000000000
-              Size.Height = 128.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle52: TRectangle
-                Align = Top
-                Fill.Color = claWhite
-                Margins.Bottom = 2.000000000000000000
-                Size.Width = 169.000000000000000000
-                Size.Height = 38.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Text38: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 38.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'Revenu Total'
-                  TextSettings.Font.Size = 11.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  TextSettings.FontColor = claDimgray
-                end
-              end
-              object Rectangle53: TRectangle
-                Align = Client
-                Fill.Color = claWhite
-                Size.Width = 169.000000000000000000
-                Size.Height = 88.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object TextRevenu: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 64.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = '456321'
-                  TextSettings.Font.Size = 24.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  object TextRevenuPercnt: TText
-                    Align = Bottom
-                    Position.Y = 42.000000000000000000
-                    Size.Width = 169.000000000000000000
-                    Size.Height = 22.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = '10%'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claForestgreen
-                    TextSettings.VertAlign = Trailing
-                    Visible = False
-                  end
-                end
-                object Text36: TText
-                  Align = Bottom
-                  Position.Y = 64.000000000000000000
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 24.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'DZD'
-                  TextSettings.FontColor = claDimgray
-                  TextSettings.VertAlign = Leading
-                end
-              end
-            end
-            object Rectangle54: TRectangle
-              Align = Center
-              Size.Width = 169.000000000000000000
-              Size.Height = 128.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle55: TRectangle
-                Align = Top
-                Fill.Color = claWhite
-                Margins.Bottom = 2.000000000000000000
-                Size.Width = 169.000000000000000000
-                Size.Height = 38.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Text49: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 38.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'D'#233'penses Totales'
-                  TextSettings.Font.Size = 11.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  TextSettings.FontColor = claDimgray
-                end
-              end
-              object Rectangle63: TRectangle
-                Align = Client
-                Fill.Color = claWhite
-                Size.Width = 169.000000000000000000
-                Size.Height = 88.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object TextDepenses: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 64.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = '456321'
-                  TextSettings.Font.Size = 24.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  object TextDepensesPercnt: TText
-                    Align = Bottom
-                    Position.Y = 42.000000000000000000
-                    Size.Width = 169.000000000000000000
-                    Size.Height = 22.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = '10%'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claForestgreen
-                    TextSettings.VertAlign = Trailing
-                    Visible = False
-                  end
-                end
-                object Text52: TText
-                  Align = Bottom
-                  Position.Y = 64.000000000000000000
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 24.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'DZD'
-                  TextSettings.FontColor = claDimgray
-                  TextSettings.VertAlign = Leading
-                end
-              end
-            end
-            object Rectangle88: TRectangle
-              Align = Right
-              Position.X = 618.000000000000000000
-              Size.Width = 169.000000000000000000
-              Size.Height = 128.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle95: TRectangle
-                Align = Top
-                Fill.Color = claWhite
-                Margins.Bottom = 2.000000000000000000
-                Size.Width = 169.000000000000000000
-                Size.Height = 38.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Text53: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 38.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'B'#233'n'#233'fice Net'
-                  TextSettings.Font.Size = 11.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  TextSettings.FontColor = claDimgray
-                end
-              end
-              object Rectangle96: TRectangle
-                Align = Client
-                Fill.Color = claWhite
-                Size.Width = 169.000000000000000000
-                Size.Height = 88.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object TextNet: TText
-                  Align = Client
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 64.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = '456321'
-                  TextSettings.Font.Size = 24.000000000000000000
-                  TextSettings.Font.StyleExt = {00070000000000000004000000}
-                  object TextNetPercnt: TText
-                    Align = Bottom
-                    Position.Y = 42.000000000000000000
-                    Size.Width = 169.000000000000000000
-                    Size.Height = 22.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = '10%'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claForestgreen
-                    TextSettings.VertAlign = Trailing
-                    Visible = False
-                  end
-                end
-                object Text56: TText
-                  Align = Bottom
-                  Position.Y = 64.000000000000000000
-                  Size.Width = 169.000000000000000000
-                  Size.Height = 24.000000000000000000
-                  Size.PlatformDefault = False
-                  Text = 'DZD'
-                  TextSettings.FontColor = claDimgray
-                  TextSettings.VertAlign = Leading
-                end
-              end
-            end
-          end
-        end
-        object Rectangle48: TRectangle
-          Align = Client
-          Size.Width = 887.000000000000000000
-          Size.Height = 326.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Rectangle49: TRectangle
-            Align = HorzCenter
-            Margins.Bottom = 15.000000000000000000
-            Position.X = 48.000000000000000000
-            Size.Width = 790.000000000000000000
-            Size.Height = 311.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Rectangle98: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Size.Width = 377.000000000000000000
-              Size.Height = 311.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle103: TRectangle
-                Align = Client
-                Fill.Kind = None
-                Size.Width = 377.000000000000000000
-                Size.Height = 311.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle104: TRectangle
-                  Align = Top
-                  Fill.Color = claWhite
-                  Margins.Bottom = 3.000000000000000000
-                  Size.Width = 377.000000000000000000
-                  Size.Height = 73.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Rectangle105: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 73.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    Stroke.Cap = Round
-                    object Text57: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 73.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'La Date'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Rectangle106: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.X = 73.000000000000000000
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 203.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    object Text58: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 203.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'Nom et Pr'#233'nom'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Line4: TLine
-                    Align = Top
-                    LineType = Top
-                    Margins.Left = 3.000000000000000000
-                    Margins.Top = 5.000000000000000000
-                    Margins.Right = 3.000000000000000000
-                    Position.X = 3.000000000000000000
-                    Position.Y = 35.000000000000000000
-                    Size.Width = 371.000000000000000000
-                    Size.Height = 4.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Color = claSteelblue
-                    Stroke.Thickness = 4.000000000000000000
-                    Stroke.Cap = Round
-                  end
-                  object Rectangle108: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.X = 276.000000000000000000
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 80.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    object Text60: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 80.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'Montant'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Text59: TText
-                    Align = Top
-                    Margins.Left = 15.000000000000000000
-                    Position.X = 15.000000000000000000
-                    Size.Width = 362.000000000000000000
-                    Size.Height = 30.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Derniers Factures des Produits Achet'#233's'
-                    TextSettings.Font.StyleExt = {00070000000000000004000000}
-                    TextSettings.FontColor = claDimgray
-                    TextSettings.HorzAlign = Leading
-                  end
-                end
-                object Rectangle117: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  Size.Width = 377.000000000000000000
-                  Size.Height = 235.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object GridFactureAchat: TStringGrid
-                    Align = Client
-                    CanFocus = True
-                    ClipChildren = True
-                    Size.Width = 377.000000000000000000
-                    Size.Height = 235.000000000000000000
-                    Size.PlatformDefault = False
-                    TextSettings.HorzAlign = Center
-                    TabOrder = 0
-                    RowCount = 5
-                    Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-                    Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 231.000000000000000000
-                  end
-                end
-              end
-            end
-            object Rectangle102: TRectangle
-              Align = Right
-              Position.X = 413.000000000000000000
-              Size.Width = 377.000000000000000000
-              Size.Height = 311.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle107: TRectangle
-                Align = Client
-                Fill.Kind = None
-                Size.Width = 377.000000000000000000
-                Size.Height = 311.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle109: TRectangle
-                  Align = Top
-                  Fill.Color = claWhite
-                  Margins.Bottom = 3.000000000000000000
-                  Size.Width = 377.000000000000000000
-                  Size.Height = 73.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Rectangle110: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 73.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    Stroke.Cap = Round
-                    object Text61: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 73.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'La Date'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Rectangle111: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.X = 73.000000000000000000
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 203.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    object Text62: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 203.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'Nom et Pr'#233'nom'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Line5: TLine
-                    Align = Top
-                    LineType = Top
-                    Margins.Left = 3.000000000000000000
-                    Margins.Top = 5.000000000000000000
-                    Margins.Right = 3.000000000000000000
-                    Position.X = 3.000000000000000000
-                    Position.Y = 35.000000000000000000
-                    Size.Width = 371.000000000000000000
-                    Size.Height = 4.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Color = claSteelblue
-                    Stroke.Thickness = 4.000000000000000000
-                    Stroke.Cap = Round
-                  end
-                  object Rectangle112: TRectangle
-                    Align = Left
-                    Fill.Kind = None
-                    Position.X = 276.000000000000000000
-                    Position.Y = 39.000000000000000000
-                    Size.Width = 80.000000000000000000
-                    Size.Height = 34.000000000000000000
-                    Size.PlatformDefault = False
-                    Stroke.Kind = None
-                    object Text63: TText
-                      Align = Client
-                      Padding.Left = 15.000000000000000000
-                      Size.Width = 80.000000000000000000
-                      Size.Height = 34.000000000000000000
-                      Size.PlatformDefault = False
-                      Text = 'Montant'
-                      TextSettings.Font.StyleExt = {00060000000000000004000000}
-                      TextSettings.FontColor = xFF494949
-                    end
-                  end
-                  object Text64: TText
-                    Align = Top
-                    Margins.Left = 15.000000000000000000
-                    Position.X = 15.000000000000000000
-                    Size.Width = 362.000000000000000000
-                    Size.Height = 30.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Derniers Factures des Produits Vendues'
-                    TextSettings.Font.StyleExt = {00070000000000000004000000}
-                    TextSettings.FontColor = claDimgray
-                    TextSettings.HorzAlign = Leading
-                  end
-                end
-                object Rectangle118: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  Size.Width = 377.000000000000000000
-                  Size.Height = 235.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object GridFactureVent: TStringGrid
-                    Align = Client
-                    CanFocus = True
-                    ClipChildren = True
-                    Size.Width = 377.000000000000000000
-                    Size.Height = 235.000000000000000000
-                    Size.PlatformDefault = False
-                    TextSettings.HorzAlign = Center
-                    TabOrder = 0
-                    RowCount = 7
-                    Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-                    Viewport.Width = 373.000000000000000000
-                    Viewport.Height = 231.000000000000000000
-                  end
-                end
-              end
             end
           end
         end
@@ -2169,1436 +1653,6 @@ object Form2: TForm2
           end
         end
       end
-      object TabItem9: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = 'Accueil'
-        ExplicitSize.cx = 58.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-        object Rectangle75: TRectangle
-          Align = Top
-          Fill.Kind = None
-          Margins.Top = 17.000000000000000000
-          Position.Y = 17.000000000000000000
-          Size.Width = 887.000000000000000000
-          Size.Height = 121.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object GridPanelLayout1: TGridPanelLayout
-            Align = Client
-            Size.Width = 887.000000000000000000
-            Size.Height = 121.000000000000000000
-            Size.PlatformDefault = False
-            ColumnCollection = <
-              item
-                Value = 50.000000000000000000
-              end
-              item
-                Value = 50.000000000000000000
-              end>
-            ControlCollection = <
-              item
-                Column = 0
-                Control = Rectangle68
-                Row = 0
-              end
-              item
-                Column = 1
-                Control = Rectangle73
-                Row = 0
-              end>
-            RowCollection = <
-              item
-                Value = 100.000000000000000000
-              end
-              item
-                SizeStyle = Auto
-              end>
-            object Rectangle68: TRectangle
-              Align = Right
-              Fill.Kind = None
-              Margins.Right = 30.000000000000000000
-              Position.X = 124.500000000000000000
-              Size.Width = 289.000000000000000000
-              Size.Height = 121.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle69: TRectangle
-                Align = Client
-                Cursor = crHandPoint
-                Fill.Color = claCadetblue
-                Padding.Right = 5.000000000000000000
-                Margins.Top = 10.000000000000000000
-                Margins.Bottom = 10.000000000000000000
-                Size.Width = 289.000000000000000000
-                Size.Height = 101.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle71: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  HitTest = False
-                  Size.Width = 224.000000000000000000
-                  Size.Height = 101.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text16: TText
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 5.000000000000000000
-                    Size.Width = 219.000000000000000000
-                    Size.Height = 101.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Achtez Produits'
-                    TextSettings.Font.Size = 16.000000000000000000
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claWhite
-                  end
-                end
-                object Rectangle72: TRectangle
-                  Align = Right
-                  Fill.Kind = None
-                  HitTest = False
-                  Position.X = 224.000000000000000000
-                  Size.Width = 60.000000000000000000
-                  Size.Height = 101.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Image20: TImage
-                    MultiResBitmap.Height = 188
-                    MultiResBitmap.Width = 188
-                    MultiResBitmap = <
-                      item
-                        Width = 188
-                        Height = 188
-                        PNG = {
-                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
-                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
-                          780052D0A2CD2BD0D044888A45DA6DF202A1E01568220AEF381450B0C9E041D7
-                          DAAC49ECB17DEFDCF33BE7FB6932B3D24AAB936F4EAEFF24DB9C002BCBE55D97
-                          2EFFA7EB1EBE3A3F3FFF29DD4A23F8E0B685BE6915FED7ABF02FD3ADA449FA88
-                          605EBDFAE5619FD87B4D3379D9FF9DDBDBDB4FD21FC961C307B46FE84F596DFB
-                          DBD5B6FF2CDDCA20F86072C4FE5EF7F77C3EFF38DD48E0481348DED87BCD47CB
-                          E5F2FB7423810D1F44FED8DF9BCF67321D117C0025635F53899E238D7363C4AE
-                          84E01D1B33F6B6BDFB365D9AC691C6A91A9B5DE158C386778863CCF308DE1962
-                          DF8EE01D21F6DD08DE09621F86E01D20F6E1085E9C95D8EFEFBB5FD3A5693C2D
-                          29CCD266E7955614C531E630042FC85AECB3D999CC0F8410BC188B9BBD699ABF
-                          D2A5799CE185588C5DE9ADC13D821741EC7910BC0062CF87E08D23F6BC08DE30
-                          62CF8FE08D22F63208DE20622F87E08D21F6B208DE10622F8FE08D20F67110BC
-                          01C43E1E82AF8CD8C745F01511FBF808BE1262AF83E02B20F67A087E64C45E17
-                          C18F88D8EB23F89110BB0D043F0262B783E00B23765B08BE2062B787E00B2176
-                          9B08BE0062B78B216446ECB631888C88DD3E869109B16B60201910BB0E867224
-                          62D7C2608E40EC7A18CE81885D13033A00B1EB62487B22766D0C6A0FC4AE8F61
-                          0D44EC3E30B00188DD0F86B603B1FBC2E0B620767F18DE3388DD2706F80462F7
-                          8B216E2076DF18E423C4EE1FC34C883D0606BA42EC71841F2AB1C7127AB0C41E
-                          4FD8E1127B4C21074CEC71851B32B1C7166AD0C48E30C32676F4420C9CD8B1E6
-                          7EE8C48EC75C0F9ED8B169923EBA6331F6D9ECCCEDBC55B8DC3656636F9AC6DC
-                          BF2B1A77C1133BB671F52DD662EC97972FA7C46E879B0D6F74B3F7B13FA45B18
-                          E0227862C750F2C1133BF6217D86B718FB9B37AF4F89DD2ED90D6F74B3F7B1DF
-                          A75B1824193CB1E35072C1133B8E2115BCC5D8796F8C169907AD6DBBFC2D5D9A
-                          41EC7A643E61D6B63BB16B92F8A4113B72E1EDAA7B22766DE6837FFB76F94DBA
-                          AC8ED8F599FF045A39CE10BB0F1C690620763F087E0762F785E077582C169FA7
-                          4B3840F03B4CA7A7BFDFDCDCBC48B710C783D68166B3B3174DD3BC4BB710657E
-                          C33F3C7417E9B2AABBBB3FFFE9BAEE34DD4294C403324BAFB4B2E9B57186DF13
-                          9B5E9BCC536ED6DE4FC3A6D7A4B4E17F4C1F4DE837FDF5F5359B5E8CD48B2AD6
-                          B67C8F9F76D222F72A22D1E31872C1F7881E87920CBE47F43884ECD39216DFD4
-                          B57A20FBEEEAEA6A9A6E6190EC865F33BAE9F9557B46C907DF237A0CE522F81E
-                          D16308376F2D307AA6BFBFB8B8E0ED1B86B8D9F06B46373DFFE58D11EE82EF11
-                          3D9EE332F81ED1E3296ECF9746CFF43C80ADCCED865FB3B8E9F94D08F584183C
-                          D1632DCCD0891EBD5003277A841B36D1C71672D0441F57D821137D4CA1074CF4
-                          F1841F2ED1C7C26057883E0E869A107D0C0CF411A2F78F616E207ADF18E41388
-                          DE2F86F80CA2F789016E41F4FE30BC1D88DE17063700D1FBC1D006227A1F18D8
-                          1E885E1FC3DA13D16B635007207A5D0CE94044AF89011D81E8F5309C2311BD16
-                          069301D1EB60289910BD06069211D1DBC73032237ADB184401446F17432884E8
-                          6D22F88288DE1E822F8CE86D21F81110BD1D043F12A2B781E04744F4F511FCC8
-                          88BE2E82AF80E8EB21F84A88BE0E82AF88E8C747F09511FDB808DE00A21F0FC1
-                          1B41F4E320784388BE3C823786E8CB22788388BE1C82378AE8CB2078C3883E3F
-                          82378EE8F3227801449F0FC18B20FA3C085E08D11F8FE0C510FD7126E9234428
-                          3F60B480E189B2B6E955BE10D9F0A2D8F48721786196A26FDBF6E774691A5BC2
-                          012BC71B85EF3A6C780738DE0C47F04E10FD3004EF08D1EF46F0CE10FD7604EF
-                          10D13F8FE09D1A3BFAC9A4F9225D9AC626706EACA72C55BEABB0E19DE378F321
-                          861144C94DAFF445C5860FA254944D73F243BA94C0860F26F7A6573B32117C40
-                          B9A2577C7CC09126A0E343EDBE538CBDC7860FAC6DDB79D34CDA743B886AE86B
-                          048FFF2C168B3FA6D3D34FD3ED86EECBF97CFE3ADD083B39F9171FC808E3065F
-                          0B1D0000000049454E44AE426082}
-                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
-                      end>
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 13.000000000000000000
-                    Margins.Top = 13.000000000000000000
-                    Margins.Right = 13.000000000000000000
-                    Margins.Bottom = 13.000000000000000000
-                    RotationAngle = 180.000000000000000000
-                    Size.Width = 34.000000000000000000
-                    Size.Height = 75.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                end
-                object ColorAnimation9: TColorAnimation
-                  Duration = 0.200000002980232200
-                  PropertyName = 'Fill.Color'
-                  StartValue = claCadetblue
-                  StopValue = xFF06AD57
-                  Trigger = 'IsMouseOver=true'
-                  TriggerInverse = 'IsMouseOver=false'
-                end
-              end
-            end
-            object Rectangle73: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Margins.Left = 30.000000000000000000
-              Position.X = 473.500000000000000000
-              Size.Width = 289.000000000000000000
-              Size.Height = 121.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle74: TRectangle
-                Align = Client
-                Cursor = crHandPoint
-                Fill.Color = claCadetblue
-                Padding.Right = 5.000000000000000000
-                Margins.Top = 10.000000000000000000
-                Margins.Bottom = 10.000000000000000000
-                Size.Width = 289.000000000000000000
-                Size.Height = 101.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle76: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  HitTest = False
-                  Size.Width = 224.000000000000000000
-                  Size.Height = 101.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text17: TText
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 5.000000000000000000
-                    Size.Width = 219.000000000000000000
-                    Size.Height = 101.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Vent Produits'
-                    TextSettings.Font.Size = 16.000000000000000000
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claWhite
-                  end
-                end
-                object Rectangle77: TRectangle
-                  Align = Right
-                  Fill.Kind = None
-                  HitTest = False
-                  Position.X = 224.000000000000000000
-                  Size.Width = 60.000000000000000000
-                  Size.Height = 101.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Image22: TImage
-                    MultiResBitmap.Height = 188
-                    MultiResBitmap.Width = 188
-                    MultiResBitmap = <
-                      item
-                        Width = 188
-                        Height = 188
-                        PNG = {
-                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
-                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-                          05D749444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
-                          780052D0A2CD2BD0D044882A14BB4D5E2014BC024D44E11D87020A36193CE85A
-                          1B426C8FED7BE79EDF39DF4F939995565A9D7C7372FD27D9E60458592EEFBB74
-                          F93F5DF7F8D5F9F9F94FE9561AC107B72DF4E756E17FBD0AFF32DD4A9AA48F08
-                          E6FAFAE7C77D62EF35CDE475FF77EEEEEE3E497F24870D1FD0BEA1BF64B5EDEF
-                          56DBFEB3742B83E083C911FB07DD5FF3F9FCE3742381234D207963EF351F2D97
-                          CBEFD38D04367C10F963FF603E9FC97444F001948C7D4D257A8E34CE8D11BB12
-                          82776CCCD8DBF6FEDB74691A471AA76A6C7685630D1BDE218E319B11BC33C4BE
-                          1DC13B42ECBB11BC13C43E0CC13B40ECC311BC382BB13F3C74BFA44BD3785A52
-                          98A5CDCE2BAD288A63CC61085E90B5D867B333991F0821783116377BD3347FA6
-                          4BF338C30BB118BBD25B837B042F82D8F3207801C49E0FC11B47EC7911BC61C4
-                          9E1FC11B45EC6510BC41C45E0EC11B43EC6511BC21C45E1EC11B41ECE3207803
-                          887D3C045F19B18F8BE02B22F6F1117C25C45E07C15740ECF510FCC888BD2E82
-                          1F11B1D747F02321761B087E04C46E07C11746ECB6107C41C46E0FC11742EC36
-                          117C01C46E1743C88CD86D63101911BB7D0C231362D7C0403220761D0CE548C4
-                          AE85C11C81D8F5309C0311BB2606740062D7C590F644ECDA18D41E885D1FC31A
-                          88D87D60600310BB1F0C6D0762F785C16D41ECFE30BC0D88DD2706F80262F78B
-                          213E43ECBE31C82788DD3F8699107B0C0C7485D8E3083F54628F25F460893D9E
-                          B0C325F698420E98D8E30A3764628F2DD4A0891D61864DECE8851838B163CDFD
-                          D0891D4FB91E3CB1E3B949FAE88EC5D867B333B7F356E172DB588DBD691A73FF
-                          AE68DC054FECD8C6D5B7588BB15F5EBE9E12BB1D6E36BCD1CDDEC7FE986E6180
-                          8BE0891D43C9074FECD887F419DE62EC6FDFBE392576BB6437BCD1CDDEC7FE90
-                          6E619064F0C48E43C9054FEC388654F01663E7BD315A641EB4B6EDF2D7746906
-                          B1EB91F98459DBEEC4AE49E29346ECC885B7ABEE89D8B5990FFEDDBBE537E9B2
-                          3A62D767FE1368E53843EC3E70A41980D8FD20F81D88DD1782DF61B1587C9E2E
-                          E100C1EF309D9EFE767B7BFB2ADD421C0F5A079ACDCE5E354DF33EDD4294F90D
-                          FFF8D85DA4CBAAEEEFFFF8BBEBBAD3740B51120FC82CBDD2CAA6D7C6197E4F6C
-                          7A6D324FB9597B3F0D9B5E93D286FF317D34A1DFF43737376C7A31522FAA58DB
-                          F23D7EDA498BDCAB88448F63C805DF237A1C4A32F81ED1E310B24F4B5A7C53D7
-                          EA81ECFBABABAB69BA8541B21B7ECDE8A6E757ED19251F7C8FE831948BE07B44
-                          8F21DCBCB5C0E899FEE1E2E282B76F18E266C3AF19DDF4FC973746B80BBE47F4
-                          D8C465F03DA2C74BDC9E2F8D9EE979005B99DB0DBF6671D3F39B10EA093178A2
-                          C75A98A1133D7AA1064EF408376CA28F2DE4A0893EAEB04326FA98420F98E8E3
-                          093F5CA28F85C1AE107D1C0C3521FA1818E81344EF1FC37C86E87D63902F207A
-                          BF18E20644EF1303DC82E8FD61783B10BD2F0C6E00A2F783A10D44F43E30B03D
-                          10BD3E86B527A2D7C6A00E40F4BA18D281885E13033A02D1EB613847227A2D0C
-                          2603A2D7C15032217A0D0C2423A2B78F616446F4B631880288DE2E865008D1DB
-                          44F00511BD3D045F18D1DB42F023207A3B087E24446F03C18F88E8EB23F89111
-                          7D5D045F01D1D743F095107D1D045F11D18F8FE02B23FA7111BC01443F1E8237
-                          82E8C741F086107D79046F0CD19745F006117D39046F14D19741F086117D7E04
-                          6F1CD1E745F002883E1F821741F47910BC10A23F1EC18B21FAE34CD24788507E
-                          C06801C313656DD3AB7C21B2E145B1E90F43F0C22C45DFB6ED75BA348D2DE180
-                          95E38DC2771D36BC031C6F86237827887E18827784E877237867887E3B827788
-                          E8372378A7C68E7E3269BE4897A6B1099C1BEB294B95EF2A6C78E738DEFC17C3
-                          08A2E4A657FAA262C307512ACAA639F9215D4A60C307937BD3AB1D99083EA05C
-                          D12B3E3EE04813D0F1A176DF29C6DE63C307D6B6EDBC69266DBA1D4435F43582
-                          C7BF168BC5EFD3E9E9A7E9F699EECBF97CFE26DD083B39F907BBFF08E0DF90BF
-                          CC0000000049454E44AE426082}
-                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
-                      end>
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 13.000000000000000000
-                    Margins.Top = 13.000000000000000000
-                    Margins.Right = 13.000000000000000000
-                    Margins.Bottom = 13.000000000000000000
-                    RotationAngle = 180.000000000000000000
-                    Size.Width = 34.000000000000000000
-                    Size.Height = 75.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                end
-                object ColorAnimation10: TColorAnimation
-                  Duration = 0.200000002980232200
-                  PropertyName = 'Fill.Color'
-                  StartValue = claCadetblue
-                  StopValue = claLightcoral
-                  Trigger = 'IsMouseOver=true'
-                  TriggerInverse = 'IsMouseOver=false'
-                end
-              end
-            end
-          end
-        end
-        object Rectangle80: TRectangle
-          Align = Client
-          Fill.Kind = None
-          Size.Width = 887.000000000000000000
-          Size.Height = 369.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object GridPanelLayout2: TGridPanelLayout
-            Align = Client
-            Margins.Bottom = 30.000000000000000000
-            Size.Width = 887.000000000000000000
-            Size.Height = 339.000000000000000000
-            Size.PlatformDefault = False
-            ColumnCollection = <
-              item
-                Value = 50.000000000000000000
-              end
-              item
-                Value = 50.000000000000000000
-              end>
-            ControlCollection = <
-              item
-                Column = 0
-                Control = Rectangle70
-                Row = 0
-              end
-              item
-                Column = 1
-                Control = Rectangle78
-                Row = 0
-              end>
-            RowCollection = <
-              item
-                Value = 100.000000000000000000
-              end
-              item
-                SizeStyle = Auto
-              end>
-            object Rectangle70: TRectangle
-              Align = Right
-              Fill.Kind = None
-              Margins.Right = 30.000000000000000000
-              Position.X = 125.500000000000000000
-              Size.Width = 288.000000000000000000
-              Size.Height = 339.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text18: TText
-                Align = Top
-                Margins.Left = 7.000000000000000000
-                Position.X = 7.000000000000000000
-                Size.Width = 281.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Stock'
-                TextSettings.Font.Size = 14.000000000000000000
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF232323
-                TextSettings.HorzAlign = Leading
-              end
-              object StringGrid4: TStringGrid
-                Align = Client
-                CanFocus = True
-                ClipChildren = True
-                Size.Width = 288.000000000000000000
-                Size.Height = 248.000000000000000000
-                Size.PlatformDefault = False
-                RowCount = 0
-                Options = [AlternatingRowBackground]
-                Viewport.Width = 284.000000000000000000
-                Viewport.Height = 244.000000000000000000
-              end
-              object Rectangle97: TRectangle
-                Align = Top
-                Fill.Kind = None
-                Position.Y = 41.000000000000000000
-                Size.Width = 288.000000000000000000
-                Size.Height = 50.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle99: TRectangle
-                  Align = Left
-                  Fill.Kind = None
-                  Position.X = 169.000000000000000000
-                  Position.Y = 9.000000000000000000
-                  Size.Width = 56.000000000000000000
-                  Size.Height = 41.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text30: TText
-                    Align = Client
-                    Padding.Left = 15.000000000000000000
-                    Size.Width = 56.000000000000000000
-                    Size.Height = 41.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Quantit'#233
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = xFF494949
-                  end
-                end
-                object Rectangle100: TRectangle
-                  Align = Left
-                  Fill.Kind = None
-                  Position.Y = 9.000000000000000000
-                  Size.Width = 73.000000000000000000
-                  Size.Height = 41.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text31: TText
-                    Align = Client
-                    Padding.Left = 15.000000000000000000
-                    Margins.Left = 7.000000000000000000
-                    Size.Width = 66.000000000000000000
-                    Size.Height = 41.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Designation'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = xFF494949
-                    TextSettings.HorzAlign = Leading
-                  end
-                end
-                object Rectangle101: TRectangle
-                  Align = Left
-                  Fill.Kind = None
-                  Position.X = 73.000000000000000000
-                  Position.Y = 9.000000000000000000
-                  Size.Width = 96.000000000000000000
-                  Size.Height = 41.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text32: TText
-                    Align = Client
-                    Padding.Left = 15.000000000000000000
-                    Size.Width = 96.000000000000000000
-                    Size.Height = 41.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Prix unitaire'
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = xFF494949
-                  end
-                end
-                object Line9: TLine
-                  Align = Top
-                  LineType = Top
-                  Margins.Left = 3.000000000000000000
-                  Margins.Top = 5.000000000000000000
-                  Margins.Right = 3.000000000000000000
-                  Position.X = 3.000000000000000000
-                  Position.Y = 5.000000000000000000
-                  Size.Width = 282.000000000000000000
-                  Size.Height = 4.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Color = claSteelblue
-                  Stroke.Thickness = 4.000000000000000000
-                  Stroke.Cap = Round
-                end
-              end
-            end
-            object Rectangle78: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Margins.Left = 30.000000000000000000
-              Position.X = 473.500000000000000000
-              Size.Width = 288.000000000000000000
-              Size.Height = 339.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Rectangle92: TRectangle
-                Align = Top
-                Cursor = crHandPoint
-                Fill.Color = claCadetblue
-                Padding.Right = 5.000000000000000000
-                Margins.Top = 45.000000000000000000
-                Position.Y = 45.000000000000000000
-                Size.Width = 288.000000000000000000
-                Size.Height = 95.000000000000000000
-                Size.PlatformDefault = False
-                Stroke.Kind = None
-                object Rectangle93: TRectangle
-                  Align = Client
-                  Fill.Kind = None
-                  HitTest = False
-                  Size.Width = 223.000000000000000000
-                  Size.Height = 95.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Text19: TText
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 5.000000000000000000
-                    Size.Width = 218.000000000000000000
-                    Size.Height = 95.000000000000000000
-                    Size.PlatformDefault = False
-                    Text = 'Frais'
-                    TextSettings.Font.Size = 16.000000000000000000
-                    TextSettings.Font.StyleExt = {00060000000000000004000000}
-                    TextSettings.FontColor = claWhite
-                  end
-                end
-                object Rectangle94: TRectangle
-                  Align = Right
-                  Fill.Kind = None
-                  HitTest = False
-                  Position.X = 223.000000000000000000
-                  Size.Width = 60.000000000000000000
-                  Size.Height = 95.000000000000000000
-                  Size.PlatformDefault = False
-                  Stroke.Kind = None
-                  object Image23: TImage
-                    MultiResBitmap.Height = 188
-                    MultiResBitmap.Width = 188
-                    MultiResBitmap = <
-                      item
-                        Width = 188
-                        Height = 188
-                        PNG = {
-                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
-                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
-                          780052D0A2CD2BD0D0448862A1D96DF202A1E01568220AEF381450B0C9E041D7
-                          DAAC49ECB17DEFDCF33BE7FB6932B3D24AAB936F4EAEFF24DB9C002BCBE55D97
-                          2EFFA7EB1EBE3A3F3FFF29DD4A23F8E0B685BE6915FED7ABF02FD3ADA449FA88
-                          605EBDFAF9619FD87B4D3379D9FF9DDBDBDB4FD21FC961C307B46FE84F596DFB
-                          DBD5B6FF2CDDCA20F86072C4FE5EF7F77C3EFF38DD48E0481348DED87BCD47CB
-                          E5F2FB7423810D1F44FED8DF9BCF67321D117C0025635F53899E238D7363C4AE
-                          84E01D1B33F6B6BDFB365D9AC691C6A91A9B5DE158C386778863CCF308DE1962
-                          DF8EE01D21F6DD08DE09621F86E01D20F6E1085E9C95D8EFEFBB5FD3A5693C2D
-                          29CCD266E7955614C531E630042FC85AECB3D999CC0F8410BC188B9BBD699ABF
-                          D2A5799CE185588C5DE9ADC13D821741EC7910BC0062CF87E08D23F6BC08DE30
-                          62CF8FE08D22F63208DE20622F87E08D21F6B208DE10622F8FE08D20F67110BC
-                          01C43E1E82AF8CD8C745F01511FBF808BE1262AF83E02B20F67A087E64C45E17
-                          C18F88D8EB23F89110BB0D043F0262B783E00B23765B08BE2062B787E00B2176
-                          9B08BE0062B78B216446ECB631888C88DD3E869109B16B60201910BB0E867224
-                          62D7C2608E40EC7A18CE81885D13033A00B1EB62487B22766D0C6A0FC4AE8F61
-                          0D44EC3E30B00188DD0F86B603B1FBC2E0B620767F18DE3388DD2706F80462F7
-                          8B216E2076DF18E423C4EE1FC34C883D0606BA42EC71841F2AB1C7127AB0C41E
-                          4FD8E1127B4C21074CEC71851B32B1C7166AD0C48E30C32676F4420C9CD8B1E6
-                          7EE8C48EC75C0F9ED8B169923EBA6331F6D9ECCCEDBC55B8DC3656636F9AC6DC
-                          BF2B1A77C1133BB671F52DD662EC97972FA7C46E879B0D6F74B3F7B13FA45B18
-                          E0227862C750F2C1133BF6217D86B718FB9B37AF4F89DD2ED90D6F74B3F7B1DF
-                          A75B1824193CB1E35072C1133B8E2115BCC5D8796F8C169907AD6DBBFC2D5D9A
-                          41EC7A643E61D6B63BB16B92F8A4113B72E1EDAA7B22766DE6837FFB76F94DBA
-                          AC8ED8F599FF045A39CE10BB0F1C690620763F087E0762F785E077582C169FA7
-                          4B3840F03B4CA7A7BFDFDCDCBC48B710C783D68166B3B3174DD3BC4BB710657E
-                          C33F3C7417E9B2AABBBB3FFFE9BAEE34DD4294C403324BAFB4B2E9B57186DF13
-                          9B5E9BCC536ED6DE4FC3A6D7A4B4E17F4C1F4DE837FDF5F5359B5E8CD48B2AD6
-                          B67C8F9F76D222F72A22D1E31872C1F7881E87920CBE47F43884ECD39216DFD4
-                          B57A20FBEEEAEA6A9A6E6190EC865F33BAE9F9557B46C907DF237A0CE522F81E
-                          D16308376F2D307AA6BFBFB8B8E0ED1B86B8D9F06B46373DFFE58D11EE82EF11
-                          3D9EE332F81ED1E3296ECF9746CFF43C80ADCCED865FB3B8E9F94D08F584183C
-                          D1632DCCD0891EBD5003277A841B36D1C71672D0441F57D821137D4CA1074CF4
-                          F1841F2ED1C7C26057883E0E869A107D0C0CF411A2F78F616E207ADF18E41388
-                          DE2F86F80CA2F789016E41F4FE30BC1D88DE17063700D1FBC1D006227A1F18D8
-                          1E885E1FC3DA13D16B635007207A5D0CE94044AF89011D81E8F5309C2311BD16
-                          069301D1EB60289910BD06069211D1DBC73032237ADB184401446F17432884E8
-                          6D22F88288DE1E822F8CE86D21F81110BD1D043F12A2B781E04744F4F511FCC8
-                          88BE2E82AF80E8EB21F84A88BE0E82AF88E8C747F09511FDB808DE00A21F0FC1
-                          1B41F4E320784388BE3C823786E8CB22788388BE1C82378AE8CB2078C3883E3F
-                          82378EE8F3227801449F0FC18B20FA3C085E08D11F8FE0C510FD7126E9234428
-                          3F60B480E189B2B6E955BE10D9F0A2D8F48721786196A26FDBF69774691A5BC2
-                          012BC71B85EF3A6C780738DE0C47F04E10FD3004EF08D1EF46F0CE10FD7604EF
-                          10D13F8FE09D1A3BFAC9A4F9225D9AC626706EACA72C55BEABB0E19DE378F321
-                          861144C94DAFF445C5860FA254944D73F243BA94C0860F26F7A6573B32117C40
-                          B9A2577C7CC09126A0E343EDBE538CBDC7860FAC6DDB79D34CDA743B886AE86B
-                          048FFF2C168B3FA6D3D34FD3ED86EECBF97CFE3ADD083B39F917F47C08DA0FF1
-                          E07A0000000049454E44AE426082}
-                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
-                      end>
-                    Align = Client
-                    HitTest = False
-                    Margins.Left = 13.000000000000000000
-                    Margins.Top = 13.000000000000000000
-                    Margins.Right = 13.000000000000000000
-                    Margins.Bottom = 13.000000000000000000
-                    RotationAngle = 180.000000000000000000
-                    Size.Width = 34.000000000000000000
-                    Size.Height = 69.000000000000000000
-                    Size.PlatformDefault = False
-                  end
-                end
-                object ColorAnimation12: TColorAnimation
-                  Duration = 0.200000002980232200
-                  PropertyName = 'Fill.Color'
-                  StartValue = claCadetblue
-                  StopValue = claLightcoral
-                  Trigger = 'IsMouseOver=true'
-                  TriggerInverse = 'IsMouseOver=false'
-                end
-              end
-            end
-          end
-        end
-      end
-      object TabItem11: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = #1575#1604#1576#1590#1575#1593#1577
-        ExplicitSize.cx = 60.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-        object Rectangle113: TRectangle
-          Align = Client
-          Fill.Kind = None
-          Size.Width = 887.000000000000000000
-          Size.Height = 452.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Rectangle114: TRectangle
-            Align = Top
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object recCodeProduit: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.Y = 9.000000000000000000
-              Size.Width = 89.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              Stroke.Cap = Round
-              object Text39: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 89.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Code Produit'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecQte: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 521.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 136.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text40: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 136.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Quantit'#233
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecDesignation: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 89.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 224.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text41: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 224.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Designation'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecPrix: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 409.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 112.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text42: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 112.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Prix unitaire'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Line11: TLine
-              Align = Top
-              LineType = Top
-              Margins.Left = 3.000000000000000000
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 3.000000000000000000
-              Position.X = 3.000000000000000000
-              Position.Y = 5.000000000000000000
-              Size.Width = 881.000000000000000000
-              Size.Height = 4.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Color = claSteelblue
-              Stroke.Thickness = 4.000000000000000000
-              Stroke.Cap = Round
-            end
-            object RecCategorie: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 313.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 96.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              Stroke.Cap = Round
-              object Text43: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 96.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Categorie'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-          end
-          object Rectangle119: TRectangle
-            Align = Client
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 402.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object GridStock: TStringGrid
-              Align = Client
-              CanFocus = True
-              CanParentFocus = True
-              ClipChildren = True
-              Size.Width = 887.000000000000000000
-              Size.Height = 402.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.HorzAlign = Center
-              RowCount = 10
-              Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 398.000000000000000000
-            end
-          end
-        end
-        object Rectangle120: TRectangle
-          Align = Top
-          Fill.Kind = None
-          Margins.Top = 5.000000000000000000
-          Position.Y = 5.000000000000000000
-          Size.Width = 887.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Line12: TLine
-            Align = Top
-            LineType = Top
-            Margins.Left = 3.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 3.000000000000000000
-            Position.X = 3.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 881.000000000000000000
-            Size.Height = 4.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Color = claSteelblue
-            Stroke.Thickness = 4.000000000000000000
-            Stroke.Cap = Round
-          end
-          object Rectangle121: TRectangle
-            Align = Right
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Position.X = 620.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 252.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Edit16: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Right
-              Position.X = 104.000000000000000000
-              Position.Y = 7.000000000000000000
-              Margins.Right = 7.000000000000000000
-              Size.Width = 141.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object Rectangle122: TRectangle
-            Align = Left
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Left = 15.000000000000000000
-            Position.X = 15.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 130.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Button13: TButton
-              Align = Left
-              Position.Y = 7.000000000000000000
-              Size.Width = 113.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Ajouter un Produit'
-            end
-          end
-        end
-      end
-      object TabItem12: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = #1575#1604#1605#1608#1585#1583#1608#1606
-        ExplicitSize.cx = 65.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-        object Rectangle115: TRectangle
-          Align = Client
-          Fill.Kind = None
-          Size.Width = 887.000000000000000000
-          Size.Height = 452.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Rectangle116: TRectangle
-            Align = Top
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object RecCodeFour: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.Y = 9.000000000000000000
-              Size.Width = 105.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              Stroke.Cap = Round
-              object Text44: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 105.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Code'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecNomFour: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 105.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 241.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text45: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 241.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Nom de Fournisseur'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Line13: TLine
-              Align = Top
-              LineType = Top
-              Margins.Left = 3.000000000000000000
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 3.000000000000000000
-              Position.X = 3.000000000000000000
-              Position.Y = 5.000000000000000000
-              Size.Width = 881.000000000000000000
-              Size.Height = 4.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Color = claSteelblue
-              Stroke.Thickness = 4.000000000000000000
-              Stroke.Cap = Round
-            end
-            object RecDette: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 622.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text46: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Dette'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecCCP: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 530.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text47: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'N'#176' RC'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecAdr: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 346.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text48: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Adresse'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecPhone: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 438.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text69: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Telephone'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-          end
-          object Rectangle124: TRectangle
-            Align = Client
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 402.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object GridFC: TStringGrid
-              Align = Client
-              CanFocus = True
-              ClipChildren = True
-              Size.Width = 887.000000000000000000
-              Size.Height = 402.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.HorzAlign = Center
-              RowCount = 1
-              Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 398.000000000000000000
-            end
-          end
-        end
-        object Rectangle125: TRectangle
-          Align = Top
-          Fill.Kind = None
-          Margins.Top = 5.000000000000000000
-          Position.Y = 5.000000000000000000
-          Size.Width = 887.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Line14: TLine
-            Align = Top
-            LineType = Top
-            Margins.Left = 3.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 3.000000000000000000
-            Position.X = 3.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 881.000000000000000000
-            Size.Height = 4.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Color = claSteelblue
-            Stroke.Thickness = 4.000000000000000000
-            Stroke.Cap = Round
-          end
-          object Rectangle126: TRectangle
-            Align = Right
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Position.X = 620.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 252.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Edit17: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Right
-              Position.X = 104.000000000000000000
-              Position.Y = 7.000000000000000000
-              Margins.Right = 7.000000000000000000
-              Size.Width = 141.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object Rectangle127: TRectangle
-            Align = Left
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Left = 15.000000000000000000
-            Position.X = 15.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 562.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Button14: TButton
-              Align = Left
-              Position.Y = 7.000000000000000000
-              Size.Width = 145.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Ajouter une Fournisseur'
-            end
-            object Rectangle123: TRectangle
-              Align = Left
-              Fill.Color = claTomato
-              Margins.Left = 15.000000000000000000
-              Position.X = 160.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 113.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text65: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 85.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Supprimer'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-            object Text67: TText
-              Align = Left
-              HitTest = False
-              Margins.Left = 10.000000000000000000
-              Position.X = 283.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 248.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'S'#233'lectionner Fournisseur puis Clic Supprimer'
-              TextSettings.Font.Size = 9.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              TextSettings.FontColor = claDimgray
-              TextSettings.HorzAlign = Leading
-            end
-          end
-        end
-      end
-      object TabItem1: TTabItem
-        CustomIcon = <
-          item
-          end>
-        IsSelected = False
-        Size.Width = 8.000000000000000000
-        Size.Height = 8.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = ''
-        TabOrder = 0
-        Text = #1575#1604#1586#1576#1575#1574#1606
-        ExplicitSize.cx = 65.000000000000000000
-        ExplicitSize.cy = 26.000000000000000000
-        object Rectangle29: TRectangle
-          Align = Client
-          Fill.Kind = None
-          Size.Width = 887.000000000000000000
-          Size.Height = 452.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Rectangle31: TRectangle
-            Align = Top
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 50.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object RecCodeClient: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.Y = 9.000000000000000000
-              Size.Width = 105.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              Stroke.Cap = Round
-              object Text1: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 105.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Code'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecNomClient: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 105.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 241.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text2: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 241.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Nom de Fournisseur'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object Line1: TLine
-              Align = Top
-              LineType = Top
-              Margins.Left = 3.000000000000000000
-              Margins.Top = 5.000000000000000000
-              Margins.Right = 3.000000000000000000
-              Position.X = 3.000000000000000000
-              Position.Y = 5.000000000000000000
-              Size.Width = 881.000000000000000000
-              Size.Height = 4.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Color = claSteelblue
-              Stroke.Thickness = 4.000000000000000000
-              Stroke.Cap = Round
-            end
-            object RecDetteC: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 622.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text3: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Dette'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecCCPC: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 530.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text4: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'N'#176' RC'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecAdrC: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 346.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text5: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Adresse'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-            object RecPhoneC: TRectangle
-              Align = Left
-              Fill.Kind = None
-              Position.X = 438.000000000000000000
-              Position.Y = 9.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 41.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text70: TText
-                Align = Client
-                Padding.Left = 15.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 41.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Telephone'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = xFF494949
-              end
-            end
-          end
-          object Rectangle37: TRectangle
-            Align = Client
-            Fill.Kind = None
-            Size.Width = 887.000000000000000000
-            Size.Height = 402.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object GridClient: TStringGrid
-              Align = Client
-              CanFocus = True
-              ClipChildren = True
-              Size.Width = 887.000000000000000000
-              Size.Height = 402.000000000000000000
-              Size.PlatformDefault = False
-              TextSettings.HorzAlign = Center
-              RowCount = 1
-              Options = [AlternatingRowBackground, Editing, ColLines, RowLines, RowSelect, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 398.000000000000000000
-            end
-          end
-        end
-        object Rectangle38: TRectangle
-          Align = Top
-          Fill.Kind = None
-          Margins.Top = 5.000000000000000000
-          Position.Y = 5.000000000000000000
-          Size.Width = 887.000000000000000000
-          Size.Height = 50.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-          object Line2: TLine
-            Align = Top
-            LineType = Top
-            Margins.Left = 3.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 3.000000000000000000
-            Position.X = 3.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 881.000000000000000000
-            Size.Height = 4.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Color = claSteelblue
-            Stroke.Thickness = 4.000000000000000000
-            Stroke.Cap = Round
-          end
-          object Rectangle39: TRectangle
-            Align = Right
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Position.X = 620.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 252.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Edit1: TEdit
-              Touch.InteractiveGestures = [LongTap, DoubleTap]
-              Align = Right
-              Position.X = 104.000000000000000000
-              Position.Y = 7.000000000000000000
-              Margins.Right = 7.000000000000000000
-              Size.Width = 141.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-            end
-          end
-          object Rectangle40: TRectangle
-            Align = Left
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Left = 15.000000000000000000
-            Position.X = 15.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 605.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Button2: TButton
-              Align = Left
-              Position.Y = 7.000000000000000000
-              Size.Width = 145.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Ajouter une Client'
-            end
-            object Rectangle128: TRectangle
-              Align = Left
-              Fill.Color = claTomato
-              Margins.Left = 15.000000000000000000
-              Position.X = 160.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 113.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text66: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 85.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Supprimer'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-            object Text68: TText
-              Align = Left
-              HitTest = False
-              Margins.Left = 10.000000000000000000
-              Position.X = 283.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 248.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'S'#233'lectionner Client puis Clic Supprimer'
-              TextSettings.Font.Size = 9.000000000000000000
-              TextSettings.Font.StyleExt = {00060000000000000004000000}
-              TextSettings.FontColor = claDimgray
-              TextSettings.HorzAlign = Leading
-            end
-          end
-        end
-      end
       object TabItem2: TTabItem
         CustomIcon = <
           item
@@ -4131,6 +2185,492 @@ object Form2: TForm2
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.FontColor = claDimgray
               TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+      end
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Kind = None
+          Size.Width = 887.000000000000000000
+          Size.Height = 452.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Rectangle2: TRectangle
+            Align = Top
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle3: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.Y = 9.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Cap = Round
+              object Text1: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Code'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle4: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 57.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 403.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text2: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 403.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Designation'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Line1: TLine
+              Align = Top
+              LineType = Top
+              Margins.Left = 3.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Position.X = 3.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 881.000000000000000000
+              Size.Height = 4.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claSteelblue
+              Stroke.Thickness = 4.000000000000000000
+              Stroke.Cap = Round
+            end
+            object Rectangle5: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 710.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 150.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text3: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 150.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Qte'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle6: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 460.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 250.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text4: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 250.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Cat'#233'gorie'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+          end
+          object Rectangle7: TRectangle
+            Align = Client
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 344.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object StringGrid3: TStringGrid
+              Align = Client
+              CanFocus = True
+              ClipChildren = True
+              Size.Width = 887.000000000000000000
+              Size.Height = 344.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              TabOrder = 0
+              RowCount = 2
+              Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 340.000000000000000000
+            end
+          end
+          object Rectangle8: TRectangle
+            Align = Bottom
+            Fill.Kind = None
+            Position.Y = 394.000000000000000000
+            Size.Width = 887.000000000000000000
+            Size.Height = 58.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle21: TRectangle
+              Align = FitRight
+              Fill.Kind = None
+              Padding.Left = 25.000000000000000000
+              Padding.Top = 11.000000000000000000
+              Padding.Right = 25.000000000000000000
+              Padding.Bottom = 11.000000000000000000
+              Position.X = 392.000030517578100000
+              Size.Width = 494.999969482421900000
+              Size.Height = 58.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Rectangle22: TRectangle
+                Align = Right
+                Cursor = crHandPoint
+                Fill.Color = xFF06AD57
+                Padding.Right = 5.000000000000000000
+                Position.X = 268.999969482421900000
+                Position.Y = 11.000000000000000000
+                Size.Width = 201.000000000000000000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Rectangle23: TRectangle
+                  Align = Left
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image2: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          0BDF49444154785EEDDD7D7014F51DC7F1EFEE3DE5012497C40B49908228382D
+                          3EB58A46892022B48E3A850211091D1D67AA4305A733B53A9D8E55DB994EFDA3
+                          D6C751C73EF958DAD15A9FC6C15A1F40B18856F0B1A520865E2077840493CBE5
+                          9EF6D7DDCB77829484DC5E76B9BDDFEFF39AB1F7FD2D8E139B77D6BDBBBD5F34
+                          F2102184DED9D9B929994C9ED6D7D7571589443CF5F539A9BFBF9FA7E2CD78ED
+                          92EFFAAFDDF9282FA1003A3F965C4747C7D966EC39736CA9ACACAC963976A798
+                          DFBC47B20F9C74252FA1009E08DE3CB3FB4C5B780936E89A781CD117CE13C1EF
+                          DDBBF7691EA10888BE709E083E954A9DC72314C98ADE78E8A455BC84517822F8
+                          DEDEDE5A1E613C84780C67FAA3F344F0E613544F7C1D32C0E5CDD121340971F4
+                          EDBC842F41F09232A37F1467FA232178890D3D913D71252FC184E06527B42770
+                          A63F04C12B207F4DFFE08CD5BC541A825784F98DC66D082604AF10BC6489E095
+                          A37AF4085E412A478FE015A56AF4085E612A468FE015978F5EA1972C113C5811
+                          28F3922582873CEB4CAFC26D08081E0E51E03604040F87E127B2D2DE5A8CE0E1
+                          0866F4D2DE5A8CE06144B2BE6489E06154434F64E5FA60388287A393EC83E108
+                          1EC624D3E50D828782C8123D828782E5A32FF3DB10103CD86206F388F1D0C965
+                          FB8E2C8207FB8451B6EFC82278284AB95ED3BBBA07FBF2EFAC6AD735EDFB5961
+                          D4FAF45C5D3CD6131E695BBD5FFDFA973CA9C3895F8870F26B97F0543A3FDB58
+                          472FEFAAE655310C4350AEC710BE6E9FD00F906EDCB7E9ADD71FE33F749CE3C1
+                          2F5BD6BE4008FABD5FA713F8D098107C71BC10BCE57633FABF8D2BFA23E504ED
+                          311FAEDABCF9D5BF0F1D71866397344B96AC9AB274697BDCA7D12B766287F277
+                          4B6B372D9C3EC02B67981D9D60B5D4D272617CCE9C7953F8F0B83912FC15CBDB
+                          D705FDDA9E808FEAF91028E6960BF6D3A219095E39C78CBE3EE8D7F7CC6D99BF
+                          8E0F8DCBB8836F5BB6EA594174172F41613F996B9EE94F743EFA3C4DBBCB8CFE
+                          595E156D5CC19BB1BF647E2197F11260E8F2C6BDE82F3BFFBC0B5FE255518A0E
+                          7EC5B2D56BCC2F60312F0186B919BD46B4D83CD3AFE1A56D4505DFD6B67AA6A6
+                          89FB780925227C219EBCC78ADE8D6BFA3C4DBB6FEEDC8B66F2CA96A28217466A
+                          238F50429F9FFD204FDE94BFA677F8D59B6146B6A8066D07BF62C5EAC51A0523
+                          BC8412CA5444A87B9AB73F7E6ABD7AE3CEE58D1E696D996FFB92DA76F05A3AFB
+                          1B1EC1030E4CBB9276B63EE5F9CB9B8B5D885E6839DB2DDA7EA7B56D79BBE0D1
+                          3178A7550DD75C7D1D4FCED9F4D6ABB61AB675865FB1ACFD6A1E013C616ECB85
+                          B69AB4157C4E1837F308E00939B2D7A4CD6B787D020F009EE0CB92AD266D05EF
+                          D3B3137904F086AC6EAB495BC16BE4C7191EBCA5D2C533BCC9D50F8C0014C1BD
+                          576900CA1D8207A52078500A8207A52078500A8207A52078500A8207A5207850
+                          0A8207A52078500A8207A52078500A8207A52078508AAD7B89AD1D0BBA9B4EA3
+                          D857CEA67465CDD05F15C791D0F073635766373E3C560C9D52E44BF750A02F4A
+                          13F66FA19A4F9FB6B57341417FE3E427E267E93EFAB346FE697C08C609C13B27
+                          3BD09BF2D74FBA2CB636F0321F1AD551839FB2BEA35218157B480FD4F1217008
+                          827781DE9515954DE1F8F5DAA89BFE8C7A2DD2F8E481EB054D1C40EC50368C06
+                          BF96C8F545EE1A1C75A3DF11CFF0CDEB0FFCC9FCA3E5BC0417E00CEF325F7663
+                          EC871517F06AD81167783376F33A08B14399CBF95B1BEEC86CE7D5B0C3826F5A
+                          DF7D9D19FB425E02943521B4531BEE49FE819779C397348D8FC74FD1FDFE4F78
+                          092EC325CDB1A3551AE774AD0B6EB1E6E133BC267CAFF2082015D11DDFC4E350
+                          F08DEB7B2FD602DAE4FC1100D9543504227727AFB5C67CF039217E6B3D02C86A
+                          B03B75A7F5980F3EA09163BFE918C08B2AAA26545A8F7AD3933D57E58F00486E
+                          F2BD0377EB9A266EE73580D48C846F994E5A2E7FAA07909E9699685EC3FB113C
+                          A82171B052A758AC8A970072AB6AF0E91489147CF33C40B91B7EA7154005081E
+                          9482E04129081E94A235AFEF113CBBC27A46BCAA39489736F8A9B942275F814F
+                          910DF3ABEA4A19F4523C4B0F77A4C9D52FB204707B7069B81A7C4D40A317E654
+                          17B635C218966E4DD0BE943CD923F8D270F592E6798762B73C755635E9780115
+                          C6C9B5E06F9A1172F41F6EB5FEC0A9785318C6C7B5E0E7D5F97972CEEC893E9E
+                          008AE35AF0C7F971FD01DEE35AF049EB6516008F712DF81D098327E70CE4F043
+                          04E3E35AF06B3F4CF2E49C4BDF49F004501CD782B74EC6377F32C8ABF1BB7F77
+                          9A0673BC0028926BC15BDE3890A5255B13D49329FE522461FEE4AC7C6F801E8B
+                          A6F90840F15CBFB5004686775A4BC3D5333C80D72078500A8207A52078500A82
+                          07A52078500A8207A52078500A8207A52078500A8207A5B87E2F4D70B08FCEDC
+                          F0730AA407F80858A2D1284F60D17C7EFAECA2DF51BAD2DD5F35E6EA19BEFEBF
+                          FFA439CFFF18B1C398442E4BD336ACA6BADDCFF21177B816BC66E4E894B7F1BB
+                          D2C09EBA6DF7909E73EE7314FFCFB5E04F7DE36E9E00EC99BAE9073C39CFB5E0
+                          AB0F76F204604FE88BDD3C39CFB5E0F52C3EA104C511469627E7B9167C36805D
+                          C2A048FE100FCE732DF8DE86593C01D83358379B27E7B916FCBFCEB99A27007B
+                          3ACEFD054FCE732D78CBD66FDDCA1340613A163C6CFEAF7BDB34BABF6B811034
+                          7DFB5FA83EBA8D82C95ED284F33B929523BCD37A8816A8A283CDF3A9EBB41B48
+                          68AE9E83BDB14DC796B9EABD13DBDFDFCF933A5A9F99C153E9B8FBE304E03108
+                          1E9482E04129081E9482E04129081E9482E04129081E9482E04129081E94A2C4
+                          AD058661D0F6ED1F536AD03B1F4AD9B9E3339E4A2F180AD2C245ADE4F73BFFCB
+                          A4BF0CB7161C037D7DFDF4CE96F73D15BBD7A453697AF1B957281EEBE623F292
+                          3A7821047DFCD1BF790563D9FCE6D6FC7F0D652675F03B777ECE1314EADDADDB
+                          799293D4C17F71B08F272854BC4BEECB1AA983CF66DDFBF4BBAC7239B97FFBB3
+                          D4C10782019EA0508180BBAFD4949AD4C187C3937882424D6E6AE0494E52073F
+                          6DDA093C41A14E3FE3AB3CC949EAE02D679CE9DE1E27B25970712B699A7B3B06
+                          7881F4C18742413AE7DCAF53A4A19E82E635BDECDF50BBACE73953A636D1E54B
+                          16D38409557C545ED8B5A044B06B4169487F8607F832040F4A41F0A014040F4A
+                          D129162BF99356806345A7DA48926700B90DC4723AE919040F4A48D0C44133F8
+                          007E892A28A13A10ECD30D237707AF01E43649BCA8EF5D597F2F2F01A4165B5B
+                          714DFEC692E63F767791A647F2474BE058DC5AB06DDB4734984CF1AAF4BCB46B
+                          41A832448B16CF73FD3EA392DE5A3010CBC46E6B0AF2EBF0FA9AA147F9241203
+                          F48FB7DFF354EC5E9332FFBF79EE990DD4BDBF878F48A8AEF626EB211F7CF48A
+                          F053E954FA8035CBC4DAB5E0C30F3EE5158CE5CD8D5BE4DCB540EFCAC6D655DC
+                          991FF3074CC16060018FD2D8B50BBB16D8F5DEBB1FF0240F3D185EC8E3A1E0A3
+                          57D46E13247ECA4B291CECC5AE0576C5BBF6F32407BD2AFDC2BE1BAA5EE7E5A1
+                          E02D9D6DB5B71B24DEE665D9C3AE05F665B3F2EC5AA069E23FFBD6565DCACBBC
+                          C382B7EC6DAB6D11446FF0B2AC0502D8B5C02E59762D10BAF8A4EB4781937939
+                          EC88E02D9D6DE179E6C36D43ABF255133E8E27285443E3F13C952FAD32F7D7F8
+                          8D81113F8D3E62F096685BF856CA6666668DC15E3E5476A64F9FCA1314AAAC3F
+                          F4AEC7B2A23A7766D7BAD0B7F9C811460DDE125D15D9D1B5B2312C84B85C64C4
+                          3E3E5C564E3FE36B3CC158E65F747E797EC87DA02B4315996B63373605E2D787
+                          DEE7A323B2FD6FD7FC64F7F772BABEC627A8262B0627F9F53EF3BAE1F8A3FEE0
+                          8CE558BCD3BA63C72EFAE260BF679EC87AE59D566B4FF8DAFA1A3AB7E51B7CC4
+                          3D8EBCD33A10CB5075B89F843F4E55B90DB1B5156BF94F0AE2891FE76834AADC
+                          875054DCB560D6AC5925EF6D5C6766807283E04129081E9482E04129081E9482
+                          E04129081E9482E04129081E9482E04129081E9482E04129081E9482E0412908
+                          1E94E289E063B19884BBFF80177922F89A9A1AE9763D83C3F5F4F47862AF434F
+                          041F0A85DEE21124150E873DF13DF644F08D8D8D4B7904496532996FF258529E
+                          085ED3B49C690E2F4132E6F777D1ECD9B3D3BC2C294F046F993A75EA3B4D4D4D
+                          3E73DC9C4C2613E61359FC76C1F2963543FFB4B3B3333073E6CC97F9588911FD
+                          0FC531796287715FD30000000049454E44AE426082}
+                        FileName = 'D:\icons\printer.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 15.000000000000000000
+                    Margins.Top = 7.000000000000000000
+                    Margins.Right = 7.000000000000000000
+                    Margins.Bottom = 7.000000000000000000
+                    Size.Width = 23.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object Rectangle24: TRectangle
+                  Align = Client
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 106.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Text5: TText
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 5.000000000000000000
+                    Size.Width = 101.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Imprimmer'
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                  end
+                end
+                object Rectangle25: TRectangle
+                  Align = Right
+                  Fill.Kind = None
+                  HitTest = False
+                  Position.X = 151.000000000000000000
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image3: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
+                          780052D0A2CD2BD0D044086911CD6E93170805AF40135178C7A180824D060FBA
+                          D6664D628FED7BE79EDF39DF4F939995565A9D7C7372FD27D9E60458592EEFBA
+                          74F93F5DF7F0D5F9F9F94FE9561AC107B72DF44DABF0BF5E857F996E254DD247
+                          04F3EAD5CF0FFBC4DE6B9AC9CBFEEFDCDEDE7E92FE480E1B3EA07D437FCA6ADB
+                          DFAEB6FD67E95606C1079323F6F7BABFE7F3F9C7E94602479A40F2C6DE6B3E5A
+                          2E97DFA71B096CF820F2C7FEDE7C3E93E988E0032819FB9A4AF41C699C1B2376
+                          2504EFD898B1B7EDDDB7E9D2348E344ED5D8EC0AC71A36BC431C639E47F0CE10
+                          FB7604EF08B1EF46F04E10FB3004EF00B10F47F0E2ACC47E7FDFFD9A2E4DE369
+                          496196363BAFB4A2288E3187217841D6629FCDCE647E2084E0C558DCEC4DD3FC
+                          952ECDE30C2FC462EC4A6F0DEE11BC0862CF83E005107B3E046F1CB1E745F086
+                          117B7E046F14B19741F006117B39046F0CB19745F086107B79046F04B18F83E0
+                          0D20F6F1107C65C43E2E82AF88D8C747F095107B1D045F01B1D743F02323F6BA
+                          087E44C45E1FC18F84D86D20F81110BB1D045F18B1DB42F00511BB3D045F08B1
+                          DB44F00510BB5D0C213362B78D416444ECF6318C4C885D0303C980D875309423
+                          11BB1606730462D7C3700E44EC9A18D001885D1743DA13B16B63507B20767D0C
+                          6B2062F781810D40EC7E30B41D88DD1706B705B1FBC3F09E41EC3E31C02710BB
+                          5F0C7103B1FBC6201F2176FF186642EC3130D015628F23FC50893D96D08325F6
+                          78C20E97D8630A3960628F2BDC90893DB650832676841936B1A31762E0C48E35
+                          F74327763CE67AF0C48E4D93F4D11D8BB1CF66676EE7ADC2E5B6B11A7BD334E6
+                          FE5DD1B80B9ED8B18DAB6FB11663BFBC7C3925763BDC6C78A39BBD8FFD21DDC2
+                          0017C1133B86920F9ED8B10FE933BCC5D8DFBC797D4AEC76C96E78A39BBD8FFD
+                          3EDDC220C9E0891D87920B9ED8710CA9E02DC6CE7B63B4C83C686DDBE56FE9D2
+                          0C62D723F309B3B6DD895D93C4278DD8910B6F57DD13B16B331FFCDBB7CB6FD2
+                          6575C4AECFFC27D0CA7186D87DE0483300B1FB41F03B10BB2F04BFC362B1F83C
+                          5DC20182DF613A3DFDFDE6E6E645BA85381EB40E349B9DBD689AE65DBA8528F3
+                          1BFEE1A1BB489755DDDDFDF94FD775A7E916A2241E90597AA5954DAF8D33FC9E
+                          D8F4DA649E72B3F67E1A36BD26A50DFF63FA6842BFE9AFAFAFD9F462A45E54B1
+                          B6E57BFCB49316B95711891EC7900BBE47F4389464F03DA2C721649F96B4F8A6
+                          AED503D977575757D3740B836437FC9AD14DCFAFDA334A3EF81ED1632817C1F7
+                          881E43B8796B81D133FDFDC5C5056FDF30C4CD865F33BAE9F92F6F8C70177C8F
+                          E8F11C97C1F7881E4F717BBE347AA6E7016C656E37FC9AC54DCF6F42A827C4E0
+                          891E6B61864EF4E8851A38D123DCB0893EB6908326FAB8C20E99E8630A3D60A2
+                          8F27FC70893E1606BB42F47130D484E86360A08F10BD7F0C7303D1FBC6209F40
+                          F47E31C46710BD4F0C700BA2F787E1ED40F4BE30B80188DE0F863610D1FBC0C0
+                          F640F4FA18D69E885E1B833A00D1EB624807227A4D0CE80844AF87E11C89E8B5
+                          30980C885E0743C984E83530908C88DE3E869119D1DBC6200A207ABB18422144
+                          6F13C11744F4F6107C61446F0BC18F80E8ED20F89110BD0D043F22A2AF8FE047
+                          46F475117C05445F0FC15742F475107C45443F3E82AF8CE8C745F00610FD7808
+                          DE08A21F07C11B42F4E511BC31445F16C11B44F4E510BC51445F06C11B46F4F9
+                          11BC71449F17C10B20FA7C085E04D1E741F04288FE78042F86E88F33491F2142
+                          F901A3050C4F94B54DAFF285C88617C5A63F0CC10BB3147DDBB6BFA44BD3D812
+                          0E5839DE287CD761C33BC0F16638827782E887217847887E37827786E8B72378
+                          8788FE7904EFD4D8D14F26CD17E9D234368173633D65A9F25D850DEF1CC79B0F
+                          318C204A6E7AA52F2A367C10A5A26C9A931FD2A504367C30B937BDDA9189E003
+                          CA15BDE2E3038E34011D1F6AF79D62EC3D367C606DDBCE9B66D2A6DB4154435F
+                          2378FC67B158FC319D9E7E9A6E37745FCEE7F3D7E946D8C9C9BF90C208D7F4A2
+                          FA880000000049454E44AE426082}
+                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 13.000000000000000000
+                    Margins.Top = 13.000000000000000000
+                    Margins.Right = 13.000000000000000000
+                    Margins.Bottom = 13.000000000000000000
+                    RotationAngle = 180.000000000000000000
+                    Size.Width = 19.000000000000000000
+                    Size.Height = 10.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object ColorAnimation1: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFF06AD57
+                  StopValue = xFFF95252
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Text16: TText
+                Align = Client
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Size.Width = 238.999969482421900000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'S'#233'lectionner la Facture puis imprimmer'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = claDarkgray
+              end
+            end
+          end
+        end
+        object Rectangle26: TRectangle
+          Align = Top
+          Fill.Kind = None
+          Margins.Top = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 887.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Line2: TLine
+            Align = Top
+            LineType = Top
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 881.000000000000000000
+            Size.Height = 4.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claSteelblue
+            Stroke.Thickness = 4.000000000000000000
+            Stroke.Cap = Round
+          end
+          object Rectangle27: TRectangle
+            Align = Right
+            Fill.Kind = None
+            Padding.Top = 7.000000000000000000
+            Padding.Bottom = 7.000000000000000000
+            Margins.Right = 15.000000000000000000
+            Position.X = 620.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 252.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+          end
+          object Rectangle28: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Padding.Top = 7.000000000000000000
+            Padding.Bottom = 7.000000000000000000
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Button2: TButton
+              Align = Left
+              Position.Y = 7.000000000000000000
+              Size.Width = 193.000000000000000000
+              Size.Height = 27.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Ajouter une Demande Produits'
+              OnClick = Button4Click
             end
           end
         end
@@ -5644,6 +4184,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      OnClick = Rectangle81Click
       object Rectangle82: TRectangle
         Align = Left
         Fill.Kind = None
@@ -6289,7 +4830,8 @@ object Form2: TForm2
   object BindSourceDB1: TBindSourceDB
     DataSet = DataModule1.ADOTable1
     ScopeMappings = <>
-    Left = 248
+    Left = 224
+    Top = 488
   end
   object BindingsList1: TBindingsList
     Methods = <>
@@ -6386,12 +4928,13 @@ object Form2: TForm2
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
     ScopeMappings = <>
-    Left = 296
+    Left = 312
+    Top = 488
   end
   object BindSourceDB3: TBindSourceDB
     DataSet = DataModule1.tbl_demande
     ScopeMappings = <>
-    Left = 536
-    Top = 256
+    Left = 400
+    Top = 488
   end
 end
