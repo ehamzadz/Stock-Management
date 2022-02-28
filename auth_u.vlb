@@ -44,3 +44,12 @@ Coordinates=67,78,70,51
 [btn_login]
 Coordinates=271,78,69,33
 
+[DataModule1.ADOTable1]
+Visible=False
+
+[DataModule1.tbl_stock]
+Visible=False
+
+[DataModule1.tbl_demande]
+Visible=False
+

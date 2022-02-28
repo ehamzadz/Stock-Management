@@ -10,6 +10,9 @@ type
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
     tbl_stock: TADOTable;
+    tbl_demande: TADOTable;
+    tbl_demande_produit: TADOTable;
+    qry: TADOQuery;
   private
     { Private declarations }
   public

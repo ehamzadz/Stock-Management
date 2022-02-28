@@ -97,30 +97,19 @@ type
     TabItem6: TTabItem;
     Rectangle79: TRectangle;
     Line8: TLine;
-    Rectangle81: TRectangle;
-    Edit8: TEdit;
-    Button7: TButton;
-    Rectangle82: TRectangle;
-    ComboBox3: TComboBox;
-    Text20: TText;
     Rectangle83: TRectangle;
     Rectangle84: TRectangle;
     Rectangle85: TRectangle;
-    Text21: TText;
     Text22: TText;
     Text23: TText;
     ComboBox4: TComboBox;
     Edit9: TEdit;
-    Edit10: TEdit;
     Button9: TButton;
     Button1: TButton;
     Text24: TText;
-    Memo2: TMemo;
     Rectangle86: TRectangle;
     Rectangle87: TRectangle;
-    Text25: TText;
-    Edit11: TEdit;
-    RecVent: TRectangle;
+    btn_demander: TRectangle;
     Rectangle89: TRectangle;
     Image19: TImage;
     Rectangle90: TRectangle;
@@ -396,12 +385,16 @@ type
     ColorAnimation17: TColorAnimation;
     Image28: TImage;
     ColorAnimation18: TColorAnimation;
+    LinkFillControlToField1: TLinkFillControlToField;
+    StringGrid2: TStringGrid;
+    BindSourceDB3: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    Button7: TButton;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Rectangle46Click(Sender: TObject);
     procedure Edit2Typing(Sender: TObject);
-    procedure FormShow(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure rect_closeClick(Sender: TObject);
     procedure rect_fullScreenClick(Sender: TObject);
@@ -410,15 +403,22 @@ type
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle152Click(Sender: TObject);
     procedure Edit3Typing(Sender: TObject);
+    procedure Button9Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure btn_demanderClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
     username_globalVar :string;
+    num_employee_globalVar :integer;
   end;
 
 var
   Form2: TForm2;
+  new_demande_num :integer;
 
 implementation
 
@@ -428,6 +428,61 @@ uses auth_u, datamodule, register_u, addProduit_u;
 
 
 // Adding new employee
+procedure TForm2.btn_demanderClick(Sender: TObject);
+var
+  dt:Tdatetime;
+  script,dtt,designation :string;
+  count,i,qte,num :integer;
+begin
+
+    dt := now;
+
+    dtt := datetimetostr(dt);
+    script := 'update demande_produit SET date_demande=' + quotedstr(dtt) + ', num_employee='+ inttostr(num_employee_globalVar) +' where num_demande='+ inttostr(new_demande_num);
+
+    showmessage(script);
+
+    // insert (update) demande produits list to demande_produit table
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add(script);
+    datamodule.DataModule1.qry.ExecSQL;
+    datamodule.DataModule1.tbl_demande_produit.active := false;
+    datamodule.DataModule1.tbl_demande_produit.active := true;
+
+
+    // insert produits to permanent table produit_demande
+    count := datamodule.DataModule1.tbl_demande.RecordCount;
+
+    datamodule.DataModule1.tbl_demande.first;
+    for i := 1 to count do begin
+
+      designation := datamodule.DataModule1.tbl_demande.FieldByName('designation').asstring;
+      qte := datamodule.DataModule1.tbl_demande.FieldByName('qte').asinteger;
+      num := datamodule.DataModule1.tbl_demande.FieldByName('num_demande_produit').asinteger;
+
+      datamodule.DataModule1.qry.SQL.Clear;
+      datamodule.DataModule1.qry.SQL.Add('insert into produits_demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := designation;
+      datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
+      datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := num;
+      datamodule.DataModule1.qry.ExecSQL;
+
+      datamodule.DataModule1.tbl_demande.next;
+
+    end;
+
+    // Clear temporary demande produit list
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('DELETE FROM demande');
+    datamodule.DataModule1.qry.ExecSQL;
+
+    datamodule.DataModule1.tbl_demande.active := false;
+    datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := false;
+
+end;
+
 procedure TForm2.Button4Click(Sender: TObject);
 begin
   addProduit_u.Form4.Showmodal;
@@ -437,6 +492,66 @@ procedure TForm2.Button6Click(Sender: TObject);
 begin
   register_u.Form3.text11.Visible := false;
   register_u.Form3.ShowModal; // Shows the Form
+end;
+
+procedure TForm2.Button7Click(Sender: TObject);
+var
+  num :string;
+begin
+
+    //username_globalVar
+
+    // Clear temporary demande produit list
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('DELETE FROM demande');
+    datamodule.DataModule1.qry.ExecSQL;
+
+    //create new num for the nuw record
+    datamodule.DataModule1.tbl_demande_produit.last;
+    new_demande_num := datamodule.DataModule1.tbl_demande_produit.fields[0].asinteger + 1;
+
+    // insert new empty record to demande produit table
+    datamodule.DataModule1.qry.SQL.Clear;
+    datamodule.DataModule1.qry.SQL.Add('insert into demande_produit (num_demande) values(:num_demande)');
+    datamodule.DataModule1.qry.Parameters.ParamByName('num_demande').Value := new_demande_num;
+    datamodule.DataModule1.qry.ExecSQL;
+    datamodule.DataModule1.tbl_demande_produit.active := false;
+    datamodule.DataModule1.tbl_demande_produit.active := true;
+    datamodule.DataModule1.tbl_demande.active := false;
+    datamodule.DataModule1.tbl_demande.active := true;
+
+    rectangle83.Visible := true;
+end;
+
+// add produit to demande list
+procedure TForm2.Button9Click(Sender: TObject);
+var
+  produit, qtt :string;
+  qte, p :integer;
+begin
+
+    produit := ComboBox4.Items[ComboBox4.ItemIndex];
+    qtt := edit9.Text;
+    qte := strtoint(edit9.Text);
+    //showmessage(produit+qtt);
+
+    if (produit='') OR (qtt='') then begin
+      showmessage('Completez tous les champs');
+    end else begin
+
+      // inserting produit to temporary table
+      datamodule.DataModule1.qry.SQL.Clear;
+      datamodule.DataModule1.qry.SQL.Add('insert into demande (designation,qte,num_demande_produit) values(:designation,:qte,:num_demande_produit)');
+      datamodule.DataModule1.qry.Parameters.ParamByName('designation').Value := produit;
+      datamodule.DataModule1.qry.Parameters.ParamByName('qte').Value := qte;
+      datamodule.DataModule1.qry.Parameters.ParamByName('num_demande_produit').Value := new_demande_num;
+      datamodule.DataModule1.qry.ExecSQL;
+
+      datamodule.DataModule1.tbl_demande.Active := false;
+      datamodule.DataModule1.tbl_demande.Active := true;
+    end;
+
+
 end;
 
 // Employee Seachring Field
@@ -474,8 +589,15 @@ end;
 
 procedure TForm2.FormShow(Sender: TObject);
 begin
-  showmessage('Bienvenue ' +
-              username_globalVar);
+
+
+    ShowMessage(username_globalVar);
+
+end;
+
+procedure TForm2.Rectangle13Click(Sender: TObject);
+begin
+  tabs.TabIndex := 2;
 end;
 
 procedure TForm2.Rectangle152Click(Sender: TObject);

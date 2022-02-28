@@ -4,3 +4,12 @@ Coordinates=95,1,99,33
 []
 Coordinates=10,10,76,177
 
+[tbl_stock]
+Coordinates=95,1,59,123
+
+[ADOTable1]
+Coordinates=0,0,76,177
+
+[tbl_demande]
+Coordinates=95,143,77,123
+

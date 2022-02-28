@@ -69,7 +69,19 @@ begin
 
   if (qry1.Fields[0].asinteger<>0) then begin
     Visible := False;
-    dashboard.Form2.username_globalVar := user;
+
+    // fetsh all user data
+    qry1.SQL.Clear;
+    qry1.SQL.Add('select * from employee');
+    qry1.SQL.Add('WHERE username ='+ quotedstr(user));
+    qry1.SQL.Add('UNION ALL');
+    qry1.SQL.Add('select * from it_users');
+    qry1.SQL.Add('WHERE username ='+ quotedstr(user));
+    qry1.Open;
+    qry1.First;
+    dashboard.Form2.username_globalVar := qry1.FieldByName('username').asstring;
+    dashboard.Form2.num_employee_globalVar := qry1.FieldByName('num_employee').asinteger;
+
     try
       dashboard.Form2.ShowModal; // Shows the Form
     finally

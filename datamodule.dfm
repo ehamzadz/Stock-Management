@@ -30,4 +30,26 @@ object DataModule1: TDataModule1
     Left = 360
     Top = 88
   end
+  object tbl_demande: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande'
+    Left = 360
+    Top = 176
+  end
+  object tbl_demande_produit: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande_produit'
+    Left = 360
+    Top = 272
+  end
+  object qry: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    Left = 376
+    Top = 384
+  end
 end
