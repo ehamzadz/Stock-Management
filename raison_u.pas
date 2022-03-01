@@ -5,14 +5,15 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, Data.DB, Data.Win.ADODB;
+  FMX.Controls.Presentation, FMX.Edit, FMX.Objects, Data.DB, Data.Win.ADODB,
+  FMX.Memo.Types, FMX.ScrollBox, FMX.Memo;
 
 type
   TRaison = class(TForm)
     Rectangle71: TRectangle;
     Text31: TText;
-    Edit1: TEdit;
     qry: TADOQuery;
+    Edit1: TEdit;
     procedure Rectangle71Click(Sender: TObject);
   private
     { Private declarations }
@@ -36,8 +37,11 @@ begin
 
   // insrt raison to Rufuse table
   datamodule.DataModule1.qry.SQL.Clear;
-  datamodule.DataModule1.qry.SQL.Add('insert into refuse (num_refuse,) values(:num_demande)');
-  datamodule.DataModule1.qry.Parameters.ParamByName('num_demande').Value := new_demande_num;
+  datamodule.DataModule1.qry.SQL.Add('insert into refuse (raison,date_refuse,num_demande,num_it) values(:raison,:date_refuse,:num_demande,:num_it)');
+  datamodule.DataModule1.qry.Parameters.ParamByName('raison').Value := edit1.Text;
+  datamodule.DataModule1.qry.Parameters.ParamByName('date_refuse').Value := datetimetostr(now);
+  datamodule.DataModule1.qry.Parameters.ParamByName('num_demande').Value := produits_demande_u.Form5.num_demande_produit;
+  datamodule.DataModule1.qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   datamodule.DataModule1.qry.ExecSQL;
 
   // Delete produits demandé
@@ -50,7 +54,7 @@ begin
   qry.SQL.Clear;
   qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
   qry.Parameters.ParamByName('status').Value := 'Inacceptable';
-  qry.Parameters.ParamByName('num').Value := num_demande_produit;
+  qry.Parameters.ParamByName('num').Value := produits_demande_u.Form5.num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
 

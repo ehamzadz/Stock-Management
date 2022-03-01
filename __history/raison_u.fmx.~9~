@@ -1,0 +1,49 @@
+object Raison: TRaison
+  Left = 0
+  Top = 0
+  BorderStyle = SizeToolWin
+  Caption = 'Form6'
+  ClientHeight = 114
+  ClientWidth = 377
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle71: TRectangle
+    Fill.Color = claTomato
+    Margins.Left = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 29.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    OnClick = Rectangle71Click
+    object Text31: TText
+      Align = Center
+      HitTest = False
+      Size.Width = 67.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Refuser'
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claWhite
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object qry: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    Parameters = <>
+    Left = 312
+    Top = 16
+  end
+end

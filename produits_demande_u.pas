@@ -49,7 +49,7 @@ implementation
 
 {$R *.fmx}
 
-uses dashboard, datamodule;
+uses dashboard, datamodule, raison_u;
 
 procedure TForm5.FormShow(Sender: TObject);
 begin
@@ -91,12 +91,11 @@ begin
   close; }
 
 
-   try
-      dashboard.Form2.ShowModal; // Shows the Form
-    finally
-      Visible := true;
-      // Makes Form1 visible again
-    end;
+  try
+    raison_u.Raison.ShowModal;
+  finally
+    close;
+  end;
 
 end;
 

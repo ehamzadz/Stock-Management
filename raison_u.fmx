@@ -2,8 +2,8 @@ object Raison: TRaison
   Left = 0
   Top = 0
   BorderStyle = SizeToolWin
-  Caption = 'Form6'
-  ClientHeight = 200
+  Caption = 'Raison'
+  ClientHeight = 114
   ClientWidth = 377
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -14,7 +14,7 @@ object Raison: TRaison
     Fill.Color = claTomato
     Margins.Left = 15.000000000000000000
     Position.X = 24.000000000000000000
-    Position.Y = 160.000000000000000000
+    Position.Y = 64.000000000000000000
     Size.Width = 329.000000000000000000
     Size.Height = 29.000000000000000000
     Size.PlatformDefault = False
@@ -33,11 +33,11 @@ object Raison: TRaison
   end
   object Edit1: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 1
+    TabOrder = 3
     Position.X = 24.000000000000000000
     Position.Y = 16.000000000000000000
     Size.Width = 329.000000000000000000
-    Size.Height = 129.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
   end
   object qry: TADOQuery

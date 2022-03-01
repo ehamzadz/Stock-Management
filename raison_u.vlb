@@ -13,3 +13,6 @@ Visible=False
 [DataModule1.qry_new_demandes]
 Visible=False
 
+[DataModule1.tbl_produits_demande]
+Visible=False
+
