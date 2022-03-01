@@ -1,0 +1,13 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  BorderStyle = SizeToolWin
+  Caption = 'Form6'
+  ClientHeight = 197
+  ClientWidth = 389
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end

@@ -1,0 +1,15 @@
+﻿[DataModule1.ADOTable1]
+Visible=False
+
+[DataModule1.tbl_stock]
+Visible=False
+
+[DataModule1.tbl_demande]
+Visible=False
+
+[DataModule1.tbl_list_demande_produits]
+Visible=False
+
+[DataModule1.qry_new_demandes]
+Visible=False
+

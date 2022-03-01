@@ -68,7 +68,7 @@ procedure TForm5.Rectangle71Click(Sender: TObject);
 var
   script :string;
 begin
-
+          {
   // Delete produits demandé
   qry.SQL.Clear;
   script := 'DELETE FROM produits_demande WHERE num_demande_produit=' + inttostr(num_demande_produit);
@@ -88,7 +88,15 @@ begin
   datamodule.DataModule1.qry_new_demandes.active := true;
   datamodule.DataModule1.qry_new_demandes.refresh;
 
-  close;
+  close; }
+
+
+   try
+      dashboard.Form2.ShowModal; // Shows the Form
+    finally
+      Visible := true;
+      // Makes Form1 visible again
+    end;
 
 end;
 
