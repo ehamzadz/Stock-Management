@@ -1751,7 +1751,7 @@ object Form2: TForm2
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 54
-              Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+              Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 867.000000000000000000
               Viewport.Height = 340.000000000000000000
             end
@@ -5407,7 +5407,7 @@ object Form2: TForm2
   object BindSourceDB5: TBindSourceDB
     DataSet = DataModule1.qry_new_demandes
     ScopeMappings = <>
-    Left = 576
-    Top = 488
+    Left = 224
+    Top = 456
   end
 end

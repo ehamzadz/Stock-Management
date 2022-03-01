@@ -53,27 +53,6 @@ Coordinates=568,10,172,141
 [BindingsList1]
 Coordinates=365,465,82,33
 
-[Rectangle36]
-Coordinates=286,500,75,33
-
-[Text6]
-Coordinates=210,224,41,51
-
-[Rectangle34]
-Coordinates=207,500,75,33
-
-[Text27]
-Coordinates=364,258,46,51
-
-[Rectangle33]
+[]
 Coordinates=128,500,75,33
-
-[Line3]
-Coordinates=79,500,41,33
-
-[Rectangle41]
-Coordinates=580,170,75,33
-
-[Text8]
-Coordinates=364,188,41,51
 
