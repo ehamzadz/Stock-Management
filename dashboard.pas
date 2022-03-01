@@ -242,13 +242,7 @@ type
     Text25: TText;
     Rectangle63: TRectangle;
     Line5: TLine;
-    Rectangle68: TRectangle;
     Rectangle69: TRectangle;
-    Button10: TButton;
-    Rectangle70: TRectangle;
-    Text30: TText;
-    Rectangle71: TRectangle;
-    Text31: TText;
     green: TBrushObject;
     BindSourceDB5: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
@@ -260,6 +254,7 @@ type
     Text36: TText;
     Rectangle75: TRectangle;
     Text37: TText;
+    Text30: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -288,7 +283,7 @@ type
   public
     { Public declarations }
     username_globalVar :string;
-    num_employee_globalVar :integer;
+    num_employee_globalVar, num_it_globalVar :integer;
   end;
 
 var

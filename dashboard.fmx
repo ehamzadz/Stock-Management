@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 5
+      TabIndex = 3
       TabPosition = None
       Sizes = (
         887s
@@ -199,8 +199,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 398.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 402.000000000000000000
             end
           end
         end
@@ -420,11 +420,6 @@ object Form2: TForm2
                 TextSettings.HorzAlign = Leading
               end
               object ComboBox4: TComboBox
-                Items.Strings = (
-                  'Access Point'
-                  'Acer i7'
-                  'Dell i5'
-                  'Barcode Printer')
                 Position.X = 144.000000000000000000
                 Position.Y = 40.000000000000000000
                 Size.Width = 137.000000000000000000
@@ -469,8 +464,8 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TabOrder = 0
               RowCount = 0
-              Viewport.Width = 364.000000000000000000
-              Viewport.Height = 269.000000000000000000
+              Viewport.Width = 368.000000000000000000
+              Viewport.Height = 294.000000000000000000
             end
           end
           object Rectangle86: TRectangle
@@ -1028,8 +1023,8 @@ object Form2: TForm2
               Size.Width = 519.000000000000000000
               Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 515.000000000000000000
-              Viewport.Height = 286.000000000000000000
+              Viewport.Width = 519.000000000000000000
+              Viewport.Height = 290.000000000000000000
             end
           end
           object Rectangle61: TRectangle
@@ -1380,7 +1375,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -1515,10 +1510,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 4
+              RowCount = 0
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 398.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 402.000000000000000000
             end
           end
         end
@@ -1752,8 +1747,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 54
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 867.000000000000000000
-              Viewport.Height = 340.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 344.000000000000000000
             end
           end
           object Rectangle8: TRectangle
@@ -2103,7 +2098,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2286,7 +2281,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 344.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid4: TStringGrid
@@ -2294,15 +2289,15 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 344.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 11
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               OnCellDblClick = StringGrid4CellDblClick
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 340.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 402.000000000000000000
             end
           end
           object Rectangle50: TRectangle
@@ -2313,6 +2308,7 @@ object Form2: TForm2
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
+            Visible = False
             object Rectangle51: TRectangle
               Align = FitRight
               Fill.Kind = None
@@ -2320,7 +2316,7 @@ object Form2: TForm2
               Padding.Top = 11.000000000000000000
               Padding.Right = 25.000000000000000000
               Padding.Bottom = 11.000000000000000000
-              Position.X = 392.000030517578100000
+              Position.X = 392.000000000000000000
               Size.Width = 494.999969482421900000
               Size.Height = 58.000000000000000000
               Size.PlatformDefault = False
@@ -2611,63 +2607,6 @@ object Form2: TForm2
             Stroke.Thickness = 4.000000000000000000
             Stroke.Cap = Round
           end
-          object Rectangle68: TRectangle
-            Align = Right
-            Fill.Kind = None
-            Padding.Top = 7.000000000000000000
-            Padding.Bottom = 7.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Position.X = 620.000000000000000000
-            Position.Y = 9.000000000000000000
-            Size.Width = 252.000000000000000000
-            Size.Height = 41.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-            object Rectangle70: TRectangle
-              Align = Right
-              Fill.Color = xFF06AD57
-              Margins.Left = 15.000000000000000000
-              Position.X = 53.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              OnClick = Rectangle152Click
-              object Text30: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 67.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Accepter'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-            object Rectangle71: TRectangle
-              Align = Right
-              Fill.Color = claTomato
-              Margins.Left = 15.000000000000000000
-              Position.X = 160.000000000000000000
-              Position.Y = 7.000000000000000000
-              Size.Width = 92.000000000000000000
-              Size.Height = 27.000000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              OnClick = Rectangle152Click
-              object Text31: TText
-                Align = Center
-                HitTest = False
-                Size.Width = 67.000000000000000000
-                Size.Height = 27.000000000000000000
-                Size.PlatformDefault = False
-                Text = 'Refuser'
-                TextSettings.Font.StyleExt = {00060000000000000004000000}
-                TextSettings.FontColor = claWhite
-              end
-            end
-          end
           object Rectangle69: TRectangle
             Align = Left
             Fill.Kind = None
@@ -2680,13 +2619,20 @@ object Form2: TForm2
             Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
-            object Button10: TButton
+            object Text30: TText
               Align = Left
+              HitTest = False
+              Margins.Left = 10.000000000000000000
+              Position.X = 10.000000000000000000
               Position.Y = 7.000000000000000000
-              Size.Width = 73.000000000000000000
+              Size.Width = 248.000000000000000000
               Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              Text = 'G'#233'rer'
+              Text = 'Double clique pour '#233'diter'
+              TextSettings.Font.Size = 9.000000000000000000
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              TextSettings.FontColor = claDimgray
+              TextSettings.HorzAlign = Leading
             end
           end
         end

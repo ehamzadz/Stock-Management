@@ -81,6 +81,7 @@ begin
     qry1.First;
     dashboard.Form2.username_globalVar := qry1.FieldByName('username').asstring;
     dashboard.Form2.num_employee_globalVar := qry1.FieldByName('num_employee').asinteger;
+    dashboard.Form2.num_it_globalVar := qry1.FieldByName('num_it').asinteger;
 
     try
       dashboard.Form2.ShowModal; // Shows the Form

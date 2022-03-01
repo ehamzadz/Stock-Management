@@ -78,16 +78,10 @@ begin
 
   // update (refuser) demande produit ()
   qry.SQL.Clear;
-  {/*
-  UPDATE table_name
-  SET column1 = value1, column2 = value2, ...
-  WHERE condition;
-  */ }
-  //script := 'UPDATE demande_produit SET status=:status WHERE num_demande=:num';
-
-  qry.SQL.Add('UPDATE demande_produit SET status=:status WHERE num_demande=:num');
+  qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
   qry.Parameters.ParamByName('status').Value := 'Inacceptable';
   qry.Parameters.ParamByName('num').Value := num_demande_produit;
+  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_employee_globalVar;
   qry.ExecSQL;
 
   // refresh demande produit list
