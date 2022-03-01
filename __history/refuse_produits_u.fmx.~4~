@@ -1,0 +1,140 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  BorderStyle = SizeToolWin
+  Caption = 'Form6'
+  ClientHeight = 366
+  ClientWidth = 512
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle33: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Size.Width = 512.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle34: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.Y = 9.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Cap = Round
+      object Text6: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 87.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+    object Line3: TLine
+      Align = Top
+      LineType = Top
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 506.000000000000000000
+      Size.Height = 4.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 4.000000000000000000
+      Stroke.Cap = Round
+    end
+    object Rectangle41: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.X = 87.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text27: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Service'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+    object Rectangle36: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.X = 417.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text8: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'R'#244'le'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+  end
+  object StringGrid4: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 512.000000000000000000
+    Size.Height = 316.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    TabOrder = 0
+    RowCount = 70
+    Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+    Viewport.Width = 492.000000000000000000
+    Viewport.Height = 312.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.tbl_produits_demande
+    ScopeMappings = <>
+    Left = 240
+    Top = 168
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid4
+      Columns = <
+        item
+          MemberName = 'num_demande'
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'designation'
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'qte'
+          Alignment = taCenter
+        end>
+    end
+  end
+end

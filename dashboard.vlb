@@ -632,7 +632,7 @@ Coordinates=690,653,97,33
 Coordinates=212,778,75,33
 
 [StringGrid4]
-Coordinates=548,73,70,159
+Coordinates=600,70,70,159
 Visible=True
 
 [Rectangle69]
@@ -791,7 +791,7 @@ Coordinates=787,719,75,33
 Coordinates=894,955,75,33
 
 [StringGrid5]
-Coordinates=209,118,70,123
+Coordinates=209,118,70,141
 Visible=True
 
 [Image12]
@@ -854,6 +854,7 @@ Visible=False
 
 [BindSourceDB6]
 Coordinates=10,10,119,285
+Visible=True
 
 [Image22]
 Coordinates=208,260,55,51

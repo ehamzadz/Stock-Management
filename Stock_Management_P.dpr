@@ -9,7 +9,8 @@ uses
   register_u in 'register_u.pas' {Form3},
   addProduit_u in 'addProduit_u.pas' {Form4},
   produits_demande_u in 'produits_demande_u.pas' {Form5},
-  raison_u in 'raison_u.pas' {Raison};
+  raison_u in 'raison_u.pas' {Raison},
+  refuse_produits_u in 'refuse_produits_u.pas' {Form6};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TRaison, Raison);
+  Application.CreateForm(TForm6, Form6);
   Application.Run;
 end.

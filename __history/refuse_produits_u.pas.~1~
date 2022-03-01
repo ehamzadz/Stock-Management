@@ -1,0 +1,35 @@
+unit refuse_produits_u;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Grid,
+  FMX.Objects;
+
+type
+  TForm6 = class(TForm)
+    Rectangle33: TRectangle;
+    Rectangle34: TRectangle;
+    Text6: TText;
+    Line3: TLine;
+    Rectangle41: TRectangle;
+    Text27: TText;
+    Rectangle36: TRectangle;
+    Text8: TText;
+    StringGrid4: TStringGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.fmx}
+
+end.

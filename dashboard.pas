@@ -335,7 +335,8 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u;
+uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u,
+  refuse_produits_u;
 
 
 // Adding new employee
