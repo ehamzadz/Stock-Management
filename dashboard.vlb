@@ -308,7 +308,7 @@ Coordinates=189,1250,97,33
 Coordinates=695,1012,75,33
 
 []
-Coordinates=1587,565,58,51
+Coordinates=1257,380,46,51
 
 [BindSourceDB1]
 Coordinates=391,10,124,195
@@ -753,9 +753,6 @@ Coordinates=959,950,75,33
 
 [Form5.BindSourceDB1]
 Coordinates=10,380,172,141
-
-[Text30]
-Coordinates=1257,380,46,51
 
 [Form5.qry]
 Coordinates=1158,380,64,51

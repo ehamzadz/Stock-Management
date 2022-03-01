@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 5
+      TabIndex = 3
       TabPosition = None
       Sizes = (
         887s
@@ -1375,7 +1375,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2098,7 +2098,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -2620,13 +2620,18 @@ object Form2: TForm2
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Text30: TText
-              Align = Top
+              Align = Left
+              HitTest = False
+              Margins.Left = 10.000000000000000000
+              Position.X = 10.000000000000000000
               Position.Y = 7.000000000000000000
-              Size.Width = 605.000000000000000000
-              Size.Height = 32.000000000000000000
+              Size.Width = 248.000000000000000000
+              Size.Height = 27.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Double clique pour g'#233'rer'
+              Text = 'Double clique pour '#233'diter'
+              TextSettings.Font.Size = 9.000000000000000000
               TextSettings.Font.StyleExt = {00060000000000000004000000}
+              TextSettings.FontColor = claDimgray
               TextSettings.HorzAlign = Leading
             end
           end

@@ -69,7 +69,37 @@ begin
 
   if (qry1.Fields[0].asinteger<>0) then begin
     Visible := False;
-    dashboard.Form2.username_globalVar := qry1.FieldByName('num_employee').AsInteger;
+
+
+    qry1.SQL.Clear;
+    qry1.SQL.Add('select count(*) from employee');
+    qry1.SQL.Add('WHERE username ='+ quotedstr(user));
+    qry1.Open;
+
+    if (qry1.Fields[0].asinteger=0) then begin
+      // fetsh all employee data
+      qry1.SQL.Clear;
+      qry1.SQL.Add('select * from employee');
+      qry1.SQL.Add('WHERE username ='+ quotedstr(user));
+      qry1.Open;
+      qry1.First;
+      dashboard.Form2.username_globalVar := qry1.FieldByName('username').asstring;
+      dashboard.Form2.num_employee_globalVar := qry1.FieldByName('num_employee').asinteger;
+      dashboard.Form2.rect_navbar_employee.Visible := false;
+      dashboard.Form2.rectangle5.Visible := false;
+      dashboard.Form2.rectangle17.Visible := false;
+    end else begin
+      // fetsh all it_user data
+      qry1.SQL.Clear;
+      qry1.SQL.Add('select * from it_users');
+      qry1.SQL.Add('WHERE username ='+ quotedstr(user));
+      qry1.Open;
+      qry1.First;
+      dashboard.Form2.username_globalVar := qry1.FieldByName('username').asstring;
+      dashboard.Form2.num_it_globalVar := qry1.FieldByName('num_it').asinteger;
+    end;
+
+
     try
       dashboard.Form2.ShowModal; // Shows the Form
     finally

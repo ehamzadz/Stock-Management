@@ -465,8 +465,7 @@ end;
 procedure TForm2.FormShow(Sender: TObject);
 begin
 
-
-    ShowMessage(username_globalVar);
+    //ShowMessage(username_globalVar);
 
 end;
 
