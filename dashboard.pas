@@ -394,6 +394,9 @@ begin
     datamodule.DataModule1.tbl_demande_produit.active := true;
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
+    datamodule.DataModule1.tbl_stock.active := false;
+    datamodule.DataModule1.tbl_stock.active := true;
+    datamodule.DataModule1.tbl_stock.refresh;
 
     rectangle83.Visible := true;
 end;

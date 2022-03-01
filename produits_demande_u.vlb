@@ -54,7 +54,7 @@ Coordinates=568,10,172,141
 Coordinates=365,465,82,33
 
 []
-Coordinates=128,500,75,33
+Coordinates=364,258,58,51
 
 [Rectangle71]
 Coordinates=120,500,75,33
@@ -82,9 +82,6 @@ Coordinates=580,274,75,33
 
 [qry]
 Coordinates=297,500,40,51
-
-[Button10]
-Coordinates=364,258,58,51
 
 [Rectangle33]
 Coordinates=580,391,75,33

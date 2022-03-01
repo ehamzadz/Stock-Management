@@ -242,13 +242,7 @@ type
     Text25: TText;
     Rectangle63: TRectangle;
     Line5: TLine;
-    Rectangle68: TRectangle;
     Rectangle69: TRectangle;
-    Button10: TButton;
-    Rectangle70: TRectangle;
-    Text30: TText;
-    Rectangle71: TRectangle;
-    Text31: TText;
     green: TBrushObject;
     BindSourceDB5: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource;
@@ -260,6 +254,7 @@ type
     Text36: TText;
     Rectangle75: TRectangle;
     Text37: TText;
+    Text30: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -288,7 +283,7 @@ type
   public
     { Public declarations }
     username_globalVar :string;
-    num_employee_globalVar :integer;
+    num_employee_globalVar, num_it_globalVar :integer;
   end;
 
 var
@@ -399,6 +394,9 @@ begin
     datamodule.DataModule1.tbl_demande_produit.active := true;
     datamodule.DataModule1.tbl_demande.active := false;
     datamodule.DataModule1.tbl_demande.active := true;
+    datamodule.DataModule1.tbl_stock.active := false;
+    datamodule.DataModule1.tbl_stock.active := true;
+    datamodule.DataModule1.tbl_stock.refresh;
 
     rectangle83.Visible := true;
 end;
@@ -470,8 +468,7 @@ end;
 procedure TForm2.FormShow(Sender: TObject);
 begin
 
-
-    ShowMessage(username_globalVar);
+    //ShowMessage(username_globalVar);
 
 end;
 
@@ -576,7 +573,6 @@ procedure TForm2.StringGrid4CellDblClick(const Column: TColumn;
 var
   num :integer;
 begin
-
 
   // send num demande to produits_demande form
   num := datamodule.DataModule1.qry_new_demandes.fieldbyname('num_demande').asinteger;

@@ -32,6 +32,7 @@ type
     Rectangle36: TRectangle;
     Text8: TText;
     Rectangle69: TRectangle;
+    Button10: TButton;
     qry: TADOQuery;
     procedure FormShow(Sender: TObject);
     procedure Rectangle71Click(Sender: TObject);
@@ -80,7 +81,7 @@ begin
   qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
   qry.Parameters.ParamByName('status').Value := 'Inacceptable';
   qry.Parameters.ParamByName('num').Value := num_demande_produit;
-  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_employee_globalVar;
   qry.ExecSQL;
 
   // refresh demande produit list

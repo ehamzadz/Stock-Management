@@ -112,6 +112,14 @@ object Form5: TForm5
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
+      object Button10: TButton
+        Align = Left
+        Position.Y = 7.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'G'#233'rer'
+      end
     end
   end
   object Rectangle33: TRectangle

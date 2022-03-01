@@ -76,7 +76,7 @@ begin
     qry1.SQL.Add('WHERE username ='+ quotedstr(user));
     qry1.Open;
 
-    if (qry1.Fields[0].asinteger=0) then begin
+    if (qry1.Fields[0].asinteger<>0) then begin
       // fetsh all employee data
       qry1.SQL.Clear;
       qry1.SQL.Add('select * from employee');
@@ -86,6 +86,9 @@ begin
       dashboard.Form2.username_globalVar := qry1.FieldByName('username').asstring;
       dashboard.Form2.num_employee_globalVar := qry1.FieldByName('num_employee').asinteger;
 
+      // show normale user options
+      dashboard.Form2.rectangle81.Visible := true;
+      dashboard.Form2.rectangle13.Visible := true;
       // hide admin options
       dashboard.Form2.rect_navbar_employee.Visible := false;
       dashboard.Form2.rectangle5.Visible := false;
@@ -101,7 +104,8 @@ begin
       dashboard.Form2.num_it_globalVar := qry1.FieldByName('num_it').asinteger;
 
       // hide normale user options
-
+      dashboard.Form2.rectangle81.Visible := false;
+      dashboard.Form2.rectangle13.Visible := false;
       // show admin options
       dashboard.Form2.rect_navbar_employee.Visible := true;
       dashboard.Form2.rectangle5.Visible := true;
