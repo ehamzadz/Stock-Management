@@ -255,6 +255,45 @@ type
     Rectangle75: TRectangle;
     Text37: TText;
     Text30: TText;
+    TabItem5: TTabItem;
+    Rectangle68: TRectangle;
+    Rectangle70: TRectangle;
+    Rectangle71: TRectangle;
+    Text31: TText;
+    Rectangle76: TRectangle;
+    Text38: TText;
+    Line9: TLine;
+    Rectangle77: TRectangle;
+    Text39: TText;
+    Rectangle78: TRectangle;
+    Text40: TText;
+    Rectangle93: TRectangle;
+    StringGrid5: TStringGrid;
+    Rectangle94: TRectangle;
+    Rectangle95: TRectangle;
+    Rectangle96: TRectangle;
+    Rectangle97: TRectangle;
+    Image12: TImage;
+    Rectangle98: TRectangle;
+    Text44: TText;
+    Rectangle99: TRectangle;
+    Image13: TImage;
+    ColorAnimation7: TColorAnimation;
+    Text45: TText;
+    Rectangle100: TRectangle;
+    Line11: TLine;
+    Rectangle101: TRectangle;
+    Text46: TText;
+    BindSourceDB6: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB6: TLinkGridToDataSource;
+    Rectangle80: TRectangle;
+    Rectangle88: TRectangle;
+    Image20: TImage;
+    Rectangle92: TRectangle;
+    Text41: TText;
+    Rectangle102: TRectangle;
+    Image22: TImage;
+    ColorAnimation9: TColorAnimation;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -278,6 +317,8 @@ type
     procedure Rectangle5Click(Sender: TObject);
     procedure StringGrid4CellDblClick(const Column: TColumn;
       const Row: Integer);
+    procedure Rectangle37Click(Sender: TObject);
+    procedure Rectangle80Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -494,6 +535,11 @@ begin
   tabs.TabIndex := 3;
 end;
 
+procedure TForm2.Rectangle37Click(Sender: TObject);
+begin
+
+end;
+
 // Delete selected employee
 procedure TForm2.Rectangle46Click(Sender: TObject);
 begin
@@ -516,6 +562,15 @@ begin
   datamodule.DataModule1.qry_new_demandes.refresh;
 
   tabs.TabIndex := 5;
+end;
+
+procedure TForm2.Rectangle80Click(Sender: TObject);
+begin
+  // demande refusée liste
+  datamodule.DataModule1.qry_refuse.active := false;
+  datamodule.DataModule1.qry_refuse.active := true;
+
+  tabs.TabIndex := 6;
 end;
 
 procedure TForm2.Rectangle81Click(Sender: TObject);

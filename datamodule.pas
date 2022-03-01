@@ -16,6 +16,7 @@ type
     tbl_list_demande_produits: TADOTable;
     qry_new_demandes: TADOQuery;
     tbl_produits_demande: TADOTable;
+    qry_refuse: TADOQuery;
   private
     { Private declarations }
   public

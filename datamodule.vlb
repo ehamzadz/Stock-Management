@@ -2,7 +2,7 @@
 Coordinates=95,1,99,33
 
 []
-Coordinates=213,161,109,141
+Coordinates=257,287,75,141
 
 [tbl_stock]
 Coordinates=95,1,59,123
@@ -21,4 +21,13 @@ Coordinates=380,80,119,141
 
 [tbl_list_demande_produits]
 Coordinates=213,1,145,141
+
+[tbl_produits_demande]
+Coordinates=95,1,124,123
+
+[qry_new_demandes]
+Coordinates=238,1,112,267
+
+[qry_refuse]
+Coordinates=257,287,75,267
 

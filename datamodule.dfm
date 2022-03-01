@@ -36,7 +36,7 @@ object DataModule1: TDataModule1
     CursorType = ctStatic
     TableName = 'demande'
     Left = 360
-    Top = 176
+    Top = 160
   end
   object tbl_demande_produit: TADOTable
     Active = True
@@ -44,21 +44,21 @@ object DataModule1: TDataModule1
     CursorType = ctStatic
     TableName = 'demande_produit'
     Left = 360
-    Top = 272
+    Top = 232
   end
   object qry: TADOQuery
     Connection = ADOConnection1
     Parameters = <>
-    Left = 360
-    Top = 344
+    Left = 168
+    Top = 224
   end
   object tbl_list_demande_produits: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'demande_produit'
-    Left = 528
-    Top = 240
+    Left = 360
+    Top = 304
   end
   object qry_new_demandes: TADOQuery
     Active = True
@@ -71,15 +71,26 @@ object DataModule1: TDataModule1
         'inner join employee ON demande_produit.num_employee=employee .nu' +
         'm_employee'
       'where demande_produit.status='#39'en attente'#39)
-    Left = 528
-    Top = 328
+    Left = 168
+    Top = 296
   end
   object tbl_produits_demande: TADOTable
     Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'produits_demande'
+    Left = 360
+    Top = 376
+  end
+  object qry_refuse: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from refuse'
+      'inner join it_users on refuse.num_it=it_users.num_it')
     Left = 528
-    Top = 408
+    Top = 120
   end
 end

@@ -68,28 +68,6 @@ procedure TForm5.Rectangle71Click(Sender: TObject);
 var
   script :string;
 begin
-          {
-  // Delete produits demandé
-  qry.SQL.Clear;
-  script := 'DELETE FROM produits_demande WHERE num_demande_produit=' + inttostr(num_demande_produit);
-  qry.SQL.Add(script);
-  qry.ExecSQL;
-
-  // update (refuser) demande produit ()
-  qry.SQL.Clear;
-  qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
-  qry.Parameters.ParamByName('status').Value := 'Inacceptable';
-  qry.Parameters.ParamByName('num').Value := num_demande_produit;
-  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
-  qry.ExecSQL;
-
-  // refresh demande produit list
-  datamodule.DataModule1.qry_new_demandes.active := false;
-  datamodule.DataModule1.qry_new_demandes.active := true;
-  datamodule.DataModule1.qry_new_demandes.refresh;
-
-  close; }
-
 
   try
     raison_u.Raison.ShowModal;

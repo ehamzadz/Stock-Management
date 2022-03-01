@@ -93,6 +93,7 @@ begin
       dashboard.Form2.rect_navbar_employee.Visible := false;
       dashboard.Form2.rectangle5.Visible := false;
       dashboard.Form2.rectangle17.Visible := false;
+      dashboard.Form2.rectangle80.Visible := false;
     end else begin
       // fetsh all it_user data
       qry1.SQL.Clear;
@@ -110,6 +111,7 @@ begin
       dashboard.Form2.rect_navbar_employee.Visible := true;
       dashboard.Form2.rectangle5.Visible := true;
       dashboard.Form2.rectangle17.Visible := true;
+      dashboard.Form2.rectangle80.Visible := true;
     end;
 
 
