@@ -201,8 +201,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 402.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -466,8 +466,8 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TabOrder = 0
               RowCount = 0
-              Viewport.Width = 368.000000000000000000
-              Viewport.Height = 294.000000000000000000
+              Viewport.Width = 364.000000000000000000
+              Viewport.Height = 269.000000000000000000
             end
           end
           object Rectangle86: TRectangle
@@ -1025,8 +1025,8 @@ object Form2: TForm2
               Size.Width = 519.000000000000000000
               Size.Height = 290.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 519.000000000000000000
-              Viewport.Height = 290.000000000000000000
+              Viewport.Width = 515.000000000000000000
+              Viewport.Height = 286.000000000000000000
             end
           end
           object Rectangle61: TRectangle
@@ -1514,8 +1514,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 402.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
         end
@@ -1735,7 +1735,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 344.000000000000000000
+            Size.Height = 402.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid3: TStringGrid
@@ -1743,14 +1743,14 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 344.000000000000000000
+              Size.Height = 402.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 54
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 344.000000000000000000
+              Viewport.Width = 867.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
           object Rectangle8: TRectangle
@@ -1761,6 +1761,7 @@ object Form2: TForm2
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
+            Visible = False
             object Rectangle21: TRectangle
               Align = FitRight
               Fill.Kind = None
@@ -2298,8 +2299,8 @@ object Form2: TForm2
               RowCount = 11
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               OnCellDblClick = StringGrid4CellDblClick
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 402.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 398.000000000000000000
             end
           end
           object Rectangle50: TRectangle
