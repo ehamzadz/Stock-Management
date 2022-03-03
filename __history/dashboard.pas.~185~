@@ -335,7 +335,8 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u;
+uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u,
+  refuse_produits_u;
 
 
 // Adding new employee
@@ -566,6 +567,10 @@ end;
 
 procedure TForm2.Rectangle80Click(Sender: TObject);
 begin
+  // demande refusée liste
+  datamodule.DataModule1.qry_refuse.active := false;
+  datamodule.DataModule1.qry_refuse.active := true;
+
   tabs.TabIndex := 6;
 end;
 

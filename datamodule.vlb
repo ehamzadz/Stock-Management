@@ -2,7 +2,7 @@
 Coordinates=95,1,99,33
 
 []
-Coordinates=257,287,75,141
+Coordinates=144,285,107,267
 
 [tbl_stock]
 Coordinates=95,1,59,123
@@ -30,4 +30,7 @@ Coordinates=238,1,112,267
 
 [qry_refuse]
 Coordinates=257,287,75,267
+
+[qry_refuse_byEmp]
+Coordinates=178,304,107,357
 

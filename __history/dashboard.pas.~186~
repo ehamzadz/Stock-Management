@@ -294,6 +294,43 @@ type
     Rectangle102: TRectangle;
     Image22: TImage;
     ColorAnimation9: TColorAnimation;
+    Rectangle103: TRectangle;
+    Rectangle104: TRectangle;
+    Image23: TImage;
+    Rectangle105: TRectangle;
+    Text42: TText;
+    Rectangle106: TRectangle;
+    Image24: TImage;
+    ColorAnimation10: TColorAnimation;
+    TabItem8: TTabItem;
+    Rectangle107: TRectangle;
+    Rectangle108: TRectangle;
+    Rectangle109: TRectangle;
+    Text43: TText;
+    Rectangle110: TRectangle;
+    Text47: TText;
+    Line12: TLine;
+    Rectangle111: TRectangle;
+    Text48: TText;
+    Rectangle112: TRectangle;
+    Text49: TText;
+    Rectangle113: TRectangle;
+    StringGrid6: TStringGrid;
+    Rectangle114: TRectangle;
+    Rectangle115: TRectangle;
+    Rectangle116: TRectangle;
+    Rectangle117: TRectangle;
+    Image25: TImage;
+    Rectangle118: TRectangle;
+    Text52: TText;
+    Rectangle119: TRectangle;
+    Image26: TImage;
+    ColorAnimation12: TColorAnimation;
+    Text53: TText;
+    Rectangle120: TRectangle;
+    Line13: TLine;
+    Rectangle121: TRectangle;
+    Text56: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -319,8 +356,6 @@ type
       const Row: Integer);
     procedure Rectangle37Click(Sender: TObject);
     procedure Rectangle80Click(Sender: TObject);
-    procedure StringGrid5CellDblClick(const Column: TColumn;
-      const Row: Integer);
   private
     { Private declarations }
   public
@@ -337,7 +372,8 @@ implementation
 
 {$R *.fmx}
 
-uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u;
+uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u,
+  refuse_produits_u;
 
 
 // Adding new employee
@@ -636,17 +672,6 @@ begin
   produits_demande_u.Form5.num_demande_produit := num;
   produits_demande_u.Form5.ShowModal;
 
-end;
-
-procedure TForm2.StringGrid5CellDblClick(const Column: TColumn;
-  const Row: Integer);
-var
-  num :integer;
-begin
-  // send num demande to produits_demande form
-  num := datamodule.DataModule1.qry_refuse.fieldbyname('num_demande').asinteger;
-  produits_demande_u.Form5.num_demande_produit := num;
-  produits_demande_u.Form5.ShowModal;
 end;
 
 end.

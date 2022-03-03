@@ -203,8 +203,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 2
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 492.000000000000000000
             end
           end
         end
@@ -472,8 +472,8 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TabOrder = 0
               RowCount = 1
-              Viewport.Width = 364.000000000000000000
-              Viewport.Height = 269.000000000000000000
+              Viewport.Width = 368.000000000000000000
+              Viewport.Height = 294.000000000000000000
             end
           end
           object Rectangle86: TRectangle
@@ -1031,8 +1031,8 @@ object Form2: TForm2
               Size.Width = 519.000000000000000000
               Size.Height = 380.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 515.000000000000000000
-              Viewport.Height = 376.000000000000000000
+              Viewport.Width = 519.000000000000000000
+              Viewport.Height = 380.000000000000000000
             end
           end
           object Rectangle61: TRectangle
@@ -1520,8 +1520,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 492.000000000000000000
             end
           end
         end
@@ -1755,8 +1755,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 29
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 867.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 492.000000000000000000
             end
           end
           object Rectangle8: TRectangle
@@ -2305,8 +2305,8 @@ object Form2: TForm2
               RowCount = 1
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               OnCellDblClick = StringGrid4CellDblClick
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 492.000000000000000000
             end
           end
           object Rectangle50: TRectangle
@@ -2782,8 +2782,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 6
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 434.000000000000000000
             end
           end
           object Rectangle94: TRectangle
@@ -3279,8 +3279,8 @@ object Form2: TForm2
               TabOrder = 0
               RowCount = 6
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Width = 887.000000000000000000
+              Viewport.Height = 434.000000000000000000
             end
           end
           object Rectangle114: TRectangle
@@ -7057,7 +7057,7 @@ object Form2: TForm2
     DataSet = DataModule1.qry_new_demandes
     ScopeMappings = <>
     Left = 224
-    Top = 440
+    Top = 456
   end
   object BindSourceDB6: TBindSourceDB
     DataSet = DataModule1.qry_refuse

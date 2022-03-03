@@ -7057,7 +7057,7 @@ object Form2: TForm2
     DataSet = DataModule1.qry_new_demandes
     ScopeMappings = <>
     Left = 224
-    Top = 440
+    Top = 456
   end
   object BindSourceDB6: TBindSourceDB
     DataSet = DataModule1.qry_refuse
@@ -7068,7 +7068,7 @@ object Form2: TForm2
   object BindSourceDB7: TBindSourceDB
     DataSet = DataModule1.qry_refuse_byEmp
     ScopeMappings = <>
-    Left = 664
-    Top = 488
+    Left = 536
+    Top = 304
   end
 end

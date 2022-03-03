@@ -94,13 +94,9 @@ object DataModule1: TDataModule1
     Top = 120
   end
   object qry_refuse_byEmp: TADOQuery
-    Active = True
     Connection = ADOConnection1
-    CursorType = ctStatic
     Parameters = <>
-    SQL.Strings = (
-      'EXEC GetRefusedDemandeOfEmployee @num_emp=9')
-    Left = 528
-    Top = 248
+    Left = 552
+    Top = 232
   end
 end

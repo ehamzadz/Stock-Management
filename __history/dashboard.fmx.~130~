@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 597.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 7
+      TabIndex = 5
       TabPosition = None
       Sizes = (
         887s
@@ -2107,7 +2107,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -3121,7 +3121,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False

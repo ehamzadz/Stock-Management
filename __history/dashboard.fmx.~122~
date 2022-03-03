@@ -3277,7 +3277,7 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 6
+              RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
               Viewport.Height = 430.000000000000000000
@@ -7003,37 +7003,6 @@ object Form2: TForm2
           Visible = False
         end>
     end
-    object LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDB7
-      GridControl = StringGrid6
-      Columns = <
-        item
-          MemberName = 'num_refuse'
-          Width = 57
-          Alignment = taCenter
-        end
-        item
-          MemberName = 'raison'
-          Width = 400
-          Alignment = taCenter
-        end
-        item
-          MemberName = 'date_refuse'
-          Width = 150
-          Alignment = taCenter
-        end
-        item
-          MemberName = 'num_demande_1'
-          Width = 120
-          Alignment = taCenter
-        end
-        item
-          MemberName = 'num_it_1'
-          Width = 120
-          Alignment = taCenter
-        end>
-    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -7057,18 +7026,12 @@ object Form2: TForm2
     DataSet = DataModule1.qry_new_demandes
     ScopeMappings = <>
     Left = 224
-    Top = 440
+    Top = 456
   end
   object BindSourceDB6: TBindSourceDB
     DataSet = DataModule1.qry_refuse
     ScopeMappings = <>
     Left = 576
-    Top = 488
-  end
-  object BindSourceDB7: TBindSourceDB
-    DataSet = DataModule1.qry_refuse_byEmp
-    ScopeMappings = <>
-    Left = 664
     Top = 488
   end
 end

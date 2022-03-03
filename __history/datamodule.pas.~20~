@@ -10,6 +10,14 @@ type
     ADOConnection1: TADOConnection;
     ADOTable1: TADOTable;
     tbl_stock: TADOTable;
+    tbl_demande: TADOTable;
+    tbl_demande_produit: TADOTable;
+    qry: TADOQuery;
+    tbl_list_demande_produits: TADOTable;
+    qry_new_demandes: TADOQuery;
+    tbl_produits_demande: TADOTable;
+    qry_refuse: TADOQuery;
+    qry_refuse_byEmp: TADOQuery;
   private
     { Private declarations }
   public
@@ -24,5 +32,7 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+
 
 end.
