@@ -16,8 +16,8 @@
     <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\Unit2.pas=D:\Github\Desktop App\Stock Management\dashboard.pas</Transaction>
     <Transaction>2022/02/24 01:12:49.000.336,D:\Github\Desktop App\Stock Management\Unit2.fmx=D:\Github\Desktop App\Stock Management\dashboard.fmx</Transaction>
     <Transaction>2022/02/25 01:55:34.000.717,=D:\Github\Desktop App\Stock Management\Unit3.pas</Transaction>
-    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\register_u.fmx=D:\Github\Desktop App\Stock Management\Unit3.fmx</Transaction>
     <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\register_u.pas=D:\Github\Desktop App\Stock Management\Unit3.pas</Transaction>
+    <Transaction>2022/02/25 01:55:49.000.921,D:\Github\Desktop App\Stock Management\register_u.fmx=D:\Github\Desktop App\Stock Management\Unit3.fmx</Transaction>
     <Transaction>2022/02/26 02:06:02.000.014,=D:\Github\Desktop App\Stock Management\Unit4.pas</Transaction>
     <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\addProduit_u.pas=D:\Github\Desktop App\Stock Management\Unit4.pas</Transaction>
     <Transaction>2022/02/26 02:06:18.000.013,D:\Github\Desktop App\Stock Management\addProduit_u.fmx=D:\Github\Desktop App\Stock Management\Unit4.fmx</Transaction>
@@ -28,7 +28,8 @@
     <Transaction>2022/03/01 02:17:37.000.992,E:\Github\Desktop App\Stock Management\raison_u.pas=E:\Github\Desktop App\Stock Management\Unit6.pas</Transaction>
     <Transaction>2022/03/01 02:17:37.000.992,E:\Github\Desktop App\Stock Management\raison_u.fmx=E:\Github\Desktop App\Stock Management\Unit6.fmx</Transaction>
     <Transaction>2022/03/01 03:18:20.000.254,=E:\Github\Desktop App\Stock Management\Unit6.pas</Transaction>
-    <Transaction>2022/03/01 03:20:02.000.376,E:\Github\Desktop App\Stock Management\refuse_produits_u.pas=E:\Github\Desktop App\Stock Management\Unit6.pas</Transaction>
     <Transaction>2022/03/01 03:20:02.000.376,E:\Github\Desktop App\Stock Management\refuse_produits_u.fmx=E:\Github\Desktop App\Stock Management\Unit6.fmx</Transaction>
+    <Transaction>2022/03/01 03:20:02.000.376,E:\Github\Desktop App\Stock Management\refuse_produits_u.pas=E:\Github\Desktop App\Stock Management\Unit6.pas</Transaction>
+    <Transaction>2022/03/04 16:47:49.000.037,=F:\Github\Desktop App\Stock Management\Unit7.pas</Transaction>
   </Transactions>
 </BorlandProject>

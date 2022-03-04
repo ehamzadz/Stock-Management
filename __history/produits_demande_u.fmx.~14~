@@ -1,0 +1,236 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  BorderStyle = SizeToolWin
+  ClientHeight = 366
+  ClientWidth = 512
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object StringGrid4: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 512.000000000000000000
+    Size.Height = 266.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    TabOrder = 0
+    RowCount = 70
+    Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+    Viewport.Width = 512.000000000000000000
+    Viewport.Height = 266.000000000000000000
+  end
+  object Rectangle63: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Size.Width = 512.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Line5: TLine
+      Align = Top
+      LineType = Top
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 506.000000000000000000
+      Size.Height = 4.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 4.000000000000000000
+      Stroke.Cap = Round
+    end
+    object Rectangle68: TRectangle
+      Align = Right
+      Fill.Kind = None
+      Padding.Top = 7.000000000000000000
+      Padding.Bottom = 7.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Rectangle70: TRectangle
+        Align = Right
+        Fill.Color = xFF06AD57
+        Margins.Left = 15.000000000000000000
+        Position.X = 18.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Text30: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 67.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Accepter'
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object Rectangle71: TRectangle
+        Align = Right
+        Fill.Color = claTomato
+        Margins.Left = 15.000000000000000000
+        Position.X = 125.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = Rectangle71Click
+        object Text31: TText
+          Align = Center
+          HitTest = False
+          Size.Width = 67.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Refuser'
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+    end
+    object Rectangle69: TRectangle
+      Align = Client
+      Fill.Kind = None
+      Padding.Top = 7.000000000000000000
+      Padding.Bottom = 7.000000000000000000
+      Margins.Left = 15.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object Rectangle33: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Position.Y = 50.000000000000000000
+    Size.Width = 512.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Rectangle34: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.Y = 9.000000000000000000
+      Size.Width = 87.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Stroke.Cap = Round
+      object Text6: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 87.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+    object Line3: TLine
+      Align = Top
+      LineType = Top
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 506.000000000000000000
+      Size.Height = 4.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 4.000000000000000000
+      Stroke.Cap = Round
+    end
+    object Rectangle41: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.X = 87.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text27: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 330.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Service'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+    object Rectangle36: TRectangle
+      Align = Left
+      Fill.Kind = None
+      Position.X = 417.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Text8: TText
+        Align = Client
+        Padding.Left = 15.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'R'#244'le'
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF494949
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule1.tbl_produits_demande
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 93
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid4
+      Columns = <
+        item
+          MemberName = 'num_demande'
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'designation'
+        end
+        item
+          MemberName = 'qte'
+          Alignment = taCenter
+        end>
+    end
+  end
+  object qry: TADOQuery
+    Connection = DataModule1.ADOConnection1
+    Parameters = <>
+    Left = 184
+    Top = 8
+  end
+end

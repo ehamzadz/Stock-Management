@@ -44,11 +44,11 @@ begin
   datamodule.DataModule1.qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   datamodule.DataModule1.qry.ExecSQL;
 
-  // Delete produits demandé
+  {// Delete produits demandé
   qry.SQL.Clear;
   script := 'DELETE FROM produits_demande WHERE num_demande_produit=' + inttostr(produits_demande_u.Form5.num_demande_produit);
   qry.SQL.Add(script);
-  qry.ExecSQL;
+  qry.ExecSQL;}
 
   // update (refuser) demande produit ()
   qry.SQL.Clear;

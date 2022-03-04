@@ -1,109 +1,132 @@
 ﻿[DataModule1.ADOTable1]
 Visible=False
-Coordinates=305,465,136,33
+Coordinates=305,465,161,36
 
 [DataModule1.tbl_stock]
 Visible=False
-Coordinates=27,465,126,33
+Coordinates=27,465,145,36
 
 [DataModule1.tbl_demande]
 Visible=False
-Coordinates=156,465,144,33
+Coordinates=156,465,169,36
 
 [DataModule1.tbl_list_demande_produits]
 Visible=False
-Coordinates=675,1,212,33
+Coordinates=675,1,245,36
 
 [DataModule1.qry_new_demandes]
 Visible=False
-Coordinates=483,321,179,33
+Coordinates=483,321,210,36
 
 [Form2.BindSourceDB2]
-Coordinates=166,321,127,141
+Coordinates=166,321,146,168
 
 [DataModule1.qry]
-Coordinates=531,321,97,51
+Coordinates=531,321,112,58
 
 [Form2.BindSourceDB1]
-Coordinates=199,10,127,195
+Coordinates=199,10,148,234
 
 [Form2.BindSourceDB4]
-Coordinates=352,10,190,159
+Coordinates=352,10,228,190
 
 [DataModule1.tbl_demande_produit]
-Coordinates=319,321,186,141
+Coordinates=319,321,215,168
 
 [DataModule1.tbl_produits_demande]
-Coordinates=0,0,191,33
+Coordinates=0,0,222,36
 Visible=False
 
 [Form2.BindSourceDB3]
-Coordinates=10,321,130,141
+Coordinates=10,321,155,168
 
 [StringGrid4]
-Coordinates=820,28,70,105
+Coordinates=850,30,80,124
 Visible=True
 
 [Form2.BindSourceDB5]
-Coordinates=10,10,163,285
+Coordinates=10,10,195,344
 
 [BindSourceDB1]
-Coordinates=568,10,172,141
+Coordinates=590,10,206,168
 
 [BindingsList1]
-Coordinates=365,465,82,33
+Coordinates=365,465,91,36
 
 []
 Coordinates=364,258,58,51
 
 [Rectangle71]
-Coordinates=120,500,75,33
+Coordinates=120,500,87,36
 
 [Rectangle41]
-Coordinates=41,500,75,33
+Coordinates=41,500,87,36
 
 [Text6]
-Coordinates=364,188,41,51
+Coordinates=364,188,47,58
 
 [Text8]
-Coordinates=199,500,41,51
+Coordinates=199,500,47,58
 
 [Text31]
-Coordinates=346,500,46,51
+Coordinates=346,500,54,58
 
 [Rectangle68]
-Coordinates=580,170,75,33
+Coordinates=580,170,87,36
 
 [Rectangle70]
-Coordinates=580,222,75,33
+Coordinates=580,222,87,36
 
 [Rectangle69]
-Coordinates=580,274,75,33
+Coordinates=580,274,87,36
 
 [qry]
-Coordinates=297,500,40,51
+Coordinates=297,500,40,58
 
 [Rectangle33]
-Coordinates=580,391,75,33
+Coordinates=580,391,87,36
 
 [Rectangle63]
-Coordinates=580,443,75,33
+Coordinates=580,443,87,36
 
 [Line3]
-Coordinates=580,495,41,33
+Coordinates=580,495,46,36
 
 [Text27]
-Coordinates=248,500,46,51
+Coordinates=248,500,54,58
 
 [Text30]
-Coordinates=210,224,46,51
+Coordinates=210,224,54,58
 
 [Line5]
-Coordinates=580,547,41,33
+Coordinates=580,547,46,36
 
 [Rectangle36]
-Coordinates=561,589,75,33
+Coordinates=561,589,87,36
 
 [Rectangle34]
-Coordinates=482,589,75,33
+Coordinates=482,589,87,36
+
+[DataModule1.qry_refuse]
+Visible=False
+Coordinates=663,498,155,36
+
+[DataModule1.qry_refuse_byEmp]
+Visible=False
+Coordinates=812,171,202,36
+
+[DataModule1.qry_demande_employee]
+Coordinates=390,285,235,322
+
+[Form2.BindSourceDB6]
+Coordinates=400,0,146,344
+
+[Form2.BindSourceDB7]
+Coordinates=184,303,187,454
+
+[DataModule1.qry_produits_demande]
+Coordinates=0,0,226,146
+
+[Raison.qry]
+Coordinates=572,626,76,58
 

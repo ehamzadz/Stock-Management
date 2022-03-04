@@ -49,8 +49,8 @@ object DataModule1: TDataModule1
   object qry: TADOQuery
     Connection = ADOConnection1
     Parameters = <>
-    Left = 168
-    Top = 224
+    Left = 208
+    Top = 216
   end
   object tbl_list_demande_produits: TADOTable
     Active = True
@@ -71,8 +71,8 @@ object DataModule1: TDataModule1
         'inner join employee ON demande_produit.num_employee=employee .nu' +
         'm_employee'
       'where demande_produit.status='#39'en attente'#39)
-    Left = 168
-    Top = 296
+    Left = 208
+    Top = 280
   end
   object tbl_produits_demande: TADOTable
     Active = True
@@ -90,8 +90,8 @@ object DataModule1: TDataModule1
     SQL.Strings = (
       'select * from refuse'
       'inner join it_users on refuse.num_it=it_users.num_it')
-    Left = 528
-    Top = 120
+    Left = 208
+    Top = 88
   end
   object qry_refuse_byEmp: TADOQuery
     Active = True
@@ -100,7 +100,7 @@ object DataModule1: TDataModule1
     Parameters = <>
     SQL.Strings = (
       'EXEC GetRefusedDemandeOfEmployee @num_emp=9')
-    Left = 528
-    Top = 248
+    Left = 208
+    Top = 152
   end
 end

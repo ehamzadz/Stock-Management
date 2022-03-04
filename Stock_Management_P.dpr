@@ -10,7 +10,8 @@ uses
   addProduit_u in 'addProduit_u.pas' {Form4},
   produits_demande_u in 'produits_demande_u.pas' {Form5},
   raison_u in 'raison_u.pas' {Raison},
-  refuse_produits_u in 'refuse_produits_u.pas' {Form6};
+  refuse_produits_u in 'refuse_produits_u.pas' {Form6},
+  Unit7 in 'Unit7.pas' {Form7};
 
 {$R *.res}
 
@@ -24,5 +25,6 @@ begin
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TRaison, Raison);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
   Application.Run;
 end.

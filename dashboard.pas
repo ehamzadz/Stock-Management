@@ -361,6 +361,8 @@ type
     procedure Rectangle37Click(Sender: TObject);
     procedure Rectangle80Click(Sender: TObject);
     procedure Rectangle103Click(Sender: TObject);
+    procedure StringGrid3CellDblClick(const Column: TColumn;
+      const Row: Integer);
   private
     { Private declarations }
   public
@@ -378,7 +380,7 @@ implementation
 {$R *.fmx}
 
 uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u,
-  refuse_produits_u;
+  refuse_produits_u, Unit7;
 
 
 // Adding new employee
@@ -672,6 +674,17 @@ procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbleft) then StartWindowDrag;
+end;
+
+procedure TForm2.StringGrid3CellDblClick(const Column: TColumn;
+  const Row: Integer);
+var
+  num :integer;
+begin
+  // send num demande to report form
+  num := datamodule.DataModule1.tbl_list_demande_produits.fieldbyname('num_demande').asinteger;
+  form7.num_demande := num;
+  form7.ShowModal;
 end;
 
 procedure TForm2.StringGrid4CellDblClick(const Column: TColumn;

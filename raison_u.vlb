@@ -14,5 +14,10 @@ Visible=False
 Visible=False
 
 [DataModule1.tbl_produits_demande]
+
+[DataModule1.qry_refuse]
+Visible=False
+
+[DataModule1.qry_refuse_byEmp]
 Visible=False
 

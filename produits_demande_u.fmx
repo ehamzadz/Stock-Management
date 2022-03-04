@@ -19,10 +19,10 @@ object Form5: TForm5
     Size.PlatformDefault = False
     TextSettings.HorzAlign = Center
     TabOrder = 0
-    RowCount = 70
+    RowCount = 0
     Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-    Viewport.Width = 512.000000000000000000
-    Viewport.Height = 266.000000000000000000
+    Viewport.Width = 508.000000000000000000
+    Viewport.Height = 262.000000000000000000
   end
   object Rectangle63: TRectangle
     Align = Top
