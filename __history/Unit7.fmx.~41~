@@ -62,7 +62,7 @@ object Form7: TForm7
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44624.736575439800000000
-    ReportOptions.LastChange = 44624.899496099540000000
+    ReportOptions.LastChange = 44624.893077662040000000
     ReportOptions.IsFMXReport = True
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
@@ -384,11 +384,11 @@ object Form7: TForm7
       end
       object PageFooter1: TfrxPageFooter
         Height = 94.488249999999990000
-        Top = 498.897960000000000000
+        Top = 483.779840000000000000
         Width = 718.110700000000000000
         object Memo3: TfrxMemoView
           Left = 219.212740000000000000
-          Top = 37.795300000000220000
+          Top = 37.795300000000170000
           Width = 83.149660000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -405,7 +405,7 @@ object Form7: TForm7
         end
         object Memo12: TfrxMemoView
           Left = 219.212740000000000000
-          Top = 60.472479999999910000
+          Top = 60.472479999999850000
           Width = 83.149660000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -422,7 +422,7 @@ object Form7: TForm7
         end
         object frxDBDataset2username: TfrxMemoView
           Left = 302.362400000000000000
-          Top = 37.795300000000000000
+          Top = 37.795299999999940000
           Width = 400.630180000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -440,7 +440,7 @@ object Form7: TForm7
         end
         object frxDBDataset1date_demande: TfrxMemoView
           Left = 302.362400000000000000
-          Top = 60.472480000000360000
+          Top = 60.472480000000300000
           Width = 400.630180000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -458,7 +458,7 @@ object Form7: TForm7
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 34.015770000000000000
+        Height = 18.897650000000000000
         Top = 408.189240000000000000
         Width = 718.110700000000000000
         DataSet = frxDBDataset3
@@ -466,7 +466,6 @@ object Form7: TForm7
         RowCount = 0
         object frxDBDataset3num_demande: TfrxMemoView
           Left = 64.252010000000000000
-          Top = 7.559059999999988000
           Width = 86.929190000000010000
           Height = 18.897650000000000000
           ShowHint = False
@@ -478,15 +477,15 @@ object Form7: TForm7
           Font.Style = []
           Font.Color = claBlack
           Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8W = (
             '[frxDBDataset3."num_demande"]')
           ParentFont = False
         end
         object frxDBDataset3designation: TfrxMemoView
-          Left = 188.976500000000000000
-          Top = 7.559059999999988000
-          Width = 302.362400000000000000
+          Left = 151.181200000000000000
+          Width = 370.393940000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'designation'
@@ -497,13 +496,13 @@ object Form7: TForm7
           Font.Style = []
           Font.Color = claBlack
           Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8W = (
             '[frxDBDataset3."designation"]')
           ParentFont = False
         end
         object frxDBDataset3qte: TfrxMemoView
           Left = 521.575140000000000000
-          Top = 7.559059999999988000
           Width = 128.504020000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -515,47 +514,11 @@ object Form7: TForm7
           Font.Style = []
           Font.Color = claBlack
           Font.Height = -13.333333015441890000
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8W = (
             '[frxDBDataset3."qte"]')
           ParentFont = False
-        end
-        object Line7: TfrxLineView
-          Left = 64.252010000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Frame.Typ = [ftLeft]
-        end
-        object Line8: TfrxLineView
-          Left = 64.252010000000000000
-          Width = 585.827150000000000000
-          ShowHint = False
-          Frame.Typ = [ftTop]
-        end
-        object Line9: TfrxLineView
-          Left = 650.079160000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Frame.Typ = [ftLeft]
-        end
-        object Line10: TfrxLineView
-          Left = 151.181200000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Frame.Typ = [ftLeft]
-        end
-        object Line11: TfrxLineView
-          Left = 521.575140000000000000
-          Height = 34.015770000000000000
-          ShowHint = False
-          Frame.Typ = [ftLeft]
-        end
-        object Line12: TfrxLineView
-          Left = 64.252010000000000000
-          Top = 34.015770000000030000
-          Width = 585.827150000000000000
-          ShowHint = False
-          Frame.Typ = [ftTop]
         end
       end
     end

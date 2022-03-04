@@ -592,7 +592,7 @@ procedure TForm2.Rectangle22Click(Sender: TObject);
 begin
   // send num demande of selected row to report form
   form7.num_demande := strtoint(Stringgrid3.Cells[0,Stringgrid3.Selected]);
-  ShowMessage(Stringgrid3.Cells[0,Stringgrid3.Selected]);
+  //ShowMessage(Stringgrid3.Cells[0,Stringgrid3.Selected]);
 
   // filter
   form7.ADOTable1.filtered := false;

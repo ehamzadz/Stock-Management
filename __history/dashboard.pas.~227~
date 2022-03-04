@@ -362,8 +362,7 @@ type
     procedure Rectangle37Click(Sender: TObject);
     procedure Rectangle80Click(Sender: TObject);
     procedure Rectangle103Click(Sender: TObject);
-    procedure StringGrid3CellDblClick(const Column: TColumn;
-      const Row: Integer);
+    procedure Rectangle22Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -589,9 +588,44 @@ begin
   tabs.TabIndex := 3;
 end;
 
+procedure TForm2.Rectangle22Click(Sender: TObject);
+begin
+  // send num demande of selected row to report form
+  form7.num_demande := strtoint(Stringgrid3.Cells[0,Stringgrid3.Selected]);
+  ShowMessage(Stringgrid3.Cells[0,Stringgrid3.Selected]);
+
+  // filter
+  form7.ADOTable1.filtered := false;
+  form7.ADOTable1.filter := 'num_demande=' + inttostr(form7.num_demande);
+  form7.ADOTable1.filtered := true;
+
+  form7.ADOTable1.active := false;
+  form7.ADOTable1.active := true;
+  form7.ADOTable1.refresh;
+
+  form7.ADOTable1.First;
+
+  form7.ADOTable2.filtered := false;
+  form7.ADOTable2.filter := 'num_employee=' + inttostr(form7.ADOTable1.FieldByName('num_employee').AsInteger);
+  form7.ADOTable2.filtered := true;
+
+  form7.ADOTable2.active := false;
+  form7.ADOTable2.active := true;
+  form7.ADOTable2.refresh;
+
+  form7.ADOTable3.filtered := false;
+  form7.ADOTable3.filter := 'num_demande_produit=' + inttostr(form7.num_demande);
+  form7.ADOTable3.filtered := true;
+
+  form7.ADOTable3.active := false;
+  form7.ADOTable3.active := true;
+  form7.ADOTable3.refresh;
+
+  form7.frxReport1.ShowReport();
+end;
+
 procedure TForm2.Rectangle37Click(Sender: TObject);
 begin
-
 end;
 
 // Delete selected employee
@@ -678,18 +712,6 @@ procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbleft) then StartWindowDrag;
-end;
-
-procedure TForm2.StringGrid3CellDblClick(const Column: TColumn;
-  const Row: Integer);
-begin
-  //num := datamodule.DataModule1.tbl_list_demande_produits.fieldbyname('num_demande').asinteger;
-
-  // send num demande to report form
-  form7.num_demande := strtoint(Stringgrid3.Cells[0,Stringgrid3.Selected]);
-  ShowMessage(Stringgrid3.Cells[0,Stringgrid3.Selected]);
-  form7.ShowModal;
-
 end;
 
 procedure TForm2.StringGrid4CellDblClick(const Column: TColumn;
