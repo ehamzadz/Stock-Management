@@ -34,3 +34,6 @@ Coordinates=257,287,75,267
 [qry_refuse_byEmp]
 Coordinates=178,304,107,357
 
+[qry_list_demande_produits]
+Coordinates=396,1,148,141
+

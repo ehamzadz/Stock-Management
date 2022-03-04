@@ -103,4 +103,14 @@ object DataModule1: TDataModule1
     Left = 208
     Top = 152
   end
+  object qry_list_demande_produits: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from demande_produit')
+    Left = 552
+    Top = 240
+  end
 end

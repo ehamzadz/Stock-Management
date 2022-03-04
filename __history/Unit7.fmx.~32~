@@ -1,0 +1,113 @@
+object Form7: TForm7
+  Left = 0
+  Top = 0
+  Caption = 'Form7'
+  ClientHeight = 603
+  ClientWidth = 728
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object frxReport1: TfrxReport
+    Version = '2022.1'
+    DotMatrixReport = False
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFullScreen, pbOutline, pbThumbnails, pbPageSetup, pbEdit, pbNavigator, pbClose]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 44624.819966608800000000
+    ReportOptions.LastChange = 44624.819966608800000000
+    ReportOptions.IsFMXReport = True
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 192
+    Top = 16
+    Datasets = <>
+    Variables = <>
+    Style = <>
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security In' +
+      'fo=False;Initial Catalog=db;Use Procedure for Prepare=1;Auto Tra' +
+      'nslate=True;Packet Size=4096;Workstation ID=BLACKDEV;Use Encrypt' +
+      'ion for Data=False;Tag with column collation when possible=False'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 64
+    Top = 16
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'demande_produit'
+    Left = 416
+    Top = 16
+  end
+  object ADOTable2: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    IndexFieldNames = 'num_employee'
+    MasterFields = 'num_employee'
+    MasterSource = DataSource1
+    TableName = 'employee'
+    Left = 352
+    Top = 16
+  end
+  object ADOTable3: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    IndexFieldNames = 'num_demande_produit'
+    MasterFields = 'num_demande'
+    MasterSource = DataSource1
+    TableName = 'produits_demande'
+    Left = 288
+    Top = 16
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = ADOTable1
+    BCDToCurrency = False
+    Left = 416
+    Top = 80
+  end
+  object frxDBDataset2: TfrxDBDataset
+    UserName = 'frxDBDataset2'
+    CloseDataSource = False
+    DataSet = ADOTable2
+    BCDToCurrency = False
+    Left = 352
+    Top = 80
+  end
+  object frxDBDataset3: TfrxDBDataset
+    UserName = 'frxDBDataset3'
+    CloseDataSource = False
+    DataSet = ADOTable3
+    BCDToCurrency = False
+    Left = 288
+    Top = 80
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 416
+    Top = 152
+  end
+  object DataSource2: TDataSource
+    DataSet = ADOTable3
+    Left = 288
+    Top = 152
+  end
+  object DataSource3: TDataSource
+    DataSet = ADOTable2
+    Left = 352
+    Top = 152
+  end
+end

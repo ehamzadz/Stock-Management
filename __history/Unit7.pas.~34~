@@ -1,0 +1,74 @@
+unit Unit7;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.frxClass,
+  FMX.frxDBSet, Data.DB, Data.Win.ADODB, FMX.Controls.Presentation, FMX.StdCtrls,
+  System.Rtti, FMX.Grid.Style, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, FMX.ScrollBox,
+  FMX.Grid;
+
+type
+  TForm7 = class(TForm)
+    frxReport1: TfrxReport;
+    ADOConnection1: TADOConnection;
+    ADOTable1: TADOTable;
+    ADOTable2: TADOTable;
+    ADOTable3: TADOTable;
+    frxDBDataset1: TfrxDBDataset;
+    frxDBDataset2: TfrxDBDataset;
+    frxDBDataset3: TfrxDBDataset;
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+    DataSource3: TDataSource;
+    Button1: TButton;
+    StringGrid1: TStringGrid;
+    StringGrid2: TStringGrid;
+    StringGrid3: TStringGrid;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    BindSourceDB2: TBindSourceDB;
+    BindSourceDB3: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    procedure Button1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    num_demande :integer;
+  end;
+
+var
+  Form7: TForm7;
+
+implementation
+
+{$R *.fmx}
+
+uses datamodule, dashboard;
+
+procedure TForm7.Button1Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
+end;
+
+procedure TForm7.FormShow(Sender: TObject);
+begin
+
+  ADOTable1.filtered := false;
+  ADOTable1.filter := 'num_demande=' + inttostr(num_demande);
+  ADOTable1.filtered := true;
+
+  ADOTable1.active := false;
+  ADOTable1.active := true;
+  ADOTable1.refresh;
+
+end;
+
+end.

@@ -1,88 +1,118 @@
 ﻿[DataModule1.ADOTable1]
 Visible=False
-Coordinates=706,276,161,36
+Coordinates=706,276,136,33
 
 [DataModule1.tbl_stock]
 Visible=False
-Coordinates=706,386,145,36
+Coordinates=706,386,126,33
 
 [DataModule1.tbl_demande]
 Visible=False
-Coordinates=706,331,169,36
+Coordinates=706,331,144,33
 
 [DataModule1.tbl_list_demande_produits]
 Visible=False
-Coordinates=706,221,245,36
+Coordinates=706,221,212,33
 
 [DataModule1.qry_new_demandes]
 Visible=False
-Coordinates=706,166,210,36
+Coordinates=706,166,179,33
 
 [DataModule1.qry_refuse]
 Visible=False
-Coordinates=234,855,155,36
+Coordinates=234,855,133,33
 
 [DataModule1.qry_refuse_byEmp]
 Visible=False
-Coordinates=25,855,202,36
+Coordinates=25,855,174,33
 
 [DataModule1.tbl_produits_demande]
-Coordinates=706,1,222,146
-
-[frxReport2]
-Coordinates=393,855,75,36
+Coordinates=319,596,191,123
 
 [Form2.BindSourceDB7]
-Coordinates=0,0,187,454
+Coordinates=10,10,156,375
 
 [Form2.BindSourceDB1]
-Coordinates=206,210,148,234
+Coordinates=534,10,127,195
 
 [Form2.BindSourceDB6]
-Coordinates=57,473,146,344
+Coordinates=381,10,127,285
 
 [Form2.BindSourceDB3]
-Coordinates=472,738,155,168
+Coordinates=163,596,130,141
 
 [Form2.BindSourceDB4]
-Coordinates=206,1,228,190
+Coordinates=278,411,190,159
 
 [Form2.BindSourceDB2]
-Coordinates=472,188,146,168
+Coordinates=10,596,127,141
 
 [DataModule1.tbl_demande_produit]
-Coordinates=453,1,215,168
+Coordinates=494,411,186,141
 
 [Form2.BindSourceDB5]
-Coordinates=472,375,195,344
+Coordinates=192,10,163,285
 
 [DataModule1.qry]
-Coordinates=206,463,112,58
+Coordinates=10,763,97,51
 
-[demandes]
-Coordinates=706,1024,91,168
+[]
+Coordinates=718,1,77,33
+Visible=False
+
+[StringGrid1]
+Coordinates=920,660,70,141
+Visible=True
+
+[ADOTable1]
+Coordinates=770,660,69,33
+Visible=False
+
+[Button1]
+Coordinates=489,775,53,51
+
+[ADOConnection1]
+Coordinates=222,775,99,33
 
 [frxDBDataset1]
-Coordinates=369,944,98,36
+Coordinates=133,775,85,33
 
-[produits]
-Coordinates=468,944,134,146
-
-[frxDBDataset3]
-Coordinates=270,944,98,36
+[ADOTable3]
+Coordinates=66,404,69,33
+Visible=False
 
 [frxDBDataset2]
-Coordinates=171,944,98,36
+Coordinates=718,143,85,33
 
-[DataSource3]
-Coordinates=706,441,89,36
+[frxDBDataset3]
+Coordinates=718,195,85,33
 
-[DataSource1]
-Coordinates=706,606,89,36
+[ADOTable2]
+Coordinates=548,224,69,33
+Visible=False
 
-[emp]
-Coordinates=607,944,91,212
+[frxReport1]
+Coordinates=718,247,66,33
 
-[DataSource2]
-Coordinates=706,837,89,36
+[StringGrid2]
+Coordinates=393,314,70,159
+
+[StringGrid3]
+Coordinates=250,410,70,123
+
+[BindSourceDB1]
+Coordinates=670,600,92,159
+
+[BindingsList1]
+Coordinates=185,314,82,33
+
+[BindSourceDB2]
+Coordinates=548,224,92,195
+
+[BindSourceDB3]
+Coordinates=66,404,112,141
+
+[DataModule1.qry_list_demande_produits]
+Coordinates=718,1,215,51
+Visible=False
 

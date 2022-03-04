@@ -208,7 +208,6 @@ type
     Rectangle28: TRectangle;
     Button2: TButton;
     BindSourceDB4: TBindSourceDB;
-    LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource;
     Rectangle5: TRectangle;
     Rectangle29: TRectangle;
     Image5: TImage;
@@ -335,6 +334,8 @@ type
     Text57: TText;
     BindSourceDB7: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource;
+    BindSourceDB8: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -361,8 +362,7 @@ type
     procedure Rectangle37Click(Sender: TObject);
     procedure Rectangle80Click(Sender: TObject);
     procedure Rectangle103Click(Sender: TObject);
-    procedure StringGrid3CellDblClick(const Column: TColumn;
-      const Row: Integer);
+    procedure Rectangle22Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -588,9 +588,44 @@ begin
   tabs.TabIndex := 3;
 end;
 
+procedure TForm2.Rectangle22Click(Sender: TObject);
+begin
+  // send num demande of selected row to report form
+  form7.num_demande := strtoint(Stringgrid3.Cells[0,Stringgrid3.Selected]);
+  ShowMessage(Stringgrid3.Cells[0,Stringgrid3.Selected]);
+
+  // filter
+  form7.ADOTable1.filtered := false;
+  form7.ADOTable1.filter := 'num_demande=' + inttostr(form7.num_demande);
+  form7.ADOTable1.filtered := true;
+
+  form7.ADOTable1.active := false;
+  form7.ADOTable1.active := true;
+  form7.ADOTable1.refresh;
+
+  form7.ADOTable1.First;
+
+  form7.ADOTable2.filtered := false;
+  form7.ADOTable2.filter := 'num_employee=' + inttostr(form7.ADOTable1.FieldByName('num_employee').AsInteger);
+  form7.ADOTable2.filtered := true;
+
+  form7.ADOTable2.active := false;
+  form7.ADOTable2.active := true;
+  form7.ADOTable2.refresh;
+
+  form7.ADOTable3.filtered := false;
+  form7.ADOTable3.filter := 'num_demande_produit=' + inttostr(form7.num_demande);
+  form7.ADOTable3.filtered := true;
+
+  form7.ADOTable3.active := false;
+  form7.ADOTable3.active := true;
+  form7.ADOTable3.refresh;
+
+  form7.frxReport1.ShowReport();
+end;
+
 procedure TForm2.Rectangle37Click(Sender: TObject);
 begin
-
 end;
 
 // Delete selected employee
@@ -636,11 +671,14 @@ begin
 
   // show only demandes of the current login employee
   datamodule.DataModule1.tbl_list_demande_produits.filtered := false;
-  script := 'num_employee =' + inttostr(num_employee_globalVar);
-  datamodule.DataModule1.tbl_list_demande_produits.filter := script;
-  datamodule.DataModule1.tbl_list_demande_produits.filtered := true;
-  datamodule.DataModule1.tbl_list_demande_produits.active := false;
-  datamodule.DataModule1.tbl_list_demande_produits.active := true;
+  script := 'select * from demande_produit where num_employee =' + inttostr(num_employee_globalVar);
+
+  datamodule.DataModule1.qry_list_demande_produits.sql.clear;
+  datamodule.DataModule1.qry_list_demande_produits.sql.add(script);
+  datamodule.DataModule1.qry_list_demande_produits.open;
+
+  datamodule.DataModule1.qry_list_demande_produits.active := false;
+  datamodule.DataModule1.qry_list_demande_produits.active := true;
 
 end;
 
@@ -674,17 +712,6 @@ procedure TForm2.rect_topBarMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
   if (Button = TMouseButton.mbleft) then StartWindowDrag;
-end;
-
-procedure TForm2.StringGrid3CellDblClick(const Column: TColumn;
-  const Row: Integer);
-var
-  num :integer;
-begin
-  // send num demande to report form
-  num := datamodule.DataModule1.tbl_list_demande_produits.fieldbyname('num_demande').asinteger;
-  form7.num_demande := num;
-  form7.ShowModal;
 end;
 
 procedure TForm2.StringGrid4CellDblClick(const Column: TColumn;
