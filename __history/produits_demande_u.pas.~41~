@@ -84,11 +84,24 @@ begin
   //.............
 
   // search for available produit
-  qry.SQL.Clear;
-  qry.SQL.Add('select * from status WHERE (categorie=:cat and status=:status)');
-  qry.Parameters.ParamByName('cat').Value := cat;
-  qry.Parameters.ParamByName('status').Value := 'Accepté';
-  qry.open;
+  datamodule1.tbl_produits_demande.first;
+
+  while not datamodule1.tbl_produits_demande.Eof do begin
+
+    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
+    qry.SQL.Clear;
+    qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
+    qry.Parameters.ParamByName('cat').Value := cat;
+    qry.Parameters.ParamByName('status').Value := 'stock';
+    qry.open;
+
+    qry.First;
+    showmessage(qry.FieldByName('Designation').AsString);
+
+    //showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
+    datamodule1.tbl_produits_demande.next;
+  end;
+
 
 
 

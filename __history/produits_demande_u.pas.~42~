@@ -71,7 +71,33 @@ var
 begin
 
   // accepter la demande + modifier demande_produits|status|delivery
-    {
+
+
+
+  // add refresh accepted demande produits list
+  //.............
+
+  datamodule1.tbl_produits_demande.first;
+
+  // search for available produit
+  while not datamodule1.tbl_produits_demande.Eof do begin
+
+    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
+    qry.SQL.Clear;
+    qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
+    qry.Parameters.ParamByName('cat').Value := cat;
+    qry.Parameters.ParamByName('status').Value := 'stock';
+    qry.open;
+
+    qry.First;
+    showmessage(qry.FieldByName('Designation').AsString);
+
+    //showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
+    datamodule1.tbl_produits_demande.next;
+  end;
+
+
+
   // update (accepter) demande produit
   qry.SQL.Clear;
   qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
@@ -79,31 +105,6 @@ begin
   qry.Parameters.ParamByName('num').Value := produits_demande_u.Form5.num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
-
-  // add refresh accepted demande produits list
-  //.............
-   }
-  // search for available produit
-  datamodule1.tbl_produits_demande.Next;
-  showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
-  {
-  while not datamodule1.tbl_produits_demande.Eof do begin
-    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
-    qry.SQL.Clear;
-    qry.SQL.Add('select * from status WHERE (categorie=:cat and status=:status)');
-    qry.Parameters.ParamByName('cat').Value := cat;
-    qry.Parameters.ParamByName('status').Value := 'Accepté';
-    qry.open;
-  end;
-
-
-  qry.SQL.Clear;
-  qry.SQL.Add('select * from status WHERE (categorie=:cat and status=:status)');
-  qry.Parameters.ParamByName('cat').Value := cat;
-  qry.Parameters.ParamByName('status').Value := 'Accepté';
-  qry.open;
-
-   }
 
 
 end;

@@ -1741,7 +1741,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 434.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid3: TStringGrid
@@ -1749,27 +1749,24 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 434.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 35
               Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              OnSelectCell = StringGrid3SelectCell
-              OnCellDblClick = StringGrid3CellDblClick
               Viewport.Width = 867.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Height = 430.000000000000000000
             end
           end
           object Rectangle8: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 394.000000000000000000
+            Position.Y = 484.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
-            Visible = False
             object Rectangle21: TRectangle
               Align = FitRight
               Fill.Kind = None
@@ -1793,6 +1790,7 @@ object Form2: TForm2
                 Size.Height = 36.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
+                OnClick = Rectangle22Click
                 object Rectangle23: TRectangle
                   Align = Left
                   Fill.Kind = None
@@ -2037,7 +2035,7 @@ object Form2: TForm2
                 Size.Width = 238.999969482421900000
                 Size.Height = 36.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'S'#233'lectionner la Facture puis imprimmer'
+                Text = 'S'#233'lectionner la Demande puis imprimmer'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = claDarkgray
               end
@@ -6925,21 +6923,6 @@ object Form2: TForm2
           Width = 70
         end>
     end
-    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDB4
-      GridControl = StringGrid3
-      Columns = <
-        item
-          MemberName = 'num_demande'
-        end
-        item
-          MemberName = 'date_demande'
-        end
-        item
-          MemberName = 'status'
-        end>
-    end
     object LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource
       Category = 'Quick Bindings'
       DataSource = BindSourceDB5
@@ -7038,6 +7021,21 @@ object Form2: TForm2
           Alignment = taCenter
         end>
     end
+    object LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB8
+      GridControl = StringGrid3
+      Columns = <
+        item
+          MemberName = 'num_demande'
+        end
+        item
+          MemberName = 'date_demande'
+        end
+        item
+          MemberName = 'status'
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -7074,5 +7072,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 664
     Top = 488
+  end
+  object BindSourceDB8: TBindSourceDB
+    DataSet = DataModule1.qry_list_demande_produits
+    ScopeMappings = <>
+    Left = 536
+    Top = 304
   end
 end
