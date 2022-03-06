@@ -19,10 +19,10 @@ object Form5: TForm5
     Size.PlatformDefault = False
     TextSettings.HorzAlign = Center
     TabOrder = 0
-    RowCount = 0
+    RowCount = 29
     Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-    Viewport.Width = 508.000000000000000000
-    Viewport.Height = 262.000000000000000000
+    Viewport.Width = 512.000000000000000000
+    Viewport.Height = 266.000000000000000000
   end
   object Rectangle63: TRectangle
     Align = Top
@@ -68,6 +68,7 @@ object Form5: TForm5
         Size.Height = 27.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
+        OnClick = Rectangle70Click
         object Text30: TText
           Align = Center
           HitTest = False
@@ -172,7 +173,7 @@ object Form5: TForm5
         Size.Width = 330.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
-        Text = 'Service'
+        Text = 'Produit'
         TextSettings.Font.StyleExt = {00060000000000000004000000}
         TextSettings.FontColor = xFF494949
       end
@@ -192,7 +193,7 @@ object Form5: TForm5
         Size.Width = 70.000000000000000000
         Size.Height = 41.000000000000000000
         Size.PlatformDefault = False
-        Text = 'R'#244'le'
+        Text = 'Qte'
         TextSettings.Font.StyleExt = {00060000000000000004000000}
         TextSettings.FontColor = xFF494949
       end

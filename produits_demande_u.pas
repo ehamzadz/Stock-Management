@@ -35,6 +35,7 @@ type
     qry: TADOQuery;
     procedure FormShow(Sender: TObject);
     procedure Rectangle71Click(Sender: TObject);
+    procedure Rectangle70Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,6 +62,49 @@ begin
   datamodule.DataModule1.tbl_produits_demande.active := false;
   datamodule.DataModule1.tbl_produits_demande.active := true;
   datamodule.DataModule1.tbl_produits_demande.refresh;
+
+end;
+
+procedure TForm5.Rectangle70Click(Sender: TObject);
+var
+  cat :string;
+begin
+
+  // accepter la demande + modifier demande_produits|status|delivery
+
+  // update (accepter) demande produit
+  qry.SQL.Clear;
+  qry.SQL.Add('UPDATE demande_produit SET status=:status,num_it=:num_it WHERE num_demande=:num');
+  qry.Parameters.ParamByName('status').Value := 'Accepté';
+  qry.Parameters.ParamByName('num').Value := produits_demande_u.Form5.num_demande_produit;
+  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+  qry.ExecSQL;
+
+  // add refresh accepted demande produits list
+  //.............
+
+  // search for available produit
+  datamodule1.tbl_produits_demande.first;
+
+  while not datamodule1.tbl_produits_demande.Eof do begin
+
+    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
+    qry.SQL.Clear;
+    qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
+    qry.Parameters.ParamByName('cat').Value := cat;
+    qry.Parameters.ParamByName('status').Value := 'stock';
+    qry.open;
+
+    qry.First;
+    showmessage(qry.FieldByName('Designation').AsString);
+
+    //showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
+    datamodule1.tbl_produits_demande.next;
+  end;
+
+
+
+
 
 end;
 
