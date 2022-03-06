@@ -68,7 +68,7 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i :integer;
+  num_delivery,qte,i,id_record :integer;
 begin
 
   // accepter la demande + modifier demande_produits|status|delivery
@@ -86,7 +86,12 @@ begin
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
 
+  qry.SQL.Clear;
+  qry.SQL.Add('select * from delivery order by date_delivery DESC');
+  qry.open;
+
   qry.last;
+
   num_delivery := qry.FieldByName('num_delivery').AsInteger;
 
   showmessage('1');
@@ -104,7 +109,7 @@ begin
 
     qry.First;
     showmessage('3');
-    if (qry.FieldByName('id_record').AsInteger=qte) then begin
+    if (qry.FieldByName('count(id_record)').AsInteger=qte) then begin
 
       for i := 1 to qte do begin
         qry.SQL.Clear;
@@ -113,15 +118,15 @@ begin
         qry.Parameters.ParamByName('status').Value := 'stock';
         qry.open;
         qry.First;
-
-        qry.FieldByName('id_record').AsInteger;
+        id_record := qry.FieldByName('id_record').AsInteger;
+        showmessage('4');
         qry.SQL.Clear;
         qry.SQL.Add('UPDATE demande_produit SET destination=:destination where id_record=:id_record');
         qry.Parameters.ParamByName('destination').Value := num_demande_produit;
-        qry.Parameters.ParamByName('id_record').Value := 'id_record';
+        qry.Parameters.ParamByName('id_record').Value := id_record;
         qry.ExecSQL;
       end;
-      showmessage('4');
+      showmessage('5');
       qry.SQL.Clear;
       qry.SQL.Add('insert into produits_delivery (designation,:qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
       qry.Parameters.ParamByName('designation').Value := cat;
