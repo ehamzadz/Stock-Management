@@ -68,9 +68,74 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
+  num_delivery,qte,i :integer;
 begin
 
   // accepter la demande + modifier demande_produits|status|delivery
+
+
+  // add refresh accepted demande produits list
+  //.............
+
+  datamodule1.tbl_produits_demande.first;
+
+  qry.SQL.Clear;
+  qry.SQL.Add('insert into delivery (date_delivery,num_demande,num_it) values(:dt)');
+  qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
+  qry.Parameters.ParamByName('num_demande').Value := num_demande_produit;
+  qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+  qry.ExecSQL;
+
+  qry.last;
+  num_delivery := qry.FieldByName('num_delivery').AsInteger;
+
+
+  // search for available produit
+  while not datamodule1.tbl_produits_demande.Eof do begin
+
+    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
+    qte := strtoint(Stringgrid4.Cells[2,Stringgrid4.Selected]);
+
+    qry.SQL.Clear;
+    qry.SQL.Add('select count(id_record) from status WHERE (categorie=:cat and destination=:status)');
+    qry.Parameters.ParamByName('cat').Value := cat;
+    qry.Parameters.ParamByName('status').Value := 'stock';
+    qry.open;
+
+    qry.First;
+
+    if (qry.FieldByName('id_record').AsInteger=qte) then begin
+
+      for i := 1 to qte do begin
+        qry.SQL.Clear;
+        qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
+        qry.Parameters.ParamByName('cat').Value := cat;
+        qry.Parameters.ParamByName('status').Value := 'stock';
+        qry.open;
+        qry.First;
+        qry.FieldByName('id').AsInteger;
+      end;
+
+
+      qry.SQL.Clear;
+      qry.SQL.Add('insert into produits_delivery (designation,num_delivery_bill) values(:dt)');
+      qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
+
+
+
+    end else begin
+      // insert data to produits_achat
+    end;
+
+    showmessage(qry.FieldByName('Designation').AsString);
+
+    //showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
+    datamodule1.tbl_produits_demande.next;
+
+  end;
+
+
+
 
   // update (accepter) demande produit
   qry.SQL.Clear;
@@ -79,31 +144,6 @@ begin
   qry.Parameters.ParamByName('num').Value := produits_demande_u.Form5.num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
-
-  // add refresh accepted demande produits list
-  //.............
-
-  // search for available produit
-  datamodule1.tbl_produits_demande.first;
-
-  while not datamodule1.tbl_produits_demande.Eof do begin
-
-    cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
-    qry.SQL.Clear;
-    qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
-    qry.Parameters.ParamByName('cat').Value := cat;
-    qry.Parameters.ParamByName('status').Value := 'stock';
-    qry.open;
-
-    qry.First;
-    showmessage(qry.FieldByName('Designation').AsString);
-
-    //showmessage(Stringgrid4.Cells[1,Stringgrid4.Selected]);
-    datamodule1.tbl_produits_demande.next;
-  end;
-
-
-
 
 
 end;

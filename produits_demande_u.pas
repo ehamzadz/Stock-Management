@@ -68,7 +68,7 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery :integer;
+  num_delivery,qte,i :integer;
 begin
 
   // accepter la demande + modifier demande_produits|status|delivery
@@ -80,8 +80,8 @@ begin
   datamodule1.tbl_produits_demande.first;
 
   qry.SQL.Clear;
-  qry.SQL.Add('insert into delivery (date_delivery,num_demande,num_it) values(:dt)');
-  qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);;
+  qry.SQL.Add('insert into delivery (date_delivery,num_demande,num_it) values(:date_delivery,:num_demande,:num_it)');
+  qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
   qry.Parameters.ParamByName('num_demande').Value := num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
@@ -94,6 +94,8 @@ begin
   while not datamodule1.tbl_produits_demande.Eof do begin
 
     cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
+    qte := strtoint(Stringgrid4.Cells[2,Stringgrid4.Selected]);
+
     qry.SQL.Clear;
     qry.SQL.Add('select count(id_record) from status WHERE (categorie=:cat and destination=:status)');
     qry.Parameters.ParamByName('cat').Value := cat;
@@ -101,15 +103,34 @@ begin
     qry.open;
 
     qry.First;
-    if (qry.FieldByName('id_record').AsInteger=0) then begin
+
+    if (qry.FieldByName('id_record').AsInteger=qte) then begin
+
+      for i := 1 to qte do begin
+        qry.SQL.Clear;
+        qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
+        qry.Parameters.ParamByName('cat').Value := cat;
+        qry.Parameters.ParamByName('status').Value := 'stock';
+        qry.open;
+        qry.First;
+
+        qry.FieldByName('id_record').AsInteger;
+        qry.SQL.Clear;
+        qry.SQL.Add('UPDATE demande_produit SET destination=:destination where id_record=:id_record');
+        qry.Parameters.ParamByName('destination').Value := num_demande_produit;
+        qry.Parameters.ParamByName('id_record').Value := 'id_record';
+        qry.ExecSQL;
+      end;
+
+      qry.SQL.Clear;
+      qry.SQL.Add('insert into produits_delivery (designation,:qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
+      qry.Parameters.ParamByName('designation').Value := cat;
+      qry.Parameters.ParamByName('qte').Value := qte;
+      qry.Parameters.ParamByName('num_delivery_bill').Value := num_delivery;
+      qry.ExecSQL;
 
     end else begin
-      qry.SQL.Clear;
-      qry.SQL.Add('select * from status WHERE (categorie=:cat and destination=:status)');
-      qry.Parameters.ParamByName('cat').Value := cat;
-      qry.Parameters.ParamByName('status').Value := 'stock';
-      qry.open;
-
+      // insert data to produits_achat
     end;
 
     showmessage(qry.FieldByName('Designation').AsString);
@@ -118,9 +139,6 @@ begin
     datamodule1.tbl_produits_demande.next;
 
   end;
-
-
-
 
   // update (accepter) demande produit
   qry.SQL.Clear;
