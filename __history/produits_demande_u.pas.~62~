@@ -80,7 +80,7 @@ begin
   datamodule1.tbl_produits_demande.first;
 
   qry.SQL.Clear;
-  qry.SQL.Add('insert into delivery (date_delivery,num_demande,num_it) values(:dt)');
+  qry.SQL.Add('insert into delivery (date_delivery,num_demande,num_it) values(:date_delivery,:num_demande,:num_it)');
   qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
   qry.Parameters.ParamByName('num_demande').Value := num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
@@ -113,15 +113,21 @@ begin
         qry.Parameters.ParamByName('status').Value := 'stock';
         qry.open;
         qry.First;
-        qry.FieldByName('id').AsInteger;
+
+        qry.FieldByName('id_record').AsInteger;
+        qry.SQL.Clear;
+        qry.SQL.Add('UPDATE demande_produit SET destination=:destination where id_record=:id_record');
+        qry.Parameters.ParamByName('destination').Value := num_demande_produit;
+        qry.Parameters.ParamByName('id_record').Value := 'id_record';
+        qry.ExecSQL;
       end;
 
-
       qry.SQL.Clear;
-      qry.SQL.Add('insert into produits_delivery (designation,num_delivery_bill) values(:dt)');
-      qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
-
-
+      qry.SQL.Add('insert into produits_delivery (designation,:qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
+      qry.Parameters.ParamByName('designation').Value := cat;
+      qry.Parameters.ParamByName('qte').Value := qte;
+      qry.Parameters.ParamByName('num_delivery_bill').Value := num_delivery;
+      qry.ExecSQL;
 
     end else begin
       // insert data to produits_achat
@@ -133,9 +139,6 @@ begin
     datamodule1.tbl_produits_demande.next;
 
   end;
-
-
-
 
   // update (accepter) demande produit
   qry.SQL.Clear;
