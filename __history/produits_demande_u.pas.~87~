@@ -68,7 +68,7 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i :integer;
+  num_delivery,qte,i,id_record :integer;
 begin
 
   // accepter la demande + modifier demande_produits|status|delivery
@@ -94,7 +94,7 @@ begin
 
   num_delivery := qry.FieldByName('num_delivery').AsInteger;
 
-
+  showmessage('1');
   // search for available produit
   while not datamodule1.tbl_produits_demande.Eof do begin
     showmessage('2');
@@ -102,7 +102,7 @@ begin
     qte := strtoint(Stringgrid4.Cells[2,Stringgrid4.Selected]);
 
     qry.SQL.Clear;
-    qry.SQL.Add('select count(id_record) from status WHERE (categorie=:cat and destination=:status)');
+    qry.SQL.Add('select count(id_record) as id_record from status WHERE (categorie=:cat and destination=:status)');
     qry.Parameters.ParamByName('cat').Value := cat;
     qry.Parameters.ParamByName('status').Value := 'stock';
     qry.open;
@@ -118,24 +118,42 @@ begin
         qry.Parameters.ParamByName('status').Value := 'stock';
         qry.open;
         qry.First;
+        id_record := qry.FieldByName('id_record').AsInteger;
         showmessage('4');
-        qry.FieldByName('id_record').AsInteger;
         qry.SQL.Clear;
-        qry.SQL.Add('UPDATE demande_produit SET destination=:destination where id_record=:id_record');
+        qry.SQL.Add('UPDATE status SET destination=:destination where id_record=:id_record');
         qry.Parameters.ParamByName('destination').Value := num_demande_produit;
-        qry.Parameters.ParamByName('id_record').Value := 'id_record';
+        qry.Parameters.ParamByName('id_record').Value := id_record;
         qry.ExecSQL;
       end;
       showmessage('5');
       qry.SQL.Clear;
-      qry.SQL.Add('insert into produits_delivery (designation,:qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
+      qry.SQL.Add('insert into produits_delivery (designation,qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
       qry.Parameters.ParamByName('designation').Value := cat;
       qry.Parameters.ParamByName('qte').Value := qte;
       qry.Parameters.ParamByName('num_delivery_bill').Value := num_delivery;
       qry.ExecSQL;
-
+      showmessage('6');
     end else begin
       // insert data to produits_achat
+
+
+      case MessageDlg('Certains produits sont en rupture de stock, souhaitez-vous commander maintenant ?', System.UITypes.TMsgDlgType.mtInformation,
+        [
+          System.UITypes.TMsgDlgBtn.mbYes,
+          System.UITypes.TMsgDlgBtn.mbNo,
+          System.UITypes.TMsgDlgBtn.mbCancel
+        ], 0) of
+        { Detect which button was pushed and show a different message }
+        mrYES:
+          ShowMessage('You chose Yes');
+        mrNo:
+          ShowMessage('You chose No');
+        mrCancel:
+          ShowMessage('You chose Cancel');
+
+      end;
+
     end;
 
 
