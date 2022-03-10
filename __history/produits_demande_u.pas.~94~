@@ -68,8 +68,10 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i,id_record, test :integer;
+  num_delivery,num_achat,qte,i,id_record, test :integer;
 begin
+
+  test := 0;
 
   // accepter la demande + modifier demande_produits|status|delivery
 
@@ -144,8 +146,22 @@ begin
           System.UITypes.TMsgDlgBtn.mbNo,
           System.UITypes.TMsgDlgBtn.mbCancel
         ], 0) of
-        { Detect which button was pushed and show a different message }
+
         mrYES:  begin
+                  // send produit to produit_achat table
+                  // test if demande achat produit created
+                  if test=0 then begin
+                    qry.SQL.Clear;
+                    qry.SQL.Add('insert into demande_achat (data_dem_achat,num_it) values(:date_delivery,:num_it)');
+                    qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
+                    qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+                    qry.ExecSQL;
+                    // get last demande achat num
+                    qry.Last;
+                    num_achat := qry.FieldByName('num_demande');
+                    test := 1;
+                  end;
+
                   ShowMessage('You chose Yes');
                 end;
 

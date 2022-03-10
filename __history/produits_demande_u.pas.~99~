@@ -68,8 +68,10 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i,id_record :integer;
+  num_delivery,num_achat,qte,i,id_record, test :integer;
 begin
+
+  test := 0;
 
   // accepter la demande + modifier demande_produits|status|delivery
 
@@ -94,13 +96,13 @@ begin
 
   num_delivery := qry.FieldByName('num_delivery').AsInteger;
 
-  showmessage('1');
   // search for available produit
   while not datamodule1.tbl_produits_demande.Eof do begin
-    showmessage('2');
+    // get cat + qte from selected row in grid
     cat := Stringgrid4.Cells[1,Stringgrid4.Selected];
     qte := strtoint(Stringgrid4.Cells[2,Stringgrid4.Selected]);
 
+    // count available produit
     qry.SQL.Clear;
     qry.SQL.Add('select count(id_record) as id_record from status WHERE (categorie=:cat and destination=:status)');
     qry.Parameters.ParamByName('cat').Value := cat;
@@ -109,7 +111,7 @@ begin
 
     qry.First;
     showmessage('3');
-    if (qry.FieldByName('id_record').AsInteger=qte) then begin
+    if (qry.FieldByName('id_record').AsInteger>=qte) then begin
 
       for i := 1 to qte do begin
         qry.SQL.Clear;
@@ -119,7 +121,7 @@ begin
         qry.open;
         qry.First;
         id_record := qry.FieldByName('id_record').AsInteger;
-        showmessage('4');
+
         qry.SQL.Clear;
         qry.SQL.Add('UPDATE status SET destination=:destination where id_record=:id_record');
         qry.Parameters.ParamByName('destination').Value := num_demande_produit;
@@ -138,17 +140,45 @@ begin
       // insert data to produits_achat
 
 
-      case MessageDlg('Il n''y a pas de produits disponibles, souhaitez-vous commander maintenant?', System.UITypes.TMsgDlgType.mtInformation,
+      case MessageDlg('Certains produits sont en rupture de stock, souhaitez-vous commander maintenant ?', System.UITypes.TMsgDlgType.mtInformation,
         [
           System.UITypes.TMsgDlgBtn.mbYes,
           System.UITypes.TMsgDlgBtn.mbNo,
           System.UITypes.TMsgDlgBtn.mbCancel
         ], 0) of
-        { Detect which button was pushed and show a different message }
-        mrYES:
-          ShowMessage('You chose Yes');
-        mrNo:
-          ShowMessage('You chose Cancel');
+
+        mrYES:  begin
+                  // send produit to produit_achat table
+                  // test if demande achat produit created
+                  if test=0 then begin
+                    qry.SQL.Clear;
+                    qry.SQL.Add('insert into demande_achat (date_dem_achat,num_it) values(:date_delivery,:num_it)');
+                    qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
+                    qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+                    qry.ExecSQL;
+                    // get last demande achat num
+                    qry.SQL.Clear;
+                    qry.SQL.Add('select * from demande_achat');
+                    qry.Last;
+                    num_achat := qry.FieldByName('num_demande').AsInteger;
+                    test := 1;
+                  end;
+
+                  // add produits to produits_demande_achat
+                  qry.SQL.Clear;
+                  qry.SQL.Add('insert into produits_demande_achat (designation,qte,num_dem_achat) values(:designation,:qte,:num_dem_achat)');
+                  qry.Parameters.ParamByName('designation').Value := cat;
+                  qry.Parameters.ParamByName('qte').Value := qte;
+                  qry.Parameters.ParamByName('num_dem_achat').Value := num_achat;
+                  qry.ExecSQL;
+
+                  ShowMessage('You chose Yes');
+                end;
+
+        mrNo:   begin
+                  ShowMessage('You chose No');
+                end;
+
         mrCancel:
           ShowMessage('You chose Cancel');
 

@@ -68,8 +68,10 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i,id_record :integer;
+  num_delivery,num_achat,qte,i,id_record, test :integer;
 begin
+
+  test := 0;
 
   // accepter la demande + modifier demande_produits|status|delivery
 
@@ -94,7 +96,6 @@ begin
 
   num_delivery := qry.FieldByName('num_delivery').AsInteger;
 
-  showmessage('1');
   // search for available produit
   while not datamodule1.tbl_produits_demande.Eof do begin
     // get cat + qte from selected row in grid
@@ -120,7 +121,7 @@ begin
         qry.open;
         qry.First;
         id_record := qry.FieldByName('id_record').AsInteger;
-        showmessage('4');
+
         qry.SQL.Clear;
         qry.SQL.Add('UPDATE status SET destination=:destination where id_record=:id_record');
         qry.Parameters.ParamByName('destination').Value := num_demande_produit;
@@ -145,8 +146,30 @@ begin
           System.UITypes.TMsgDlgBtn.mbNo,
           System.UITypes.TMsgDlgBtn.mbCancel
         ], 0) of
-        { Detect which button was pushed and show a different message }
+
         mrYES:  begin
+                  // send produit to produit_achat table
+                  // test if demande achat produit created
+                  if test=0 then begin
+                    qry.SQL.Clear;
+                    qry.SQL.Add('insert into demande_achat (date_dem_achat,num_it) values(:date_delivery,:num_it)');
+                    qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
+                    qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
+                    qry.ExecSQL;
+                    // get last demande achat num
+                    qry.Last;
+                    num_achat := qry.FieldByName('num_demande').AsInteger;
+                    test := 1;
+                  end;
+
+                  // add produits to produits_demande_achat
+                  qry.SQL.Clear;
+                  qry.SQL.Add('insert into produits_demande_achat (designation,qte,num_dem_achat) values(:designation,:qte,:num_dem_achat)');
+                  qry.Parameters.ParamByName('designation').Value := cat;
+                  qry.Parameters.ParamByName('qte').Value := qte;
+                  qry.Parameters.ParamByName('num_dem_achat').Value := num_achat;
+                  qry.ExecSQL;
+
                   ShowMessage('You chose Yes');
                 end;
 

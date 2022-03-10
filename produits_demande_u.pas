@@ -68,7 +68,7 @@ end;
 procedure TForm5.Rectangle70Click(Sender: TObject);
 var
   cat :string;
-  num_delivery,qte,i,id_record, test :integer;
+  num_delivery,num_achat,qte,i,id_record, test :integer;
 begin
 
   test := 0;
@@ -152,13 +152,26 @@ begin
                   // test if demande achat produit created
                   if test=0 then begin
                     qry.SQL.Clear;
-                    qry.SQL.Add('insert into demande_achat (date_delivery,num_demande,num_it) values(:date_delivery,:num_demande,:num_it)');
+                    qry.SQL.Add('insert into demande_achat (date_dem_achat,num_it) values(:date_delivery,:num_it)');
                     qry.Parameters.ParamByName('date_delivery').Value := datetimetostr(now);
-                    qry.Parameters.ParamByName('num_demande').Value := num_demande_produit;
                     qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
                     qry.ExecSQL;
+                    // get last demande achat num
+                    qry.SQL.Clear;
+                    qry.SQL.Add('select * from demande_achat');
+                    qry.Open;
+                    qry.Last;
+                    num_achat := qry.FieldByName('num_dem_achat').AsInteger;
                     test := 1;
                   end;
+
+                  // add produits to produits_demande_achat
+                  qry.SQL.Clear;
+                  qry.SQL.Add('insert into produits_demande_achat (designation,qte,num_dem_achat) values(:designation,:qte,:num_dem_achat)');
+                  qry.Parameters.ParamByName('designation').Value := cat;
+                  qry.Parameters.ParamByName('qte').Value := qte;
+                  qry.Parameters.ParamByName('num_dem_achat').Value := num_achat;
+                  qry.ExecSQL;
 
                   ShowMessage('You chose Yes');
                 end;
