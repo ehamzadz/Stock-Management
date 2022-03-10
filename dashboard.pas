@@ -622,6 +622,7 @@ begin
   form7.ADOTable3.refresh;
 
   form7.frxReport1.ShowReport();
+
 end;
 
 procedure TForm2.Rectangle37Click(Sender: TObject);

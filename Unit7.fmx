@@ -24,7 +24,7 @@ object Form7: TForm7
     Size.Height = 129.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 21
-    RowCount = 35
+    RowCount = 43
     Viewport.Width = 605.000000000000000000
     Viewport.Height = 104.000000000000000000
   end
@@ -37,7 +37,7 @@ object Form7: TForm7
     Size.Height = 129.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 20
-    RowCount = 2
+    RowCount = 3
     Viewport.Width = 621.000000000000000000
     Viewport.Height = 104.000000000000000000
   end
@@ -50,7 +50,7 @@ object Form7: TForm7
     Size.Height = 129.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 19
-    RowCount = 22
+    RowCount = 36
     Viewport.Width = 605.000000000000000000
     Viewport.Height = 104.000000000000000000
   end
