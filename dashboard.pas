@@ -459,6 +459,14 @@ type
     Rectangle195: TRectangle;
     Image41: TImage;
     ColorAnimation23: TColorAnimation;
+    Rectangle196: TRectangle;
+    Rectangle197: TRectangle;
+    Image42: TImage;
+    Rectangle198: TRectangle;
+    Text89: TText;
+    Rectangle199: TRectangle;
+    Image43: TImage;
+    ColorAnimation24: TColorAnimation;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -491,6 +499,7 @@ type
     procedure Rectangle170Click(Sender: TObject);
     procedure Rectangle192Click(Sender: TObject);
     procedure Rectangle186Click(Sender: TObject);
+    procedure Rectangle196Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -814,6 +823,15 @@ begin
   datamodule.DataModule1.qry_accepté.refresh;
 
   tabs.TabIndex := 10;
+end;
+
+procedure TForm2.Rectangle196Click(Sender: TObject);
+begin    {
+  datamodule.DataModule1.qry_wait_achat.active := false;
+  datamodule.DataModule1.qry_wait_achat.active := true;
+  datamodule.DataModule1.qry_wait_achat.refresh;
+                      }
+  tabs.TabIndex := 11;
 end;
 
 procedure TForm2.Rectangle22Click(Sender: TObject);

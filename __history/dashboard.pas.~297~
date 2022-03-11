@@ -418,6 +418,55 @@ type
     Text79: TText;
     BindSourceDB10: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB10: TLinkGridToDataSource;
+    TabItem11: TTabItem;
+    Rectangle176: TRectangle;
+    Rectangle177: TRectangle;
+    Rectangle178: TRectangle;
+    Text80: TText;
+    Rectangle179: TRectangle;
+    Text81: TText;
+    Line19: TLine;
+    Rectangle180: TRectangle;
+    Text82: TText;
+    Rectangle181: TRectangle;
+    Text83: TText;
+    Rectangle182: TRectangle;
+    Text84: TText;
+    Rectangle183: TRectangle;
+    StringGrid9: TStringGrid;
+    Rectangle184: TRectangle;
+    Rectangle185: TRectangle;
+    Rectangle186: TRectangle;
+    Rectangle187: TRectangle;
+    Image38: TImage;
+    Rectangle188: TRectangle;
+    Text85: TText;
+    Rectangle189: TRectangle;
+    Image39: TImage;
+    ColorAnimation22: TColorAnimation;
+    Text86: TText;
+    Rectangle190: TRectangle;
+    Line20: TLine;
+    Rectangle191: TRectangle;
+    Text87: TText;
+    BindSourceDB11: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB11: TLinkGridToDataSource;
+    Rectangle192: TRectangle;
+    Rectangle193: TRectangle;
+    Image40: TImage;
+    Rectangle194: TRectangle;
+    Text88: TText;
+    Rectangle195: TRectangle;
+    Image41: TImage;
+    ColorAnimation23: TColorAnimation;
+    Rectangle196: TRectangle;
+    Rectangle197: TRectangle;
+    Image42: TImage;
+    Rectangle198: TRectangle;
+    Text89: TText;
+    Rectangle199: TRectangle;
+    Image43: TImage;
+    ColorAnimation24: TColorAnimation;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -448,6 +497,9 @@ type
     procedure Rectangle123Click(Sender: TObject);
     procedure Rectangle156Click(Sender: TObject);
     procedure Rectangle170Click(Sender: TObject);
+    procedure Rectangle192Click(Sender: TObject);
+    procedure Rectangle186Click(Sender: TObject);
+    procedure Rectangle196Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -690,7 +742,7 @@ procedure TForm2.Rectangle170Click(Sender: TObject);
 begin
   // send num Delivery of selected row to report form
   form8.num_delivery := strtoint(Stringgrid8.Cells[0,Stringgrid8.Selected]);
-  ShowMessage(Stringgrid8.Cells[0,Stringgrid8.Selected]);
+  //ShowMessage(Stringgrid8.Cells[0,Stringgrid8.Selected]);
   // filter
 
   form8.ADOTable2.filtered := false;
@@ -726,6 +778,60 @@ end;
 procedure TForm2.Rectangle17Click(Sender: TObject);
 begin
   tabs.TabIndex := 3;
+end;
+
+procedure TForm2.Rectangle186Click(Sender: TObject);
+begin
+// send num Delivery of selected row to report form
+  form8.num_delivery := strtoint(Stringgrid9.Cells[0,Stringgrid9.Selected]);
+  //ShowMessage(Stringgrid8.Cells[0,Stringgrid8.Selected]);
+  // filter
+
+  form8.ADOTable2.filtered := false;
+  form8.ADOTable2.filter := 'num_delivery=' + inttostr(form8.num_delivery);
+  form8.ADOTable2.filtered := true;
+
+  form8.ADOTable2.active := false;
+  form8.ADOTable2.active := true;
+  form8.ADOTable2.refresh;
+
+  form8.ADOTable2.First;
+
+  form8.ADOQuery1.filtered := false;
+  form8.ADOQuery1.filter := 'num_demande=' + inttostr(form8.ADOTable2.FieldByName('num_demande').AsInteger);
+  form8.ADOQuery1.filtered := true;
+
+  form8.ADOQuery1.active := false;
+  form8.ADOQuery1.active := true;
+  form8.ADOQuery1.refresh;
+
+  form8.ADOTable1.filtered := false;
+  form8.ADOTable1.filter := 'num_delivery_bill=' + inttostr(form8.num_delivery);
+  form8.ADOTable1.filtered := true;
+
+  form8.ADOTable1.active := false;
+  form8.ADOTable1.active := true;
+  form8.ADOTable1.refresh;
+
+  form8.frxReport1.ShowReport();
+end;
+
+procedure TForm2.Rectangle192Click(Sender: TObject);
+begin
+  datamodule.DataModule1.qry_accepté.active := false;
+  datamodule.DataModule1.qry_accepté.active := true;
+  datamodule.DataModule1.qry_accepté.refresh;
+
+  tabs.TabIndex := 10;
+end;
+
+procedure TForm2.Rectangle196Click(Sender: TObject);
+begin
+  datamodule.DataModule1.qry_wait_achat.active := false;
+  datamodule.DataModule1.qry_wait_achat.active := true;
+  datamodule.DataModule1.qry_wait_achat.refresh;
+
+  tabs.TabIndex := 11;
 end;
 
 procedure TForm2.Rectangle22Click(Sender: TObject);

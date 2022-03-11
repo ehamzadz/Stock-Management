@@ -1,4 +1,4 @@
-object DataModule1: TDataModule1
+﻿object DataModule1: TDataModule1
   OldCreateOrder = False
   Height = 520
   Width = 718
@@ -103,10 +103,45 @@ object DataModule1: TDataModule1
     Left = 208
     Top = 152
   end
-  object ADOQuery1: TADOQuery
+  object qry_list_demande_produits: TADOQuery
+    Active = True
     Connection = ADOConnection1
+    CursorType = ctStatic
     Parameters = <>
+    SQL.Strings = (
+      'select * from demande_produit')
     Left = 552
     Top = 240
+  end
+  object qry_list_demande_produits2: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from demande_produit'
+      'where status='#39'Accept'#233#39' ')
+    Left = 552
+    Top = 328
+  end
+  object qry_accepté_byEmp: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'EXEC GetAcceptedDemandeOfEmployee @num_emp=9')
+    Left = 208
+    Top = 32
+  end
+  object qry_accepté: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'EXEC GetAcceptedDemande')
+    Left = 208
+    Top = 368
   end
 end

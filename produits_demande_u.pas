@@ -165,7 +165,7 @@ begin
 
                   // add produits to produits_demande_achat
                   qry.SQL.Clear;
-                  qry.SQL.Add('insert into produits_demande_achat (designation,qte,num_dem_achat) values(:designation,:qte,:num_dem_achat)');
+                  qry.SQL.Add('insert into wait_achat (designation,qte,num_dem_achat) values(:designation,:qte,:num_dem_achat)');
                   qry.Parameters.ParamByName('designation').Value := cat;
                   qry.Parameters.ParamByName('qte').Value := qte;
                   qry.Parameters.ParamByName('num_dem_achat').Value := num_achat;
