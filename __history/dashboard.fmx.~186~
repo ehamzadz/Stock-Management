@@ -1,9 +1,10 @@
 ﻿object Form2: TForm2
   Left = 0
   Top = 0
+  ActiveControl = TabItem10
   BorderStyle = None
   Caption = 'Dashboard'
-  ClientHeight = 630
+  ClientHeight = 705
   ClientWidth = 1094
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -15,37 +16,37 @@
     Align = Client
     Fill.Kind = None
     Size.Width = 887.000000000000000000
-    Size.Height = 597.000000000000000000
+    Size.Height = 672.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object tabs: TTabControl
       Align = Client
       Size.Width = 887.000000000000000000
-      Size.Height = 597.000000000000000000
+      Size.Height = 672.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 9
+      TabIndex = 8
       TabPosition = None
       Sizes = (
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s)
+        672s)
       object TabItem4: TTabItem
         CustomIcon = <
           item
@@ -63,7 +64,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle33: TRectangle
@@ -193,7 +194,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -201,14 +202,14 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
         end
@@ -917,7 +918,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle60: TRectangle
@@ -927,7 +928,7 @@
             Padding.Right = 30.000000000000000000
             Padding.Bottom = 30.000000000000000000
             Size.Width = 887.000000000000000000
-            Size.Height = 444.000000000000000000
+            Size.Height = 519.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Rectangle67: TRectangle
@@ -936,7 +937,7 @@
               Position.X = 30.000000000000000000
               Position.Y = 34.000000000000000000
               Size.Width = 308.000000000000000000
-              Size.Height = 380.000000000000000000
+              Size.Height = 455.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text10: TText
@@ -1035,16 +1036,16 @@
               ReadOnly = True
               Align = Client
               Size.Width = 519.000000000000000000
-              Size.Height = 380.000000000000000000
+              Size.Height = 455.000000000000000000
               Size.PlatformDefault = False
               Viewport.Width = 515.000000000000000000
-              Viewport.Height = 376.000000000000000000
+              Viewport.Height = 451.000000000000000000
             end
           end
           object Rectangle61: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 444.000000000000000000
+            Position.Y = 519.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 98.000000000000000000
             Size.PlatformDefault = False
@@ -1402,7 +1403,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle136: TRectangle
@@ -1512,7 +1513,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid1: TStringGrid
@@ -1520,14 +1521,14 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
         end
@@ -1657,7 +1658,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle2: TRectangle
@@ -1747,7 +1748,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid3: TStringGrid
@@ -1755,20 +1756,20 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 53
               Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 867.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle8: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -2126,7 +2127,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle39: TRectangle
@@ -2296,7 +2297,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid4: TStringGrid
@@ -2304,7 +2305,7 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
@@ -2312,7 +2313,7 @@
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               OnCellDblClick = StringGrid4CellDblClick
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 488.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
           object Rectangle50: TRectangle
@@ -2664,7 +2665,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle70: TRectangle
@@ -2774,7 +2775,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid5: TStringGrid
@@ -2782,20 +2783,20 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 12
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle94: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -3140,7 +3141,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle108: TRectangle
@@ -3271,7 +3272,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid6: TStringGrid
@@ -3279,20 +3280,20 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 11
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle114: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -3624,7 +3625,7 @@
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -3637,7 +3638,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle128: TRectangle
@@ -3768,7 +3769,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid7: TStringGrid
@@ -3776,20 +3777,20 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 15
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle143: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -3817,6 +3818,7 @@
                 Size.Height = 36.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
+                OnClick = Rectangle145Click
                 object Rectangle146: TRectangle
                   Align = Left
                   Fill.Kind = None
@@ -4110,7 +4112,7 @@
               Size.Width = 605.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Demandes Refus'#233'e'
+              Text = 'Demandes Accept'#233
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.HorzAlign = Leading
             end
@@ -4121,7 +4123,7 @@
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -4134,7 +4136,7 @@
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle161: TRectangle
@@ -4265,7 +4267,7 @@
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid8: TStringGrid
@@ -4273,20 +4275,20 @@
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 11
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle168: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -4314,6 +4316,7 @@
                 Size.Height = 36.000000000000000000
                 Size.PlatformDefault = False
                 Stroke.Kind = None
+                OnClick = Rectangle170Click
                 object Rectangle171: TRectangle
                   Align = Left
                   Fill.Kind = None
@@ -4607,7 +4610,7 @@
               Size.Width = 605.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Demandes Refus'#233'e'
+              Text = 'Demandes Accept'#233
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.HorzAlign = Leading
             end
@@ -4623,7 +4626,7 @@
     Padding.Bottom = 25.000000000000000000
     Position.Y = 33.000000000000000000
     Size.Width = 207.000000000000000000
-    Size.Height = 597.000000000000000000
+    Size.Height = 672.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object rect_navbar_employee: TRectangle

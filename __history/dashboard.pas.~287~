@@ -448,6 +448,7 @@ type
     procedure Rectangle123Click(Sender: TObject);
     procedure Rectangle156Click(Sender: TObject);
     procedure Rectangle170Click(Sender: TObject);
+    procedure Rectangle145Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -664,6 +665,42 @@ begin
   tabs.TabIndex := 1;
 end;
 
+procedure TForm2.Rectangle145Click(Sender: TObject);
+begin
+  // send num Delivery of selected row to report form
+  form8.num_delivery := strtoint(Stringgrid7.Cells[0,Stringgrid7.Selected]);
+  //ShowMessage(Stringgrid7.Cells[0,Stringgrid8.Selected]);
+  // filter
+
+  form8.ADOTable2.filtered := false;
+  form8.ADOTable2.filter := 'num_delivery=' + inttostr(form8.num_delivery);
+  form8.ADOTable2.filtered := true;
+
+  form8.ADOTable2.active := false;
+  form8.ADOTable2.active := true;
+  form8.ADOTable2.refresh;
+
+  form8.ADOTable2.First;
+
+  form8.ADOQuery1.filtered := false;
+  form8.ADOQuery1.filter := 'num_demande=' + inttostr(form8.ADOTable2.FieldByName('num_demande').AsInteger);
+  form8.ADOQuery1.filtered := true;
+
+  form8.ADOQuery1.active := false;
+  form8.ADOQuery1.active := true;
+  form8.ADOQuery1.refresh;
+
+  form8.ADOTable1.filtered := false;
+  form8.ADOTable1.filter := 'num_delivery_bill=' + inttostr(form8.num_delivery);
+  form8.ADOTable1.filtered := true;
+
+  form8.ADOTable1.active := false;
+  form8.ADOTable1.active := true;
+  form8.ADOTable1.refresh;
+
+  form8.frxReport1.ShowReport();
+end;
+
 procedure TForm2.Rectangle152Click(Sender: TObject);
 begin
     try
@@ -692,7 +729,7 @@ begin
   form8.num_delivery := strtoint(Stringgrid8.Cells[0,Stringgrid8.Selected]);
   ShowMessage(Stringgrid8.Cells[0,Stringgrid8.Selected]);
   // filter
-  {
+
   form8.ADOTable2.filtered := false;
   form8.ADOTable2.filter := 'num_delivery=' + inttostr(form8.num_delivery);
   form8.ADOTable2.filtered := true;
@@ -719,8 +756,8 @@ begin
   form8.ADOTable1.active := true;
   form8.ADOTable1.refresh;
 
-  form8.frxReport1.ShowReport();           }
-  form8.ShowModal;
+  form8.frxReport1.ShowReport();
+  //form8.ShowModal;
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);

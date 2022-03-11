@@ -1,9 +1,10 @@
-object Form2: TForm2
+﻿object Form2: TForm2
   Left = 0
   Top = 0
+  ActiveControl = TabItem10
   BorderStyle = None
   Caption = 'Dashboard'
-  ClientHeight = 630
+  ClientHeight = 705
   ClientWidth = 1094
   Position = DesktopCenter
   FormFactor.Width = 320
@@ -15,35 +16,39 @@ object Form2: TForm2
     Align = Client
     Fill.Kind = None
     Size.Width = 887.000000000000000000
-    Size.Height = 597.000000000000000000
+    Size.Height = 672.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object tabs: TTabControl
       Align = Client
       Size.Width = 887.000000000000000000
-      Size.Height = 597.000000000000000000
+      Size.Height = 672.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 8
+      TabIndex = 10
       TabPosition = None
       Sizes = (
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s
+        672s
         887s
-        597s)
+        672s
+        887s
+        672s
+        887s
+        672s)
       object TabItem4: TTabItem
         CustomIcon = <
           item
@@ -61,7 +66,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle33: TRectangle
@@ -191,7 +196,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object grid_Employee_List: TStringGrid
@@ -199,14 +204,14 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 492.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
         end
@@ -476,8 +481,8 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TabOrder = 0
               RowCount = 0
-              Viewport.Width = 368.000000000000000000
-              Viewport.Height = 384.000000000000000000
+              Viewport.Width = 364.000000000000000000
+              Viewport.Height = 359.000000000000000000
             end
           end
           object Rectangle86: TRectangle
@@ -915,7 +920,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle60: TRectangle
@@ -925,7 +930,7 @@ object Form2: TForm2
             Padding.Right = 30.000000000000000000
             Padding.Bottom = 30.000000000000000000
             Size.Width = 887.000000000000000000
-            Size.Height = 444.000000000000000000
+            Size.Height = 519.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object Rectangle67: TRectangle
@@ -934,7 +939,7 @@ object Form2: TForm2
               Position.X = 30.000000000000000000
               Position.Y = 34.000000000000000000
               Size.Width = 308.000000000000000000
-              Size.Height = 380.000000000000000000
+              Size.Height = 455.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text10: TText
@@ -1033,16 +1038,16 @@ object Form2: TForm2
               ReadOnly = True
               Align = Client
               Size.Width = 519.000000000000000000
-              Size.Height = 380.000000000000000000
+              Size.Height = 455.000000000000000000
               Size.PlatformDefault = False
-              Viewport.Width = 519.000000000000000000
-              Viewport.Height = 380.000000000000000000
+              Viewport.Width = 515.000000000000000000
+              Viewport.Height = 451.000000000000000000
             end
           end
           object Rectangle61: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 444.000000000000000000
+            Position.Y = 519.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 98.000000000000000000
             Size.PlatformDefault = False
@@ -1400,7 +1405,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle136: TRectangle
@@ -1510,7 +1515,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid1: TStringGrid
@@ -1518,14 +1523,14 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 3
               Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 492.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
         end
@@ -1655,7 +1660,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle2: TRectangle
@@ -1745,7 +1750,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid3: TStringGrid
@@ -1753,20 +1758,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 53
               Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 434.000000000000000000
+              Viewport.Width = 867.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle8: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -2124,7 +2129,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle39: TRectangle
@@ -2294,7 +2299,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 492.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid4: TStringGrid
@@ -2302,15 +2307,15 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 492.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 0
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               OnCellDblClick = StringGrid4CellDblClick
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 492.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
           object Rectangle50: TRectangle
@@ -2662,7 +2667,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle70: TRectangle
@@ -2772,7 +2777,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid5: TStringGrid
@@ -2780,20 +2785,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 12
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 434.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle94: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -3138,7 +3143,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle108: TRectangle
@@ -3269,7 +3274,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 509.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid6: TStringGrid
@@ -3277,20 +3282,20 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 509.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 11
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 434.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 505.000000000000000000
             end
           end
           object Rectangle114: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
@@ -3622,7 +3627,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -3635,7 +3640,7 @@ object Form2: TForm2
           Align = Client
           Fill.Kind = None
           Size.Width = 887.000000000000000000
-          Size.Height = 542.000000000000000000
+          Size.Height = 617.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object Rectangle128: TRectangle
@@ -3766,7 +3771,7 @@ object Form2: TForm2
             Align = Client
             Fill.Kind = None
             Size.Width = 887.000000000000000000
-            Size.Height = 434.000000000000000000
+            Size.Height = 567.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
             object StringGrid7: TStringGrid
@@ -3774,24 +3779,25 @@ object Form2: TForm2
               CanFocus = True
               ClipChildren = True
               Size.Width = 887.000000000000000000
-              Size.Height = 434.000000000000000000
+              Size.Height = 567.000000000000000000
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
               RowCount = 15
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 887.000000000000000000
-              Viewport.Height = 434.000000000000000000
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 563.000000000000000000
             end
           end
           object Rectangle143: TRectangle
             Align = Bottom
             Fill.Kind = None
-            Position.Y = 484.000000000000000000
+            Position.Y = 559.000000000000000000
             Size.Width = 887.000000000000000000
             Size.Height = 58.000000000000000000
             Size.PlatformDefault = False
             Stroke.Kind = None
+            Visible = False
             object Rectangle144: TRectangle
               Align = FitRight
               Fill.Kind = None
@@ -4108,7 +4114,1003 @@ object Form2: TForm2
               Size.Width = 605.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              Text = 'Demandes Refus'#233'e'
+              Text = 'Demandes Accept'#233
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+      end
+      object TabItem10: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem5'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object Rectangle160: TRectangle
+          Align = Client
+          Fill.Kind = None
+          Size.Width = 887.000000000000000000
+          Size.Height = 617.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Rectangle161: TRectangle
+            Align = Top
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle162: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.Y = 9.000000000000000000
+              Size.Width = 59.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Cap = Round
+              object Text68: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 59.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Code'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle163: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 59.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text69: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 300.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Delivery Date '
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Line17: TLine
+              Align = Top
+              LineType = Top
+              Margins.Left = 3.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Position.X = 3.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 881.000000000000000000
+              Size.Height = 4.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claSteelblue
+              Stroke.Thickness = 4.000000000000000000
+              Stroke.Cap = Round
+            end
+            object Rectangle164: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 359.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 100.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text70: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Num Demande'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle165: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 459.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text71: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 300.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Demande Date'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle166: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 759.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 100.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Cap = Round
+              object Text72: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Faite par'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+          end
+          object Rectangle167: TRectangle
+            Align = Client
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 509.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object StringGrid8: TStringGrid
+              Align = Client
+              CanFocus = True
+              ClipChildren = True
+              Size.Width = 887.000000000000000000
+              Size.Height = 509.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              TabOrder = 0
+              RowCount = 11
+              Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 505.000000000000000000
+            end
+          end
+          object Rectangle168: TRectangle
+            Align = Bottom
+            Fill.Kind = None
+            Position.Y = 559.000000000000000000
+            Size.Width = 887.000000000000000000
+            Size.Height = 58.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle169: TRectangle
+              Align = FitRight
+              Fill.Kind = None
+              Padding.Left = 25.000000000000000000
+              Padding.Top = 11.000000000000000000
+              Padding.Right = 25.000000000000000000
+              Padding.Bottom = 11.000000000000000000
+              Position.X = 392.000030517578100000
+              Size.Width = 494.999969482421900000
+              Size.Height = 58.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Rectangle170: TRectangle
+                Align = Right
+                Cursor = crHandPoint
+                Fill.Color = xFF06AD57
+                Padding.Right = 5.000000000000000000
+                Position.X = 268.999969482421900000
+                Position.Y = 11.000000000000000000
+                Size.Width = 201.000000000000000000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                OnClick = Rectangle170Click
+                object Rectangle171: TRectangle
+                  Align = Left
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image36: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          0BE249444154785EEDDD7D7014F51DC7F1EFEE3DE501843C342109D020019C16
+                          9F5A45A34410115A079D428188091D1D67AA4305A733B53A9D8E55DB994EFDA3
+                          D6C751C73EF94469476B7D1A076B7D00C5225AC1C7968098F402C911022697CB
+                          3DEDAFBB97EF046908B9BDEC727BBFDFE73563EFFB5B1C2736EFAC7B777BBF68
+                          E4214208BDB3B3736B2C163B231C0E9734343478EAEB73527F7F3F4FB99BF9DA
+                          65DFF35FB7E7315E42163C13547B7BFBB93E9F6F3B2FA5E744F0B35EBB8C0CA1
+                          B5F8AF6F7B920FC118747ECC2BF3CC6EB6AE4EEC4ED235F144EAC186AB780963
+                          F044F0FBF7EF7F9A47C801A2CF9E27828FC7E317F00839B2A2371E6E68E1258C
+                          C213C19BD7EFE53CC27808F138CEF427E689E01B1A1A3CF175C80097372786D0
+                          24C4D1B7F212BE04C14BCA8CFE319CE94742F0121B7A227BEA1A5E8209C1CB4E
+                          684FE24C7F14825740E69AFEA1996B79A93404AF08F31BFD28CEF4085E2978C9
+                          12C12B47F5E811BC82548E1EC12B4AD5E811BCC2548C1EC12B2E13BD422F5922
+                          78B02250E6254B040F19D6995E85DB10103C1CA5C06D08081E8EC14F64A5BDB5
+                          18C1C30866F4D2DE5A8CE0E1B8647DC912C1C3A8869EC8CAF5C170040F2726D9
+                          07C3113C8C49A6CB1B040F5991257A040F59CB445FE0B7212078B0C50CE651E3
+                          E15905FB8E2C8207FB8451B0EFC82278C849A15ED3BBBA3FFCAAEFB6B4EA9AF6
+                          839430CA7D7ABAA2ABFB40D994AA69237EC87EFD9B5FF1A40EA7F687CFB79F6F
+                          A9A097F796F22A17862128DD6B085F8F4FE8874837EEDFFAD6EB8FF31F3ACEF1
+                          E057AE6C5D2404FDC1AFD3343E3426049F1B2F046FB9C38CFEEFE38A7EA4B4A0
+                          0EF3E1EA6DDB5EFDC7D01167387649B37C79CBD4152B5A233E8D5EB1133B14BE
+                          5B9B7A68F18C015E39C3EC689AD55263E3C59179F3164CE5C3E3E648F057AE6A
+                          DD10F46B1D011F55F22150CCAD171DA42533A3BC728E197D65D0AF77CC6F5CB8
+                          810F8DCBB8836F5ED9F2AC20BA9B97A0B09FCE37CFF4A73A1F7D86A6DD6D46FF
+                          2CAF7236AEE0CDD85F32BF90CB7909307479E35EF4975F78C1C52FF12A273907
+                          BF7AE5DA75E617B0949700C3DC8C5E235A6A9EE9D7F1D2B69C826F6E5E3B5BD3
+                          C4FDBC843C11BE104FDE6345EFC6357D86A6DD3F7FFE25B379654B4EC10B23BE
+                          8547C8A3CFCF7D88276FCA5CD33BFCEACD3023955383B6835FBD7AED528D8255
+                          BC843C4A1655514FBDB73F7E6ABD7AE3CEE58D5ED5D4B8D0F625B5EDE0B544EA
+                          B73C82071CAABF8AF6343DE5F9CB9B4B5D885E6869DB2DDA7EA7B57955ABE0D1
+                          3178A7550DD75E733D4FCED9FAD6ABB61AB675865FBDB2F51A1E013C617EE3C5
+                          B69AB4157C5A18B7F008E00969B2D7A4CD6B787D020F009EE04B91AD266D05EF
+                          D353137904F086946EAB495BC16BE4C7191EBCA5D8C533BCC9D50F8C00E4C0BD
+                          5769000A1D8207A52078500A8207A52078500A8207A52078500A8207A5207850
+                          0A8207A52078500A8207A52078500A8207A52078508AAD7B89AD1D0B7A6ACFA0
+                          EEAF9E4B89E2C9437F159D4242C3CF8D5DC97DF8F0582E748A932FD14B81BE30
+                          4D38B89D267FFAB4AD9D0BB2FA1BA73C193947F7D15F34F2D7F321182704EF9C
+                          D4C0E1B8BF72D2E5DDEB032FF3A1519D30F8A99BDA8B8551D4417AA0820F8143
+                          10BC0BF48E9428AE2F8BDCA08DBAE9CFA8D722351B0FDD2068E200628782614C
+                          F36BD1745FD5DD83A36EF47BDC337CDDA6437F36FF68152FC10538C3BBCC97DA
+                          D2FDA3A28B78356CC419DE8CDDBC0E42EC50E0D2FEA6EA3B93BB7835EC98E06B
+                          37F55C6FC6BE989700054D08EDF4EA7B637FE465C6F0254DCD1391D374BFFF13
+                          5E82CB704973F268C5C6795D1B82DBAD79F80CAF09DFAB3C024845F444B6F238
+                          147CCDA6C3976A016D4AE608806C4AAA0355F7C4AEB3C64CF069217E673D02C8
+                          6AB0277E97F598093EA09163BFE918C08B8A4A26145B8F7AEDC6DEAB33470024
+                          37E5BE817B744D1377F01A406A46D4B752272D9D39D503484F4B4E34AFE1FD08
+                          1ED410ED28D6A9ADAD849700722B99E5D3A9A121EB9BE7010ADDF03BAD002A40
+                          F0A014040F4A41F0A014AD6E53AFE0D915D633E296BA202DABF6535D914EBE2C
+                          9F221BE657D51537E8A5488A1E694F90AB5F641EE0F6E0FC7035F8C9018D5E98
+                          579ADDD6086358B1234A07E2F2648FE0F3C3D54B9AE71D8ADDF2D439A5A4E305
+                          541827D782BF7966C8D17FB8D5FA83A7E34D61181FD7825F50E1E7C9397327FA
+                          7802C88D6BC19FE2C7F507788F6BC1C7AC9759003CC6B5E077470D9E9C3390C6
+                          0F118C8F6BC1AFFF30C6937396BD13E5092037AE056F9D8C6FF9649057E3F7C0
+                          BE040DA679019023D782B7BC712845CB7744A93799FBA548D4FCC959F3DE003D
+                          1E4EF01180DCB97E6B011C1FDE69CD0F57CFF0005E83E04129081E9482E04129
+                          081E9482E04129081E9482E04129081E9482E04129081E94E2FABD34C1C13E3A
+                          7BF32F289018E023600987C33C8145F3F9E9B34B7E4F8962777FD598AB67F8CA
+                          FFFE8BE63DFF13C40E6312E914D56F5E4B15FB9EE523EE702D78CD48D3696FE3
+                          77A5813D153BEF253DEDDCE728FE9F6BC19FFEC63D3C01D8337DEB0F79729E6B
+                          C1971EE9E409C09ED017FB78729E6BC1EB297C420972238C144FCE732DF85400
+                          BB84418EFC211E9CE75AF087ABE7F00460CF60C55C9E9CE75AF0FF3EEF1A9E00
+                          EC693FFF973C39CFB5E02D3BBE7D1B4F00D9695FF488F9BFEE6DD3E8FEAE0542
+                          D08C5D7FA5CAF04E0AC60E93269CDF91AC10E19DD6A3B440091DA95B485D67DC
+                          484273F51CEC8D6D3AB6CF57EF9DD8FEFE7E9ED4D1F4CC4C9EF2C7DD1F27008F
+                          41F0A014040F4A41F0A014040F4A41F0A014040F4A41F0A014040F4A41F0A014
+                          256E2D300C8376EDFA98E283DEF950CA9EDD9FF1947FC15090162F6922BFDFF9
+                          5F26FD65B8B5E024E8EBEBA777B6BFEFA9D8BD26114FD08BCFBD4291EE1E3E22
+                          2FA9831742D0C71FFD875730966D6FEEC8FCD750665207BF67CFE73C41B6DEDD
+                          B18B2739491DFC1747FA78826C45BAE4BEAC913AF854CABD4FBFCB2A9D96FBB7
+                          3F4B1D7C2018E009B21508B8FB4A4DBE491D7C59D9249E205B536AAB799293D4
+                          C1D7D74FE309B275E6595FE3494E52076F39EB6CF7F63891CDA24B9B48D3DCDB
+                          31C00BA40F3E140AD279E77F83AAAA2B29685ED3CBFE0DB5CB7A9E33757A2D5D
+                          B17C294D9850C247E5855D0BF204BB16E487F46778802F43F0A014040F4A41F0
+                          A0149DDADAF2FEA415E064D1A9BE21C63380DC06DAD23AE949040F4A8852DDA0
+                          197C00BF441594501A08F6E98691BE93D700729B245ED4F7AFA9BC8F970052EB
+                          5E5F746DE6C692BA3FF57491A657658EE6C1C9B8B560E7CE8F683016E755FE79
+                          69D782507188962C5DE0FA7D4679BDB560A02BD97D7B5D905F87D7D70D3DCA27
+                          1A1DA07FBEFD9EA762F79AB8F9FFCD73CF6CA69E83BD7C44421515375B0F99E0
+                          C357963D9588270E59B34CAC5D0B3EFCE0535EC158DEDCB25DCE5D0BF48E54F7
+                          86A2BB3263E68029180C2CE2511A7BF762D702BBDE7BF7039EE4A107AB17F378
+                          34F8F095E53B05899FF1520A470E63D702BB225D077992835E9278E1C08D25AF
+                          F3F268F096CEE6F23B0C126FF3B2E061D702FB522979762DD034D176607DC932
+                          5E661C13BC657F7379A3207A8397052D10C0AE0576C9B26B81D0C5275D3F0ECC
+                          E2E5B011C15B3A9BCB16980FB70FAD0AD7E4B25378826C55D77C85A7C2A515A7
+                          FF16B92970DC4FA31F37784BB8B9EC364A2567A78CC1C37CA8E0CC98319D27C8
+                          56417FE85DEF4889D2F4D95D1B42DFE123238C1ABC25DC52B5BB6B4D4D9910E2
+                          0A911407F8704139F3ACAFF304635978C98585F921F781AE241525AFEBBE6946
+                          207243E87D3E7A5CB6FFEDEA36F67C3FADEBEB7C8226A7C4E024BF1E36AF1B66
+                          9EF007672C27E39DD6DDBBF7D21747FA3DF344D62BEFB45A7BC297574EA6F31B
+                          BFC947DCE3C83BAD56DCA5E5FD24FC112A496FEE5E5FB49EFF242B9EF8710E87
+                          C3CA7D0845C55D0BE6CC9993F7DEC67566062834081E9482E04129081E9482E0
+                          4129081E9482E04129081E9482E04129081E9482E04129081E9482E04129081E
+                          9482E041299E08BEADAD4DC2DD7FC08B3C11FCF4E9D3A5DBF50C8ED5DBDBEB89
+                          BD0E3D117C28147A8B47905459599927BEC79E08BEA6A666058F20A96432F92D
+                          1EF3CA13C16B9A9636CDE32548C6FCFE2E993B776E829779E589E02DE675FC3B
+                          B5B5B53E73DC168BC5A2E61359FC76C1C2963243FFB4B3B333307BF6EC97F958
+                          9E11FD0F56807B5CEEBDB2D20000000049454E44AE426082}
+                        FileName = 'D:\icons\printer.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 15.000000000000000000
+                    Margins.Top = 7.000000000000000000
+                    Margins.Right = 7.000000000000000000
+                    Margins.Bottom = 7.000000000000000000
+                    Size.Width = 23.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object Rectangle172: TRectangle
+                  Align = Client
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 106.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Text76: TText
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 5.000000000000000000
+                    Size.Width = 101.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Imprimmer'
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                  end
+                end
+                object Rectangle173: TRectangle
+                  Align = Right
+                  Fill.Kind = None
+                  HitTest = False
+                  Position.X = 151.000000000000000000
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image37: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
+                          780052D0A2CD2B202D3411A2A2D96DF202A1E01568220AEF381450B0C9E041D7
+                          DAAC49ECB17DEFDCF33BE7FB6932B3D24AAB936F4EAEFF24DB9C002BCBE55D97
+                          2EFFA7EB1EBE3A3F3FFF39DD4A23F8E0B685BE6915FED7ABF02FD3ADA449FA88
+                          605EBDFAE1619FD87B4D3379D9FF9DDBDBDB4FD21FC961C307B46FE84F596DFB
+                          DBD5B6FF2CDDCA20F86072C4FE5EF7F77C3EFF38DD48E0481348DED87BCD47CB
+                          E5F2FB7423810D1F44FED8DF9BCF67321D117C0025635F53899E238D7363C4AE
+                          84E01D1B33F6B6BDFB365D9AC691C6A91A9B5DE158C386778863CCF308DE1962
+                          DF8EE01D21F6DD08DE09621F86E01D20F6E1085E9C95D8EFEFBB5FD3A5693C2D
+                          29CCD266E7955614C531E630042FC85AECB3D999CC0F8410BC188B9BBD699ABF
+                          D2A5799CE185588C5DE9ADC13D821741EC7910BC0062CF87E08D23F6BC08DE30
+                          62CF8FE08D22F63208DE20622F87E08D21F6B208DE10622F8FE08D20F67110BC
+                          01C43E1E82AF8CD8C745F01511FBF808BE1262AF83E02B20F67A087E64C45E17
+                          C18F88D8EB23F89110BB0D043F0262B783E00B23765B08BE2062B787E00B2176
+                          9B08BE0062B78B216446ECB631888C88DD3E869109B16B60201910BB0E867224
+                          62D7C2608E40EC7A18CE81885D13033A00B1EB62487B22766D0C6A0FC4AE8F61
+                          0D44EC3E30B00188DD0F86B603B1FBC2E0B620767F18DE3388DD2706F80462F7
+                          8B216E2076DF18E423C4EE1FC34C883D0606BA42EC71841F2AB1C7127AB0C41E
+                          4FD8E1127B4C21074CEC71851B32B1C7166AD0C48E30C32676F4420C9CD8B1E6
+                          7EE8C48EC75C0F9ED8B169923EBA6331F6D9ECCCEDBC55B8DC3656636F9AC6DC
+                          BF2B1A77C1133BB671F52DD662EC97972FA7C46E879B0D6F74B3F7B13FA45B18
+                          E0227862C750F2C1133BF6217D86B718FB9B37AF4F89DD2ED90D6F74B3F7B1DF
+                          A75B1824193CB1E35072C1133B8E2115BCC5D8796F8C169907AD6DBBFC2D5D9A
+                          41EC7A643E61D6B63BB16B92F8A4113B72E1EDAA7B22766DE6837FFB76F94DBA
+                          AC8ED8F599FF045A39CE10BB0F1C690620763F087E0762F785E077582C169FA7
+                          4B3840F03B4CA7A7BFDFDCDCBC48B710C783D68166B3B3174DD3BC4BB710657E
+                          C33F3C7417E9B2AABBBB3FFFE9BAEE34DD4294C403324BAFB4B2E9B57186DF13
+                          9B5E9BCC536ED6DE4FC3A6D7A4B4E17F4A1F4DE837FDF5F5359B5E8CD48B2AD6
+                          B67C8F9F76D222F72A22D1E31872C1F7881E87920CBE47F43884ECD39216DFD4
+                          B57A20FBEEEAEA6A9A6E6190EC865F33BAE9F9557B46C907DF237A0CE522F81E
+                          D16308376F2D307AA6BFBFB8B8E0ED1B86B8D9F06B46373DFFE58D11EE82EF11
+                          3D9EE332F81ED1E3296ECF9746CFF43C80ADCCED865FB3B8E9F94D08F584183C
+                          D1632DCCD0891EBD5003277A841B36D1C71672D0441F57D821137D4CA1074CF4
+                          F1841F2ED1C7C26057883E0E869A107D0C0CF411A2F78F616E207ADF18E41388
+                          DE2F86F80CA2F789016E41F4FE30BC1D88DE17063700D1FBC1D006227A1F18D8
+                          1E885E1FC3DA13D16B635007207A5D0CE94044AF89011D81E8F5309C2311BD16
+                          069301D1EB60289910BD06069211D1DBC73032237ADB184401446F17432884E8
+                          6D22F88288DE1E822F8CE86D21F81110BD1D043F12A2B781E04744F4F511FCC8
+                          88BE2E82AF80E8EB21F84A88BE0E82AF88E8C747F09511FDB808DE00A21F0FC1
+                          1B41F4E320784388BE3C823786E8CB22788388BE1C82378AE8CB2078C3883E3F
+                          82378EE8F3227801449F0FC18B20FA3C085E08D11F8FE0C510FD7126E9234428
+                          3F60B480E189B2B6E955BE10D9F0A2D8F48721786196A26FDBF69774691A5BC2
+                          012BC71B85EF3A6C780738DE0C47F04E10FD3004EF08D1EF46F0CE10FD7604EF
+                          10D13F8FE09D1A3BFAC9A4F9225D9AC626706EACA72C55BEABB0E19DE378F321
+                          861144C94DAFF445C5860FA254944D73F263BA94C0860F26F7A6573B32117C40
+                          B9A2577C7CC09126A0E343EDBE538CBDC7860FAC6DDB79D34CDA743B886AE86B
+                          048FFF2C168B3FA6D3D34FD3ED86EECBF97CFE3ADD083B39F9171C4B08AD84BD
+                          D14C0000000049454E44AE426082}
+                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 13.000000000000000000
+                    Margins.Top = 13.000000000000000000
+                    Margins.Right = 13.000000000000000000
+                    Margins.Bottom = 13.000000000000000000
+                    RotationAngle = 180.000000000000000000
+                    Size.Width = 19.000000000000000000
+                    Size.Height = 10.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object ColorAnimation21: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFF06AD57
+                  StopValue = xFFF95252
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Text78: TText
+                Align = Client
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Size.Width = 238.999969482421900000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'S'#233'lectionner la Facture puis imprimmer'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = claDarkgray
+              end
+            end
+          end
+        end
+        object Rectangle174: TRectangle
+          Align = Top
+          Fill.Kind = None
+          Margins.Top = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 887.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Line18: TLine
+            Align = Top
+            LineType = Top
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 881.000000000000000000
+            Size.Height = 4.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claSteelblue
+            Stroke.Thickness = 4.000000000000000000
+            Stroke.Cap = Round
+          end
+          object Rectangle175: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Padding.Top = 7.000000000000000000
+            Padding.Bottom = 7.000000000000000000
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Text79: TText
+              Align = Top
+              Position.Y = 7.000000000000000000
+              Size.Width = 605.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Demandes Accept'#233
+              TextSettings.Font.StyleExt = {00060000000000000004000000}
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+      end
+      object TabItem11: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem5'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object Rectangle176: TRectangle
+          Align = Client
+          Fill.Kind = None
+          Size.Width = 887.000000000000000000
+          Size.Height = 617.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Rectangle177: TRectangle
+            Align = Top
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle178: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.Y = 9.000000000000000000
+              Size.Width = 59.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Cap = Round
+              object Text80: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 59.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Code'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle179: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 59.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text81: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 300.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Delivery Date '
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Line19: TLine
+              Align = Top
+              LineType = Top
+              Margins.Left = 3.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Position.X = 3.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 881.000000000000000000
+              Size.Height = 4.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claSteelblue
+              Stroke.Thickness = 4.000000000000000000
+              Stroke.Cap = Round
+            end
+            object Rectangle180: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 359.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 100.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text82: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Num Demande'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle181: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 459.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text83: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 300.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Demande Date'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+            object Rectangle182: TRectangle
+              Align = Left
+              Fill.Kind = None
+              Position.X = 759.000000000000000000
+              Position.Y = 9.000000000000000000
+              Size.Width = 100.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              Stroke.Cap = Round
+              object Text84: TText
+                Align = Client
+                Padding.Left = 15.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 41.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Faite par'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = xFF494949
+              end
+            end
+          end
+          object Rectangle183: TRectangle
+            Align = Client
+            Fill.Kind = None
+            Size.Width = 887.000000000000000000
+            Size.Height = 509.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object StringGrid9: TStringGrid
+              Align = Client
+              CanFocus = True
+              ClipChildren = True
+              Size.Width = 887.000000000000000000
+              Size.Height = 509.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              TabOrder = 0
+              RowCount = 4
+              Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
+              Viewport.Width = 883.000000000000000000
+              Viewport.Height = 505.000000000000000000
+            end
+          end
+          object Rectangle184: TRectangle
+            Align = Bottom
+            Fill.Kind = None
+            Position.Y = 559.000000000000000000
+            Size.Width = 887.000000000000000000
+            Size.Height = 58.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Rectangle185: TRectangle
+              Align = FitRight
+              Fill.Kind = None
+              Padding.Left = 25.000000000000000000
+              Padding.Top = 11.000000000000000000
+              Padding.Right = 25.000000000000000000
+              Padding.Bottom = 11.000000000000000000
+              Position.X = 392.000030517578100000
+              Size.Width = 494.999969482421900000
+              Size.Height = 58.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Rectangle186: TRectangle
+                Align = Right
+                Cursor = crHandPoint
+                Fill.Color = xFF06AD57
+                Padding.Right = 5.000000000000000000
+                Position.X = 268.999969482421900000
+                Position.Y = 11.000000000000000000
+                Size.Width = 201.000000000000000000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                OnClick = Rectangle170Click
+                object Rectangle187: TRectangle
+                  Align = Left
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image38: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          0BE549444154785EEDDD7D7014F51DC7F1EFEE3DE501843C3421090F414C705A
+                          7C6A158D124144681D740A05222674749CA90E159CCED4EA743A566D673AF58F
+                          5A1F471DFBE413A51DADF5691CACF501148B68051FDB0842C2059210022697CB
+                          3DEDAFBB97EF046908B9BDEC727BBFDFE73563EFFB5B1C2736EFAC7B777BBF68
+                          E4214208BDA3A3634B341A3D73DFBE7D457575759EFAFA9CD4DFDFCF53F666BD
+                          7EF9F7FDD7EF7A9C979001CF04D5D6D6769ECFE7DBC64BE939117CDDEB979321
+                          B466FF0D9F3FC587600C3A3FE6947966375B57277627E99A7832F9D06957F312
+                          C6E089E0F7EFDFFF0C8F9005449F394F041F8BC52EE411B264456F3C725A332F
+                          61149E087EEFDEBDA53CC27808F104CEF427E689E0EBEAEA3CF175C800973727
+                          86D024C4D1B7F012BE02C14BCA8CFE719CE94742F0121B7A227BEA6A5E8209C1
+                          CB4E684FE14C7F14825740FA9AFEE1596B78A93404AF08F31BFD18CEF4085E29
+                          78C912C12B47F5E811BC82548E1EC12B4AD5E811BCC2548C1EC12B2E1DBD422F
+                          592278B02250E6254B040F69D6995E85DB10103C1CA5C06D08081E8EC14F64A5
+                          BDB518C1C30866F4D2DE5A8CE0E1B8647DC912C1C3A8869EC8CAF5C170040F27
+                          26D907C3113C8C49A6CB1B040F1991257A040F194B479FE7B7212078B0C50CE6
+                          31E391BABC7D4716C1837DC2C8DB7764113C64255FAFE95DDD1F7EE5F79A5B74
+                          4DFB615218A53E3D55D6D975A0644AC5B4113F64BFF9EDAF79528753FBC3E7DA
+                          2F3697D12BBB8B79950DC31094EA3584AFC727F443A41B0F6C79FB8D27F80F1D
+                          E778F02B56B42C1482FEE8D7691A1F1A1382CF8E1782B7DC6946FF8F71453F52
+                          4A50BBF970CDD6ADAFFD73E888331CBBA459B6AC79EAF2E52DDD3E8D5EB5133B
+                          E4BFDB1A7B68D1CC015E39C3EC689AD55243C325DD73E7CE9FCA87C7CD91E0AF
+                          5AD9B23EE8D7DA033E2AE743A098DB2E3E488B674578E51C33FAF2A05F6F9FD7
+                          B0603D1F1A977107DFB4A2F93941740F2F41613F9B679EE94F753EFA344DBBC7
+                          8CFE395E656D5CC19BB1BF6C7E2157F01260E8F2C6BDE8AFB8E8C24B5EE65556
+                          B20E7ED58A356BCD2F60092F0186B919BD46B4C43CD3AFE5A56D5905DFD4B4A6
+                          5ED3C403BC841C11BE104FDE6345EFC6357D9AA63D306FDEA5F5BCB225ABE085
+                          11DBCC23E4D0DEF31EE6C99BD2D7F40EBF7A33CC4866D5A0EDE057AD5AB344A3
+                          60052F2187120515D453EBED8F9F5AAFDEB87379A35734362CB07D496D3B782D
+                          9EFC1D8FE001876AAFA65D8D4F7BFEF2E63217A2175ACA768BB6DF696D5AD922
+                          78740CDE6955C375D7DEC09373B6BCFD9AAD866D9DE157AD68B99647004F98D7
+                          7089AD266D059F12C6AD3C0278428AEC3569F31A5E9FC0038027F89264AB495B
+                          C1FBF4E4441E01BC21A9DB6AD256F01AF97186076F2974F10C6F72F503230059
+                          70EF551A807C87E04129081E9482E04129081E9482E04129081E9482E0412908
+                          1E9482E04129081E9482E04129081E9482E04129081E9462EB5E626BC7829EEA
+                          33A96BC679142F9C3CF457C1292434FCDCD895D8830F8F6543A718F9E2BD14E8
+                          0BD38483DB68F267CFD8DAB920A3BF71CA53DDE7EA3EFAAB46FE5A3E04E384E0
+                          9D931C381CF3974FBAA26B5DE0153E34AA13063F75635BA1300ADA490F94F121
+                          7008827781DE9E1485B525DD376AA36EFA33EAB548D58643370A9A3880D8216F
+                          18D3FC5A24D55771CFE0A81BFD1EF70C5FB3F1D05FCC3F5AC94B7001CEF02EF3
+                          253777FDB8E0625E0D1B7186376337AF83103BE4B994BFB1F2AEC44E5E0D3B26
+                          F8EA8D3D3798B12FE225405E13423BA3F2BEE89F7899367C4953F564F7E9BADF
+                          FF292FC165B8A43979B442E3FCCEF5C16DD63C7C86D784EF351E01A4227ABAB7
+                          F038147CD5C6C39769016D4AFA08806C8A2A0315F746AFB7C674F029217E6F3D
+                          02C86AB02776B7F5980E3EA09163BFE918C08B0A8A26145A8F7AF586DE6BD247
+                          002437E5FE817B754D1377F21A406A46C4B742272D953ED503484F4B4C34AFE1
+                          FD081ED410692BD4A9B5B5889700722BAAF7E9545797F1CDF300F96EF89D5600
+                          152078500A8207A52078508A56B3B157F0EC0AEB1971734D909656FAA9A64027
+                          5F864F910DF3ABEA8C19F47277921E6D8B93AB5F640EE0F6E0DC7035F8C9018D
+                          5E9C5B9CD9D6086358BE3D420762F2648FE073C3D54B9A171C8ADDF2F4B9C5A4
+                          E305541827D782BF6556C8D17FB8D5FA4367E04D61181FD7829F5FE6E7C93973
+                          26FA7802C88E6BC19FE2C7F507788F6BC147AD9759003CC6B5E05B23064FCE19
+                          48E18708C6C7B5E0D77D14E5C9394BDF8DF004901DD782B74EC6B77E3AC8ABF1
+                          7B704F9C0653BC00C8926BC15BDE3C94A465DB23D49BC8FE522462FEE4AC7E7F
+                          809E08C7F90840F65CBFB5008E0FEFB4E686AB677800AF41F0A014040F4A41F0
+                          A014040F4A41F0A014040F4A41F0A014040F4A41F0A014040F4A71FD5E9AE060
+                          1F9DB3E99714880FF011B084C3619EC0A2F9FCF4C5A57FA078A1BBBF6ACCD533
+                          7CF9BE7FD3DC177E8AD8614C2295A4DA4D6BA86CCF737CC41DAE05AF19293AFD
+                          1DFCAE34B0A76CC77DA4A79CFB1CC5FF732DF833DEBC9727007BA66FF9114FCE
+                          732DF8E2231D3C01D813FA720F4FCE732D783D894F2841768491E4C979AE059F
+                          0C609730C8923FC483F35C0BFE70E56C9E00EC192C9BC393F35C0BFE3FE75FCB
+                          13803D6D17FC8A27E7B916BC65FB776EE70920336D0B1F35FFD7BD6D1ADDDFB5
+                          40089AB9F36F541EDE41C1E861D284F33B92E523BCD37A941628A223350BA8F3
+                          CC9B4868AE9E83BDB14DC7B679EABD13DBDFDFCF933A1A9F9DC553EEB8FBE304
+                          E031081E9482E04129081E9482E04129081E9482E04129081E9482E04129081E
+                          94A2C4AD058661D0CE9D9F506CD03B1F4AD9D5FA054FB9170C0569D1E246F2FB
+                          9DFF65D25F855B0B4E82BEBE7E7A77DB079E8ADD6BE2B138BDF4FCABD4DDD5C3
+                          47E42575F04208FAE4E3FFF20AC6B2F5ADEDE9FF1ACA4CEAE077EDDACB1364EA
+                          BDED3B799293D4C17F79A48F27C85477A7DC973552079F4CBAF7E97759A55272
+                          FFF667A9830F04033C41A60201775FA9C935A9832F2999C413646A4A75254F72
+                          923AF8DADA693C41A6CE3AFBEB3CC949EAE02D679FE3DE1E27B259785923699A
+                          7B3B067881F4C18742413AFF826F5245653905CD6B7AD9BFA17659CF73A64EAF
+                          A62B972DA109138AF8A8BCB06B418E60D782DC90FE0C0FF055081E9482E04129
+                          081E94A2536B6BCE9FB4029C2C3ACDAC8BF20C20B781D6944E7A02C183122234
+                          75D00C3E805FA20A4A280E04FB74C348DDC56B00B94D122FE9FB5797DFCF4B00
+                          A975AD2BB82E7D6349CD9F7B3A49D32BD24773E064DC5AB063C7C734188DF12A
+                          F7BCB46B41A830448B97CC77FD3EA39CDE5A30D099E8BAA326C8AFC3EB6B871E
+                          E513890CD0BFDE79DF53B17B4DCCFCFFE6F9673751CFC15E3E22A1B2B25BAC87
+                          74F0E1AB4A9E8EC7E287AC5926D6AE051F7DF819AF602C6F6DDE26E7AE057A7B
+                          B26B7DC1DDE9317DC0140C0616F2288DDDBBB16B815DEFBFF7214FF2D083958B
+                          783C1A7CF8AAD21D82C4CF7929852387B16B815DDD9D077992835E147FF1C04D
+                          456FF0F268F0968EA6D23B0D12EFF032EF61D702FB924979762DD034F1F98175
+                          454B7999764CF096FD4DA50D82E84D5EE6B54000BB16D825CBAE0542179F76FE
+                          2450C7CB612382B7743495CC371FEE185AE5AFC925A7F00499AAACFA1A4FF94B
+                          2B4CFDBDFBE6C0713F8D7EDCE02DE1A692DB2999A84F1A8387F950DE9939733A
+                          4F90A9BCFED0BBDE9E14C5A9733AD787BECB47461835784BB8B9A2B573755589
+                          10E24A911007F8705E39EBEC6FF004635970E945F9F921F781CE041524AEEFBA
+                          7966A0FBC6D0077CF4B86CFFDBD56CE8F9414AD7D7FA044D4E8AC1497E7D9F79
+                          DD70DA097F70C67232DE696D6DDD4D5F1EE9F7CC1359AFBCD36AED095F5A3E99
+                          2E68F8161F718F23EFB45A711797F693F07753516A53D7BA8275FC2719F1C48F
+                          73381C56EE43282AEE5A307BF6EC9CF736AE333340BE41F0A014040F4A41F0A0
+                          14040F4A41F0A014040F4A41F0A014040F4A41F0A014040F4A41F0A014040F4A
+                          41F0A014040F4AF144F0ADADAD12EEFE035EE489E067CC9821DDAE6770ACDEDE
+                          5E4FEC75E889E043A1D0DB3C82A44A4A4A3CF13DF644F0555555CB7904492512
+                          896FF398539E085ED3B494692E2F4132E6F777F19C3973E2BCCC294F046F993E
+                          7DFABBD5D5D53E73DC1A8D4623E61359FC76C1FC963443FFACA3A323505F5FFF
+                          0A1FCB31A2FF012C1F7B59A02DCBDA0000000049454E44AE426082}
+                        FileName = 'D:\icons\printer.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 15.000000000000000000
+                    Margins.Top = 7.000000000000000000
+                    Margins.Right = 7.000000000000000000
+                    Margins.Bottom = 7.000000000000000000
+                    Size.Width = 23.000000000000000000
+                    Size.Height = 22.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object Rectangle188: TRectangle
+                  Align = Client
+                  Fill.Kind = None
+                  HitTest = False
+                  Size.Width = 106.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Text85: TText
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 5.000000000000000000
+                    Size.Width = 101.000000000000000000
+                    Size.Height = 36.000000000000000000
+                    Size.PlatformDefault = False
+                    Text = 'Imprimmer'
+                    TextSettings.Font.StyleExt = {00060000000000000004000000}
+                    TextSettings.FontColor = claWhite
+                  end
+                end
+                object Rectangle189: TRectangle
+                  Align = Right
+                  Fill.Kind = None
+                  HitTest = False
+                  Position.X = 151.000000000000000000
+                  Size.Width = 45.000000000000000000
+                  Size.Height = 36.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  object Image39: TImage
+                    MultiResBitmap.Height = 188
+                    MultiResBitmap.Width = 188
+                    MultiResBitmap = <
+                      item
+                        Width = 188
+                        Height = 188
+                        PNG = {
+                          89504E470D0A1A0A0000000D49484452000000BC000000BC0806000000C249C4
+                          AB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                          05D849444154785EEDDDBF6E235514C7F18C9D2D0029761A0A245E8027A1E74D
+                          780052D0A2CD2BA0453411A2A2D96DF202A1E01568220AEF381450B0C9E041D7
+                          DAAC49ECB17DEFDCF33BE7FB6932B3D24AAB936F4EAEFF24DB9C002BCBE55D97
+                          2EFFA7EB1EBE3A3F3FFF39DD4A23F8E0B685BE6915FED7ABF02FD3ADA449FA88
+                          605EBDFAE1619FD87B4D3379D9FF9DDBDBDB4FD21FC961C307B46FE84F596DFB
+                          DBD5B6FF2CDDCA20F86072C4FE5EF7F77C3EFF38DD48E0481348DED87BCD47CB
+                          E5F2FB7423810D1F44FED8DF9BCF67321D117C0025635F53899E238D7363C4AE
+                          84E01D1B33F6B6BDFB365D9AC691C6A91A9B5DE158C386778863CCF308DE1962
+                          DF8EE01D21F6DD08DE09621F86E01D20F6E1085E9C95D8EFEFBB5FD3A5693C2D
+                          29CCD266E7955614C531E630042FC85AECB3D999CC0F8410BC188B9BBD699ABF
+                          D2A5799CE185588C5DE9ADC13D821741EC7910BC0062CF87E08D23F6BC08DE30
+                          62CF8FE08D22F63208DE20622F87E08D21F6B208DE10622F8FE08D20F67110BC
+                          01C43E1E82AF8CD8C745F01511FBF808BE1262AF83E02B20F67A087E64C45E17
+                          C18F88D8EB23F89110BB0D043F0262B783E00B23765B08BE2062B787E00B2176
+                          9B08BE0062B78B216446ECB631888C88DD3E869109B16B60201910BB0E867224
+                          62D7C2608E40EC7A18CE81885D13033A00B1EB62487B22766D0C6A0FC4AE8F61
+                          0D44EC3E30B00188DD0F86B603B1FBC2E0B620767F18DE3388DD2706F80462F7
+                          8B216E2076DF18E423C4EE1FC34C883D0606BA42EC71841F2AB1C7127AB0C41E
+                          4FD8E1127B4C21074CEC71851B32B1C7166AD0C48E30C32676F4420C9CD8B1E6
+                          7EE8C48EC75C0F9ED8B169923EBA6331F6D9ECCCEDBC55B8DC3656636F9AC6DC
+                          BF2B1A77C1133BB671F52DD662EC97972FA7C46E879B0D6F74B3F7B13FA45B18
+                          E0227862C750F2C1133BF6217D86B718FB9B37AF4F89DD2ED90D6F74B3F7B1DF
+                          A75B1824193CB1E35072C1133B8E2115BCC5D8796F8C169907AD6DBBFC2D5D9A
+                          41EC7A643E61D6B63BB16B92F8A4113B72E1EDAA7B22766DE6837FFB76F94DBA
+                          AC8ED8F599FF045A39CE10BB0F1C690620763F087E0762F785E077582C169FA7
+                          4B3840F03B4CA7A7BFDFDCDCBC48B710C783D68166B3B3174DD3BC4BB710657E
+                          C33F3C7417E9B2AABBBB3FFFE9BAEE34DD4294C403324BAFB4B2E9B57186DF13
+                          9B5E9BCC536ED6DE4FC3A6D7A4B4E17F4A1F4DE837FDF5F5359B5E8CD48B2AD6
+                          B67C8F9F76D222F72A22D1E31872C1F7881E87920CBE47F43884ECD39216DFD4
+                          B57A20FBEEEAEA6A9A6E6190EC865F33BAE9F9557B46C907DF237A0CE522F81E
+                          D16308376F2D307AA6BFBFB8B8E0ED1B86B8D9F06B46373DFFE58D11EE82EF11
+                          3D9EE332F81ED1E3296ECF9746CFF43C80ADCCED865FB3B8E9F94D08F584183C
+                          D1632DCCD0891EBD5003277A841B36D1C71672D0441F57D821137D4CA1074CF4
+                          F1841F2ED1C7C26057883E0E869A107D0C0CF411A2F78F616E207ADF18E41388
+                          DE2F86F80CA2F789016E41F4FE30BC1D88DE17063700D1FBC1D006227A1F18D8
+                          1E885E1FC3DA13D16B635007207A5D0CE94044AF89011D81E8F5309C2311BD16
+                          069301D1EB60289910BD06069211D1DBC73032237ADB184401446F17432884E8
+                          6D22F88288DE1E822F8CE86D21F81110BD1D043F12A2B781E04744F4F511FCC8
+                          88BE2E82AF80E8EB21F84A88BE0E82AF88E8C747F09511FDB808DE00A21F0FC1
+                          1B41F4E320784388BE3C823786E8CB22788388BE1C82378AE8CB2078C3883E3F
+                          82378EE8F3227801449F0FC18B20FA3C085E08D11F8FE0C510FD7126E9234428
+                          3F60B480E189B2B6E955BE10D9F0A2D8F48721786196A26FDBF69774691A5BC2
+                          012BC71B85EF3A6C780738DE0C47F04E10FD3004EF08D1EF46F0CE10FD7604EF
+                          10D13F8FE09D1A3BFAC9A4F9225D9AC626706EACA72C55BEABB0E19DE378F321
+                          861144C94DAFF445C5860FA254944D73F263BA94C0860F26F7A6573B32117C40
+                          B9A2577C7CC09126A0E343EDBE538CBDC7860FAC6DDB79D34CDA743B886AE86B
+                          048FFF2C168B3FA6D3D34FD3ED86EECBF97CFE3ADD083B39F917B88208AAEB92
+                          95AC0000000049454E44AE426082}
+                        FileName = 'D:\1\icons\chevron-pointing-to-the-left.png'
+                      end>
+                    Align = Client
+                    HitTest = False
+                    Margins.Left = 13.000000000000000000
+                    Margins.Top = 13.000000000000000000
+                    Margins.Right = 13.000000000000000000
+                    Margins.Bottom = 13.000000000000000000
+                    RotationAngle = 180.000000000000000000
+                    Size.Width = 19.000000000000000000
+                    Size.Height = 10.000000000000000000
+                    Size.PlatformDefault = False
+                  end
+                end
+                object ColorAnimation22: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFF06AD57
+                  StopValue = xFFF95252
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Text86: TText
+                Align = Client
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Size.Width = 238.999969482421900000
+                Size.Height = 36.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'S'#233'lectionner la Facture puis imprimmer'
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = claDarkgray
+              end
+            end
+          end
+        end
+        object Rectangle190: TRectangle
+          Align = Top
+          Fill.Kind = None
+          Margins.Top = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 887.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Line20: TLine
+            Align = Top
+            LineType = Top
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 3.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 881.000000000000000000
+            Size.Height = 4.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claSteelblue
+            Stroke.Thickness = 4.000000000000000000
+            Stroke.Cap = Round
+          end
+          object Rectangle191: TRectangle
+            Align = Left
+            Fill.Kind = None
+            Padding.Top = 7.000000000000000000
+            Padding.Bottom = 7.000000000000000000
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 605.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Text87: TText
+              Align = Top
+              Position.Y = 7.000000000000000000
+              Size.Width = 605.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Demandes Accept'#233
               TextSettings.Font.StyleExt = {00060000000000000004000000}
               TextSettings.HorzAlign = Leading
             end
@@ -4124,7 +5126,7 @@ object Form2: TForm2
     Padding.Bottom = 25.000000000000000000
     Position.Y = 33.000000000000000000
     Size.Width = 207.000000000000000000
-    Size.Height = 597.000000000000000000
+    Size.Height = 672.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object rect_navbar_employee: TRectangle
@@ -7346,7 +8348,7 @@ object Form2: TForm2
       Size.Height = 45.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
-      OnClick = Rectangle123Click
+      OnClick = Rectangle156Click
       object Rectangle157: TRectangle
         Align = Left
         Fill.Kind = None
@@ -7523,7 +8525,7 @@ object Form2: TForm2
           Size.Width = 117.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Demandes Accept'#233'es'
+          Text = 'Demandes Accept'#233'es (Delivery)'
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.FontColor = claWhite
         end
@@ -8141,6 +9143,68 @@ object Form2: TForm2
           Alignment = taCenter
         end>
     end
+    object LinkGridToDataSourceBindSourceDB10: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB10
+      GridControl = StringGrid8
+      Columns = <
+        item
+          MemberName = 'num_delivery'
+          Width = 57
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_delivery'
+          Width = 300
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_demande'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_demande'
+          Width = 300
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_it_1'
+          Width = 100
+          Alignment = taCenter
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB11: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB11
+      GridControl = StringGrid9
+      Columns = <
+        item
+          MemberName = 'num_delivery'
+          Width = 57
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_delivery'
+          Width = 300
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_demande_1'
+          Width = 100
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'date_demande'
+          Width = 300
+          Alignment = taCenter
+        end
+        item
+          MemberName = 'num_it_1'
+          Width = 100
+          Alignment = taCenter
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -8189,5 +9253,17 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 536
     Top = 304
+  end
+  object BindSourceDB10: TBindSourceDB
+    DataSet = DataModule1.qry_accepté_byEmp
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
+  end
+  object BindSourceDB11: TBindSourceDB
+    DataSet = DataModule1.qry_accepté
+    ScopeMappings = <>
+    Left = 536
+    Top = 336
   end
 end

@@ -134,4 +134,14 @@
     Left = 208
     Top = 32
   end
+  object qry_accepté: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'EXEC GetAcceptedDemande')
+    Left = 208
+    Top = 368
+  end
 end

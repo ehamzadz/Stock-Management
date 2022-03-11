@@ -701,7 +701,7 @@ begin
   form8.ADOTable2.active := true;
   form8.ADOTable2.refresh;
 
-  form8.ADOTable1.First;
+  form8.ADOTable2.First;
 
   form8.ADOQuery1.filtered := false;
   form8.ADOQuery1.filter := 'num_demande=' + inttostr(form8.ADOTable2.FieldByName('num_demande').AsInteger);
@@ -720,6 +720,7 @@ begin
   form8.ADOTable1.refresh;
 
   form8.frxReport1.ShowReport();
+  //form8.ShowModal;
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);

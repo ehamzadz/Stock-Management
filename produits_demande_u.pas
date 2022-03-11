@@ -88,7 +88,7 @@ begin
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
   qry.SQL.Clear;
-  qry.SQL.Add('select * from delivery order by date_delivery DESC');
+  qry.SQL.Add('select * from delivery order by date_delivery ASC');
   qry.open;
 
   qry.last;
@@ -131,6 +131,7 @@ begin
       qry.Parameters.ParamByName('qte').Value := qte;
       qry.Parameters.ParamByName('num_delivery_bill').Value := num_delivery;
       qry.ExecSQL;
+      showmessage(inttostr(num_delivery));
       close;
     end else begin
       // insert data to produits_achat

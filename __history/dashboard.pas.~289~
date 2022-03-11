@@ -418,6 +418,37 @@ type
     Text79: TText;
     BindSourceDB10: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB10: TLinkGridToDataSource;
+    TabItem11: TTabItem;
+    Rectangle176: TRectangle;
+    Rectangle177: TRectangle;
+    Rectangle178: TRectangle;
+    Text80: TText;
+    Rectangle179: TRectangle;
+    Text81: TText;
+    Line19: TLine;
+    Rectangle180: TRectangle;
+    Text82: TText;
+    Rectangle181: TRectangle;
+    Text83: TText;
+    Rectangle182: TRectangle;
+    Text84: TText;
+    Rectangle183: TRectangle;
+    StringGrid9: TStringGrid;
+    Rectangle184: TRectangle;
+    Rectangle185: TRectangle;
+    Rectangle186: TRectangle;
+    Rectangle187: TRectangle;
+    Image38: TImage;
+    Rectangle188: TRectangle;
+    Text85: TText;
+    Rectangle189: TRectangle;
+    Image39: TImage;
+    ColorAnimation22: TColorAnimation;
+    Text86: TText;
+    Rectangle190: TRectangle;
+    Line20: TLine;
+    Rectangle191: TRectangle;
+    Text87: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -720,6 +751,7 @@ begin
   form8.ADOTable1.refresh;
 
   form8.frxReport1.ShowReport();
+  //form8.ShowModal;
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);

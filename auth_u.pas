@@ -97,6 +97,7 @@ begin
       dashboard.Form2.rectangle17.Visible := false;
       dashboard.Form2.rectangle80.Visible := false;
       dashboard.Form2.rectangle123.Visible := false;
+      dashboard.Form2.rectangle192.Visible := false;
 
       // EXEC GetRefusedDemandeOfEmployee @num_emp=9
       datamodule.DataModule1.qry_refuse_byEmp.SQL.clear;
@@ -125,6 +126,7 @@ begin
       dashboard.Form2.rectangle17.Visible := true;
       dashboard.Form2.rectangle80.Visible := true;
       dashboard.Form2.rectangle123.Visible := true;
+      dashboard.Form2.rectangle192.Visible := true;
     end;
 
 

@@ -37,3 +37,12 @@ Coordinates=178,304,107,357
 [qry_list_demande_produits]
 Coordinates=570,50,148,141
 
+[qry_list_demande_produits2]
+Coordinates=537,210,154,141
+
+[qry_accepté_byEmp]
+Coordinates=59,285,114,339
+
+[qry_accepté]
+Coordinates=76,643,88,357
+
