@@ -3778,10 +3778,10 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 0
+              RowCount = 51
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
-              Viewport.Height = 430.000000000000000000
+              Viewport.Width = 867.000000000000000000
+              Viewport.Height = 414.000000000000000000
             end
           end
           object Rectangle143: TRectangle
@@ -7825,6 +7825,27 @@ object Form2: TForm2
           MemberName = 'status'
         end>
     end
+    object LinkGridToDataSourceBindSourceDB9: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB9
+      GridControl = StringGrid7
+      Columns = <
+        item
+          MemberName = 'num_demande'
+        end
+        item
+          MemberName = 'date_demande'
+        end
+        item
+          MemberName = 'status'
+        end
+        item
+          MemberName = 'num_employee'
+        end
+        item
+          MemberName = 'num_it'
+        end>
+    end
   end
   object BindSourceDB2: TBindSourceDB
     DataSet = DataModule1.tbl_stock
@@ -7867,5 +7888,11 @@ object Form2: TForm2
     ScopeMappings = <>
     Left = 536
     Top = 304
+  end
+  object BindSourceDB9: TBindSourceDB
+    DataSet = DataModule1.qry_accepted_demandes
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end

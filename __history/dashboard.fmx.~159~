@@ -23,7 +23,7 @@ object Form2: TForm2
       Size.Width = 887.000000000000000000
       Size.Height = 597.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 4
+      TabIndex = 1
       TabPosition = None
       Sizes = (
         887s
@@ -321,7 +321,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -355,26 +355,28 @@ object Form2: TForm2
             Stroke.Cap = Round
           end
           object Text24: TText
-            Align = Top
-            Margins.Left = 30.000000000000000000
-            Position.X = 30.000000000000000000
+            Align = Left
+            Margins.Left = 15.000000000000000000
+            Position.X = 231.000000000000000000
             Position.Y = 9.000000000000000000
             Size.Width = 857.000000000000000000
-            Size.Height = 32.000000000000000000
+            Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
-            Text = 'Ajoutez les produits que vous souhaitez'
+            Text = 'Ajoutez Demande Produits'
             TextSettings.Font.StyleExt = {00060000000000000004000000}
             TextSettings.HorzAlign = Leading
-            object Button7: TButton
-              Align = Right
-              Position.X = 656.000000000000000000
-              Size.Width = 201.000000000000000000
-              Size.Height = 32.000000000000000000
-              Size.PlatformDefault = False
-              TabOrder = 0
-              Text = 'Cr'#233'er une demande'
-              OnClick = Button7Click
-            end
+          end
+          object Button7: TButton
+            Align = Left
+            Margins.Left = 15.000000000000000000
+            Position.X = 15.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 201.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cr'#233'er une demande'
+            OnClick = Button7Click
           end
         end
         object Rectangle83: TRectangle
@@ -384,6 +386,7 @@ object Form2: TForm2
           Size.Height = 542.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
+          Visible = False
           object Rectangle84: TRectangle
             Align = Client
             Fill.Color = claWhitesmoke
@@ -1637,7 +1640,7 @@ object Form2: TForm2
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False

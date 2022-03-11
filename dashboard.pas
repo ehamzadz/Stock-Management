@@ -336,6 +336,45 @@ type
     LinkGridToDataSourceBindSourceDB7: TLinkGridToDataSource;
     BindSourceDB8: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB8: TLinkGridToDataSource;
+    Rectangle123: TRectangle;
+    Rectangle124: TRectangle;
+    Image27: TImage;
+    Rectangle125: TRectangle;
+    Text58: TText;
+    Rectangle126: TRectangle;
+    Image31: TImage;
+    ColorAnimation13: TColorAnimation;
+    TabItem9: TTabItem;
+    Rectangle127: TRectangle;
+    Rectangle128: TRectangle;
+    Rectangle129: TRectangle;
+    Text59: TText;
+    Rectangle130: TRectangle;
+    Text60: TText;
+    Line14: TLine;
+    Rectangle131: TRectangle;
+    Text61: TText;
+    Rectangle132: TRectangle;
+    Text62: TText;
+    Rectangle133: TRectangle;
+    Text63: TText;
+    Rectangle134: TRectangle;
+    StringGrid7: TStringGrid;
+    Rectangle143: TRectangle;
+    Rectangle144: TRectangle;
+    Rectangle145: TRectangle;
+    Rectangle146: TRectangle;
+    Image32: TImage;
+    Rectangle147: TRectangle;
+    Text64: TText;
+    Rectangle148: TRectangle;
+    Image33: TImage;
+    ColorAnimation14: TColorAnimation;
+    Text65: TText;
+    Rectangle154: TRectangle;
+    Line16: TLine;
+    Rectangle155: TRectangle;
+    Text66: TText;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -363,6 +402,7 @@ type
     procedure Rectangle80Click(Sender: TObject);
     procedure Rectangle103Click(Sender: TObject);
     procedure Rectangle22Click(Sender: TObject);
+    procedure Rectangle123Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -565,6 +605,13 @@ begin
   datamodule.DataModule1.qry_refuse_byEmp.active := false;
   datamodule.DataModule1.qry_refuse_byEmp.active := true;
   tabs.TabIndex := 7;
+end;
+
+procedure TForm2.Rectangle123Click(Sender: TObject);
+begin
+  //datamodule.DataModule1.qry_refuse_byEmp.active := false;
+  //datamodule.DataModule1.qry_refuse_byEmp.active := true;
+  tabs.TabIndex := 8;
 end;
 
 procedure TForm2.Rectangle13Click(Sender: TObject);

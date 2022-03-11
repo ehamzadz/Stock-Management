@@ -2,7 +2,7 @@
 Coordinates=95,1,99,33
 
 []
-Coordinates=144,285,107,267
+Coordinates=380,280,124,141
 
 [tbl_stock]
 Coordinates=95,1,59,123
@@ -35,5 +35,5 @@ Coordinates=257,287,75,267
 Coordinates=178,304,107,357
 
 [qry_list_demande_produits]
-Coordinates=396,1,148,141
+Coordinates=570,50,148,141
 

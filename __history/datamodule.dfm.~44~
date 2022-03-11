@@ -103,23 +103,20 @@ object DataModule1: TDataModule1
     Left = 208
     Top = 152
   end
-  object frx_emp: TADOTable
+  object qry_list_demande_produits: TADOQuery
+    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
-    IndexFieldNames = 'empNo'
-    TableName = 'employee'
-    Left = 608
-    Top = 88
+    Parameters = <>
+    SQL.Strings = (
+      'select * from demande_produit')
+    Left = 552
+    Top = 240
   end
-  object DataSource1: TDataSource
-    DataSet = frx_orders
-    Left = 608
-    Top = 224
-  end
-  object frx_orders: TADOTable
+  object qry_accepted_demandes: TADOQuery
     Connection = ADOConnection1
-    TableName = 'produits_demande'
-    Left = 608
-    Top = 344
+    Parameters = <>
+    Left = 552
+    Top = 112
   end
 end

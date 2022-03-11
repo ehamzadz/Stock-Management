@@ -3778,7 +3778,7 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 0
+              RowCount = 9
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
               Viewport.Width = 883.000000000000000000
               Viewport.Height = 430.000000000000000000
@@ -6623,7 +6623,7 @@ object Form2: TForm2
           Size.Width = 117.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Demandes Refus'#233'es'
+          Text = 'Demandes Refus'#233'e'
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.FontColor = claWhite
         end
@@ -6955,7 +6955,7 @@ object Form2: TForm2
           Size.Width = 117.000000000000000000
           Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Demandes Refus'#233'es'
+          Text = 'Demandes Refus'#233'e'
           TextSettings.Font.StyleExt = {00060000000000000004000000}
           TextSettings.FontColor = claWhite
         end
