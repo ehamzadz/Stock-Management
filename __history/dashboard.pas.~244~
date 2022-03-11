@@ -375,6 +375,8 @@ type
     Line16: TLine;
     Rectangle155: TRectangle;
     Text66: TText;
+    BindSourceDB9: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB9: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -609,9 +611,12 @@ end;
 
 procedure TForm2.Rectangle123Click(Sender: TObject);
 begin
-  datamodule.DataModule1.qry_refuse_byEmp.active := false;
-  datamodule.DataModule1.qry_refuse_byEmp.active := true;
-  tabs.TabIndex := 7;
+  datamodule.DataModule1.tbl_demande_produit2.filtered := false;
+  datamodule.DataModule1.tbl_demande_produit2.filter := 'where status='+quotedstr('Accepté');
+  datamodule.DataModule1.tbl_demande_produit2.filtered := true;
+  datamodule.DataModule1.tbl_demande_produit2.active := false;
+  datamodule.DataModule1.tbl_demande_produit2.active := true;
+  tabs.TabIndex := 8;
 end;
 
 procedure TForm2.Rectangle13Click(Sender: TObject);

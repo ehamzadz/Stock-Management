@@ -18,9 +18,7 @@ type
     tbl_produits_demande: TADOTable;
     qry_refuse: TADOQuery;
     qry_refuse_byEmp: TADOQuery;
-    frx_emp: TADOTable;
-    DataSource1: TDataSource;
-    frx_orders: TADOTable;
+    qry_list_demande_produits: TADOQuery;
   private
     { Private declarations }
   public

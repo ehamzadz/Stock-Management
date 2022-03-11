@@ -375,6 +375,8 @@ type
     Line16: TLine;
     Rectangle155: TRectangle;
     Text66: TText;
+    BindSourceDB9: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB9: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -609,8 +611,8 @@ end;
 
 procedure TForm2.Rectangle123Click(Sender: TObject);
 begin
-  //datamodule.DataModule1.qry_refuse_byEmp.active := false;
-  //datamodule.DataModule1.qry_refuse_byEmp.active := true;
+  datamodule.DataModule1.qry_list_demande_produits2.active := false;
+  datamodule.DataModule1.qry_list_demande_produits2.active := true;
   tabs.TabIndex := 8;
 end;
 

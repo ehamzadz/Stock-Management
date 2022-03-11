@@ -611,8 +611,11 @@ end;
 
 procedure TForm2.Rectangle123Click(Sender: TObject);
 begin
-  //datamodule.DataModule1.qry_refuse_byEmp.active := false;
-  //datamodule.DataModule1.qry_refuse_byEmp.active := true;
+  datamodule.DataModule1.qry_list_demande_produits.filtered := false;
+  datamodule.DataModule1.qry_list_demande_produits.filter := 'where status='+quotedstr('Accepté');
+  datamodule.DataModule1.qry_list_demande_produits.filtered := true;
+  datamodule.DataModule1.qry_list_demande_produits.active := false;
+  datamodule.DataModule1.qry_list_demande_produits.active := true;
   tabs.TabIndex := 8;
 end;
 

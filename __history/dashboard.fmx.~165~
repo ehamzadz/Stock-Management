@@ -3670,17 +3670,17 @@ object Form2: TForm2
               Fill.Kind = None
               Position.X = 59.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 300.000000000000000000
+              Size.Width = 400.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text60: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 300.000000000000000000
+                Size.Width = 400.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Date '
+                Text = 'Raison'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -3703,19 +3703,19 @@ object Form2: TForm2
             object Rectangle131: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 359.000000000000000000
+              Position.X = 459.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 200.000000000000000000
+              Size.Width = 153.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text61: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 200.000000000000000000
+                Size.Width = 153.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Status'
+                Text = 'Date'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -3723,16 +3723,16 @@ object Form2: TForm2
             object Rectangle132: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 559.000000000000000000
+              Position.X = 612.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 150.000000000000000000
+              Size.Width = 120.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
               object Text62: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 150.000000000000000000
+                Size.Width = 120.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
                 Text = 'Num Demande'
@@ -3743,9 +3743,9 @@ object Form2: TForm2
             object Rectangle133: TRectangle
               Align = Left
               Fill.Kind = None
-              Position.X = 709.000000000000000000
+              Position.X = 732.000000000000000000
               Position.Y = 9.000000000000000000
-              Size.Width = 150.000000000000000000
+              Size.Width = 120.000000000000000000
               Size.Height = 41.000000000000000000
               Size.PlatformDefault = False
               Stroke.Kind = None
@@ -3753,10 +3753,10 @@ object Form2: TForm2
               object Text63: TText
                 Align = Client
                 Padding.Left = 15.000000000000000000
-                Size.Width = 150.000000000000000000
+                Size.Width = 120.000000000000000000
                 Size.Height = 41.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Faite par'
+                Text = 'Code'
                 TextSettings.Font.StyleExt = {00060000000000000004000000}
                 TextSettings.FontColor = xFF494949
               end
@@ -3778,9 +3778,9 @@ object Form2: TForm2
               Size.PlatformDefault = False
               TextSettings.HorzAlign = Center
               TabOrder = 0
-              RowCount = 13
+              RowCount = 51
               Options = [AlternatingRowBackground, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
-              Viewport.Width = 883.000000000000000000
+              Viewport.Width = 867.000000000000000000
               Viewport.Height = 430.000000000000000000
             end
           end
@@ -7841,17 +7841,17 @@ object Form2: TForm2
         end
         item
           MemberName = 'status'
-          Width = 200
+          Width = 300
           Alignment = taCenter
         end
         item
           MemberName = 'num_employee'
-          Width = 150
+          Width = 100
           Alignment = taCenter
         end
         item
           MemberName = 'num_it'
-          Width = 150
+          Width = 100
           Alignment = taCenter
         end>
     end
@@ -7895,13 +7895,13 @@ object Form2: TForm2
   object BindSourceDB8: TBindSourceDB
     DataSet = DataModule1.qry_list_demande_produits
     ScopeMappings = <>
-    Left = 600
-    Top = 288
-  end
-  object BindSourceDB9: TBindSourceDB
-    DataSet = DataModule1.qry_list_demande_produits2
-    ScopeMappings = <>
     Left = 536
     Top = 304
+  end
+  object BindSourceDB9: TBindSourceDB
+    DataSet = DataModule1.tbl_demande_produit
+    ScopeMappings = <>
+    Left = 544
+    Top = 312
   end
 end
