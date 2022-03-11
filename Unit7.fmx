@@ -24,9 +24,9 @@ object Form7: TForm7
     Size.Height = 129.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 21
-    RowCount = 43
-    Viewport.Width = 605.000000000000000000
-    Viewport.Height = 104.000000000000000000
+    RowCount = 53
+    Viewport.Width = 625.000000000000000000
+    Viewport.Height = 129.000000000000000000
   end
   object StringGrid2: TStringGrid
     CanFocus = True
@@ -38,8 +38,8 @@ object Form7: TForm7
     Size.PlatformDefault = False
     TabOrder = 20
     RowCount = 3
-    Viewport.Width = 621.000000000000000000
-    Viewport.Height = 104.000000000000000000
+    Viewport.Width = 625.000000000000000000
+    Viewport.Height = 129.000000000000000000
   end
   object StringGrid3: TStringGrid
     CanFocus = True
@@ -50,9 +50,9 @@ object Form7: TForm7
     Size.Height = 129.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 19
-    RowCount = 36
-    Viewport.Width = 605.000000000000000000
-    Viewport.Height = 104.000000000000000000
+    RowCount = 44
+    Viewport.Width = 625.000000000000000000
+    Viewport.Height = 129.000000000000000000
   end
   object frxReport1: TfrxReport
     Version = '2022.1'
@@ -569,8 +569,8 @@ object Form7: TForm7
       'ion for Data=False;Tag with column collation when possible=False'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
-    Left = 64
-    Top = 16
+    Left = 104
+    Top = 8
   end
   object ADOTable1: TADOTable
     Active = True

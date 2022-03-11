@@ -1,4 +1,4 @@
-object DataModule1: TDataModule1
+﻿object DataModule1: TDataModule1
   OldCreateOrder = False
   Height = 520
   Width = 718
@@ -123,5 +123,15 @@ object DataModule1: TDataModule1
       'where status='#39'Accept'#233#39' ')
     Left = 552
     Top = 328
+  end
+  object qry_accepté_byEmp: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'EXEC GetAcceptedDemandeOfEmployee @num_emp=9')
+    Left = 208
+    Top = 32
   end
 end

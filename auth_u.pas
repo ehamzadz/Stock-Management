@@ -90,6 +90,7 @@ begin
       dashboard.Form2.rectangle81.Visible := true;
       dashboard.Form2.rectangle13.Visible := true;
       dashboard.Form2.rectangle103.Visible := true;
+      dashboard.Form2.rectangle156.Visible := true;
       // hide admin options
       dashboard.Form2.rect_navbar_employee.Visible := false;
       dashboard.Form2.rectangle5.Visible := false;
@@ -117,6 +118,7 @@ begin
       dashboard.Form2.rectangle81.Visible := false;
       dashboard.Form2.rectangle13.Visible := false;
       dashboard.Form2.rectangle103.Visible := false;
+      dashboard.Form2.rectangle156.Visible := false;
       // show admin options
       dashboard.Form2.rect_navbar_employee.Visible := true;
       dashboard.Form2.rectangle5.Visible := true;

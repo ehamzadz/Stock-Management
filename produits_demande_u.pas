@@ -87,7 +87,6 @@ begin
   qry.Parameters.ParamByName('num_demande').Value := num_demande_produit;
   qry.Parameters.ParamByName('num_it').Value := dashboard.Form2.num_it_globalVar;
   qry.ExecSQL;
-
   qry.SQL.Clear;
   qry.SQL.Add('select * from delivery order by date_delivery DESC');
   qry.open;
@@ -95,7 +94,6 @@ begin
   qry.last;
 
   num_delivery := qry.FieldByName('num_delivery').AsInteger;
-
   // search for available produit
   while not datamodule1.tbl_produits_demande.Eof do begin
     // get cat + qte from selected row in grid
@@ -110,7 +108,6 @@ begin
     qry.open;
 
     qry.First;
-    showmessage('3');
     if (qry.FieldByName('id_record').AsInteger>=qte) then begin
 
       for i := 1 to qte do begin
@@ -128,18 +125,18 @@ begin
         qry.Parameters.ParamByName('id_record').Value := id_record;
         qry.ExecSQL;
       end;
-      showmessage('5');
       qry.SQL.Clear;
       qry.SQL.Add('insert into produits_delivery (designation,qte,num_delivery_bill) values(:designation,:qte,:num_delivery_bill)');
       qry.Parameters.ParamByName('designation').Value := cat;
       qry.Parameters.ParamByName('qte').Value := qte;
       qry.Parameters.ParamByName('num_delivery_bill').Value := num_delivery;
       qry.ExecSQL;
-      showmessage('6');
+      close;
     end else begin
       // insert data to produits_achat
 
 
+      showmessage('00');
       case MessageDlg('Certains produits sont en rupture de stock, souhaitez-vous commander maintenant ?', System.UITypes.TMsgDlgType.mtInformation,
         [
           System.UITypes.TMsgDlgBtn.mbYes,
@@ -174,10 +171,12 @@ begin
                   qry.ExecSQL;
 
                   ShowMessage('You chose Yes');
+                  close;
                 end;
 
         mrNo:   begin
                   ShowMessage('You chose No');
+                  close;
                 end;
 
         mrCancel:

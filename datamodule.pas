@@ -20,6 +20,7 @@ type
     qry_refuse_byEmp: TADOQuery;
     qry_list_demande_produits: TADOQuery;
     qry_list_demande_produits2: TADOQuery;
+    qry_accepté_byEmp: TADOQuery;
   private
     { Private declarations }
   public

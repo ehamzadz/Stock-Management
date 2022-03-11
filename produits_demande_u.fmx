@@ -19,7 +19,7 @@ object Form5: TForm5
     Size.PlatformDefault = False
     TextSettings.HorzAlign = Center
     TabOrder = 0
-    RowCount = 35
+    RowCount = 44
     Options = [AlternatingRowBackground, Editing, ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, CancelEditingByDefault, AutoDisplacement]
     Viewport.Width = 492.000000000000000000
     Viewport.Height = 262.000000000000000000

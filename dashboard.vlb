@@ -1,457 +1,457 @@
 ﻿[txtFournisseurs]
-Coordinates=440,596,92,51
+Coordinates=1670,790,92,51
 
 [Image21]
-Coordinates=1571,596,55,51
+Coordinates=3061,874,55,51
 
 [Image15]
-Coordinates=2552,750,55,51
+Coordinates=2244,706,55,51
 
 [tabs]
-Coordinates=1625,886,40,33
+Coordinates=476,1166,40,33
 
 [ComboBox4]
-Coordinates=1318,28,84,123
+Coordinates=264,508,84,123
 Visible=True
 
 [Button9]
-Coordinates=526,673,53,51
+Coordinates=1339,706,53,51
 
 [Memo1]
-Coordinates=1857,750,49,51
+Coordinates=240,790,49,51
 
 [Rectangle42]
-Coordinates=2177,886,75,33
+Coordinates=10,1228,75,33
 
 [Button5]
-Coordinates=872,673,53,51
+Coordinates=1799,790,53,51
 
 [Image10]
-Coordinates=1586,411,55,51
+Coordinates=2891,874,55,51
 
 [Rectangle35]
-Coordinates=318,1181,75,33
+Coordinates=130,1104,75,33
 
 [Text12]
-Coordinates=2424,673,46,51
+Coordinates=2720,706,46,51
 
 [Rectangle91]
-Coordinates=1322,1122,75,33
+Coordinates=1823,1228,75,33
 
 [ColorAnimation4]
 Coordinates=1149,383,97,33
 
 [Image16]
-Coordinates=633,596,55,51
+Coordinates=996,706,55,51
 
 [Rectangle16]
-Coordinates=419,1181,75,33
+Coordinates=1525,1290,75,33
 
 [Rectangle64]
-Coordinates=1362,1004,75,33
+Coordinates=2614,1228,75,33
 
 [Text13]
-Coordinates=1932,750,46,51
+Coordinates=836,706,46,51
 
 [Button1]
-Coordinates=2239,750,53,51
+Coordinates=1089,790,53,51
 
 [TabItem6]
-Coordinates=626,1181,59,33
+Coordinates=2727,1228,59,33
 
 [ComboBox1]
-Coordinates=1395,411,84,123
+Coordinates=1472,490,84,123
 
 [Edit4]
-Coordinates=1549,673,40,51
+Coordinates=170,790,40,51
 
 [Text24]
-Coordinates=2773,596,46,51
+Coordinates=410,706,46,51
 
 [Text23]
-Coordinates=163,673,46,51
+Coordinates=2502,874,46,51
 
 [Rectangle36]
-Coordinates=1673,1004,75,33
+Coordinates=2110,1352,75,33
 
 [Text28]
-Coordinates=813,750,46,51
+Coordinates=1590,790,46,51
 
 [Line8]
-Coordinates=1558,886,41,33
+Coordinates=2448,1414,41,33
 
 [RecAchat]
-Coordinates=2384,1004,61,33
+Coordinates=2065,1414,61,33
 
 [Rectangle89]
-Coordinates=313,945,75,33
+Coordinates=10,1290,75,33
 
 [Image9]
-Coordinates=2004,750,49,51
+Coordinates=1699,874,49,51
 
 [Rectangle32]
-Coordinates=2490,945,75,33
+Coordinates=236,1476,75,33
 
 [Rectangle13]
-Coordinates=2268,1122,75,33
+Coordinates=2360,1166,75,33
 
 [Edit6]
-Coordinates=10,750,40,51
+Coordinates=2582,874,40,51
 
 [Text10]
-Coordinates=2485,596,46,51
+Coordinates=170,706,46,51
 
 [Text6]
-Coordinates=1652,596,41,51
+Coordinates=1434,790,41,51
 
 [TabItem7]
-Coordinates=2471,1004,59,33
+Coordinates=2274,1414,59,33
 
 [Rectangle19]
-Coordinates=307,1240,75,33
+Coordinates=1172,1290,75,33
 
 [Image17]
-Coordinates=1701,750,55,51
+Coordinates=233,958,55,51
 
 [ColorAnimation8]
 Coordinates=1425,157,97,33
 
 [Rectangle60]
-Coordinates=1165,886,75,33
+Coordinates=1202,1166,75,33
 
 [Rectangle11]
-Coordinates=2283,1004,75,33
+Coordinates=2086,1290,75,33
 
 [Text11]
-Coordinates=235,596,46,51
+Coordinates=2800,706,46,51
 
 [Rectangle61]
-Coordinates=1601,945,75,33
+Coordinates=815,1476,75,33
 
 [Rectangle57]
-Coordinates=2192,1063,75,33
+Coordinates=863,1166,75,33
 
 [Edit5]
-Coordinates=1615,673,40,51
+Coordinates=1782,874,40,51
 
 [Text7]
-Coordinates=373,596,41,51
+Coordinates=2732,874,41,51
 
 [Rectangle85]
-Coordinates=1312,1063,75,33
+Coordinates=10,1166,75,33
 
 [ComboBox2]
-Coordinates=1285,411,84,123
+Coordinates=1345,490,84,123
 
 [Button8]
-Coordinates=2160,750,53,51
+Coordinates=2159,706,53,51
 
 [Rectangle17]
-Coordinates=1426,827,75,33
+Coordinates=1771,1352,75,33
 
 [Rectangle20]
-Coordinates=923,1004,75,33
+Coordinates=2247,1166,75,33
 
 [Rectangle59]
-Coordinates=807,1122,75,33
+Coordinates=641,1042,75,33
 
 [Text9]
-Coordinates=2121,596,41,51
+Coordinates=100,874,41,51
 
 [grid_Employee_List]
-Coordinates=1180,37,112,141
+Coordinates=1557,43,112,141
 Visible=True
 
 [Rectangle41]
-Coordinates=1399,1181,75,33
+Coordinates=2657,1104,75,33
 
 [txtClients]
-Coordinates=2337,673,61,51
+Coordinates=3030,790,61,51
 
 [Rectangle14]
-Coordinates=1187,945,75,33
+Coordinates=356,1414,75,33
 
 [Text27]
-Coordinates=163,596,46,51
+Coordinates=1264,790,46,51
 
 [Image18]
-Coordinates=2845,596,55,51
+Coordinates=2780,790,55,51
 
 [Line7]
-Coordinates=542,827,41,33
+Coordinates=860,1290,41,33
 
 [Rectangle12]
-Coordinates=307,1004,75,33
+Coordinates=2528,1352,75,33
 
 [Edit9]
-Coordinates=2568,673,40,51
+Coordinates=2570,706,40,51
 
 [Rectangle34]
-Coordinates=284,886,75,33
+Coordinates=2085,1104,75,33
 
 [txtStock]
-Coordinates=2113,673,54,51
+Coordinates=2805,874,54,51
 
 [Rectangle58]
-Coordinates=206,1240,75,33
+Coordinates=1089,1166,75,33
 
 [Rectangle83]
-Coordinates=2004,945,75,33
+Coordinates=823,1352,75,33
 
 [Rectangle56]
-Coordinates=1014,1122,75,33
+Coordinates=2586,1042,75,33
 
 [Rectangle18]
-Coordinates=1802,1181,75,33
+Coordinates=1360,1352,75,33
 
 [Image7]
-Coordinates=1183,673,49,51
+Coordinates=843,790,49,51
 
 [Rectangle10]
-Coordinates=1889,1063,75,33
+Coordinates=123,1476,75,33
 
 [Text15]
-Coordinates=2318,750,46,51
+Coordinates=2965,706,46,51
 
 [client]
-Coordinates=1120,945,41,33
+Coordinates=1289,1352,41,33
 
 [Rectangle86]
-Coordinates=2456,886,75,33
+Coordinates=589,1104,75,33
 
 [Rectangle84]
-Coordinates=111,945,75,33
+Coordinates=1056,1352,75,33
 
 [navbar]
-Coordinates=664,886,48,33
+Coordinates=1743,1228,48,33
 
 [TabItem4]
-Coordinates=1372,886,59,33
+Coordinates=860,1414,59,33
 
 [Rectangle15]
-Coordinates=615,1004,75,33
+Coordinates=1877,1104,75,33
 
 [Text22]
-Coordinates=235,673,46,51
+Coordinates=2044,790,46,51
 
 [Button3]
-Coordinates=148,750,53,51
+Coordinates=866,874,53,51
 
 [Text8]
-Coordinates=996,596,41,51
+Coordinates=2414,706,41,51
 
 [ColorAnimation11]
 Coordinates=388,1179,103,33
 
 [Rectangle65]
-Coordinates=2091,1063,75,33
+Coordinates=123,1290,75,33
 
 [Rectangle90]
-Coordinates=408,1004,75,33
+Coordinates=1541,1166,75,33
 
 [RecLogo]
-Coordinates=1837,1122,58,33
+Coordinates=928,1476,58,33
 
 [Image4]
-Coordinates=1782,750,49,51
+Coordinates=1507,790,49,51
 
 [Rectangle67]
-Coordinates=217,1122,75,33
+Coordinates=867,1042,75,33
 
 [Edit7]
-Coordinates=786,596,40,51
+Coordinates=636,874,40,51
 
 [Text14]
-Coordinates=2260,596,46,51
+Coordinates=916,706,46,51
 
 [Image14]
-Coordinates=10,673,55,51
+Coordinates=573,790,55,51
 
 [ColorAnimation3]
 Coordinates=1700,573,97,33
 
 [Image19]
-Coordinates=10,596,55,51
+Coordinates=323,790,55,51
 
 [Line3]
-Coordinates=2106,827,41,33
+Coordinates=1408,1042,41,33
 
 [DataModule1.ADOTable1]
 Coordinates=10,10,136,33
 Visible=False
 
 [Rectangle43]
-Coordinates=1702,945,75,33
+Coordinates=243,1414,75,33
 
 [Rectangle30]
-Coordinates=1325,827,75,33
+Coordinates=2415,1352,75,33
 
 [Rectangle33]
-Coordinates=384,1063,75,33
+Coordinates=589,1228,75,33
 
 [Text26]
-Coordinates=1330,673,46,51
+Coordinates=413,790,46,51
 
 [Rectangle62]
-Coordinates=1788,1063,75,33
+Coordinates=1140,1414,75,33
 
 [Rectangle87]
-Coordinates=2470,1122,75,33
+Coordinates=2473,1042,75,33
 
 [Rectangle66]
-Coordinates=738,886,75,33
+Coordinates=2688,1290,75,33
 
 [ColorAnimation2]
 Coordinates=189,1250,97,33
 
 [Rectangle79]
-Coordinates=1527,827,75,33
+Coordinates=2826,1166,75,33
 
 []
 Coordinates=1520,220,113,141
 
 [BindSourceDB1]
-Coordinates=976,10,124,195
+Coordinates=1329,10,124,195
 
 [BindingsList1]
 Coordinates=153,152,82,33
 
 [rect_navbar_employee]
-Coordinates=1921,1122,125,33
+Coordinates=2199,1290,125,33
 
 [Edit2]
-Coordinates=307,596,40,51
+Coordinates=2870,790,40,51
 
 [Form3.qry1]
 Coordinates=783,385,70,51
 
 [Text29]
-Coordinates=2413,596,46,51
+Coordinates=90,790,46,51
 
 [Rectangle9]
-Coordinates=1500,1181,69,33
+Coordinates=2004,1352,69,33
 
 [Rectangle46]
-Coordinates=1595,1181,75,33
+Coordinates=1486,1414,75,33
 
 [Button6]
-Coordinates=1029,750,53,51
+Coordinates=1834,706,53,51
 
 [Line6]
-Coordinates=121,1063,41,33
+Coordinates=548,1414,41,33
 
 [Rectangle45]
-Coordinates=1736,1122,75,33
+Coordinates=1840,1042,75,33
 
 [Text33]
-Coordinates=2706,673,46,51
+Coordinates=2262,874,46,51
 
 [Rectangle44]
-Coordinates=1024,1004,75,33
+Coordinates=2056,1228,75,33
 
 [Edit3]
-Coordinates=460,673,40,51
+Coordinates=83,958,40,51
 
 [Text74]
-Coordinates=2197,411,46,51
+Coordinates=2334,706,46,51
 
 [Rectangle136]
-Coordinates=908,945,80,33
+Coordinates=620,1414,80,33
 
 [Rectangle141]
-Coordinates=2486,827,80,33
+Coordinates=1421,1166,80,33
 
 [Text34]
-Coordinates=2850,673,46,51
+Coordinates=2342,874,46,51
 
 [Rectangle142]
-Coordinates=1628,827,80,33
+Coordinates=1638,1290,80,33
 
 [Rectangle151]
-Coordinates=1118,827,80,33
+Coordinates=1390,1228,80,33
 
 [Text50]
-Coordinates=2634,673,46,51
+Coordinates=1674,706,46,51
 
 [Rectangle149]
-Coordinates=945,886,80,33
+Coordinates=702,1228,80,33
 
 [DataModule1.tbl_stock]
 Coordinates=1035,856,126,33
 Visible=False
 
 [Rectangle150]
-Coordinates=509,1004,80,33
+Coordinates=1599,1414,80,33
 
 [Text55]
-Coordinates=885,750,46,51
+Coordinates=1754,706,46,51
 
 [TabItem2]
-Coordinates=717,945,59,33
+Coordinates=1991,1290,59,33
 
 [Rectangle138]
-Coordinates=2557,886,80,33
+Coordinates=703,1352,80,33
 
 [Button4]
-Coordinates=2269,411,53,51
+Coordinates=1294,874,53,51
 
 [Text54]
-Coordinates=2496,673,46,51
+Coordinates=1514,706,46,51
 
 [Line15]
-Coordinates=1999,886,46,33
+Coordinates=1206,1042,46,33
 
 [StringGrid1]
-Coordinates=1673,28,70,123
+Coordinates=657,508,70,123
 Visible=True
 
 [Rectangle140]
-Coordinates=486,886,80,33
+Coordinates=356,1166,80,33
 
 [Rectangle137]
-Coordinates=1423,1122,80,33
+Coordinates=2537,1104,80,33
 
 [Rectangle152]
-Coordinates=701,1122,80,33
+Coordinates=2770,1104,80,33
 
 [Line10]
-Coordinates=592,886,46,33
+Coordinates=2369,1414,46,33
 
 [Rectangle135]
-Coordinates=817,1004,80,33
+Coordinates=740,1414,80,33
 
 [Text73]
-Coordinates=1404,750,46,51
+Coordinates=2124,790,46,51
 
 [BindSourceDB2]
-Coordinates=1482,10,111,159
+Coordinates=445,490,111,159
 
 [Image28]
-Coordinates=2332,596,55,51
+Coordinates=663,790,55,51
 
 [rect_fullScreen]
-Coordinates=1051,886,88,33
+Coordinates=1880,1166,88,33
 
 [Text51]
-Coordinates=1258,673,46,51
+Coordinates=493,790,46,51
 
 [ColorAnimation15]
 Coordinates=803,175,103,33
 
 [rect_topBar]
-Coordinates=1907,827,72,33
+Coordinates=596,1352,72,33
 
 [rect_close]
-Coordinates=610,1122,65,33
+Coordinates=2370,1290,65,33
 
 [Text77]
-Coordinates=957,750,46,51
+Coordinates=2610,790,46,51
 
 [Text75]
-Coordinates=714,596,46,51
+Coordinates=1919,706,46,51
 
 [rect_minimize]
-Coordinates=1463,1004,83,33
+Coordinates=589,1290,83,33
 
 [ColorAnimation18]
 Coordinates=1260,87,103,33
@@ -463,7 +463,7 @@ Coordinates=1260,142,103,33
 Coordinates=1500,87,103,33
 
 [StringGrid2]
-Coordinates=683,438,70,87
+Coordinates=998,523,70,87
 Visible=True
 
 [DataModule1.tbl_demande]
@@ -471,43 +471,43 @@ Coordinates=1090,100,144,33
 Visible=False
 
 [BindSourceDB3]
-Coordinates=473,411,130,141
+Coordinates=763,490,130,141
 
 [btn_demander]
-Coordinates=10,1063,85,33
+Coordinates=1285,1042,85,33
 
 [Button7]
-Coordinates=1032,673,53,51
+Coordinates=2880,706,53,51
 
 [DataModule1.qry]
-Coordinates=605,673,97,51
+Coordinates=253,874,97,51
 
 [DataModule1.tbl_demande_produit]
-Coordinates=1073,411,186,141
+Coordinates=1100,480,186,141
 
 [Form1.qry1]
-Coordinates=1719,596,70,51
+Coordinates=730,706,70,51
 
 [Image2]
-Coordinates=2047,411,49,51
+Coordinates=1211,874,49,51
 
 [Rectangle2]
-Coordinates=904,1063,69,33
+Coordinates=2801,1290,69,33
 
 [Button2]
-Coordinates=1887,411,53,51
+Coordinates=471,874,53,51
 
 [Rectangle27]
-Coordinates=10,886,75,33
+Coordinates=637,1166,75,33
 
 [Text20]
-Coordinates=669,750,46,51
+Coordinates=1932,874,46,51
 
 [Image29]
-Coordinates=1323,750,55,51
+Coordinates=1121,874,55,51
 
 [StringGrid3]
-Coordinates=2043,37,70,105
+Coordinates=2448,43,70,105
 Visible=True
 
 [DataModule1.tbl_list_demande_produits]
@@ -515,203 +515,203 @@ Coordinates=430,190,212,33
 Visible=False
 
 [Rectangle1]
-Coordinates=2082,1004,69,33
+Coordinates=1315,1166,69,33
 
 [Rectangle3]
-Coordinates=710,827,69,33
+Coordinates=1034,1414,69,33
 
 [Image1]
-Coordinates=452,750,49,51
+Coordinates=3124,790,49,51
 
 [Rectangle21]
-Coordinates=515,945,75,33
+Coordinates=1878,1290,75,33
 
 [Image30]
-Coordinates=1548,750,55,51
+Coordinates=2092,874,55,51
 
 [Rectangle28]
-Coordinates=2369,1122,75,33
+Coordinates=2161,1414,75,33
 
 [Rectangle25]
-Coordinates=1197,1181,75,33
+Coordinates=2282,1228,75,33
 
 [Rectangle8]
-Coordinates=2072,1122,69,33
+Coordinates=815,1104,69,33
 
 [Rectangle82]
-Coordinates=116,1122,75,33
+Coordinates=349,1476,75,33
 
 [Text4]
-Coordinates=1667,411,41,51
+Coordinates=1176,706,41,51
 
 [Rectangle6]
-Coordinates=111,1240,69,33
+Coordinates=2469,1290,69,33
 
 [Line1]
-Coordinates=217,886,41,33
+Coordinates=569,1042,41,33
 
 [Rectangle4]
-Coordinates=289,1063,69,33
+Coordinates=2753,1414,69,33
 
 [Rectangle7]
-Coordinates=1803,945,69,33
+Coordinates=1771,1104,69,33
 
 [TabItem1]
-Coordinates=2081,1181,59,33
+Coordinates=1055,1228,59,33
 
 [Rectangle24]
-Coordinates=385,886,75,33
+Coordinates=1719,1414,75,33
 
 [Rectangle22]
-Coordinates=1572,1004,75,33
+Coordinates=1510,1228,75,33
 
 [Rectangle139]
-Coordinates=1288,945,80,33
+Coordinates=1600,1042,80,33
 
 [Text5]
-Coordinates=1189,750,41,51
+Coordinates=1689,490,41,51
 
 [Rectangle153]
-Coordinates=403,1122,80,33
+Coordinates=236,1290,80,33
 
 [Rectangle23]
-Coordinates=10,945,75,33
+Coordinates=942,1228,75,33
 
 [Text16]
-Coordinates=2701,596,46,51
+Coordinates=556,874,46,51
 
 [Text1]
-Coordinates=1207,596,41,51
+Coordinates=2294,790,41,51
 
 [ColorAnimation19]
 Coordinates=849,391,103,33
 
 [Rectangle26]
-Coordinates=1413,1063,75,33
+Coordinates=243,1352,75,33
 
 [ColorAnimation1]
 Coordinates=1283,307,97,33
 
 [Image3]
-Coordinates=594,750,49,51
+Coordinates=323,958,49,51
 
 [Rectangle81]
-Coordinates=2723,750,75,33
+Coordinates=1253,1414,75,33
 
 [Text2]
-Coordinates=1256,750,41,51
+Coordinates=10,958,41,51
 
 [Line2]
-Coordinates=1210,1004,41,33
+Coordinates=1473,1352,41,33
 
 [BindSourceDB4]
-Coordinates=10,411,190,159
+Coordinates=10,490,190,159
 
 [Text18]
-Coordinates=924,596,46,51
+Coordinates=1619,874,46,51
 
 [Rectangle38]
-Coordinates=1500,945,75,33
+Coordinates=1767,1166,75,33
 
 [TabItem3]
-Coordinates=178,827,59,33
+Coordinates=2822,1228,59,33
 
 [Image8]
-Coordinates=558,596,49,51
+Coordinates=3205,706,49,51
 
 [Rectangle53]
-Coordinates=77,827,75,33
+Coordinates=356,1104,75,33
 
 [Rectangle51]
-Coordinates=111,1181,75,33
+Coordinates=2424,1104,75,33
 
 [ColorAnimation5]
 Coordinates=690,653,97,33
 
 [Rectangle40]
-Coordinates=1792,886,75,33
+Coordinates=750,1166,75,33
 
 [StringGrid4]
-Coordinates=880,73,70,159
+Coordinates=895,87,70,159
 Visible=True
 
 [Rectangle69]
-Coordinates=1981,1004,75,33
+Coordinates=976,1166,75,33
 
 [Line5]
-Coordinates=1840,827,41,33
+Coordinates=709,1290,41,33
 
 [Rectangle52]
-Coordinates=10,1181,75,33
+Coordinates=10,1352,75,33
 
 [Rectangle49]
-Coordinates=2167,1122,75,33
+Coordinates=2311,1104,75,33
 
 [Rectangle54]
-Coordinates=10,1004,75,33
+Coordinates=2520,1414,75,33
 
 [Rectangle47]
-Coordinates=1774,1004,75,33
+Coordinates=2859,1414,75,33
 
 [Rectangle29]
-Coordinates=1224,827,75,33
+Coordinates=1654,1166,75,33
 
 [Rectangle48]
-Coordinates=414,945,75,33
+Coordinates=2048,1042,75,33
 
 [Rectangle50]
-Coordinates=2173,827,75,33
+Coordinates=123,1228,75,33
 
 [Image5]
-Coordinates=2122,411,49,51
+Coordinates=2487,706,49,51
 
 [Line4]
-Coordinates=369,827,41,33
+Coordinates=1154,1104,41,33
 
 [Rectangle31]
-Coordinates=2293,1063,75,33
+Coordinates=1658,1352,75,33
 
 [ColorAnimation6]
 Coordinates=1388,818,97,33
 
 [Image11]
-Coordinates=1959,596,55,51
+Coordinates=10,874,55,51
 
 [Text19]
-Coordinates=728,673,46,51
+Coordinates=2652,874,46,51
 
 [Rectangle39]
-Coordinates=1691,886,75,33
+Coordinates=2641,1352,75,33
 
 [Rectangle63]
-Coordinates=1017,827,75,33
+Coordinates=1459,1104,75,33
 
 [Text17]
-Coordinates=1063,596,46,51
+Coordinates=2079,706,46,51
 
 [Rectangle55]
-Coordinates=1529,1122,75,33
+Coordinates=2819,1042,75,33
 
 [Text3]
-Coordinates=527,750,41,51
+Coordinates=2447,790,41,51
 
 [Rectangle37]
-Coordinates=1457,886,75,33
+Coordinates=130,1414,75,33
 
 [Rectangle5]
-Coordinates=212,1004,69,33
+Coordinates=2508,1228,69,33
 
 [Text25]
-Coordinates=2188,596,46,51
+Coordinates=1594,706,46,51
 
 [green]
 Coordinates=580,350,42,33
 
 [Text21]
-Coordinates=91,673,46,51
+Coordinates=490,706,46,51
 
 [Image6]
-Coordinates=1402,673,49,51
+Coordinates=926,790,49,51
 
 [DataModule1.]
 Coordinates=1430,250,191,33
@@ -722,35 +722,35 @@ Coordinates=10,10,179,33
 Visible=False
 
 [BindSourceDB5]
-Coordinates=637,10,163,285
+Coordinates=620,10,163,285
 
 [Text35]
-Coordinates=388,673,46,51
+Coordinates=3125,706,46,51
 
 [Text32]
-Coordinates=852,596,46,51
+Coordinates=1459,874,46,51
 
 [Rectangle75]
-Coordinates=212,945,75,33
+Coordinates=2395,1228,75,33
 
 [Rectangle74]
-Coordinates=1687,1063,75,33
+Coordinates=2575,1290,75,33
 
 [Text36]
-Coordinates=2265,673,46,51
+Coordinates=570,706,46,51
 
 [Rectangle72]
-Coordinates=2556,1004,75,33
+Coordinates=754,1042,75,33
 
 [Text37]
-Coordinates=380,750,46,51
+Coordinates=406,958,46,51
 
 [DataModule1.tbl_produits_demande]
 Coordinates=919,170,191,33
 Visible=False
 
 [Rectangle73]
-Coordinates=10,1240,75,33
+Coordinates=243,1104,75,33
 
 [Form5.BindSourceDB1]
 Coordinates=875,411,172,141
@@ -759,245 +759,245 @@ Coordinates=875,411,172,141
 Coordinates=2633,750,64,51
 
 [Rectangle98]
-Coordinates=2283,945,75,33
+Coordinates=2713,1166,75,33
 
 [Image13]
-Coordinates=1966,411,55,51
+Coordinates=1424,706,55,51
 
 [Rectangle70]
-Coordinates=1096,1181,75,33
+Coordinates=123,1166,75,33
 
 [Text45]
-Coordinates=1753,673,46,51
+Coordinates=650,706,46,51
 
 [Text31]
-Coordinates=2348,411,46,51
+Coordinates=3045,706,46,51
 
 [Line9]
-Coordinates=10,827,41,33
+Coordinates=2343,1352,41,33
 
 [ColorAnimation7]
 Coordinates=807,227,97,33
 
 [Text46]
-Coordinates=1629,750,46,51
+Coordinates=2367,790,46,51
 
 [Rectangle76]
-Coordinates=716,1004,75,33
+Coordinates=702,1104,75,33
 
 [Rectangle97]
-Coordinates=485,1063,75,33
+Coordinates=1093,1042,75,33
 
 [Rectangle71]
-Coordinates=711,1181,75,33
+Coordinates=980,1042,75,33
 
 [StringGrid5]
-Coordinates=541,82,70,141
+Coordinates=1223,98,70,141
 Visible=True
 
 [Image12]
-Coordinates=2471,750,55,51
+Coordinates=1344,790,55,51
 
 [Rectangle99]
-Coordinates=1221,1122,75,33
+Coordinates=1226,1104,75,33
 
 [Rectangle93]
-Coordinates=111,1004,75,33
+Coordinates=582,1476,75,33
 
 [Rectangle78]
-Coordinates=999,1063,75,33
+Coordinates=10,1476,75,33
 
 [TabItem5]
-Coordinates=318,1122,59,33
+Coordinates=542,1166,59,33
 
 [Rectangle101]
-Coordinates=2166,1181,80,33
+Coordinates=1884,1352,80,33
 
 [Rectangle77]
-Coordinates=2005,827,75,33
+Coordinates=1545,1352,75,33
 
 [Text30]
-Coordinates=2193,673,46,51
+Coordinates=2012,874,46,51
 
 [Rectangle100]
-Coordinates=884,1181,80,33
+Coordinates=10,1104,80,33
 
 [Text39]
-Coordinates=1887,596,46,51
+Coordinates=3151,874,46,51
 
 [Rectangle94]
-Coordinates=188,1063,75,33
+Coordinates=2169,1228,75,33
 
 [Text38]
-Coordinates=308,750,46,51
+Coordinates=706,874,46,51
 
 [Rectangle96]
-Coordinates=1514,1063,75,33
+Coordinates=2198,1104,75,33
 
 [Rectangle95]
-Coordinates=509,1122,75,33
+Coordinates=2161,1042,75,33
 
 [Text44]
-Coordinates=1135,596,46,51
+Coordinates=1964,790,46,51
 
 [Line11]
-Coordinates=2009,1181,46,33
+Coordinates=2274,1042,46,33
 
 [Rectangle68]
-Coordinates=609,827,75,33
+Coordinates=921,1104,75,33
 
 [Text40]
-Coordinates=1111,673,46,51
+Coordinates=486,958,46,51
 
 [DataModule1.qry_refuse]
 Coordinates=340,0,133,33
 Visible=False
 
 [BindSourceDB6]
-Coordinates=342,10,119,285
+Coordinates=1001,10,119,285
 Visible=True
 
 [Image22]
-Coordinates=1505,411,55,51
+Coordinates=1086,706,55,51
 
 [Rectangle80]
-Coordinates=1990,1063,75,33
+Coordinates=356,1290,75,33
 
 [Rectangle92]
-Coordinates=616,945,75,33
+Coordinates=236,1228,75,33
 
 [Rectangle88]
-Coordinates=1298,1181,75,33
+Coordinates=1952,1414,75,33
 
 [Image20]
-Coordinates=2040,596,55,51
+Coordinates=2940,790,55,51
 
 [Text41]
-Coordinates=1734,411,46,51
+Coordinates=2448,490,46,51
 
 [Rectangle102]
-Coordinates=263,827,80,33
+Coordinates=822,1228,80,33
 
 [ColorAnimation9]
 Coordinates=738,279,97,33
 
 [Text49]
-Coordinates=1969,673,46,51
+Coordinates=1884,790,46,51
 
 [ColorAnimation12]
 Coordinates=575,258,103,33
 
 [Rectangle119]
-Coordinates=1903,1181,80,33
+Coordinates=1405,1290,80,33
 
 [Rectangle106]
-Coordinates=911,827,80,33
+Coordinates=462,1476,80,33
 
 [Text56]
-Coordinates=76,750,46,51
+Coordinates=173,874,46,51
 
 [Rectangle114]
-Coordinates=802,945,80,33
+Coordinates=2127,1166,80,33
 
 [Rectangle112]
-Coordinates=1734,827,80,33
+Coordinates=1623,1228,80,33
 
 [Rectangle113]
-Coordinates=1898,945,80,33
+Coordinates=1020,1476,80,33
 
 [Rectangle118]
-Coordinates=2071,886,80,33
+Coordinates=1651,1104,80,33
 
 [Text42]
-Coordinates=1681,673,46,51
+Coordinates=1539,874,46,51
 
 [Rectangle108]
-Coordinates=839,886,80,33
+Coordinates=1936,1228,80,33
 
 [Rectangle121]
-Coordinates=2384,945,80,33
+Coordinates=2754,1352,80,33
 
 [Rectangle117]
-Coordinates=1115,1122,80,33
+Coordinates=356,1352,80,33
 
 [Rectangle110]
-Coordinates=2484,1181,80,33
+Coordinates=1052,1290,80,33
 
 [StringGrid6]
-Coordinates=246,127,70,141
+Coordinates=277,153,70,141
 Visible=True
 
 [Rectangle115]
-Coordinates=692,1063,80,33
+Coordinates=1339,1104,80,33
 
 [Image23]
-Coordinates=307,673,55,51
+Coordinates=753,790,55,51
 
 [Rectangle105]
-Coordinates=2272,1181,80,33
+Coordinates=469,1290,80,33
 
 [Image24]
-Coordinates=1108,750,55,51
+Coordinates=2520,790,55,51
 
 [Rectangle111]
-Coordinates=2394,1063,80,33
+Coordinates=932,1290,80,33
 
 [Text47]
-Coordinates=2041,673,46,51
+Coordinates=1852,874,46,51
 
 [Rectangle107]
-Coordinates=2500,1063,80,33
+Coordinates=2473,1166,80,33
 
 [Line13]
-Coordinates=1615,1063,46,33
+Coordinates=955,1414,46,33
 
 [Rectangle109]
-Coordinates=1875,1004,80,33
+Coordinates=1758,1290,80,33
 
 [Text48]
-Coordinates=91,596,46,51
+Coordinates=2422,874,46,51
 
 [Rectangle116]
-Coordinates=1100,1063,80,33
+Coordinates=469,1228,80,33
 
 [TabItem8]
-Coordinates=1277,1004,59,33
+Coordinates=1953,1042,59,33
 
 [ColorAnimation10]
 Coordinates=1337,209,103,33
 
 [Rectangle104]
-Coordinates=908,1122,80,33
+Coordinates=1366,1414,80,33
 
 [Rectangle120]
-Coordinates=10,1122,80,33
+Coordinates=469,1104,80,33
 
 [Text43]
-Coordinates=741,750,46,51
+Coordinates=2981,874,46,51
 
 [Text53]
-Coordinates=1825,673,46,51
+Coordinates=2182,874,46,51
 
 [Image25]
-Coordinates=227,750,55,51
+Coordinates=1249,706,55,51
 
 [Text52]
-Coordinates=1815,596,46,51
+Coordinates=391,874,46,51
 
 [Rectangle103]
-Coordinates=212,1181,80,33
+Coordinates=10,1414,80,33
 
 [Image26]
-Coordinates=2390,750,55,51
+Coordinates=2690,790,55,51
 
 [Line12]
-Coordinates=2278,886,46,33
+Coordinates=1572,1104,46,33
 
 [Rectangle122]
-Coordinates=2378,1181,80,33
+Coordinates=736,958,80,33
 
 [Text57]
-Coordinates=1897,673,46,51
+Coordinates=566,958,46,51
 
 [DataModule1.qry_refuse_byEmp]
 Coordinates=10,10,174,33
@@ -1023,143 +1023,293 @@ Visible=False
 Coordinates=354,366,104,33
 
 [Form7.BindSourceDB3]
-Coordinates=1680,250,127,141
+Coordinates=354,366,127,141
 
 [Form7.BindSourceDB2]
-Coordinates=1092,10,127,195
+Coordinates=543,1,127,195
 
 [Form7.BindSourceDB1]
-Coordinates=1646,10,127,159
+Coordinates=354,314,127,159
 
 [DataModule1.qry_list_demande_produits]
 Coordinates=2000,210,215,33
 Visible=False
 
 [BindSourceDB8]
-Coordinates=1769,10,194,159
+Coordinates=2136,10,194,159
+Visible=True
 
 [Rectangle134]
-Coordinates=1696,1181,80,33
+Coordinates=1034,1104,80,33
 
 [Image33]
-Coordinates=1346,596,55,51
+Coordinates=646,958,55,51
 
 [Rectangle132]
-Coordinates=1014,945,80,33
+Coordinates=2353,1042,80,33
 
 [Rectangle126]
-Coordinates=1266,886,80,33
+Coordinates=123,1352,80,33
 
 [Image32]
-Coordinates=951,673,55,51
+Coordinates=1174,790,55,51
 
 [Rectangle129]
-Coordinates=2177,1004,80,33
+Coordinates=1285,1290,80,33
 
 [Rectangle128]
-Coordinates=805,827,80,33
+Coordinates=349,1228,80,33
 
 [Rectangle123]
-Coordinates=990,1181,80,33
+Coordinates=1480,1042,80,33
 
 [Rectangle125]
-Coordinates=2824,750,80,33
+Coordinates=936,1352,80,33
 
 [Rectangle154]
-Coordinates=1394,945,80,33
+Coordinates=2223,1352,80,33
 
 [Text64]
-Coordinates=1499,596,46,51
+Coordinates=1009,790,46,51
 
 [Rectangle131]
-Coordinates=2380,827,80,33
+Coordinates=1169,1352,80,33
 
 [Rectangle130]
-Coordinates=1893,886,80,33
+Coordinates=2633,1414,80,33
 
 [Text66]
-Coordinates=800,673,46,51
+Coordinates=2640,706,46,51
 
 [Rectangle146]
-Coordinates=798,1063,80,33
+Coordinates=2007,1166,80,33
 
 [Rectangle147]
-Coordinates=520,1181,80,33
+Coordinates=1832,1414,80,33
 
 [Line14]
-Coordinates=812,1181,46,33
+Coordinates=469,1414,46,33
 
 [Text58]
-Coordinates=2629,596,46,51
+Coordinates=1999,706,46,51
 
 [Text60]
-Coordinates=1427,596,46,51
+Coordinates=153,958,46,51
 
 [Text63]
-Coordinates=1477,673,46,51
+Coordinates=1379,874,46,51
 
 [Rectangle133]
-Coordinates=586,1063,80,33
+Coordinates=1720,1042,80,33
 
 [Line16]
-Coordinates=2105,945,46,33
+Coordinates=781,1290,46,33
 
 [ColorAnimation14]
 Coordinates=1395,319,103,33
 
 [Rectangle155]
-Coordinates=2274,827,80,33
+Coordinates=476,1352,80,33
 
 [Rectangle148]
-Coordinates=1630,1122,80,33
+Coordinates=2593,1166,80,33
 
 [StringGrid7]
-Coordinates=1460,210,70,141
+Coordinates=2030,21,70,141
 Visible=True
 
 [TabItem9]
-Coordinates=1125,1004,59,33
+Coordinates=1990,1104,59,33
 
 [Rectangle127]
-Coordinates=111,886,80,33
+Coordinates=2699,1042,80,33
 
 [Rectangle124]
-Coordinates=1206,1063,80,33
+Coordinates=695,1476,80,33
 
 [Text59]
-Coordinates=2557,596,46,51
+Coordinates=1041,874,46,51
 
 [Text65]
-Coordinates=2778,673,46,51
+Coordinates=2262,490,46,51
 
 [Text61]
-Coordinates=1476,750,46,51
+Coordinates=786,874,46,51
 
 [Rectangle145]
-Coordinates=2177,945,80,33
+Coordinates=236,1166,80,33
 
 [Image31]
-Coordinates=1806,411,55,51
+Coordinates=951,874,55,51
 
 [Rectangle144]
-Coordinates=2350,886,80,33
+Coordinates=1270,1228,80,33
 
 [Text62]
-Coordinates=1274,596,46,51
+Coordinates=10,790,46,51
 
 [Rectangle143]
-Coordinates=436,827,80,33
+Coordinates=1150,1228,80,33
 
 [ColorAnimation13]
 Coordinates=1848,403,103,33
 
 [Image27]
-Coordinates=2079,750,55,51
+Coordinates=2204,790,55,51
 
 [DataModule1.qry_list_demande_produits2]
 Coordinates=1160,230,221,33
 Visible=False
 
 [BindSourceDB9]
-Coordinates=1160,230,199,159
+Coordinates=1711,10,199,159
+
+[Text71]
+Coordinates=2022,490,46,51
+
+[Text68]
+Coordinates=2618,490,46,51
+
+[Rectangle164]
+Coordinates=449,1042,80,33
+
+[Rectangle174]
+Coordinates=329,1042,80,33
+
+[Text79]
+Coordinates=250,706,46,51
+
+[Line17]
+Coordinates=250,1042,46,33
+
+[Text69]
+Coordinates=330,706,46,51
+
+[Rectangle157]
+Coordinates=130,1042,80,33
+
+[Rectangle159]
+Coordinates=10,1042,80,33
+
+[Rectangle168]
+Coordinates=2837,958,80,33
+
+[Rectangle162]
+Coordinates=2717,958,80,33
+
+[StringGrid8]
+Coordinates=2750,180,70,141
+Visible=True
+
+[Text67]
+Coordinates=90,706,46,51
+
+[Rectangle156]
+Coordinates=2597,958,80,33
+
+[Rectangle170]
+Coordinates=2477,958,80,33
+
+[Rectangle167]
+Coordinates=2357,958,80,33
+
+[Text78]
+Coordinates=2102,490,46,51
+
+[ColorAnimation20]
+Coordinates=2039,265,103,33
+
+[ColorAnimation21]
+Coordinates=2039,320,103,33
+
+[Rectangle165]
+Coordinates=2237,958,80,33
+
+[Text72]
+Coordinates=10,706,46,51
+
+[Rectangle173]
+Coordinates=2117,958,80,33
+
+[Image34]
+Coordinates=1762,490,55,51
+
+[Image36]
+Coordinates=1599,490,55,51
+
+[Rectangle166]
+Coordinates=1997,958,80,33
+
+[Text76]
+Coordinates=2182,490,46,51
+
+[Rectangle175]
+Coordinates=1877,958,80,33
+
+[Rectangle172]
+Coordinates=1757,958,80,33
+
+[Image35]
+Coordinates=1852,490,55,51
+
+[Line18]
+Coordinates=1678,958,46,33
+
+[Rectangle160]
+Coordinates=1558,958,80,33
+
+[Image37]
+Coordinates=2528,490,55,51
+
+[TabItem10]
+Coordinates=1456,958,65,33
+
+[Rectangle161]
+Coordinates=1336,958,80,33
+
+[Rectangle171]
+Coordinates=1216,958,80,33
+
+[Rectangle158]
+Coordinates=1096,958,80,33
+
+[Text70]
+Coordinates=1942,490,46,51
+
+[Rectangle163]
+Coordinates=976,958,80,33
+
+[Rectangle169]
+Coordinates=856,958,80,33
+
+[DataModule1.qry_accepté_byEmp]
+Coordinates=2980,120,181,33
+Visible=False
+
+[BindSourceDB10]
+Coordinates=2930,50,164,357
+
+[Form8.ADOTable2]
+Visible=False
+Coordinates=385,104,104,33
+
+[Form8.ADOTable1]
+Visible=False
+Coordinates=99,404,104,33
+
+[Form8.ADOQuery1]
+Visible=False
+Coordinates=385,52,107,33
+
+[Form8.ADOTable3]
+Coordinates=208,1,104,141
+
+[Form8.BindSourceDB3]
+Coordinates=1199,1466,127,285
+
+[Form8.BindSourceDB2]
+Coordinates=208,313,127,141
+
+[Form8.BindSourceDB1]
+Coordinates=680,314,127,141
 

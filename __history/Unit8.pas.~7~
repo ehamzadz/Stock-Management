@@ -1,0 +1,79 @@
+unit Unit8;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, System.Rtti,
+  FMX.Grid.Style, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Grid,
+  FMX.frxClass, Data.DB, Data.Win.ADODB, Data.Bind.EngExt, Fmx.Bind.DBEngExt,
+  Fmx.Bind.Grid, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope;
+
+type
+  TForm8 = class(TForm)
+    StringGrid1: TStringGrid;
+    StringGrid2: TStringGrid;
+    StringGrid3: TStringGrid;
+    ADOConnection1: TADOConnection;
+    frxReport1: TfrxReport;
+    ADOTable1: TADOTable;
+    ADOTable2: TADOTable;
+    ADOTable3: TADOTable;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    BindSourceDB2: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource;
+    ADOQuery1: TADOQuery;
+    BindSourceDB3: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    num_demande, num_delivery :integer;
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm8.FormShow(Sender: TObject);
+begin
+
+
+  ADOTable2.filtered := false;
+  ADOTable2.filter := 'num_delivery=' + inttostr(num_delivery);
+  ADOTable2.filtered := true;
+
+  ADOTable2.active := false;
+  ADOTable2.active := true;
+  ADOTable2.refresh;
+
+  ADOTable1.First;
+
+  ADOTable3.filtered := false;
+  ADOTable3.filter := 'num_demande=' + inttostr(ADOTable2.FieldByName('num_demande').AsInteger);
+  ADOTable3.filtered := true;
+
+  ADOTable3.active := false;
+  ADOTable3.active := true;
+  ADOTable3.refresh;
+
+  ADOTable1.filtered := false;
+  ADOTable1.filter := 'num_delivery_bill=' + inttostr(num_delivery);
+  ADOTable1.filtered := true;
+
+  ADOTable1.active := false;
+  ADOTable1.active := true;
+  ADOTable1.refresh;
+
+  frxReport1.ShowReport();
+end;
+
+end.

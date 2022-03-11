@@ -377,6 +377,47 @@ type
     Text66: TText;
     BindSourceDB9: TBindSourceDB;
     LinkGridToDataSourceBindSourceDB9: TLinkGridToDataSource;
+    Rectangle156: TRectangle;
+    Rectangle157: TRectangle;
+    Image34: TImage;
+    Rectangle158: TRectangle;
+    Text67: TText;
+    Rectangle159: TRectangle;
+    Image35: TImage;
+    ColorAnimation20: TColorAnimation;
+    TabItem10: TTabItem;
+    Rectangle160: TRectangle;
+    Rectangle161: TRectangle;
+    Rectangle162: TRectangle;
+    Text68: TText;
+    Rectangle163: TRectangle;
+    Text69: TText;
+    Line17: TLine;
+    Rectangle164: TRectangle;
+    Text70: TText;
+    Rectangle165: TRectangle;
+    Text71: TText;
+    Rectangle166: TRectangle;
+    Text72: TText;
+    Rectangle167: TRectangle;
+    StringGrid8: TStringGrid;
+    Rectangle168: TRectangle;
+    Rectangle169: TRectangle;
+    Rectangle170: TRectangle;
+    Rectangle171: TRectangle;
+    Image36: TImage;
+    Rectangle172: TRectangle;
+    Text76: TText;
+    Rectangle173: TRectangle;
+    Image37: TImage;
+    ColorAnimation21: TColorAnimation;
+    Text78: TText;
+    Rectangle174: TRectangle;
+    Line18: TLine;
+    Rectangle175: TRectangle;
+    Text79: TText;
+    BindSourceDB10: TBindSourceDB;
+    LinkGridToDataSourceBindSourceDB10: TLinkGridToDataSource;
     procedure rect_navbar_employeeClick(Sender: TObject);
     procedure Rectangle17Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
@@ -405,6 +446,8 @@ type
     procedure Rectangle103Click(Sender: TObject);
     procedure Rectangle22Click(Sender: TObject);
     procedure Rectangle123Click(Sender: TObject);
+    procedure Rectangle156Click(Sender: TObject);
+    procedure Rectangle170Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -422,7 +465,7 @@ implementation
 {$R *.fmx}
 
 uses auth_u, datamodule, register_u, addProduit_u, produits_demande_u,
-  refuse_produits_u, Unit7;
+  refuse_produits_u, Unit7, Unit8;
 
 
 // Adding new employee
@@ -631,6 +674,53 @@ begin
                         E.ClassName + ':' + E.Message);
         end;
     end;
+end;
+
+procedure TForm2.Rectangle156Click(Sender: TObject);
+begin
+  //num_employee_globalVar         EXEC GetAcceptedDemandeOfEmployee @num_emp
+  datamodule.DataModule1.qry_accepté_byEmp.sql.clear;
+  datamodule.DataModule1.qry_accepté_byEmp.sql.add('EXEC GetAcceptedDemandeOfEmployee @num_emp=:num_emp');
+  datamodule.DataModule1.qry_accepté_byEmp.parameters.parambyname('num_emp').value := num_employee_globalVar;
+  datamodule.DataModule1.qry_accepté_byEmp.open;
+  tabs.TabIndex := 9;
+end;
+
+procedure TForm2.Rectangle170Click(Sender: TObject);
+begin
+  // send num Delivery of selected row to report form
+  form8.num_delivery := strtoint(Stringgrid8.Cells[0,Stringgrid8.Selected]);
+  ShowMessage(Stringgrid8.Cells[0,Stringgrid8.Selected]);
+  // filter
+   {
+  form8.ADOTable2.filtered := false;
+  form8.ADOTable2.filter := 'num_delivery=' + inttostr(form8.num_delivery);
+  form8.ADOTable2.filtered := true;
+
+  form8.ADOTable2.active := false;
+  form8.ADOTable2.active := true;
+  form8.ADOTable2.refresh;
+
+  form8.ADOTable2.First;
+
+  form8.ADOQuery1.filtered := false;
+  form8.ADOQuery1.filter := 'num_demande=' + inttostr(form8.ADOTable2.FieldByName('num_demande').AsInteger);
+  form8.ADOQuery1.filtered := true;
+
+  form8.ADOQuery1.active := false;
+  form8.ADOQuery1.active := true;
+  form8.ADOQuery1.refresh;
+
+  form8.ADOTable1.filtered := false;
+  form8.ADOTable1.filter := 'num_delivery_bill=' + inttostr(form8.num_delivery);
+  form8.ADOTable1.filtered := true;
+
+  form8.ADOTable1.active := false;
+  form8.ADOTable1.active := true;
+  form8.ADOTable1.refresh;
+
+  form8.frxReport1.ShowReport();  }
+  form8.ShowModal;
 end;
 
 procedure TForm2.Rectangle17Click(Sender: TObject);

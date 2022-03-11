@@ -113,6 +113,23 @@ Coordinates=548,224,92,195
 Coordinates=66,404,112,141
 
 [DataModule1.qry_list_demande_produits]
-Coordinates=718,1,215,51
+Coordinates=718,1,215,33
 Visible=False
+
+[DataModule1.qry_list_demande_produits2]
+Visible=False
+Coordinates=718,438,221,33
+
+[DataModule1.qry_accepté_byEmp]
+Visible=False
+Coordinates=956,1,181,33
+
+[Form2.BindSourceDB9]
+Coordinates=294,314,199,159
+
+[Form2.BindSourceDB8]
+Coordinates=718,1,194,159
+
+[Form2.BindSourceDB10]
+Coordinates=475,775,164,357
 

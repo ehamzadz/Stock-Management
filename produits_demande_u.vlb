@@ -137,3 +137,9 @@ Coordinates=834,382,215,33
 [Form2.BindSourceDB8]
 Coordinates=834,173,194,159
 
+[DataModule1.qry_list_demande_produits2]
+Visible=False
+
+[DataModule1.qry_accepté_byEmp]
+Visible=False
+
